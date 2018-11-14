@@ -1,0 +1,21 @@
+ <li v-if="showColor">
+        <div class="liLeft">产品成色：</div>
+        <div class="liRight">
+            {!!  Form::select('product_colour',array_only(config('status.barcode_associateds_type'),['new','good','bad']),old('product_colour',''),['placeholder'=>'请选择产品成色',"class"=>'checkNull select2']) !!}
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li v-if="showInput">
+        <div class="liLeft">条码录入：</div>
+        <div class="liRight">
+            {!!  Form::text(null,null,['placeholder'=>'条码录入',"class"=>'code','v-model'=>'code','v-on:keyup.enter'=>"entering()"]) !!}
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li v-if="showInput">
+        <div class="liLeft">新条码：</div>
+        <div class="liRight">
+            {!!  Form::text('two_code',old('two_code'),['placeholder'=>'新条码',"class"=>'','v-model'=>'new_code','readonly']) !!}
+        </div>
+        <div class="clear"></div>
+    </li>

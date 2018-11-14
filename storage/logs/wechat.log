@@ -1,0 +1,16 @@
+[2018-10-27 17:46:17] NULL.INFO: >>>>>>>>
+GET /cgi-bin/user/get?access_token=15_SgaWcqVpIjJOoL1NCxiF-o3qU3d373K01FNPBrvCmZwPAGjj_pgZ7bOMp20EgWCbrri02z2DkXNcw_tsNZG3N0voB5dztB_67q5GYcWVDU4kPqc3v6uzeT1YGwUZh2DASQjw4O2wdx9u961uZQYfAJAKBJ HTTP/1.1
+Host: api.weixin.qq.com
+User-Agent: GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.5-1+ubuntu18.04.1+deb.sury.org+1
+
+
+<<<<<<<<
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json; encoding=utf-8
+Date: Sat, 27 Oct 2018 09:46:17 GMT
+Content-Length: 117
+
+{"total":1,"count":1,"data":{"openid":["oSILJ1TGRJh1OnrCctR_xvDtsIgo"]},"next_openid":"oSILJ1TGRJh1OnrCctR_xvDtsIgo"}
+--------
+NULL  

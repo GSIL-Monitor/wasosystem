@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class CreateVideosTable extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('videos', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->string('name');
+			$table->string('url');
+			$table->text('complete_category')->nullable();
+			$table->text('complete_machine')->nullable();
+			$table->text('file')->nullable();
+			$table->timestamps();
+		});
+	}
+
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::drop('videos');
+	}
+
+}

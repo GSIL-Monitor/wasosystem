@@ -1,0 +1,84 @@
+
+<?php $good = app('App\Presenters\ProductGoodParamenterPresenter'); ?>
+<?php $__env->startSection('title','配件选购'); ?>
+<?php $__env->startSection('css'); ?>
+    <link href="<?php echo e(asset('css/order_info_public.css')); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo e(asset('css/order.css')); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo e(asset('css/product_info_edit.css')); ?>" rel="stylesheet" type="text/css">
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('js'); ?>
+
+    <script type="text/javascript" src="<?php echo e(asset('js/picScroll.js')); ?>"></script>
+    <script type="text/javascript" src="<?php echo e(asset('js/clipboard.min.js')); ?>"></script>
+    <script type="text/javascript" src="<?php echo e(asset('js/person.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/common_equipments.js')); ?>"></script>
+    <script>
+        $(function () {
+            qrcode();
+            zheng_JiXingHao_Create();
+            ConfigurationCodeCreate()
+        });
+        var vm = new Vue({
+            el: "#app",
+            data:{
+                total_price: '<?php echo $common_equipment->unit_price; ?>',
+                goodLists:[],
+                <?php if($user_products->isNotEmpty()): ?>
+                goodLists:<?php echo $good->get_goods($user_products); ?>,
+                <?php endif; ?>
+                raids :<?php echo json_encode($good->raids(),true); ?>
+
+            },
+            methods:{
+                set_price:function (price){
+                    this.total_price=price;
+                },
+                reset:function () {
+                    var self=this;
+                    var Notice=this.$Notice;
+                    axios.get('<?php echo e(route('common_equipments.reset',$common_equipment->id)); ?>').then(function (response) {
+                        self.$refs.child.goodList=response.data;
+                        Notice.success(
+                            {
+                                title: "重置成功！",
+                                duration: 1,
+                                onClose: function () {
+                                    zheng_JiXingHao_Create();
+                                    ConfigurationCodeCreate()
+                                    qrcode();
+                                }
+                            });
+                    }).catch(function (error) {
+                        swal(error.response.data.message,'','warning')
+                    });
+                },
+                save:function () {
+                    var self=this;
+                    var Notice=this.$Notice;
+                    var form_data=$('#completeMachine').fixedSerialize();
+                    axios.post('<?php echo e(route('common_equipments.save',$common_equipment->id)); ?>',form_data+'&_token='+getToken()).then(function (response) {
+                        Notice.success(
+                            {
+                                title: "保存成功 正在刷新订单！",
+                                duration: 1,
+                                onClose: function () {
+                                    location.reload()
+                                }
+                            });
+                    }).catch(function (error) {
+                        swal(error.response.data.message,'','warning')
+                    });
+                }
+            }
+        });
+    </script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+    <div id="Pic_black"></div>
+        <div class="pro_detail" id="app">
+            <?php echo $__env->make('member_centers.common_equipments.form.material_editor', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        </div>
+        <?php echo $__env->make('member_centers.common_equipments.form.non_intention', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('member_centers.orders.layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
