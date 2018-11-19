@@ -57,7 +57,7 @@
                         <td class="tableMoreHide">
                             @foreach(config('status.procuctGoodStatus') as $key=>$status)
                                 <label for="{{ $key.$product_good->id }}">
-                                    {{ Form::checkbox('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key],old('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key]),['onclick'=>'this.value=(this.value==0)?1:0','id'=>$key.$product_good->id]) }}
+                                    {{ Form::checkbox('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key],old('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key]),['class'=>'radio','id'=>$key.$product_good->id]) }}
                                     {{ $status }}</label>
                             @endforeach
                         </td>

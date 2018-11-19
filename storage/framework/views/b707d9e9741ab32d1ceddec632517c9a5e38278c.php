@@ -17,6 +17,7 @@
                 showInput: false,
                 showColor: false,
                 showProduct: false,
+                showTable:false,
                 color: "<?php echo $barcode_associated['barcode_associated']->product_colour ?? ''; ?>",
                 GoodUrl: "<?php echo e(route('admin.product_goods.getseries')); ?>",
             },
@@ -46,10 +47,14 @@
                             this.showInput = true;
                             this.showColor = true;
                             break;
+                        case 'loan_out_to_replace':
+                            this.showTable = true;
+                            break;
                         default :
                             this.showInput = false;
                             this.showColor = false;
                             this.showProduct = false;
+                            this.showTable = false;
                     }
                 },
                 entering: function () {

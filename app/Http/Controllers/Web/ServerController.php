@@ -8,6 +8,7 @@ use App\Models\CompleteMachine;
 use App\Models\CompleteMachineFrameworks;
 use App\Models\Order;
 use App\Models\User;
+use App\Models\Video;
 use App\Services\CompleteMachineServices;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -35,6 +36,7 @@ class ServerController extends Controller
         } else {
             $session->put('complete_machine_type', $id);
         }
+
         return view('site.servers.index', compact('servers', 'complete_machine_framework', 'id', 'type'));
     }
 
@@ -69,9 +71,14 @@ class ServerController extends Controller
         if(user()){
               user()->user_product()->detach();//删除
               $this->completeMachineServices->set_user_product($completeMachine->complete_machine_product_goods);
-              $user_products=$this->completeMachineServices->get_user_product();
+            $user_products=$this->completeMachineServices->get_user_product();
         }
-        return view('site.servers.show', compact('completeMachine', 'parent', 'sales_records', 'sales_srecord_count', 'recommends','user_products'));
+        if($parent->framework_video->first()){
+            $video=$parent->framework_video->first();
+        }else{
+            $video=$completeMachine->complete_machine_video->first() ?? [];
+        }
+        return view('site.servers.show', compact('completeMachine', 'parent', 'sales_records', 'sales_srecord_count', 'recommends','user_products','video'));
     }
 
     public function add_or_delete(Request $request)

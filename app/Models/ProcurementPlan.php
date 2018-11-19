@@ -11,6 +11,10 @@ class ProcurementPlan extends Model
        'product_colour','procurement_status','serial_number','procurement_number','finish_procurement_number',
        'quality_time','postscript','logistics_company','logistics_number','admin','purchase','code','two_code'];
 
+    public function getTypeAttribute()
+    {
+        return 'ProcurementPlan';
+    }
     public function setCodeAttribute($value){
         return $this->attributes['code']=json_encode($value,JSON_UNESCAPED_UNICODE);
     }

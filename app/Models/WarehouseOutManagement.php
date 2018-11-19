@@ -10,6 +10,10 @@ class WarehouseOutManagement extends Model
    protected $casts=[];
    protected $fillable=['user_id','order_id','out_type','out_status','associated_disposal','serial_number','out_number','finish_out_number','admin','postscript'];
 
+    public function getTypeAttribute()
+    {
+        return 'WarehouseOutManagement';
+    }
     public function scopeCondition($query,$status,$request)
     {
         $searchOrder = ['type' => $request->get('type') ?? false,
@@ -44,7 +48,13 @@ class WarehouseOutManagement extends Model
                             $query->where('code', 'like', '%' . $searchOrder['keyword'] . '%');
                         });
                     }, function ($query) use ($searchOrder) {
-                        return $query->where($searchOrder['type'], 'like', '%' . $searchOrder['keyword'] . '%');//筛选管理员
+                        return $query->when($searchOrder['type'] == 'product', function ($query) use ($searchOrder) {
+                            return $query->whereHas('codes.product_good', function ($query) use ($searchOrder) {
+                                $query->where('name', 'like', '%' . $searchOrder['keyword'] . '%');
+                            });
+                        }, function ($query) use ($searchOrder) {
+                            return $query->where($searchOrder['type'], 'like', '%' . $searchOrder['keyword'] . '%');//筛选管理员
+                        });
                     });
                 });
             });

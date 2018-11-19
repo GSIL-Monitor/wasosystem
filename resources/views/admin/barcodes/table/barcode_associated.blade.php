@@ -15,7 +15,7 @@
                 @elseif(in_array($types,['sell','loan_out']))
                     @php $url=route('admin.warehouse_out_managements.edit',$barcode_associated->id);@endphp
                 @else
-                    @php $url=route('admin.barcode_associateds.create').'?status='.$types.'&id='.$barcode_associated->id.'&code='.$barcode_associated->code.'&product_good_id='.$barcode_associated->product_good->id.'&search=search';@endphp
+                    @php $url=route('admin.barcode_associateds.create').'?category='.$barcode_associated->type.'&status='.$types.'&id='.$barcode_associated->id.'&code='.$barcode_associated->code.'&product_good_id='.$barcode_associated->product_good->id.'&search=search';@endphp
                 @endif
                 <a class="changeWeb" data_url="{{ $url }}">
                     {{ config('status.barcode_associateds_type')[$types] }} {{ $types }}

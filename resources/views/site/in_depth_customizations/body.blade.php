@@ -226,7 +226,7 @@
                 </div>
             </div>
         </div>
-
+        @if(!empty($videos))
         <div class="deepTxt8 txtCon">
             <div class="wrap">
                 <div class="txtTit">
@@ -240,16 +240,17 @@
                         <span class="aorrw right"></span>
                         <div class="videos">
                             <ul>
-                                <li class="active">
+                                @foreach($videos as $video)
+                                <li class="@if($loop->index == 0) active @endif">
                                     <div class="choose"></div>
                                     <i class="play"></i>
                                     <span class="playscreen"></span>
-                                    <video preload="none" style="background-image:url('');">
-                                        <source src="" type="video/mp4">
-                                        <source src="" type="video/ogg">
+                                    <video preload="none" style="background-image: url({{ asset('storage/video_pic/'.$video->name.'.jpg') }})">
+                                        <source src="{{ asset('storage/'.$video->file['url'][0]) }}" type="video/mp4">
+                                        <source src="{{ asset('storage/'.$video->file['url'][0]) }}" type="video/ogg">
                                     </video>
                                 </li>
-
+                                @endforeach
 
                                 <div class="clear"></div>
                             </ul>
@@ -258,7 +259,7 @@
                 </div>
             </div>
         </div>
-
+        @endif
         <div class="goStart">
             <span class="goDeepNow">开始我的深度定制</span>
 

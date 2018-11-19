@@ -8,8 +8,9 @@
                 var status = "{{ optional($last)->out_type ?? optional($last)->procurement_type ?? optional($last)->current_state ?? '' }}";
                 if (status){
                 var id = "{{ optional($last)->id ?? '' }}";
+                var category = "{{ optional($last)->type ?? '' }}";
                 var product_good_id = "{{ optional($product)->product_goods->id  ?? optional($product)->product_good->id ?? ''}}";
-                var param = '?status=' + status + '&type=' + type + '&id=' + id + '&code=' + code + '&product_good_id=' + product_good_id;
+                var param = '?category='+category+'&status=' + status + '&type=' + type + '&id=' + id + '&code=' + code + '&product_good_id=' + product_good_id;
                 $('.openFrame').attr('data_url', '{{ route('admin.barcode_associateds.create')}}' + param);
                 console.log( '{{ route('admin.barcode_associateds.create')}}' + param);
                 $('.openFrame').click();

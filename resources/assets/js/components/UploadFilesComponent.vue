@@ -142,7 +142,7 @@
 //            console.log(this.actionImageUrl)
 //            console.log(this.imageUrl)
 //            console.log(this.deleteImageUrl)
-            if(this.defaultList[0].suffix == 'mp4'){
+            if(this.defaultList[0] !=undefined && this.defaultList[0].suffix == 'mp4'){
                 this.pic='/pic/mp4.jpg'
             }
             this.uploadList = this.$refs.upload.fileList;

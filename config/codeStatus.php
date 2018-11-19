@@ -21,11 +21,11 @@ return [
     'bad' => [
         'returned_to_the_factory' => '返厂在途', 'stock_returns' => '进货退货', 'breakage' => '报损', 'models_to_replace' => '型号更换'
     ],
-    'warranty_replacement换出' => [
+    'warranty_replacement换出!' => [
         'sell_return' => '销售退货', 'warranty_replacement' => '质保更换',
         'quality_acceptance' => '质保受理', 'loan_out_to_replace' => '借转更换'
     ],
-    'warranty_replacement换入' => [
+    'warranty_replacement换进!' => [
         'bad' => '坏货', 'stock_returns' => '进货退货', 'models_to_replace' => '型号更换'
     ],
     'models_to_replace' => [

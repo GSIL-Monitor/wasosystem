@@ -8,8 +8,9 @@
                 var status = "<?php echo e(optional($last)->out_type ?? optional($last)->procurement_type ?? optional($last)->current_state ?? ''); ?>";
                 if (status){
                 var id = "<?php echo e(optional($last)->id ?? ''); ?>";
+                var category = "<?php echo e(optional($last)->type ?? ''); ?>";
                 var product_good_id = "<?php echo e(optional($product)->product_goods->id  ?? optional($product)->product_good->id ?? ''); ?>";
-                var param = '?status=' + status + '&type=' + type + '&id=' + id + '&code=' + code + '&product_good_id=' + product_good_id;
+                var param = '?category='+category+'&status=' + status + '&type=' + type + '&id=' + id + '&code=' + code + '&product_good_id=' + product_good_id;
                 $('.openFrame').attr('data_url', '<?php echo e(route('admin.barcode_associateds.create')); ?>' + param);
                 console.log( '<?php echo e(route('admin.barcode_associateds.create')); ?>' + param);
                 $('.openFrame').click();

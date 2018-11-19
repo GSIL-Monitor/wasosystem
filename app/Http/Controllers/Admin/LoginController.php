@@ -37,7 +37,17 @@ class LoginController extends Controller
     protected function validateLogin(Request $request)
     {
         $rules=[
-            $this->username() => 'required|max:3', 'password' => 'required', 'captcha' => 'required|captcha'
+            $this->username() =>[
+                'required',
+                'max:3',
+                function ($attribute, $value, $fail) {
+                        $admin=Admin::whereAccount(\request('account'))->first();
+                        if ($admin && $admin->disabled == 1) {
+                            $fail('账号已被禁用！请联系管理员');
+                        }
+                }
+            ]
+            , 'password' => 'required', 'captcha' => 'required|captcha'
         ];
         $message=[
             $this->username().'.required' => '账号必填',

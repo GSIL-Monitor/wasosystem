@@ -39,7 +39,6 @@ class SearchController extends Controller
 //                $searchs= $searchs->merge($completeMachine);
 //            }
         }
-
         return view('site.searchs.index',compact('integrations','informationManagements','completeMachines'));
     }
 

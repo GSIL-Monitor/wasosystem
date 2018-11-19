@@ -30,6 +30,11 @@
                 $barcode_associated['product_good']->name ??  ''
                 ,['placeholder'=>'产品规格',"class"=>'checkNull','readonly']); ?>
 
+                <?php echo Form::hidden('product_colour',
+              $barcode_associated['barcode_associated']->product_colour ??  $barcode_associated['procurement_plan']->product_colour
+              ,['placeholder'=>'产品成色',"class"=>'checkNull','readonly']); ?>
+
+
             </div>
             <div class="clear"></div>
         </li>
@@ -103,6 +108,7 @@
             <div class="clear"></div>
         </li>
         <?php if ($__env->exists('admin.barcode_associateds.fileds.admin')) echo $__env->make('admin.barcode_associateds.fileds.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
         <?php if ($__env->exists('admin.barcode_associateds.fileds.description')) echo $__env->make('admin.barcode_associateds.fileds.description', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <div class="clear"></div>
         <?php echo Form::close(); ?>

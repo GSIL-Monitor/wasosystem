@@ -33,6 +33,7 @@ class BarcodeAssociatedStatusServices
             $supplier_managements = SupplierManagement::findOrFail($data['supplier_managements_id']);
             $supplier_managements->increment('sales_return_count');//添加销售退货数量
             InventoryManagement::whereProductGoodId($data['product_good_id'])->increment($data['product_colour']);
+            self::replace_code($WarehouseOutManagement->codes,$data['product_good_id'],$data['code'],$data['code'].'(已退货)');
         });
     }
     //借转销售  //功能完成
@@ -172,7 +173,7 @@ class BarcodeAssociatedStatusServices
                 $bad['current_state'] = 'bad';
                 $bad['location']='库存';
                 if(!empty($data['two_code'])){
-                    $bad['description']='换入!';
+                    $bad['description']='换进!';
                     $bad['two_code']=$code;
                     $bad['code'] = $two_code;
                     BarcodeAssociated::create($bad);
@@ -182,7 +183,7 @@ class BarcodeAssociatedStatusServices
                 }
             }else{
                 if(!empty($data['two_code'])){
-                    $data['description']='换入!';
+                    $data['description']='换进!';
                     $data['two_code']=$code;
                     $data['code'] = $two_code;
                     $data['location']='库存';
@@ -192,6 +193,7 @@ class BarcodeAssociatedStatusServices
             }
         });
   }
+  //质保返回
     public static function quality_return($data)
     {
         \DB::transaction(function () use ($data) {
@@ -209,7 +211,7 @@ class BarcodeAssociatedStatusServices
                 $bad['current_state'] = 'bad';
                 $bad['location']='代管';
                 if(!empty($data['two_code'])){
-                    $bad['description']='换入!';
+                    $bad['description']='换进!';
                     $bad['two_code']=$code;
                     $bad['code'] = $two_code;
                     BarcodeAssociated::create($bad);
@@ -219,7 +221,7 @@ class BarcodeAssociatedStatusServices
                 }
             }else{
                 if(!empty($data['two_code'])){
-                    $data['description']='换入!';
+                    $data['description']='换进!';
                     $data['two_code']=$code;
                     $data['code'] = $two_code;
                     $data['location']='代管';
@@ -229,7 +231,7 @@ class BarcodeAssociatedStatusServices
             }
         });
     }
-
+//质保取走
     public static function quality_take_away($data)
     {
         \DB::transaction(function () use ($data) {
@@ -240,7 +242,7 @@ class BarcodeAssociatedStatusServices
             BarcodeAssociated::create($data);
         });
     }
-
+//代管转入库
     public static function escrow_to_storage($data)
     {
         \DB::transaction(function () use ($data) {
@@ -258,6 +260,7 @@ class BarcodeAssociatedStatusServices
             BarcodeAssociated::create($data);
         });
     }
+    //测试品返还
     public static function test_return($data)
     {
         \DB::transaction(function () use ($data) {
@@ -276,7 +279,7 @@ class BarcodeAssociatedStatusServices
             BarcodeAssociated::create($data);
         });
     }
-
+//测试品转采购
     public static function test_to_procurement($data)
     {
 
@@ -305,123 +308,110 @@ class BarcodeAssociatedStatusServices
         });
     }
 
-    //有新条码则更换订单的条码-》质保更换,借转更换
-    public function replace_tms($upid,$tm,$newtm){
-        //$oid=M('tout')->where(array('id'=>$upid))->getField('orderid');
-        $where['tiaomas']=array('like',"%$tm%");
-        $tiaoma=M('orders')->where($where)->field('orderid,tiaomas')->find();
-        $new=str_replace($tm,$newtm,$tiaoma['tiaomas']);
-        M('orders')->where(array('orderid'=>$tiaoma['orderid']))->setField('tiaomas',$new);
-    }
-    //质保列表->质保更换
-    private function ZBGH()
-    {
-        $kc = D('Tkucun');
-        $cpcs = I('post.cpcs', 0, 'intval');
-        $gltm = I('post.gltm', '', 'trim');
-        $upid = I('post.upid', 0, 'intval');
-        $tiaoma = I('post.tiaoma', '', 'trim');
-        $where['cplx'] = I('post.cplx', 0, 'intval');
-        $where['cpgg'] = I('post.cpgg', 0, 'intval');
-        if ($cpcs == 6) {
-            $sta = 'xpsl';
-        }
-        if ($cpcs == 7) {
-            $sta = 'lpsl';
-        }
-        if ($cpcs == 8) {
-            $sta = 'hhsl';
-            if (!empty($gltm)) {
-                $data = $_POST;
-                $_POST['tiaoma'] = $gltm;
-                $_POST['gltm'] = $tiaoma;
-                $data['addtime'] = time() + 10;
-                $data['dangqianshijian'] = $cpcs;
-                $data['xszt'] = 3;
-                $data['userid'] = 0;
-                $data['gid'] = $this->ghss();
-                D('Tguanlian')->data($data)->add();
-            } else {
-                $data = $_POST;
-                $data['addtime'] = time() + 10;
-                $data['dangqianshijian'] = $cpcs;
-                $data['xszt'] = 3;
-                $data['userid'] = 0;
-                $data['gid'] = $this->ghss();
-                D('Tguanlian')->data($data)->add();
-            }
 
-        }
-        //在库存表中成色库存加一
-        $kc->where($where)->setInc($sta);
-        if (!empty($gltm)) {
-            $data1 = $_POST;
-            $data1['tiaoma'] = $gltm;
-            $data1['gltm'] = $tiaoma;
-            $data1['addtime'] = time() + 10;
-            $data1['xszt'] = 9;
-            $data1['cpcs'] = 0;
-            $data1['gid'] = 0;
-            D('Tguanlian')->data($data1)->add();
-            $cpcs = $this->where($where)->order('addtime desc')->limit(1)->getField('cpcs');//返回最后一条  查询是否是已经借出还回了
-            if (empty($cpcs)) {//如果没有 那么就到入库表里面去查
-                $cpcs = D('tin')->where($where)->getField('cpcs');
-            }
-            if ($cpcs == 6) {
-                $cpcs = 'xpsl';
-            }
-            if ($cpcs == 7) {
-                $cpcs = 'lpsl';
-            }
-            if ($cpcs == 8) {
-                $cpcs = 'hhsl';
-            }
-            $kucun[] = $kc->where(array('cplx' => $where['cplx'], 'cpgg' => $where['cpgg']))->setDec($cpcs);
-        }
-
-        D('Tguanlian')->where(array('id' => $upid))->setField('xszt', 0);
-        if (!empty($gltm)){
-            $this->replace_tms($upid,$tiaoma,$gltm);
-        }
-    }
-
+//质保更换
     public static function warranty_replacement($data)
     {
 
         \DB::transaction(function () use ($data) {
             $WarehouseOutManagements=WarehouseOutManagement::findOrFail($data['warehouse_out_management_id']);
+            $WarehouseOutManagements->update(['associated_disposal' => false]);
             $code=$data['code'];
             $two_code=$data['two_code'];
-            $bad=$data;
+            $twoCodes=$data;
+            if(!empty($two_code)) {
+                $new_code_product_colour = BarcodeAssociated::where(function ($query) use ($two_code) {
+                    $query->orWhere('code', $two_code)
+                        ->orWhere('two_code',$two_code);
+                })->first();
+                if (empty($new_code_product_colour)) {
+                    $new_code_product_colour = ProcurementPlan::where('code','like',"%$two_code%")->latest()->first();
+                }
+                if(!empty($data['two_code'])){
+                    $twoCodes['description']='换出!';
+                    $twoCodes['two_code']=$code;
+                    $twoCodes['code'] = $two_code;
+                    $twoCodes['location']='客户';
+                    $twoCodes['product_colour']=$new_code_product_colour->product_colour;
+                    BarcodeAssociated::create($twoCodes);
+                    self::replace_code($WarehouseOutManagements->codes,$data['product_good_id'],$code,$code.'(换入)'.'=>'.$two_code.'(换出)');
+                }
+                InventoryManagement::whereProductGoodId($data['product_good_id'])->decrement($new_code_product_colour->product_colour);
+
+            }
+            $data['description']='换进!';
+            $data['location']='库存';
+            BarcodeAssociated::create($data);
+            InventoryManagement::whereProductGoodId($data['product_good_id'])->increment($data['product_colour']);
 
             if (isset($data['product_colour']) && $data['product_colour'] == 'bad') {
+                $bad=$data;
                 $bad['associated_disposal'] = true;
                 $bad['current_state'] = 'bad';
                 $bad['location']='库存';
                 if(!empty($data['two_code'])){
-                    $bad['description']='换入!';
-                    $bad['two_code']=$code;
-                    $bad['code'] = $two_code;
+                    $bad['description']='换进!';
                     BarcodeAssociated::create($bad);
-                    // self::replace_code($WarehouseOutManagements->codes,$data['product_good_id'],$code,$two_code);
+
                 }else{
                     BarcodeAssociated::create($bad);
                 }
-            }else{
-                if(!empty($data['two_code'])){
-                    $data['description']='换出!';
-                    $data['two_code']=$code;
-                    $data['code'] = $two_code;
-                    $data['location']='客户';
-                    BarcodeAssociated::create($data);
-                   // self::replace_code($WarehouseOutManagements->codes,$data['product_good_id'],$code,$two_code);
-                }
-            }
-            if(!empty($data['two_code'])){
-                InventoryManagement::whereProductGoodId($data['product_good_id'])->decrement($data['product_colour']);
             }
         });
     }
+    //质保受理
+    public static function quality_acceptance($data)
+    {
+
+        \DB::transaction(function () use ($data) {
+            $data['location']='代管';
+            BarcodeAssociated::create($data);
+            InventoryManagement::whereProductGoodId($data['product_good_id'])->increment('proxies');
+        });
+    }
+//借转更换
+    public static function loan_out_to_replace($data)
+    {
+
+        \DB::transaction(function () use ($data) {
+            $WarehouseOutManagements=WarehouseOutManagement::findOrFail($data['warehouse_out_management_id']);
+            $WarehouseOutManagements->update(['associated_disposal' => false]);
+            $code=$data['code'];
+            $two_code=$data['two_code'];
+            $twoCodes=$data;
+            if(!empty($two_code)) {
+                    $twoCode=WarehouseOutManagement::whereHas('codes',function ($query) use($two_code){
+                        $query->where('code','like',"%$two_code%");
+                    })->first();
+                    $twoCode->update(['associated_disposal' => true]);
+                    $twoCodes['description']='换出!';
+                    $twoCodes['two_code']=$code;
+                    $twoCodes['code'] = $two_code;
+                    $twoCodes['location']='客户';
+                    BarcodeAssociated::create($twoCodes);
+                self::replace_code($WarehouseOutManagements->codes,$data['product_good_id'],$code,$code.'(换入)'.'=>'.$two_code.'(换出)');
+            }
+            $data['description']='换进!';
+            $data['location']='库存';
+            BarcodeAssociated::create($data);
+            InventoryManagement::whereProductGoodId($data['product_good_id'])->increment($data['product_colour']);
+
+            if (isset($data['product_colour']) && $data['product_colour'] == 'bad') {
+                $bad=$data;
+                $bad['associated_disposal'] = true;
+                $bad['current_state'] = 'bad';
+                $bad['location']='库存';
+                if(!empty($data['two_code'])){
+                    $bad['description']='换进!';
+                    BarcodeAssociated::create($bad);
+
+                }else{
+                    BarcodeAssociated::create($bad);
+                }
+            }
+        });
+    }
+
     //替换掉出库中对应的条码
     public static function replace_code($codes,$good_id,$old_code,$new_code)
     {

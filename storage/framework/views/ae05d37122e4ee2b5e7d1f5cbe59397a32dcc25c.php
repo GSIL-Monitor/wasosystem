@@ -29,12 +29,12 @@
     <div class="wrap">
         <!--  手机端 搜索 开始-->
         <div class="P_pro_condition">
-            <div class="P_search">
-                <form action="{:U('Products/server')}" method="get">
-                    <input type="text" name="keyword" value="" placeholder="请输入产品关键字">
-                    <button></button>
-                </form>
-            </div>
+            
+                
+                    
+                    
+                
+            
             <span class="P_condition">筛选条件</span>
             <div class="clear"></div>
         </div>

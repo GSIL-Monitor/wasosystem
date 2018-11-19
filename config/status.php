@@ -65,8 +65,7 @@ return [
                                         'E'=>'E，正常质保，无人为责任；',
     ],
     'service_quality_assurance_model'=>['complete_machine'=>'整机质保','parts'=>'配件质保','manual_service'=>'人工服务'],
-
-
+    'business_management_category'=>[38=>'buying_guide',39=>'terms_of_service',40=>'after_sale_policy',41=>'other_description'],
 
 
     /*******************************条码关联状态************************************/

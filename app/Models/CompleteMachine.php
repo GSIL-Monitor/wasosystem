@@ -187,6 +187,10 @@ class CompleteMachine extends Model
         return $this->belongsToMany(InformationManagement::Class, 'information_complete_machines');
     }
 
+    public function complete_machine_video()
+    {
+        return $this->belongsToMany(Video::class,'video_complete_machines');
+    }
 
 
 }

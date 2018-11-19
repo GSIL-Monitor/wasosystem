@@ -13,7 +13,7 @@ import iView from 'iview';
 //import Distpicker from 'v-distpicker'
 import VueDND from 'awe-dnd';
 import VeeValidate , { Validator }from 'vee-validate';
-import zh from 'vee-validate/dist/locale/zh_CN'
+import zh from './zh_CN'
 import "babel-polyfill";
 Vue.use(VueDND)
 Vue.use(iView);

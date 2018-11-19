@@ -4,6 +4,7 @@
            filterable
            remote
            clearable
+           :placeholder="placeholder"
            :remote-method="remoteMethod"
            :loading="loading">
        <Option v-for="(option, index) in options" :value="option.id" :key="index">{{option.name}}</Option>
@@ -18,7 +19,8 @@
             return {
                 options:[],
                 loading:false,
-                product_good_id:''
+                product_good_id:'',
+                placeholder:'请输入会员账号筛选！'
             }
         },
         methods: {

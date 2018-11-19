@@ -31,7 +31,7 @@
                             @foreach($item as $item2)
                                 <li>
                                     <div class="liBox">
-                                        <div class="liPic"><img src="{{ pic($item2->pic)[0]['url']  }}"></div>
+                                        <div class="liPic"><img src="{{ pic($item2->pic)[0]['url'] ?? ''  }}"></div>
                                         <div class="induce">
                                             <div class="inducePage">
                                                 <h5>{{ $item2->details['cooperation_types'] }}</h5>

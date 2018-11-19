@@ -25,6 +25,10 @@
                 {!!  Form::text(null,
                 $barcode_associated['product_good']->name ??  ''
                 ,['placeholder'=>'产品规格',"class"=>'checkNull','readonly']) !!}
+                {!!  Form::hidden('product_colour',
+              $barcode_associated['barcode_associated']->product_colour ??  $barcode_associated['procurement_plan']->product_colour
+              ,['placeholder'=>'产品成色',"class"=>'checkNull','readonly']) !!}
+
             </div>
             <div class="clear"></div>
         </li>
@@ -90,6 +94,7 @@
             <div class="clear"></div>
         </li>
         @includeIf('admin.barcode_associateds.fileds.admin')
+
         @includeIf('admin.barcode_associateds.fileds.description')
         <div class="clear"></div>
         {!! Form::close() !!}

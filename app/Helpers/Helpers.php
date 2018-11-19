@@ -308,12 +308,18 @@ if (!function_exists('randomColor')) {
             $arr=collect([]);
             foreach ($product_goods as $product_good){
                 if($product_good->drive->isNotEmpty()){
-                    $arr->push($product_good->drive);
+                    $arr=$arr->push($product_good->drive);
                 }
                 if($product_good->series->drive->isNotEmpty()){
-                    $arr->push($product_good->series->drive);
+                    $arr=$arr->push($product_good->series->drive);
                 }
             }
+
+           // $filtered=[];
+//            foreach ($arr->collapse() as $product_good){
+//                $filtered[$product_good->file['url']]=$product_good->file['name'];
+//            }
+//            dd($filtered);dsad
         return $arr->collapse();
         }
     }

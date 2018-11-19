@@ -15,7 +15,7 @@
                 <div class="tab_box">
                     <div class="aboutPic"><img src="<?php echo e(asset('pic/about1.jpg')); ?>"></div>
                     <div class="about_box">
-                        <div class="us"><?php echo $about->field['content']; ?></div>
+                        <div class="us"><?php echo optional($about)->field['content'] ?? ''; ?></div>
                     </div>
                 </div>
                 <div class="clear"></div>

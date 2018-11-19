@@ -19,7 +19,7 @@
         <div class="wrap">
             <div class="info_box">
                 <?php $__empty_1 = true; $__currentLoopData = $complete_machines; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$complete_machine): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <?php if($key != '0'): ?>
+                    <?php if($key != '0' && $key != ''): ?>
                         <div class="down_list">
                             <h2><i></i><?php echo e($key); ?></h2>
                             <ul>
@@ -30,6 +30,9 @@
                                                 <h5><?php echo e($item->name); ?></h5></a></li>
                                     <?php endif; ?>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_2): ?>
+                                    <div class="error">
+                                        暂时没有驱动
+                                    </div>
                                 <?php endif; ?>
                                 <div class="clear"></div>
                             </ul>

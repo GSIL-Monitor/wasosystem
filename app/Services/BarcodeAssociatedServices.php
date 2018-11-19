@@ -45,11 +45,12 @@ class BarcodeAssociatedServices
     {
         $select=[];
         $status=$last->current_state ?? $last->procurement_type ?? $last->out_type;
-
+        $description=$last->description ?? '';
+        $status=$status.$description;
         switch($status){
             case in_array($status,['procurement' , 'test_to_procurement' , 'sell_return'
                 ,'loan_out_return','factory_return','loan_out_to_replace' ,'escrow_to_storage'
-                , 'warranty_replacement' , 'models_to_replace'])
+                , 'warranty_replacement换进!' , 'models_to_replace'])
             :{
                 $select=array_only(config('status.barcode_associateds_type'),['bad','models_to_replace']);
                 break;
@@ -62,13 +63,13 @@ class BarcodeAssociatedServices
                 }
                 break;
             }
-            case in_array($status,['sell' , 'warranty_replacement' , 'loan_out_to_replace'
+            case in_array($status,['sell' , 'warranty_replacement换出!' , 'loan_out_to_replace'
                 ,'quality_take_away','borrow_to_sales']):{
                 $select=array_only(config('status.barcode_associateds_type'),['sell_return','warranty_replacement','quality_acceptance','loan_out_to_replace']);
                 break;
             }
             case 'quality_acceptance' :{
-                $select=array_only(config('status.barcode_associateds_type'),['sell_return','warranty_replacement','warranty_returned_to_the_factory','quality_take_away']);
+                $select=array_only(config('status.barcode_associateds_type'),['warranty_returned_to_the_factory','quality_take_away']);
                 break;
             }
             case 'loan_out' :{
@@ -88,12 +89,9 @@ class BarcodeAssociatedServices
                 break;
             }
         }
-        if($last->description == '换进!' ){
-            $select=array_only(config('status.barcode_associateds_type'),['breakage','quality_take_away','escrow_to_storage']);
-        }
-        if($last->description == '换出!' ){
-            $select=[];
-        }
+//        if($last->description == '换进!' ){
+//            $select=array_only(config('status.barcode_associateds_type'),['breakage','quality_take_away','escrow_to_storage']);
+//        }
         return $select;
     }
     public function loan_out($status)
@@ -182,9 +180,12 @@ class BarcodeAssociatedServices
                             ->whereHas('codes',function($query) use($code){
                                 $query->where('code', 'like', "%$code%");
                             })->first();
+
         $arr['product_good'] = ProductGood::with('product')->findOrFail($product_id);
         $arr['procurement_plan'] = ProcurementPlan::with('supplier_managements')->where('code', 'like', "%$code%")->first();
-        $arr['barcode_associated'] = BarcodeAssociated::with('user', 'order', 'warehouse_out_management', 'order.markets', 'admins', 'procurement_plans', 'supplier_managements', 'product_good', 'product_good.product')->find($id);
+        if($request->category == 'BarcodeAssociated'){
+            $arr['barcode_associated'] = BarcodeAssociated::with('user', 'order', 'warehouse_out_management', 'order.markets', 'admins', 'procurement_plans', 'supplier_managements', 'product_good', 'product_good.product')->find($id);
+        }
        if(empty($arr['warehouse_out_management'])){
            $arr['warehouse_out_management']=$arr['barcode_associated']->warehouse_out_management ?? '';
            $arr['user']=$arr['barcode_associated']->warehouse_out_management->user ?? '';
@@ -207,7 +208,7 @@ class BarcodeAssociatedServices
 
         $arr['code'] = $code;
         $arr['status'] = $status;
-      //  dump($arr);
+//dd($arr,$request->all());
         return $arr;
     }
 
@@ -294,8 +295,14 @@ class BarcodeAssociatedServices
                 BarcodeAssociatedStatusServices::warranty_replacement($data);
                 break;
             }
-
-
+            case 'quality_acceptance' : { //质保受理 完成
+                BarcodeAssociatedStatusServices::quality_acceptance($data);
+                break;
+            }
+            case 'loan_out_to_replace' : { //借转更换 完成
+                BarcodeAssociatedStatusServices::loan_out_to_replace($data);
+                break;
+            }
 
 
 

@@ -34,8 +34,7 @@
         <div class="wrap">
             <div id="crumbs">
                 <a href="/">网烁官网</a> <i>></i>
-                <?php echo e(config('site.news_type_cn')[$type]); ?>
-
+                <a href="<?php echo e(url('/news_'.$type.'.html')); ?>"> <?php echo e(config('site.news_type_cn')[$type]); ?></a>
                 <i>></i>
                 <?php echo e($informationManagement->name); ?>
 

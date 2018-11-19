@@ -24,14 +24,19 @@ class VideoController extends Controller
     public function index(Request $request)
     {
         $videos =  $this->video->latest()->paginate(20);
-
        return view('admin.videos.index',compact('videos'));
 
     }
     //视频管理添加
     public function store(VideoRequest $request)
     {
-        Video::create($request->all());
+        $video=Video::create($request->all());
+        if(!empty($request->complete_category)){
+            $video->framework_video()->sync($request->complete_category,true);
+        }
+        if(!empty($request->complete_machine)){
+            $video->complete_machine_video()->sync($request->complete_machine,true);
+        }
         return response()->json(['info'=>'添加成功'],Response::HTTP_CREATED);
     }
   //视频管理添加页面
@@ -61,6 +66,13 @@ class VideoController extends Controller
     public function update(VideoRequest $request,  Video $video)
     {
         $video->update($request->all());
+
+        if(!empty($request->complete_category)){
+            $video->framework_video()->sync($request->complete_category,true);
+        }
+        if(!empty($request->complete_machine)){
+            $video->complete_machine_video()->sync($request->complete_machine,true);
+        }
          return response()->json(['info'=>'修改成功'],Response::HTTP_CREATED);
     }
   //视频管理删除

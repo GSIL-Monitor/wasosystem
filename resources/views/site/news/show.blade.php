@@ -34,7 +34,7 @@
         <div class="wrap">
             <div id="crumbs">
                 <a href="/">网烁官网</a> <i>></i>
-                {{ config('site.news_type_cn')[$type] }}
+                <a href="{{ url('/news_'.$type.'.html') }}"> {{ config('site.news_type_cn')[$type] }}</a>
                 <i>></i>
                 {{ $informationManagement->name }}
             </div>

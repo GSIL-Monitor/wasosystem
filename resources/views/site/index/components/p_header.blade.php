@@ -19,14 +19,20 @@
         <dl>
             <dt>服务器<i>+</i></dt>
             <dd>
-                <a href="">111</a>
+                @foreach($complete_machine_works as $complete_machine_work)
+                    @if($complete_machine_work->parent_id == 1)
+                        <a href="{{ route('server.index',$complete_machine_work->id) }}">{{ $complete_machine_work->name }}</a>
+                    @endif
+                @endforeach
             </dd>
 
             <dt>图形工作站及设计师电脑<i>+</i></dt>
             <dd>
-
-                <a href="">1111</a>
-                <a href="">111</a>
+                @foreach($complete_machine_works as $complete_machine_work)
+                    @if($complete_machine_work->parent_id == 2)
+                        <a href="{{ route('server.index',$complete_machine_work->id) }}">{{ $complete_machine_work->name }}</a>
+                    @endif
+                @endforeach
             </dd>
 
             <dt>整柜<i>+</i></dt>
@@ -36,21 +42,26 @@
         <li>快速选型<i class="Lii">+</i></li>
         <dl>
             <dd style="display: block;">
-                <a style="padding-left:20px;" href="">服务器选型</a>
-                <a style="padding-left:20px;" href="">设计师电脑选型</a>
+                <a style="padding-left:20px;" href="{{ route('server_selection') }}">服务器选型</a>
+                <a style="padding-left:20px;" href="{{ route('designer_selection') }}">设计师电脑选型</a>
             </dd>
         </dl>
 
-        <li><a class="more_pro" href="">深度定制</a></li>
+        <li><a class="more_pro" href="{{ route('in_depth_customization') }}">深度定制</a></li>
 
         <li>解决方案<i class="Lii">+</i></li>
         <dl>
-            <dt>11<i>+</i></dt>
-            <dd><a href="">111</a></dd>
-            </volist>
+            @foreach($integrations as $integration)
+                <dt>{{ $integration->name }}<i>+</i></dt>
+                <dd>
+                @foreach($integration->child as $child)
+                    <a href="{{ route('solution.show',$child->id) }}">{{ $child->name }}</a>
+                @endforeach
+                </dd>
+            @endforeach
         </dl>
-        <li><a class="more_pro" href="">服务外包</a></li>
-        <li><a class="more_pro" href="">服务支持</a></li>
+        <li><a class="more_pro" href="{{ route('it_outsourcing') }}">服务外包</a></li>
+        <li><a class="more_pro" href="{{ route('service_support.index') }}">服务支持</a></li>
         <li><a class="more_pro" href="">搜索</a></li>
     </ul>
 </div>

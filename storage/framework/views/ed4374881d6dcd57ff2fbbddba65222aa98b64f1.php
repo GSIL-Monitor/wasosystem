@@ -195,7 +195,8 @@
                             $('#company').val(),
                             $('#des').val(),
                             $('.delivery_goods').val(),
-                            $('.prompt').val()
+                            $('.prompt').val(),
+                            $('.service').val()
                         ])
                     })
                 },

@@ -183,7 +183,7 @@ class OrderController extends Controller
                     return $excel->download(new DeliverySheetExport($order), $file_name);
                 }
                 case 'Contract': {
-                    return Doc($contents, $company);
+                    return Doc($contents, $company . '合同' . today()->format('Y-m-d'));
                 }
                 case 'SignatureForm': {
                     $type = $request->get('type') == 'parts' ? '配件' : '整机';

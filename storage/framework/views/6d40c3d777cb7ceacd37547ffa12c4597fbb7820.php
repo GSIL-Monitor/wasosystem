@@ -31,7 +31,7 @@
                             <?php $__currentLoopData = $item; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <li>
                                     <div class="liBox">
-                                        <div class="liPic"><img src="<?php echo e(pic($item2->pic)[0]['url']); ?>"></div>
+                                        <div class="liPic"><img src="<?php echo e(pic($item2->pic)[0]['url'] ?? ''); ?>"></div>
                                         <div class="induce">
                                             <div class="inducePage">
                                                 <h5><?php echo e($item2->details['cooperation_types']); ?></h5>

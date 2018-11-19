@@ -5,7 +5,7 @@
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('create product_frameworks')): ?>
-                    <button class="OneAdd Btn" data_title="架构" data_parent_id="0"
+                    <button class="OneAdd Btn" data_title="添加架构" data_parent_id="0"
                             data_product_id="<?php echo e($product_id); ?>" data_url="<?php echo e(route('admin.product_frameworks.store')); ?>">添加架构</button>
                 <?php endif; ?>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('edit product_frameworks')): ?>

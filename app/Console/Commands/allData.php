@@ -17,6 +17,7 @@ use App\Models\InventoryManagement;
 use App\Models\MemberStatus;
 use App\Models\Order;
 use App\Models\ProcurementPlan;
+use App\Models\ProductDrive;
 use App\Models\Service;
 use App\Models\SupplierManagement;
 use App\Models\SupplierRepairAddress;
@@ -90,6 +91,7 @@ class allData extends Command
 //         $this->product_frameworks();//配件架构还原
 //         $this->product_paramenters();//配件专有项还原
 //         $this->product_goods();//配件产品还原
+//         $this->drives();//配件驱动
 //         $this->self_build_product_goods();//平台自建产品还原
 //        $this->complete_machines();//整机产品还原
 //         $this->complete_machine_goods();//整机产品物料还原
@@ -98,13 +100,13 @@ class allData extends Command
 //        $this->orders();//订单还原
 //        $this->marketing_center();//营销中心还原
 //        $this->funds();//资金还原
-//        $this->businesses();//企业管理
+        $this->businesses();//企业管理
 //        $this->informations();//资讯管理
 //        $this->suppliers();//供应商管理
 //        $this->purchasings();//采购管理
-        $this->inventorys();//库存管理
-        $this->warehouses();//出库管理
-       $this->barcode_associateds();//条码关联管理
+//        $this->inventorys();//库存管理
+//        $this->warehouses();//出库管理
+//       $this->barcode_associateds();//条码关联管理
 //        $this->services();//服务管理
     }
 
@@ -397,7 +399,7 @@ class allData extends Command
         $model->framework_name = $item->b7;
      //   $model->pic = explode(';',$item->a18);
         $pics=array_filter(explode(';',$item->a18));
-        if(!empty($pics) && ($item->b10 == 20 || $item->b10 == 23)){
+        if(!empty($pics) && ($item->b10 == 20 || $item->b10 == 23 || $item->b10 == 24)){
             $arr=[];
             foreach ($pics as $key=>$pic){
                 $arr['url'][$key]=$pic;
@@ -427,9 +429,45 @@ class allData extends Command
             }
             $model->details = $c;
         }
+        if($item->b10 == 24){
+            $model->details=[
+                'cooperation_types'=>$item->hzlx,
+                'product_base'=>$item->jishu,
+                'tally'=>$item->danwei,
+                'description'=>$item->danwei,
+            ];
+        }
         $model->save();
     }
+    //配件驱动
+    public function drives()
+    {
+        \DB::transaction(function () {
+            $this->tables('qudong')->oldest('id')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new ProductDrive();
+                    $good=ProductGood::whereProductId($item->pid)->whereOldid($item->cpid)->first();
+                    if($item->xlid && empty($item->cpid)){
+                        $model->product_frame_works_id=$item->xlid;
+                        $model->product_good_id=0;
+                    }else{
+                        if($good ){
+                            $model->product_good_id=$good->id;
+                        }
+                    }
 
+                    $model->file =[
+                        'url'=>'files/'.str_after($item->rar,'./public/Uploads/'),
+                        'name'=>$item->name
+                    ];
+                    $model->created_at=date('Y-m-d H:i:s',$item->time);
+                    $model->updated_at=date('Y-m-d H:i:s',$item->time);
+                    $model->save();
+                });
+            });
+            $this->info('配件驱动还原完成！');
+        });
+    }
     //平台自建产品
     public function self_build_product_goods()
     {
@@ -1115,30 +1153,45 @@ class allData extends Command
     {
         \DB::transaction(function () {
             //企业管理
-            $this->tables('business')->oldest('id')->chunk(100, function ($item) {
+//            $this->tables('business')->oldest('id')->chunk(100, function ($item) {
+//                $item->each(function ($item, $key) {
+//                    $model = new BusinessManagement();
+//                    if ($item->pname == 'renzheng') {
+//                        $model->id = $item->id;
+//                        $model->type = 'honor';
+//                        $model->sort = $item->sort;
+//                        $model->top = $item->top == 1 ? false : true;
+//                        $model->field = [
+//                            'year' => $item->year,
+//                            'name' => $item->name,
+//                        ];
+//                        if($item->pic){
+//                            $model->pic = [
+//                                'url'=>[$item->pic],
+//                                'name'=>[str_before(str_after($item->pic,'/'),'.')]
+//                            ];
+//                        }
+//                        $model->save();
+//                    }
+//
+//                });
+//            });
+//            $this->info('企业管理还原完成！');
+            $this->tables('service')->oldest('id')->chunk(100, function ($item) {
                 $item->each(function ($item, $key) {
                     $model = new BusinessManagement();
-                    if ($item->pname == 'renzheng') {
                         $model->id = $item->id;
-                        $model->type = 'honor';
-                        $model->sort = $item->sort;
-                        $model->top = $item->top == 1 ? false : true;
+                        $model->type = 'service_directory';
+                        $model->top = 1;
                         $model->field = [
-                            'year' => $item->year,
+                            'type' => config('status.business_management_category')[$item->pid],
                             'name' => $item->name,
+                            'content'=> $item->content,
                         ];
-                        if($item->pic){
-                            $model->pic = [
-                                'url'=>[$item->pic],
-                                'name'=>[str_before(str_after($item->pic,'/'),'.')]
-                            ];
-                        }
                         $model->save();
-                    }
-
                 });
             });
-            $this->info('企业管理还原完成！');
+            $this->info('服务帮助还原完成！');
         });
     }
 

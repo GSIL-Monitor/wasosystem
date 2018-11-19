@@ -49,7 +49,7 @@ class Admin extends Authenticatable
 {
     use Notifiable,HasRoles;
     protected $guard_name='admin';
-    protected $fillable = ['account', 'name', 'login_count','password','login_count','qq','email','phone'];
+    protected $fillable = ['account', 'name', 'login_count','password','login_count','qq','email','phone','disabled'];
     protected $hidden=['password','remember_token'];
     public function temporary_product_goods()
     {

@@ -1028,14 +1028,7 @@ mso-bidi-font-family:微软雅黑'><span style='mso-list:Ignore'>6、<span
 
     <p class=1 style='text-indent:0cm;mso-char-indent-count:0;line-height:24.0pt;
 mso-line-height-rule:exactly'><span style='mso-bidi-font-size:10.5pt;
-font-family:"微软雅黑","sans-serif"'>四、售后服务：整机三年服务，出现故障<span lang=EN-US>1</span>小时内响应，满足<span
-                    lang=EN-US>5*8</span>售后服务，工作日<span lang=EN-US>8 <o:p></o:p></span></span></p>
-
-    <p class=1 style='text-indent:0cm;mso-char-indent-count:0;line-height:24.0pt;
-mso-line-height-rule:exactly'><span lang=EN-US style='mso-bidi-font-size:10.5pt;
-font-family:"微软雅黑","sans-serif"'><span style='mso-spacerun:yes'>    </span></span><span
-                style='mso-bidi-font-size:10.5pt;font-family:"微软雅黑","sans-serif"'>小时内上门，非工作日<span
-                    lang=EN-US>48</span>小时上门。如果不能满足以上需求，应提供免费备机。<span lang=EN-US><o:p></o:p></span></span></p>
+font-family:"微软雅黑","sans-serif"'>四、售后服务：{{ $details->get('service') }}<span lang=EN-US><o:p></o:p></span></span></p>
 
     <p class=1 style='text-indent:0cm;mso-char-indent-count:0;line-height:24.0pt;
 mso-line-height-rule:exactly'><span style='mso-bidi-font-size:10.5pt;

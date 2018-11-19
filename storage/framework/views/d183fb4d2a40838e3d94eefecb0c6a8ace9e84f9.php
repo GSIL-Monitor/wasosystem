@@ -57,7 +57,7 @@
                         <td class="tableMoreHide">
                             <?php $__currentLoopData = config('status.procuctGoodStatus'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$status): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <label for="<?php echo e($key.$product_good->id); ?>">
-                                    <?php echo e(Form::checkbox('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key],old('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key]),['onclick'=>'this.value=(this.value==0)?1:0','id'=>$key.$product_good->id])); ?>
+                                    <?php echo e(Form::checkbox('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key],old('edit['.$product_good->id.'][status->'.$key.']',$product_good->status[$key]),['class'=>'radio','id'=>$key.$product_good->id])); ?>
 
                                     <?php echo e($status); ?></label>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

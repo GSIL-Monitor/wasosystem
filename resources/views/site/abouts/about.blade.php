@@ -15,7 +15,7 @@
                 <div class="tab_box">
                     <div class="aboutPic"><img src="{{ asset('pic/about1.jpg') }}"></div>
                     <div class="about_box">
-                        <div class="us">{!! $about->field['content'] !!}</div>
+                        <div class="us">{!! optional($about)->field['content'] ?? '' !!}</div>
                     </div>
                 </div>
                 <div class="clear"></div>

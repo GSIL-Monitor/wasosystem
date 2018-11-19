@@ -7,6 +7,9 @@
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('create admins')): ?>
                 <button class="alertWeb Btn" data_url="<?php echo e(route('admin.admins.create')); ?>">添加管理员</button>
                 <?php endif; ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('edit admins')): ?>
+                    <button  class="Btn blue common_update" form_id="AllEdit">更新</button>
+                <?php endif; ?>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('delete admins')): ?>
                 <button  type="submit" class="red Btn AllDel" form="AllDel" data_url="<?php echo e(url('/waso/admins/destory')); ?>">删除</button>
                 <?php endif; ?>
@@ -14,10 +17,13 @@
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">
-            <form >
+            <form action="<?php echo e(route('admin.allupdate')); ?>" method="post" id="AllEdit" onsubmit="return false">
+                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+                <input type="hidden" name="table" value="admins">
             <table class="listTable">
                 <tr>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
+                    <th class="">禁用</th>
                     <th class="tableInfoDel">账号</th>
                     <th class="">角色</th>
                     <th>名称</th>
@@ -34,6 +40,12 @@
                                 <?php else: ?>
                                 --
                                 <?php endif; ?>
+                        </td>
+                        <td>
+                            <label for="<?php echo e($admin->id); ?>">
+                                <?php echo e(Form::checkbox('edit['.$admin->id.'][disabled]',$admin->disabled,old('edit['.$admin->id.'][disabled]',$admin->disabled),['class'=>'radio','id'=>$admin->id])); ?>
+
+                            </label>
                         </td>
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="alertWeb" data_url="<?php echo e(route('admin.admins.edit',$admin->id)); ?>"><?php echo e($admin->account); ?></a></td>
                         <td><?php echo e($admin->name); ?></td>

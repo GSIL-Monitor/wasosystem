@@ -23,6 +23,7 @@
                'serial_number'=>'序列号',
                'user_id'=>'用户账号/姓名',
                'code'=>'条码',
+               'product'=>'产品'
            ]
            ])
             <div class="phoneBtnOpen"></div>

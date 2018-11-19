@@ -19,7 +19,7 @@
         <div class="wrap">
             <div class="info_box">
                 @forelse($complete_machines as $key=>$complete_machine)
-                    @if($key != '0')
+                    @if($key != '0' && $key != '')
                         <div class="down_list">
                             <h2><i></i>{{ $key }}</h2>
                             <ul>
@@ -30,6 +30,9 @@
                                                 <h5>{{ $item->name }}</h5></a></li>
                                     @endif
                                 @empty
+                                    <div class="error">
+                                        暂时没有驱动
+                                    </div>
                                 @endforelse
                                 <div class="clear"></div>
                             </ul>

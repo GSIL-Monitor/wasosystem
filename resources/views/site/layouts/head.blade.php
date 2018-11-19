@@ -1,8 +1,6 @@
 @inject('complete_machine_paramenter','App\Presenters\CompleteMachineParamenter')
 @php
-
         $complete_machine_category=$complete_machine_paramenter->complete_machine_category();
-
         $storage=$complete_machine_paramenter->storage($common_complete_machines);
         $graphic_workstation_designer_computer=$complete_machine_paramenter->graphic_workstation_designer_computer($common_complete_machines);
          $common_complete_machines=$complete_machine_paramenter->complete_machine($common_complete_machines);

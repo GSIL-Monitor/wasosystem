@@ -25,7 +25,7 @@
                     <button type="submit" class="Btn common_add" form_id="demand_managements"
                             location="top">修改 </button>
                         <button class="Btn changeWeb" data_url="<?php echo e(route('admin.demand_managements.show',$demand_management->id)); ?>">生成初步方案 </button>
-                        <button class="Btn">指定关联订单 </button>
+                        
                         <button class="Btn AllDel"  data_url="<?php echo e(url('/waso/demand_managements/destory')); ?>?delOrder=allDelete&demand_management_id=<?php echo e($demand_management->id); ?>">删除关联订单</button>
                 <?php endif; ?>
                 <?php endif; ?>

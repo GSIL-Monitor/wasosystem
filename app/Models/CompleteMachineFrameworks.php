@@ -60,4 +60,8 @@ class CompleteMachineFrameworks extends Model
     public function it_outsourcings(){
         return $this->belongsTo(ProductGood::class,'child_id','id');
     }
+    public function framework_video()
+    {
+        return $this->belongsToMany(Video::class,'video_frame_works','complete_machine_framework_id','video_id');
+    }
 }

@@ -7,6 +7,9 @@
                 @can('create admins')
                 <button class="alertWeb Btn" data_url="{{ route('admin.admins.create') }}">添加管理员</button>
                 @endcan
+                @can('edit admins')
+                    <button  class="Btn blue common_update" form_id="AllEdit">更新</button>
+                @endcan
                 @can('delete admins')
                 <button  type="submit" class="red Btn AllDel" form="AllDel" data_url="{{ url('/waso/admins/destory') }}">删除</button>
                 @endcan
@@ -14,10 +17,13 @@
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">
-            <form >
+            <form action="{{ route('admin.allupdate') }}" method="post" id="AllEdit" onsubmit="return false">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="table" value="admins">
             <table class="listTable">
                 <tr>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
+                    <th class="">禁用</th>
                     <th class="tableInfoDel">账号</th>
                     <th class="">角色</th>
                     <th>名称</th>
@@ -34,6 +40,11 @@
                                 @else
                                 --
                                 @endif
+                        </td>
+                        <td>
+                            <label for="{{ $admin->id }}">
+                                {{ Form::checkbox('edit['.$admin->id.'][disabled]',$admin->disabled,old('edit['.$admin->id.'][disabled]',$admin->disabled),['class'=>'radio','id'=>$admin->id]) }}
+                            </label>
                         </td>
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="alertWeb" data_url="{{ route('admin.admins.edit',$admin->id) }}">{{ $admin->account }}</a></td>
                         <td>{{ $admin->name }}</td>

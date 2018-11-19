@@ -13,6 +13,10 @@ class BarcodeAssociated extends Model
 
    ];
 
+    public function getTypeAttribute()
+    {
+        return 'BarcodeAssociated';
+    }
     public function procurement_plans()
     {
         return $this->belongsTo(ProcurementPlan::class,'procurement_plans_id','id');

@@ -18,6 +18,14 @@
                 </div>
                 <div class="clear"></div>
             </li>
+
+            <li>
+                <div class="liLeft">禁用：</div>
+                <div class="liRight">
+                        {{ Form::checkbox('disabled',$admin->disabled ?? 0,old('disabled'),['class'=>'radio']) }}
+                </div>
+                <div class="clear"></div>
+            </li>
         <li>
             <div class="liLeft">工号：</div>
             <div class="liRight">
