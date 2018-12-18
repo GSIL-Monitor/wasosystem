@@ -1,10 +1,10 @@
 <div class="companyAdvantage">
     <div class="wrap">
         <ul>
-            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{  json_decode(getImages(setting('advantage_members_base')),true)[0]['url'] }}');"></i><span class="AdvWord">{!! setting('advantage_members_base_description') !!}</span></a></li>
-            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{ json_decode(getImages(setting('advantage_committeeman')),true)[0]['url']  }}')"></i><span class="AdvWord">{!! setting('advantage_committeeman_description') !!}</span></a></li>
-            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{ json_decode(getImages(setting('advantage_soem')),true)[0]['url'] }}');"></i><span class="AdvWord">{!!   setting('advantage_soem_description') !!}</span></a></li>
-            <li><a href="{{ route('honor') }}"><i style="background-image:url('{{ json_decode(getImages(setting('advantage_stap')),true)[0]['url'] }}');"></i><span class="AdvWord">{!! setting('advantage_stap_description') !!}</span></a></li>
+            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{  json_decode(getImages(setting('advantage_members_base')),true)[0]['url'] ?? ''}}');"></i><span class="AdvWord">{!! setting('advantage_members_base_description') !!}</span></a></li>
+            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{ json_decode(getImages(setting('advantage_committeeman')),true)[0]['url'] ?? ''  }}')"></i><span class="AdvWord">{!! setting('advantage_committeeman_description') !!}</span></a></li>
+            <li><a href="{{ route('honor') }}"><em></em><i style="background-image:url('{{ json_decode(getImages(setting('advantage_soem')),true)[0]['url'] ?? '' }}');"></i><span class="AdvWord">{!!   setting('advantage_soem_description') !!}</span></a></li>
+            <li><a href="{{ route('honor') }}"><i style="background-image:url('{{ json_decode(getImages(setting('advantage_stap')),true)[0]['url'] ?? '' }}');"></i><span class="AdvWord">{!! setting('advantage_stap_description') !!}</span></a></li>
             <div class="clear"></div>
         </ul>
     </div>
