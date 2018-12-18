@@ -10,8 +10,12 @@
         var vm = new Vue({
             el: "#app",
             data: {
+                finish_procurement_number:false,
+                isDisabled: false,
                 <?php if(isset($put_in_storage_management)): ?>
                 isDisabled: true,
+                <?php elseif(Route::is('admin.put_in_storage_managements.create')): ?>
+                finish_procurement_number: true,
                 <?php else: ?>
                 isDisabled: false,
                 <?php endif; ?>
@@ -91,8 +95,11 @@
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('create put_in_storage_managements')): ?>
-                    <button type="submit" class="Btn common_add" form_id="put_in_storage_managements"
+                    <button type="submit" class="Btn procurement_plans_add blue" procurement_status="finish" form_id="put_in_storage_managements"
                             location="top">保存
+                    </button>
+                    <button type="submit" class="Btn procurement_plans_add blue" procurement_status="unfinished" form_id="put_in_storage_managements"
+                            location="top">临时保存
                     </button>
                 <?php endif; ?>
             </div>

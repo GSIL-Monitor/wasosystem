@@ -27,6 +27,7 @@
     </div>
 
     <div id="C_right">
+
         <?php echo $__env->make('admin.index.i_top', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>  
         <?php echo $__env->make('admin.index.i_body', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>  
         <?php echo $__env->make('admin.index.i_foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>  

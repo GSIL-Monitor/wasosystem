@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\BusinessManagementRequest;
 use App\Http\Requests\Request;
+use App\Http\Resources\BannerCollection;
 use App\Services\BusinessManagementServices;
 use App\Models\BusinessManagement;
 use Symfony\Component\HttpFoundation\Response;
@@ -44,11 +45,11 @@ class BusinessManagementController extends Controller
     //企业管理焦点图列表
     public function banner(Request $request)
     {
-        $banners = $this->business_management->whereType('banner')->latest()->paginate(20)?? [];
+        $banners = $this->business_management->whereType('banner')->oldest('sort')->paginate(20)?? [];
 
         return view('admin.business_managements.banner',compact('banners'));
-
     }
+
     //企业管理友情链接列表
     public function friend(Request $request)
     {

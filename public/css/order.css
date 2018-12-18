@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+body .looks .arrow{z-index:999993; text-align:center; color:#ccc; line-height:100px; font-size:70px;  display: block; width:70px; height:100px; position: absolute; left:10px; top:45%;}
+body .looks .rightArrow{left:auto; right:10px;}
+body .looks .arrow:hover{color:#666; background: #f0f0f0; cursor: pointer;}
+
+.body .right .info .empty{margin-top:50px; height:258px; background-size:cover; background-position: center center; background-repeat: no-repeat; background-image: url(../pic/noPro.png);}
+.body .right .info .empty i{display: none;}
+
+.orderBody .wrap{width:1200px; padding-bottom:50px;}
+.RefreshBtn{margin-bottom:20px;}
+.RefreshBtn .Refresh{color:#fff; padding:3px 10px; cursor: pointer; display: inline-block; background:#83c44e; }
+.RefreshBtn .Refresh i{transition: all 0.3s 0s; width:15px; height:15px; display: inline-block; margin:0 5px 2px 0; vertical-align: middle; background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url(../pic/resh_hover.png);}
+.RefreshBtn .Refresh:hover{background:#9de761;}
+.RefreshBtn .Refresh:hover i{transform:rotate(360deg);  -ms-transform:rotate(360deg); 	/* IE 9 */  -moz-transform:rotate(360deg); 	/* Firefox */  -webkit-transform:rotate(360deg); /* Safari 和 Chrome */  -o-transform:rotate(360deg); 	/* Opera */}
+
+/*  订单检索   */
+.order_search{background:#fff; width:100%; margin-bottom:10px;}
+.order_search .search_box{position:relative; height:30px; width:26%; display:inline-block; float:right;}
+.order_search .search_box p{position:absolute; left:10px; color:#999; z-index:1; line-height:30px; top:0;}
+.order_search .search_box input{text-indent:10px; position:absolute; left:0; top:0; width:100%; background:none; z-index:2; border:1px solid #e3e3e3; line-height:20px; padding:5px 0; height:30px;}
+.order_search .search_box .search_btn{z-index:3; display:block; width: 20%; position:absolute; right:0; top:1px; text-align:center; line-height:30px; background:none; border-left:1px solid #e3e3e3; color:#999;}
+.order_search .search_box .search_btn:hover{color:#666; background:#f5f5f5;}
+.order_search .sitUl{width:74%; float:left;}
+.order_search ul li span{display:inline-block; color:#999; cursor:pointer; line-height:30px;}
+.order_search ul li span a{padding:0 5px; color:#666;}
+.order_search ul li span a:hover{color:#176b86;}
+.order_search ul li .line{color:#e3e3e3;}
+.order_search ul li img{display:none;}
+.order_search ul .active{color:#176b86 !important; font-weight:400;}
+
+/*  购物车 */
+.shopCar{padding:20px 0 40px;}
+
+/*   购物车产品弹出框编辑 */
+.pro_detail h5{font-size:20px; color:#999; padding-bottom:20px;}
+/*.pro_detail .detail_inner{width:100%; max-height:70%; overflow-y:scroll;}*/
+/*.pro_detail .detail_inner ul{padding:9px; border:1px solid #e3e3e3;}*/
+/*.pro_detail .detail_inner ul .tit{text-align:center;}*/
+/*.pro_detail .detail_inner ul .tit .A_Total{color:#333;}*/
+/*.pro_detail .detail_inner ul li{border-bottom:1px solid #efefef; padding:10px 0; }*/
+/*.pro_detail .detail_inner ul li div{line-height:25px;font-size:12px;}*/
+/*.pro_detail .detail_inner ul li .A_type{float:left; width:15%; text-align:center;}*/
+/*.pro_detail .detail_inner ul li .A_name{float:left; width:40%;}*/
+/*.pro_detail .detail_inner ul li .A_name a{width:90%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:12px;}*/
+/*.pro_detail .detail_inner ul li .A_price{width:15%; float:left; text-align:center;}*/
+/*.pro_detail .detail_inner ul li .A_num{float:left; width:15%;}*/
+/*.pro_detail .detail_inner ul li .A_num .A_numbox{border:1px solid #e3e3e3; font-size:14px;}*/
+/*.pro_detail .detail_inner ul li .A_num .A_numbox button{float:left; width:20%; cursor:pointer; background:#f5f5f5; color:#333; height:23px; border:none;}*/
+/*.pro_detail .detail_inner ul li .A_num .A_numbox input{float:left; width:60%; text-align:center; font-size:12px; line-height:20px; background: #fff; height:23px;}*/
+/*.pro_detail .detail_inner ul li .A_num .A_numbox .none{color:#f1f1f1; cursor:default; background:#f5f5f5;}*/
+/*.pro_detail .detail_inner ul li .A_total{float:left; width:15%; text-align:center; color:#176b86;}*/
+/*.pro_detail .DoneControl{width:100%; margin:20px auto 0;}*/
+/*.pro_detail .DoneControl .A_allTotal{width:60%; float:left; line-height:40px; text-align:left;}*/
+/*.pro_detail .DoneControl .A_allTotal b{color:#176b86; font-size:18px;}*/
+/*.pro_detail .DoneControl .DoneBtn{width:40%; float:left;}*/
+/*.pro_detail .DoneControl span{display:block; width:49%; margin:0 2% 0 0;  text-align:center; line-height:40px; cursor:pointer; font-size:16px; float: left; background: #176b86; color:#fff;}*/
+/*.pro_detail .DoneControl .A_Cancel{margin:0; background:#ccc;}*/
+/*.pro_detail .DoneControl span:hover{background:#197594;}*/
+/*.pro_detail .DoneControl .A_Cancel:hover{margin:0; background:#999;}*/
+
+
+/*   购物车产品弹出框查看*/
+.Mydetail{position:fixed; left:50%; top:-900px; width:660px; padding:20px; background:#fff; z-index:9992; margin:0 0 0 -350px; max-height:70%;}
+.Mydetail h5{font-size:20px; color:#999; padding-bottom:20px;}
+.Mydetail .detail_inner{width:100%; max-height:80%; overflow-y:scroll;}
+.Mydetail .detail_inner ul{padding:9px; border:1px solid #e3e3e3;}
+.Mydetail .detail_inner ul .tit{text-align:center;}
+.Mydetail .detail_inner ul li{border-bottom:1px solid #efefef; padding:10px 0; }
+.Mydetail .detail_inner ul li div{line-height:25px; font-size:12px;}
+.Mydetail .detail_inner ul li .A_type{float:left; width:20%; text-align:center;}
+.Mydetail .detail_inner ul li .A_name{float:left; width:60%;}
+.Mydetail .detail_inner ul li .A_name a{width:90%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:12px;}
+.Mydetail .detail_inner ul li .A_num{float:left; width:20%; text-align:center;}
+.Mydetail .DoneControl{width:100%; margin:20px auto 0;}
+.Mydetail .DoneControl span{display:block; margin:0 auto; width:60%; text-align:center; line-height:40px; cursor:pointer; font-size:16px; background: #176b86; color:#fff;}
+.Mydetail .DoneControl span:hover{background:#197594;}
+
+/*  常用配置  */
+.PZList li{float:left; width:49%; margin:0 0 20px 0;}
+.PZList .leftLi{margin:0 2% 20px 0;}
+.PZList li .PZTable{padding:19px; border:1px solid #dedede;}
+.PZList li .PZInfo a{display:block;}
+.PZList li .PZInfo h5{display:block;}
+.PZList li .PZInfo .infoT{width:100%; text-align:left; border-bottom:1px solid #dedede; padding-bottom:5px; margin-bottom:5px;}
+.PZList li .PZInfo .infoT .PZName{float:left; width:70%; }
+.PZList li .PZInfo .infoT .PZName a{display: block; text-align: left; font-size:16px; font-weight:bold; color:#333;line-height: 25px;}
+.PZList li .PZInfo .infoT .PZNameInput{display:none; border:1px solid #ccc; padding:0 5px;font-size:16px; color:#444; background:#fff;}
+.PZList li .PZInfo .infoT .PZTime{color:#777; float:right; width: 30%; text-align:right; line-height:25px; font-size:14px;}
+.PZList li .PZInfo .infoL{width:100%; text-align:left;}
+.PZList li .PZInfo .infoL .PZType{color:#777; font-size:14px;}
+.PZList li .PZInfo .infoL .PZModel{color:#777; font-size:14px;}
+.PZList li .PZInfo .infoR{width:100%; }
+.PZList li .PZInfo .infoR .PZPrice{font-size:18px; color:#e02b41; float:right; line-height: 30px; margin-top:20px;}
+.PZList li .PZInfo .infoR .PZPrice img{display:inline-block; width:15px; height:15px; vertical-align: middle; margin:0 2px 2px 0; }
+.PZList li .PZInfo .infoR .PZPrice em{font-size:12px; color:#999;}
+.PZList li .PZInfo .infoR .PZOldPrice{color:#999; font-size:12px; height:25px; line-height: 25px; margin:25px 0 0 0; float:left;}
+.PZList li .PZBtn{float:right; width:100%; border-top:1px solid #dedede; padding:20px 0 0; text-align: right;}
+.PZList li .PZBtn a{transition: all 0.3s 0s; color:#999; border:1px solid #dedede; padding:3px 10px; margin-left:5px;}
+.PZList li .PZBtn a:hover{border:1px solid #999; color:#666;}
+.PZList li .PZBtn .edit{transition: all 0.3s 0s; line-height: inherit; cursor: pointer; color:#999; border:1px solid #dedede; padding:3px 10px; margin-left:5px;}
+.PZList li .PZBtn .edit:hover{border:1px solid #999; color:#666;}
+.PZList li .PZBtn .lookInfo{border-color:#176b86; color:#176b86;}
+.PZList li .PZBtn .lookInfo:hover{background:#176b86; color:#fff;border-color:#176b86;}
+.PZList li .PZEditBtn{display: none; float:right; width: 100%; border-top:1px solid #dedede; margin-top:10px; padding:20px 0 10px; text-align: right;}
+.PZList li .PZEditBtn span{transition: all 0.3s 0s; line-height: inherit; cursor: pointer; color:#999; border:1px solid #dedede; padding:3px 10px; margin-left:5px;}
+.PZList li .PZEditBtn span:hover{border:1px solid #444; color:#444;}
+.PZList li .PZEditBtn .sure{border-color:#176b86; color:#176b86;}
+.PZList li .PZEditBtn .sure:hover{background: #176b86; color:#fff; border-color:#176b86;}
+.PZList li:hover .PZTable{border-color:#176b86;}
+
+
+/*  订单确认 地址更多 */
+.chooseAddr{display:none; position:fixed; z-index: 99993; left:50%; top:10%; height:76%; background: #fff; padding:2% 40px; width:820px; margin-left:-450px;}
+.chooseAddr h5{font-size:16px; padding-bottom:15px; border-bottom:1px solid #e3e3e3; }
+.chooseAddr .Addr_box{height:90%; overflow: scroll; overflow-x:hidden;}
+.chooseAddr .bill_box{height:90%; overflow: scroll; overflow-x:hidden;}
+.chooseAddr .Addr_box{display:none;}
+.chooseAddr .bill_box{display:none;}
+.chooseAddr ul{margin-top:20px;}
+.chooseAddr ul li{border:1px solid #e3e3e3; padding:0 10px 10px 10px; margin:0 10px 10px 0; color:#333;}
+.chooseAddr ul .active{border-color:#176b86;}
+.chooseAddr ul li span{display:block; width: 50%; float:left; padding:10px 0; }
+.chooseAddr ul li:hover{border-color:#999; cursor:pointer;}
+.chooseAddr ul .active:hover{border-color:#176b86;}
+
+/*  订单确认 地址/开票地址 */
+.choosedAddr{padding:10px; border:1px solid #e3e3e3; position: relative;}
+.choosedAddr .addrInfo span{display:inline-block; width:50%; float:left; padding-bottom:10px;}
+.choosedAddr .addrMore{width:50px; position: absolute; right:0; top:10px;}
+.choosedAddr .addrMore img{display:block; vertical-align:middle; cursor:pointer; width:100%;}
+
+/*  意向订单  通用模版 */
+.orderTable .ComfirInfo .typeTit{background:#f1f1f1; padding:6px 10px;}
+.orderTable .menu{position:relative;  border-top:1px solid #dedede; border-bottom:1px solid #dedede; display:table; width:100%;}
+.orderTable .menu div{line-height:45px; min-height:1px; color:#333; display:table-cell; vertical-align:middle; text-align:center; *float:left;}
+.orderTable .menu .imgs{min-height:1px; width:10%;}
+.orderTable .menu .links_a{width:30%;}
+.orderTable .menu .num{ width:15%;}
+.orderTable .menu .price{ width:15%;}
+.orderTable .menu .control{width:15%;}
+.orderTable .menu .codeNum{width:60%;  text-align:left;}
+.orderTable .menu button{display:none; position:absolute; right:10px; top:10px; background:none; border:none;}
+
+.orderTable button:hover{cursor:pointer; color:#176b86;}
+.orderTable .typeTit{font-size:18px; padding:30px 0 10px; color:#777; font-weight:400;}
+.orderTable .orderList{position:relative; display:table; padding:20px 0 0;}
+
+
+.editShop{display:none;}
+.orderTable .check_box{float:left; width:5%; position:relative; text-align:center; line-height:80px;}
+.orderTable .orderList div{color:#444; display:table-cell; vertical-align:middle; text-align:center; *float:left;}
+.orderTable .orderList div:after{clear: both;}
+.orderTable .orderList .clear{display:none;}
+.orderTable .orderList .imgs{width:10%; text-align:left; cursor: pointer;}
+.orderTable .orderList .imgs a{display:block; text-align:left;}
+.orderTable .orderList .imgs img{height:98px; border:1px solid #dedede;}
+.orderTable .orderList .imgs ul li{display: none;}
+.orderTable .orderList .imgs ul li:first-child{display: block;}
+
+.orderTable .orderList .links_a{ width:30%; text-align: left; min-height:1px;  cursor:pointer;}
+.orderTable .orderList .price{width:15%; line-height:80px; color:#444;}
+.orderTable .orderList .price .Pc_hide{display: none; color:#333;}
+.orderTable .orderList .num{position: relative; text-align: center;}
+.orderTable .orderList .num_total{display:none;}
+.orderTable .orderList .num_box{margin:0 auto; display:inline-block;}
+.orderTable .orderList .num_box button{width:25px; display:block; height:25px; cursor:pointer; float:left; background:#f5f5f5;}
+.orderTable .orderList .num_box input{width:50px; line-height: 25px; display:block; height:25px; -webkit-appearance:none; float:left; text-align:center; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3;}
+.orderTable .orderList .num_box .none{border-color:#e3e3e3; color:#e3e3e3;}
+.orderTable .orderList .num_box button:hover{border-color:#999; color:#444;}
+.orderTable .orderList .num_box .none:hover{border-color:#e3e3e3; color:#e3e3e3; cursor:default;}
+.orderTable .orderList .num .del{display:none;}
+.orderTable .orderList .codeNum{width:60%; color:#777; vertical-align:middle; text-align:left;}
+.orderTable .orderList .codeNum label{display:inline-block; padding:5px 0; width:50%; text-align:left; cursor:pointer;}
+.orderTable .orderList .total{ width:15%; line-height:80px;color:#e02b41;}
+.orderTable .orderList .total .to{color:#e02b41;}
+.orderTable .orderList .control{ width:15%; line-height:80px;}
+.orderTable .orderList .control span{display:block;}
+.orderTable .orderList .control a{margin:0 5px; color:#777; transition:all 0.3s 0s;}
+.orderTable .orderList .control a:hover{color:#197594;}
+.orderTable .orderList .orderList .openDetail{cursor:pointer;}
+
+
+/*   展开具体参数 可下载excel   */
+.orderTable .detailTable{display:none; padding:20px 20px 0; background: #f5f5f5;}
+.orderTable .detailTable ul li{padding:10px 0; border-bottom:1px dashed #ccc; text-align: left;}
+.orderTable .detailTable ul li span{display:inline-block; width:85%; vertical-align:middle; color:#444; text-align:left; *float:left;}
+.orderTable .detailTable ul li .DTit{width:12%;}
+.orderTable .detailTable .download{margin-top:20px; text-align: left;}
+.orderTable .detailTable .download p{display:none; color:#444;}
+.orderTable .detailTable .download a{color:#176b86; margin-right:20px; font-weight:bold;}
+.orderTable .detailTable .download a:hover{text-decoration: underline;}
+.orderTable .proDetail{display:block; background:#f5f5f5; text-align:center; transition:all 0.3s 0s; color:#666; cursor:pointer; padding:10px 25px; border-top:none;}
+.orderTable .proDetail:hover{color:#333;}
+.orderTable .proDetail i{transition: all 0.3s 0s;  display:inline-block; width:20px; height:20px; vertical-align:middle; margin-left:5px; background-image:url(../pic/down_icon.png); background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.orderTable .proDetail .close{transform:rotate(180deg);  -ms-transform:rotate(180deg); 	/* IE 9 */  -moz-transform:rotate(180deg); 	/* Firefox */  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */  -o-transform:rotate(180deg);}
+.orderTable .orderTotal{margin-top:20px; padding-top:20px; border-top:1px solid #dedede; text-align: right; font-size:18px; font-weight:bolder; color:#999;}
+.orderTable .orderTotal span{font-size:22px; color:#e02b41;}
+.orderTable .orderTotal span b{font-size:22px; color:#e02b41;}
+
+/*  非意向订单  通用模版 */
+.orderAllTable{position: relative; margin-bottom:20px; background:#f5f5f5; border-radius:10px 10px; font-size:12px;}
+.orderAllTable a{display:block; text-align:left;}
+.orderAllTable .Ordertit{position:relative; padding:20px;}
+.orderAllTable .Ordertit .orderSitInfos span{display:inline-block; color:#666; font-size:16px; font-weight:bold; line-height:30px;}
+.orderAllTable .Ordertit .orderSitInfos .orderSit i{display:block; position:absolute; right:20px; top:20px; color:#f40; font-size:1.4em; line-height:30px;}
+
+.orderAllTable .OrderDetail{border-top:1px solid #dedede; position: relative; padding:10px 0;}
+.orderAllTable .OrderDetail .pic dl dd{padding:0 20px; }
+.orderAllTable .OrderDetail .pic dl dd .orderPic{text-align:left; vertical-align:middle; float:left; width:15%;}
+.orderAllTable .OrderDetail .pic dl dd .orderPic img{width:100%;}
+.orderAllTable .OrderDetail .pic dl dd .proInfoTab{float:left; width:85%; padding-top:40px;}
+.orderAllTable .OrderDetail .pic dl dd h5{text-align:left; color:#444; font-size:1.4em;  width:60%; float:left; min-height:1px; text-indent:20px;}
+.orderAllTable .OrderDetail .pic dl dd h6{text-align:center; color:#444; font-size:1.2em; width:20%; text-align:right; float:right; min-height:1px;}
+.orderAllTable .OrderDetail .pic dl .orderMore{font-size:20px; color:#999; position: absolute; left:0; bottom:0;}
+
+.orderAllTable .orderInfo{margin:0 20px; padding:10px 20px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+.orderAllTable .orderInfo ul li{float:left; padding:0;}
+.orderAllTable .orderInfo ul .lines{color:#333; margin:0 20px; line-height:30px; float:left; font-weight:bold;}
+.orderAllTable .orderInfo ul li .orderInfoTit{float:left; line-height:30px;}
+.orderAllTable .orderInfo ul li .orderInfoContent{float:left; line-height:30px; }
+.orderAllTable .orderInfo ul li .orderInfoContent i{line-height:30px; }
+
+.orderAllTable .Price{text-align: right; padding:20px 20px 10px;}
+.orderAllTable .Price .MoneyTotal{display:inline-block; text-align:right; color:#666;}
+.orderAllTable .Price .MoneyTotal i{font-size:24px; color:#444; font-weight:400;}
+
+.orderAllTable .control{text-align:right; padding:0 20px 20px;}
+.orderAllTable .control a{display:block; color:#666; background:#fff; padding:5px 15px; border:1px solid #dedede; margin-left:10px; float:right; transition: all 0.3s 0s;}
+.orderAllTable .control a:hover{color:#444; border-color:#444;}
+.orderAllTable .control .seeMoreBox{float:right; position: relative;}
+.orderAllTable .control .seeMoreBox a{float:none; margin:0;}
+.orderAllTable .control .seeMoreBox i{display:none; position: absolute; left:10px; top:22px; z-index: 10; width:15px; height:10px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-image:url('../pic/topicon.png');;}
+.orderAllTable .control .seeMore{float:right; line-height: 30px; color:#666; cursor: pointer; display: none;}
+.orderAllTable .control .seeMore:hover{color:#176b86;}
+.orderAllTable .control .pay_now{color:#176b86; border-color:#176b86;}
+.orderAllTable .control .pay_now:hover{background:#176b86; color:#fff; border-color:#176b86;}
+.orderAllTable .control .lookInfo{border-color:#176b86; background:#fff; color:#176b86;}
+.orderAllTable .control .lookInfo:hover{background:#176b86; color:#fff; border-color:#176b86;}
+/*  订单 结束 */
+
+
+
+
+@media only screen and (max-width: 900px){
+    #body_bg{padding-bottom:50px;}
+
+    .body .right .info .empty{margin:0; height: 300px;}
+
+    .RefreshBtn{position: absolute; right:10px; top:12px; padding:0; margin:0; border:none;}
+
+    .orderBody .wrap{width:auto; padding-bottom:10px;}
+    .shopCar{padding:0;}
+    .editShop{display:block; position:absolute; right:10px; top:10px; z-index:111; background:none; line-height:30px; border:none; color:#fff; background:#176b86; padding:0 10px; font-size:14px;}
+    .editShop:hover{cursor: pointer; background:#197594;}
+    .orderTable{background: #fff; }
+    .order_search .search_box{display:block; width:auto; float:none; margin:0 10px; padding:5px 0; box-sizing: content-box;}
+    .openSearch{margin:0 0 0 10px; padding:10px 0 0 0;}
+    .order_search{width:100%; padding:0; margin:0 auto 10px;}
+    .order_search .search_box input{width:98%; left:1%; -webkit-appearance:none; height:30px;}
+    .order_search .sitUl{overflow:hidden; float:none; width:100%; box-sizing:border-box; -moz-box-shadow:-5px 2px 5px #ccc inset;  -webkit-box-shadow:-5px 2px 5px #ccc inset;  box-shadow:-5px 2px 5px #ccc inset;  padding:10px; overflow-x: scroll; height:50px; position: relative; border-bottom:1px solid #dedede; margin-bottom:10px;}
+    /*.order_search .sitUl::-webkit-scrollbar{display: none;}*/
+    .order_search ul{float:none; position: absolute; left:0; bottom:7px;width:610px;}
+    .order_search ul li{ display: block;width:610px;}
+    .order_search ul li i{display: block; width:20px; font-size:14px; float:left; text-align: center; line-height:30px;}
+    .order_search ul li .line:last-child{display: none;}
+    .order_search ul li span{float:left; width:70px;}
+    .order_search ul li span a{line-height:30px; display:block; text-align:center; padding:0;}
+    .order_search ul li span a:hover{color:#666;}
+    /*   全部订单检索 */
+
+    /*  常用配置  */
+    .PZList li{float:none; width: 100%; margin:0 0 20px 0; background:#fff; border:none;}
+    .PZList li .PZPic{display: none;}
+    .PZList li .PZInfo{width: 100%; float:none;}
+    .PZList li .PZTable{padding:10px; border:none;}
+    .PZList li .PZBtn{padding:15px 0 5px;}
+    .PZList .leftLi{margin:0 0 10px 0;}
+    .PZList li .PZInfo .infoT .PZName a{font-size:16px;}
+    .PZList li .PZInfo .infoR .PZPrice{font-size:16px; padding:0;}
+    .PZList li .PZInfo .infoR .PZOldPrice{font-size:12px;}
+    .PZList li .PZInfo .infoB{text-align: left;}
+    .PZList li .PZInfo .infoB h5{line-height:20px;}
+
+    /*   选择收货地址   */
+    .info_box .total_control{margin:10px 0;}
+    .info_box .total_control .t_l{display:none;}
+    .info_box .total_control .t_r{float:none; width:auto; margin:0 auto; padding:0 10px;}
+    .info_box .total_control .t_r ul{padding:0;}
+    .info_box .total_control .t_r ul li{margin-right:10px;}
+    .info_box .total_control .t_r .confirm_btns .confirm_btn{height:auto;}
+    .info_box .total_control .t_r .confirm_btns .confirm_btn a{line-height:30px; font-size:12px;  -moz-border-radius:5px;  -webkit-border-radius:5px; border-radius: 5px 5px 5px 5px; padding:0 10px; }
+    .choosedAddr .addrMore{width:30px; top:20px;}
+
+    .pro_detail{width:100%; z-index:9992; margin:0; padding:0; height:100%;}
+    .pro_detail h5{font-size:14px; padding:0 10px;}
+    .pro_detail .detail_inner ul li .A_name{width: 35%;}
+    .pro_detail .detail_inner ul li .A_num{width:20%}
+    .pro_detail .detail_inner ul{padding:10px 0; border:none;}
+    .pro_detail .DoneControl{padding:0 10px; width:auto;}
+    /*  编辑整机  */
+
+    /*   购物车  */
+    .orderTable .menu div{min-height:0;}
+    .orderTable .check_box{line-height:50px;}
+    .orderTable .price{line-height:normal }
+    .orderTable .price .Pc_hide{display:block; text-align:right;}
+    .orderTable .num{line-height:25px;}
+    .orderTable .total{line-height:25px;}
+
+    .orderTable .typeTit{padding:10px; font-size:14px; }
+    .orderTable .AddPeijian{padding:10px;}
+    .orderTable .AddPeijian .AddTit{font-size:12px; width:15%; line-height:30px;}
+    .orderTable .AddPeijian .AddType{width:20%;}
+    .orderTable .AddPeijian .AddName{width:50%;}
+    .orderTable .AddPeijian .AddBtn{width:15%; }
+    .orderTable .AddPeijian .AddBtn button{padding:0; width:100%; line-height:28px;}
+    .orderTable .AddPeijian select{height:30px;}
+    .orderTable .proDetail{width:auto; border:none; color:#666; display:block; margin:0; background: none; display:none;}
+    .orderTable .proDetail:hover{color:#333;}
+    .orderTable .detailTable{display:block; padding:10px; height:70%; background: #fff; width:100%; position:fixed; bottom:-100%; left:0; z-index:8888; box-sizing:border-box; overflow-y:scroll;}
+    .orderTable .detailTable ul li .DTit{font-size:14px; font-weight:400; color:#666; width:25%; margin:0;}
+    .orderTable .detailTable ul li span{width:75%; margin:0; float:left;}
+    .orderTable .detailTable .download{margin-top:10px;}
+    .orderTable .detailTable .download a{display: none;}
+    .orderTable .detailTable .download p{display: block;}
+    .orderTable .orderTotal{margin:0 10px; font-size:14px; padding:10px 0;}
+    .orderTable .orderTotal span{ font-size:14px; font-weight:bold;}
+    .orderTable .orderTotal span b{ font-size:14px; font-weight:bold;}
+
+    /*   手机端非意向订单 订单摹本  */
+    .info{background:#ECECEC;}
+    .orderAllTable{width:100%; border:none; margin-bottom:10px; border-top:none; padding:0; background:#fff;}
+    .orderAllTable .Ordertit{border-bottom:none; background:#fff; padding:10px;}
+    .orderAllTable .Ordertit .orderSitInfos span{font-size:12px; line-height:25px; font-weight:100;}
+    .orderAllTable .Ordertit .orderSitInfos .orderSit i{line-height:25px; right:10px; top:10px; font-size:14px;}
+    .orderAllTable .Ordertit .orderSit{width:auto;}
+    .orderAllTable .Ordertit .orderSit span{font-size:14px;}
+    .orderAllTable .Ordertit .orderSitInfo .orderSit{right:10px;  display: block; }
+    .orderAllTable .Ordertit .orderSitInfo .orderSit i{font-size:14px;line-height: 35px;}
+
+    .orderAllTable .OrderDetail{padding:0 10px; background:#f5f5f5; border:none;}
+    .orderAllTable .OrderDetail .pic{padding:10px 0; display:block; width:100%;}
+    .orderAllTable .OrderDetail .pic dl dd{padding:0; width:100%;}
+    .orderAllTable .OrderDetail .pic dl dd .proInfoTab{padding-top:5px;}
+    .orderAllTable .OrderDetail .pic dl dd h5{font-size:12px; width:50%; text-indent:0; box-sizing:border-box; padding-left:10px;}
+    .orderAllTable .OrderDetail .pic dl dd h6{text-align: right; font-size:12px; width:25%;}
+    .orderAllTable .OrderDetail .Price{position:static; right:0; bottom:0; display:block; border-top:1px solid #ededed; width:auto; padding:10px 0 0; margin:0;}
+    .orderAllTable .OrderDetail .Price .MoneyTotal i{font-size:18px; font-weight:100;}
+
+    .orderAllTable .orderInfo{padding:0; margin:0; border:none;}
+    .orderAllTable .orderInfo ul li{float:none; width:auto; border-bottom:1px solid #eee; padding:5px 10px;}
+    .orderAllTable .orderInfo ul .lines{display:none;}
+    .orderAllTable .orderInfo ul li .orderInfoTit{float:left; width:50%;}
+    .orderAllTable .orderInfo ul li .orderInfoContent{float:left; width:50%; text-align:right; }
+
+    .orderAllTable .Price{margin:0; border:none; padding:10px;}
+    .orderAllTable .Price .MoneyTotal i{font-size:18px; color:#000;}
+
+    .orderAllTable .control{padding:0 0 15px; margin:0 10px;position:static; right:0; bottom:0; width: auto; }
+    /* .orderAllTable .control .seeMore{display: block; padding:0 10px; bottom:10px; line-height: 25px;} */
+    /* .orderAllTable .control .changBtn{display:none; position: absolute; left:0; top:28px; background: #666; border:none; width: 80px; padding:5px 10px; color:#fff; z-index: 20;-moz-border-radius:5px;  -webkit-border-radius:5px; border-radius:5px 5px 5px 5px;}
+    .orderAllTable .control .changBtn:hover{background: #444; color:#fff;}*/
+    .orderAllTable .control a{margin-left:5px; padding: 5px 10px; border-radius:3px 3px;}
+    .orderAllTable .control label{bottom:13px;}
+    .orderAllTable .control label i{width:16px; height:16px;}
+
+    /*   手机端意向订单 订单摹本  */
+    .pro_list .orderTable .ComfirInfo{border:none; background: #fff;}
+    .pro_list .orderTable .ComfirInfo .orderList{border:none;  margin:0 10px; width:auto; display:block; padding:10px 0;}
+    .pro_list .orderTable .ComfirInfo .orderList div:after{clear: both;}
+    .pro_list .orderCode{background:none; padding:0; margin-bottom:10px;}
+    .orderTable .check_box{width:10%;}
+    .orderTable .menu{display: none; border:none;}
+    .orderTable .orderList div{display:block;}
+    .orderTable .orderList .clear{display:block;}
+    .orderTable .orderList .imgs{width:25%; float:left;}
+    .orderTable .orderList .imgs img{vertical-align:middle; height:auto; width:100%; max-width:80px; border:none;}
+    .orderTable .orderList .links_a{width:75%; float:right; color:#444; font-size:1.3em; line-height: 30px; height: 30px; overflow: hidden;  text-overflow:ellipsis;  white-space: nowrap;}
+    .orderTable .orderList .price{width:75%; text-align:left; float:right; line-height:25px; color:#e02b41; font-size:14px; height:25px;}
+    .orderTable .orderList .price .pri{font-size:14px; display:inline-block;}
+    .orderTable .orderList .num_total{display:block; position:absolute; right:10px; bottom:10px; line-height:normal;}
+    .orderTable .orderList .total{display: none;}
+    .orderTable .orderList .num{width:75%; text-align:left; float:right;}
+    .orderTable .orderList .num .num_box{display:block;}
+    .orderTable .orderList .num .num_box input{width:40px;}
+    .orderTable .orderList .num .num_box div{display:block;}
+    .orderTable .orderList .num .del{position:absolute; top:0; right:0; padding:10px 0; display: block; width:20%; height:100%; color:#fff; background:#e02b41; text-align: center;}
+    .orderTable .orderList .control{line-height:normal; position:absolute; right:0; top:50%; margin-top:-12px; background:#e02b41; height:25px; width:60px;}
+    .orderTable .orderList .control span{display:table; width:100%; height:100%;}
+    .orderTable .orderList .control span a{color:#fff; margin:0; background:#e02b41; display:table-cell; font-size:12px; padding:0; vertical-align:middle;}
+    .orderTable .orderList .control .editDetail{background:#176b86; color:#fff; padding:3px 5px;}
+    .pro_list .orderTable .ComfirInfo .repairList{border-bottom:1px dashed #dedede; padding:5px 0; margin:0 10px;}
+    .repair_confirm .repairList .orderTable .ComfirInfo{border-top:1px solid #dedede;}
+    .repair_confirm .orderTable .repairList div{display:table-cell; float:none;}
+    .orderTable .repairList .codeNum{float:left; width:40%; padding-left:5%;  border-left:1px solid #dedede;}
+    .orderTable .repairList .codeNum label{width:100%; padding:0;}
+    .orderTable .repairList .links_a{width:30%;}
+    .orderDoneTable .order_info .sita{display:block;}
+    .orderDoneTable .order_info span i{font-size:12px;}
+    #foot{display:none;}
+}

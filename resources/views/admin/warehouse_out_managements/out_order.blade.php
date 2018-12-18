@@ -44,8 +44,9 @@
          <tr><td><div class='error'>没有数据</div></td></tr>
     @endforelse
 </table>
+                {!! $out_orders->appends(Request::except('page'))->render() !!}
 </form>
-{!! $out_orders->appends(Request::all())->render() !!}
+
 </div>
 </div>
 

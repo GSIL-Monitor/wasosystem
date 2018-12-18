@@ -35,7 +35,6 @@ class BarcodesController extends Controller
             $last=$barcode_associateds->last();
             $condition=$this->barcode_associatedServices->check_select( $last);//根据最后一个数据 状态来判断显示select
         }
-
         return view('admin.barcodes.index',compact('barcode_associateds','product','condition','last'));
     }
 }

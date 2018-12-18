@@ -2,6 +2,7 @@
 <?php $__env->startSection('js'); ?>
     <script src="<?php echo e(asset('admin/js/code.js')); ?>"></script>
     <script>
+
         $(function () {
             $(document).on('change', '.product', function () {
                 filtrate($(this), "<?php echo e(route('admin.procurement_plans.get_goods')); ?>")
@@ -15,73 +16,59 @@
                 show: true,
                 selected: '<?php echo e(Request::get('type') ?? ''); ?>',
                 showInput: false,
-                showColor: false,
+                showColor: true,
                 showProduct: false,
-                showTable:false,
+                showTable: false,
                 color: "<?php echo $barcode_associated['barcode_associated']->product_colour ?? ''; ?>",
                 GoodUrl: "<?php echo e(route('admin.product_goods.getseries')); ?>",
             },
             methods: {
-
                 changeSelect: function () {
-                    console.log(this.selected);
-                    switch (this.selected) {
-                        case 'loan_out_return' :
-                            this.showColor = true;
-                            break;
-                        case 'models_to_replace' :
-                            this.showProduct = true;
-                            break;
-                        case 'factory_return':
-                            this.showInput = true;
-                            this.showColor = true;
-                            break;
-                        case 'quality_return':
-                            this.showInput = true;
-                            this.showColor = true;
-                            break;
-                        case 'sell_return':
-                            this.showColor = true;
-                            break;
-                        case 'warranty_replacement':
-                            this.showInput = true;
-                            this.showColor = true;
-                            break;
-                        case 'loan_out_to_replace':
-                            this.showTable = true;
-                            break;
-                        default :
-                            this.showInput = false;
-                            this.showColor = false;
-                            this.showProduct = false;
-                            this.showTable = false;
+                    if (this.selected == 'loan_out_return' || this.selected == 'escrow_to_storage') {
+                        this.showColor = false;
+                    } else if (this.selected == 'models_to_replace') {
+                        this.showProduct = true;
+                    } else if (this.selected == 'warranty_replacement') {
+                        this.showInput = true;
+                    } else if (this.selected == 'loan_out_to_replace') {
+                        this.showInput = false;
+                        this.showTable = true;
+                    } else if (this.selected == 'quality_acceptance') {
+                        this.showColor = false;
+                        this.showInput = false;
+                    } else {
+                        this.showInput = false;
+                        this.showColor = true;
+                        this.showProduct = false;
+                        this.showTable = false;
                     }
                 },
                 entering: function () {
                     this.checkCode(this.code);
                 },
                 checkCode: function (code) {
+                    var self = this;
                     axios.post("<?php echo e(route('admin.warehouse_out_managements.checkCode')); ?>", {
                         "_token": getToken(),
                         "code": code
                     }).then(function (response) {
-                        var good_id = response.data.codes.product_good_id;
+                        var good_id = response.data.codes ? response.data.codes.product_good_id : 0;
                         var product_good_id = parseInt($('.product_good_id').val());
-                        console.log(good_id, product_good_id);
-                        if (vm.selected == 'quality_return' || vm.selected == 'factory_return') {
+                        console.log(good_id, product_good_id, self.selected);
+                        if (self.selected == 'quality_return' || self.selected == 'factory_return') {
                             if (!good_id) {
-                                vm.new_code = code;
-                                vm.show = false
-                                vm.code = '';
+                                self.new_code = code;
+                                self.show = false
+                                self.code = '';
                             } else {
                                 showError($('.code'), '这个条码已存在')
                             }
 
                         } else {
                             if (good_id == product_good_id) {
-                                vm.new_code = code;
-                                vm.show = false
-                                vm.code = '';
+                                self.new_code = code;
+                                self.show = false
+                                self.code = '';
                             } else {
                                 showError($('.code'), '没有这个条码')
                             }

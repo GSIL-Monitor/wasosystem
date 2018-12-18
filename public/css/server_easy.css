@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 设计师电脑 广告  */
+.body .big_bg{background:url('../pic/Server/server_bg.jpg') no-repeat center center; border-top:1px solid #555; background-color: #37363c;}
+.body .big_bg .wrap .big_bg_button span:hover{color:#fff !important; background:#176b86 !important; border-color:#176b86 !important;}
+
+.body .designAD{display: none;}
+.body .designAD .goStart{padding:40px 0; text-align: center;}
+.body .designAD .goStart .goNow{font-weight:400; transition:all 0.3s 0s; border:2px solid #176b86; background:#176b86; color:#fff; padding:5px 50px; cursor: pointer; display: inline-block;}
+.body .designAD .goStart .goNow:hover{background:#197594; color:#fff;}
+
+
+.body .SDisignDiy .adddl{display: block;}
+.body .SDisignDiy{background: #f5f5f5; padding:60px 0 100px; display: block;}
+.body .SDisignDiy dl{margin:20px 0; transition: all 0.3s 0s; padding:19px 19px 24px; border:1px solid #f5f5f5; border-bottom-color:#dedede;}
+.body .SDisignDiy dl .trans{display:block; transition: all 0.3s 0s;}
+.body .SDisignDiy dl dt{position: relative; cursor: pointer;}
+.body .SDisignDiy dl dt b{font-weight:400; display:block; color:#666; font-size:20px; line-height: 30px; overflow: hidden;}
+.body .SDisignDiy dl dt b em{font-size:14px; margin-left:10px; color:#999; width:85%;}
+.body .SDisignDiy dl dt span label{line-height:30px; color:#176b86;}
+.body .SDisignDiy dl dt i{
+    cursor: pointer; width:20px; opacity: 0; filter:alpha(opacity=0);
+    height:20px; position: absolute; right:0; top:50%; margin-top:-10px;
+    background-size:cover; background-position:center center; background-repeat:no-repeat; background-image: url('../pic/MoreIco.png');
+    transform:rotate(135deg);
+    -ms-transform:rotate(135deg); 	/* IE 9 */
+    -moz-transform:rotate(135deg); 	/* Firefox */
+    -webkit-transform:rotate(135deg); /* Safari 和 Chrome */
+    -o-transform:rotate(135deg); 	/* Opera */
+}
+.body .SDisignDiy dl dd{padding:20px 0 0;}
+.body .SDisignDiy dl dd ul li{float:left; *white-space: nowrap;  background:#fff; padding:5px 15px; border:1px solid #dedede; color:#777; font-weight:400; margin:0 20px 20px 0; -moz-border-radius:5px;  -webkit-border-radius:5px; border-radius:5px 5px 5px 5px; transition: all 0.3s 0s; cursor: pointer;}
+.body .SDisignDiy dl dd ul li:hover{color:#1B80A1; border-color:#1B80A1;}
+.body .SDisignDiy dl dd ul li img{width:45px; height:45px; vertical-align: middle; margin-right:10px; display:inline-block; *float:left;}
+.body .SDisignDiy dl dd ul li h1{display: inline-block; *float:left; *padding-top:10px;font-size:14px !important; }
+.body .SDisignDiy dl dd ul li h1:after{*clear: both;}
+.body .SDisignDiy dl dd ul .active{color:#176b86; border-color:#1B80A1; background:#eaf9fe;}
+.body .SDisignDiy dl .errorMSG{margin:10px auto; font-size:14px; color:red; text-align: center; display: none;}
+.body .SDisignDiy .redbg{background:#FDECEC; border-color:red;}
+.body .SDisignDiy .redbg .errorMSG{display:block;}
+.body .SDisignDiy .disignDiyBtn{ margin-top:40px; text-align:center; padding:40px 0; display: none;}
+.body .SDisignDiy .disignDiyBtn span{cursor:pointer; display: inline-block; padding:10px 60px; border:1px solid #dedede; margin:0 10px; color:#777; transition: all 0.3s 0s;}
+.body .SDisignDiy .disignDiyBtn .gotoNEXT{color:#fff; background:#0187CE; border-color:#0187CE;}
+.body .SDisignDiy .disignDiyBtn span:hover{color:#444; border-color:#999;}
+.body .SDisignDiy .disignDiyBtn .gotoNEXT:hover{color:#fff; border-color:#01AAEF; background:#01AAEF;}
+
+@media only screen and (max-width: 900px){
+    .body .designAD .goStart{background:#176b86; padding:10px 0;}
+    .body .designAD .goStart .goNow{border:none; font-size:16px;}
+    .body .designAD .goStart .goNow:hover{background:#fff; color:#176b86;}
+    .body .SDisignDiy dl dd ul li h1{font-size:12px !important; }
+
+    .body .SDisignDiy{border:none; padding:0 0 60px;}
+    .body .SDisignDiy dl{margin:0 0 10px; padding:9px 9px 14px;}
+    .body .SDisignDiy dl dt b{font-size:16px;}
+    .body .SDisignDiy dl dt span label{line-height:22px; font-size:12px;}
+    .body .SDisignDiy dl dt b em{margin:0; display:block; font-size:12px;}
+    .body .SDisignDiy dl .ModeIco{bottom:8px; width:16px; height:16px;}
+    .body .SDisignDiy dl dd{padding-top:10px;}
+    .body .SDisignDiy dl dd ul li{margin:0 10px 10px 0; padding:0 8px; font-weight:100; line-height:28px;}
+    .body .SDisignDiy dl dd ul li img{display:none;}
+    .body .SDisignDiy dl dt i{right:20px;}
+    .body .SDisignDiy dl .errorMSG{font-size:12px; padding:0; margin:0;}
+    .body .SDisignDiy .disignDiyBtn{padding:0; margin:0; position:fixed; bottom:0; left:0; width:100%; z-index: 100; background:#fff;}
+    .body .SDisignDiy .disignDiyBtn span{border:none; width:100%; margin:0; padding:0; line-height:50px; display: block; float:left;}
+
+
+
+
+
+
+}
+

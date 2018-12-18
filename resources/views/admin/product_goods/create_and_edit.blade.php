@@ -1,4 +1,58 @@
 @extends('admin.layout.default')
+@section('js')
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                is_show: false,
+                typed: '',
+                xilied: '',
+                series_name:'',
+                framework_name:'',
+                series: [],
+                @if(Route::is('admin.product_goods.create'))
+                defaultList: [],
+                @else
+                defaultList:{!! $productGood->pic !!},
+                @endif
+                actionImageUrl: "{!! env('ActionImageUrl') !!}",
+                imageUrl: "{!! env('IMAGES_URL') !!}",
+                deleteImageUrl: "{!! env('DeleteImageUrl') !!}",
+                fileCount:5,
+            },
+            methods: {
+                getCanshus: function () {
+                    this.framework_name=$('.framework_name option:selected').text();
+                    const Notice = this.$Notice;
+                    axios.post("{{ route('admin.product_goods.getseries') }}", {
+                        "_token": $('meta[name="csrf-token"]').attr('content'),
+                        "parent_id": this.typed,
+                    }).then(function (response) {
+                        vm.series = response.data;
+                    })
+                        .catch(function (err) {
+                            Notice.error({
+                                title: err.message
+                            });
+                        });
+                },
+                series_names: function () {
+                    this.series_name=$('.series_name option:selected').text();
+                }
+            },
+            mounted: function () {
+                @if(!Route::is('admin.product_goods.create'))
+                    this.typed = "{{ $productGood->jiagou_id }}",
+                    this.xilied = "{{ $productGood->xilie_id }}",
+                    this.series_name="{{ $productGood->series_name }}",
+                    this.series = this.getCanshus(),
+                    this.framework_name="{{ $productGood->framework_name }}"
+                @endif
+
+            },
+        });
+    </script>
+@endsection
 @section('content')
     <div class="nowWebBox">
         <div class="PageBtn">

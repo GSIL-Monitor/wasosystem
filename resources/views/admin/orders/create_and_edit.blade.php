@@ -1,11 +1,12 @@
 @extends('admin.layout.default')
 @section('css')
+
     <style>
         .maxUl li .liRight table tr td label{display: block;}
-        .maxUl li .liRight table tr td .openBtn{color:#176b86; margin:0 20px; cursor: pointer;}
-        .maxUl li .liRight table tr td .openTM:hover{text-decoration: underline;}
-        .maxUl li .liRight table tr td .TMBox{display: none;}
-        .maxUl li .liRight table tr td .TMBox label{margin:0; display: block; text-align: center;}
+        .openBtn{color:#176b86;  cursor: pointer;width: 100px}
+       .openTM:hover{text-decoration: underline;}
+       .TMBox{display: none;}
+       .TMBox label{margin:0; display: block; text-align: center;}
     </style>
  @endsection
 @section('js')
@@ -29,12 +30,18 @@
                 @if(!Route::is('admin.orders.create'))
                 <button class="Btn orders_for_the_transfer" @click="orders_for_the_transfer">订单过户</button>
                 @endif
+
+
                 <button class="changeWebClose Btn">返回</button>
             </div>
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">
-            @include('admin.orders.form')
+            @if(is_mobile())
+             @include('admin.orders.mobile_form')
+             @else
+             @include('admin.orders.form')
+            @endif
         </div>
     </div>
 

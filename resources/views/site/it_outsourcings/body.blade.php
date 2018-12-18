@@ -47,7 +47,17 @@
                                                             <p>总价：<b>{{ $item2->details['product_base'] * $unit_price  }}{{ $item2->details['tally'] }}</b></p>
                                                     @endguest
                                                 </div>
-                                                <button @guest('user') onclick="location.href='{{ route('login') }}'" @else  @endguest>意向保存</button>
+                                                <button @guest('user')
+                                                            onclick="location.href='{{ route('login') }}'"
+                                                        @else
+                                                            class="it_save"
+                                                            data_title="{{ $item2->details['cooperation_types'] }}"
+                                                            data_num="{{ $item2->details['product_base'] }}"
+                                                            data_price="{{ $unit_price  }}"
+                                                            data_total_price="{{ $item2->details['product_base'] * $unit_price  }}"
+                                                            data_url="{{ route('it_outsourcing.save',$item2->id) }}"
+                                                        @endguest
+                                                >意向保存</button>
                                             </div>
                                         </div>
                                         <div class="clear"></div>

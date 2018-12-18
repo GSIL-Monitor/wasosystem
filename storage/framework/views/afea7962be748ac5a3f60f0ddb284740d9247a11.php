@@ -1,4 +1,5 @@
 
+
 <?php $__env->startSection('content'); ?>
     <div class="nowWebBox">
         <div class="PageBtn">
@@ -70,14 +71,22 @@
 
                                 <?php endif; ?>
                             </a>
+                            <?php  $demand_number=$order->order_demand_management->first();?>
+                            <?php if($demand_number): ?><br/>
+
+                            <a class="changeWeb" data_url="<?php echo e(route('admin.demand_managements.edit',$demand_number->id)); ?>">
+                               <?php echo e($demand_number->demand_number ?? ''); ?>
+
+                            </a>
+                            <?php endif; ?>
                         </td>
-                        <td class=""><a href="<?php echo e(route('admin.orders.index')); ?>?user_id=<?php echo e($order->user_id); ?>&status=<?php echo e($status); ?><?php echo e(Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :''); ?>"><?php echo e($order->user->username); ?> <?php echo e($order->user->nickname); ?></a></td>
+                        <td class="tablePhoneShow"><a href="<?php echo e(route('admin.orders.index')); ?>?user_id=<?php echo e($order->user_id); ?>&status=<?php echo e($status); ?><?php echo e(Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :''); ?>"><?php echo e($order->user->username); ?> <?php echo e($order->user->nickname); ?></a></td>
                         <td class=""><?php echo e($order->machine_model); ?></td>
                         <td class=""><?php echo e($parameters['order_type'][$order->order_type]); ?></td>
                         <td class=""><?php echo e($parameters['order_status'][$order->order_status]); ?></td>
                         <td class=""><?php echo e($order->num); ?></td>
                         <td class=""><?php echo e($order->total_prices); ?></td>
-                        <td class=""><?php echo e($parameters['payment_status'][trim($order->payment_status)]); ?>  </td>
+                        <td class=""><?php echo e($parameters['payment_status'][trim($order->payment_status)] ?? ''); ?>  </td>
                         <td class=""><?php echo e($parameters['invoice'][$order->invoice_type]); ?></td>
                         <td class=""><?php echo e($order->created_at->format('Y-m-d')); ?></td>
                         <td class=""><a href="<?php echo e(route('admin.orders.index')); ?>?market=<?php echo e($order->user->admins->account); ?>&status=<?php echo e($status); ?><?php echo e(Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :''); ?>"><?php echo e($order->user->admins->name); ?></a></td>
@@ -91,8 +100,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 <?php endif; ?>
             </table>
-                <?php echo e($orders->appends(Request::has('source')? array_except(Request::all(),['status','page']) :array_except(Request::all(),['page']) )->links()); ?>
-
+                <?php echo e($orders->appends(Request::except(['page']))->links()); ?>
 
             </form>
         </div>

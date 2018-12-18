@@ -111,7 +111,7 @@
                         </tr>
                     @endforeach
                 </table>
-                {{ $users->appends(Request::has('source')? array_to_url(Request::all()) :'')->links() }}
+                {{ $users->appends(Request::except('page'))->links() }}
 
             </form>
         </div>

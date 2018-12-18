@@ -77,11 +77,13 @@
         <div class="PageBox">
             <div class="JJList">
                 <div  id="app">
+                    <ul class="halfTwoUl">
                     {!! Form::model($put_in_storage_management,['route'=>['admin.put_in_storage_managements.update',$put_in_storage_management->id],'id'=>'put_in_storage_managements','method'=>'put','onsubmit'=>'return false']) !!}
+
                     <li>
                         <div class="liLeft">预购序列号：</div>
                         <div class="liRight">
-                            {!!  Form::text('serial_number',old('serial_number',$procurement_plan->serial_number ?? 'YG'.date('YmdHis',time())),['placeholder'=>'procurement_plan',"class"=>'checkNull','readonly']) !!}
+                            {!!  Form::text('serial_number',old('serial_number',$put_in_storage_management->serial_number ?? 'YG'.date('YmdHis',time())),['placeholder'=>'procurement_plan',"class"=>'checkNull','readonly']) !!}
                         </div>
                         <div class="clear"></div>
                     </li>

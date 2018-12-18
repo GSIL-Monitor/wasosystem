@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#f5f5f5;}
+#login_logo{position: fixed; top:0; left:0; width: 100%; z-index: 99;}
+#login_logo .wrap .logoBox{width:100px;}
+#login_logo .wrap .logoBox a{display: block; width: 100px; height:100px;}
+#login_logo .wrap .logoBox img{width:100%;}
+
+#login_body{background-color:#fff; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('../pic/login/loginbg.jpg'); position: relative;}
+#login_body .wrap{position: relative; height:100%;}
+#login_body .wrap .adLinks{display: block; height:100%; width: 100%; position: absolute; left:0; top:0; z-index: 50;}
+#login_body .loginBox{background:rgba(255,255,255,0.95); position:absolute; right:0; z-index: 99;}
+#login_body .loginBox .loginWrap{position: relative; padding:60px 40px 40px; box-sizing: content-box;width:320px; }
+#login_body .loginBox .loginWrap .goToBtn{width:60px; cursor: pointer; height:60px; position: absolute; z-index: 100; right:5px; top:5px; background-position: center center; background-size: contain; background-repeat: no-repeat; }
+#login_body .loginBox .loginWrap .goToBtn .btnTips{animation: autoHide 0.3s; opacity: 0; animation-delay: 1s; animation-fill-mode: forwards; -webkit-animation-delay:s; position: absolute; right:40px; top:5px; color:#df9c1f; width: 120px; text-align: center; line-height: 20px; font-size:12px; border:1px solid #f3d995; background:#fefcee; border-right:none;}
+@keyframes autoHide{
+    0%{transform: translateX(-20px); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+#login_body .loginBox .loginWrap .goToBtn .btnTips i{display: inline-block; position: absolute; right:-16px; top:2px ; border-top:8px solid transparent; border-bottom:8px solid transparent; border-right:8px solid transparent; border-left:8px solid #fefcee; width:0; height:0;}
+#login_body .loginBox .loginWrap .goToWei{background-image: url('../pic/login/login_wei.png');}
+#login_body .loginBox .loginWrap .goToPwd{background-image: url('../pic/login/login_pwd.png');}
+#login_body .loginBox .loginWrap .weiLogin{display: none;}
+#login_body .loginBox .loginWrap .weiLogin .title{font-size:24px; color:#666;}
+#login_body .loginBox .loginWrap .weiLogin .code{width: 100%; text-align: center; margin:40px 0 0;}
+#login_body .loginBox .loginWrap .weiLogin .code .codeBox{width:160px; height:210px; margin:0 auto; text-align: center; display: inline-block; overflow: hidden; }
+#login_body .loginBox .loginWrap .weiLogin .code .codeBox img{width: 100%;  background: #f5f5f5;}
+#login_body .loginBox .loginWrap .weiLogin .tips{width: 160px; margin:10px auto 0;}
+#login_body .loginBox .loginWrap .weiLogin .tips img{display: block; margin-right:5px; height:20px; width:20px; float:left;}
+#login_body .loginBox .loginWrap .weiLogin .tips h5{display: block; color:#777; line-height: 20px; float:left;}
+#login_body .loginBox .loginWrap .weiLogin .tips::after{content:"."; clear: both; visibility: hidden; height:0; display: block;}
+#login_body .loginBox .loginWrap .pwdLogin a{display:block; margin:0 auto;}
+#login_body .loginBox .loginWrap .pwdLogin .tab_box{width:100%; margin:20px 0 0;}
+#login_body .loginBox .loginWrap .pwdLogin .login_box li{margin:25px auto;}
+#login_body .loginBox .loginWrap .pwdLogin .title{font-size:24px; text-align:center; color:#666;}
+#login_body .loginBox .loginWrap .pwdLogin .submit{width:100%; margin:0 auto; position: relative;}
+#login_body .loginBox .loginWrap .pwdLogin .submit a{height:46px; width:100%; text-align:center; line-height:46px; background:#176b86; color:#fff; transition: all 0.3s 0s;}
+#login_body .loginBox .loginWrap .pwdLogin .submit a:hover{cursor:pointer; background:#197594; color:#FFF;}
+#login_body .loginBox .loginWrap .pwdLogin .other{width:100%; margin:20px auto 0; text-align:center;}
+#login_body .loginBox .other{padding:0 40px 40px; text-align: center;}
+#login_body .loginBox .other a{color:#666; display:inline;}
+#login_body .loginBox .other a:hover{color:#176b86;}
+#login_body .loginBox .other span{display:inline-block; margin:0 10px; color:#666;}
+ 
+/* 第三方登陆 */
+#login_body .loginBox .phoneLoginMethod{display:none; padding:20px 0 0;}
+#login_body .loginBox .phoneLoginMethod h5{color:#999; border-bottom:1px solid #dedede; padding-bottom:10px; margin-bottom:10px; font-size:16px; text-align: center;}
+#login_body .loginBox .phoneLoginMethod ul{text-align: center;}
+#login_body .loginBox .phoneLoginMethod ul li{display: inline-block; margin:0 10px; width: 30px;}
+#login_body .loginBox .phoneLoginMethod ul li img{width: 100%;}
+
+#login_foot{padding:20px 0; position: fixed; bottom:20px; left:0; width: 100%;}
+#login_foot .wrap{width:1000px;}
+#login_foot .wrap h5{color:#666; text-align:center; line-height: 25px;}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    body{padding:0; background: #fff!important;}
+    #screenControl{display: none!important;}
+
+    #login_logo{ position: static; padding:40px 0;}
+    #login_logo .wrap .logoBox{text-align: center; width: 100%;}
+    #login_body .wrap .loginBox .loginWrap{padding:0; width: 100%; margin:0;}
+    #login_body .wrap .loginBox .loginWrap .goToBtn{display: none;}
+    #login_logo .wrap .logoBox a{height:auto; width: 100%; text-align: center;}
+    #login_logo .wrap .logoBox a img{height:40px; width: auto;}
+    #login_body .loginBox .other{padding:20px 0;}
+    #login_body .loginBox .phoneLoginMethod{display: block;}
+
+    #login_body{padding:0; background:#fff;}
+    #login_body .tab_box{width:80%;}
+    #login_body .wrap{width:100%;}
+    #login_body .wrap .adLinks{display:none;}
+    #login_body .loginBox .loginWrap .pwdLogin .title{font-size:18px;}
+    #login_body .loginBox{position: static; top:auto; right:auto; width: 100%; padding:0 20px; box-sizing: border-box;}
+
+
+    #login_foot .wrap{display: none;}
+
+    /*  注册等待 */
+    #login_body .thanks p{font-size:14px; width: 90%; margin:0 auto; text-align: left; line-height: normal;}
+    #login_body .big_bg{display:none;}
+    #login_body .thanks .other_way ul{width:90%; margin:0 auto;}
+    #login_body .thanks .other_way ul li i{line-height: 20px;}
+
+}

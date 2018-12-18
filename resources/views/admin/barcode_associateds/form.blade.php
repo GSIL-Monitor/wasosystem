@@ -1,102 +1,35 @@
 <div class="JJList">
     <ul class="halfTwoUl" id="app">
         {!! Form::open(['route'=>['admin.barcode_associateds.store'],'id'=>'barcode_associateds','method'=>'post','onsubmit'=>'return false']) !!}
-        <li>
-            <div class="liLeft">产品条码：</div>
-            <div class="liRight">
-                {!!  Form::text('code',old('code',$barcode_associated['code']),['placeholder'=>'产品条码',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-        <li>
-            <div class="liLeft">产品类型：</div>
-            <div class="liRight">
-                {!!  Form::text(null, $barcode_associated['product_good']->product->title ?? '' ,
-                ['placeholder'=>'产品类型',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-        <li>
-            <div class="liLeft">产品规格：</div>
-            <div class="liRight">
-                {!!  Form::hidden('product_good_id',
-                old('product_good_id',$barcode_associated['product_good']->id ??  ''
-                ),['placeholder'=>'产品规格',"class"=>'checkNull product_good_id','readonly']) !!}
-                {!!  Form::text(null,
-                $barcode_associated['product_good']->name ??  ''
-                ,['placeholder'=>'产品规格',"class"=>'checkNull','readonly']) !!}
-                {!!  Form::hidden('product_colour',
-              $barcode_associated['barcode_associated']->product_colour ??  $barcode_associated['procurement_plan']->product_colour
-              ,['placeholder'=>'产品成色',"class"=>'checkNull','readonly']) !!}
-
-            </div>
-            <div class="clear"></div>
-        </li>
-        <li>
-            <div class="liLeft">入库时间：</div>
-            <div class="liRight">
-                {!!  Form::text(null,
-                $barcode_associated['procurement_plan']->updated_at ?? ''
-                ,['placeholder'=>'入库时间',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-        <li>
-            <div class="liLeft">供货单位：</div>
-            <div class="liRight">
-                {!!  Form::text(null,
-                $barcode_associated['supplier_managements']->name ?? ''
-                ,['placeholder'=>'供货单位',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-       @if(!empty($barcode_associated['user']))
-        <li>
-            <div class="liLeft">关联客户：</div>
-            <div class="liRight">
-                {!!  Form::hidden('user_id',old('user_id',$barcode_associated['user']->id ?? 0),['placeholder'=>'关联客户',"class"=>'checkNull','readonly']) !!}
-                {!!  Form::text(null,$barcode_associated['user']->username . ' ' .$barcode_associated['user']->nickname,['placeholder'=>'关联客户',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-        @endif
-        <li>
-            <div class="liLeft">当前事件：</div>
-            <div class="liRight">
-                {!!  Form::text(null,config('status.barcode_associateds_type')[$status],['placeholder'=>'当前事件',"class"=>'checkNull','readonly']) !!}
-            </div>
-            <div class="clear"></div>
-        </li>
-        @if(!Request::has('search'))
-            @php $status=Request::get('status') ?? Request::get('type');@endphp
-            <li>
-                <div class="liLeft">选择事件：</div>
-                <div class="liRight">
-                    @if(Request::has('type'))
-                        {!!  Form::hidden('current_state',old('current_state',config('status.barcode_associateds_type')[$status]),['placeholder'=>'选择事件',"class"=>'checkNull','v-model'=>'selected']) !!}
-                        {!!  Form::text(null,config('status.barcode_associateds_type')[Request::get('type')],['placeholder'=>'选择事件',"class"=>'checkNull','readonly']) !!}
-                    @else
-                        {!!  Form::select('current_state',config('codeStatus')[$status],old('current_state'),['placeholder'=>'选择事件',"class"=>'checkNull','v-model'=>'selected','@change'=>'changeSelect']) !!}
-                    @endif
-                </div>
-                <div class="clear"></div>
-            </li>
-
-            @includeIf('admin.barcode_associateds.fileds.new_two_code')
+        @if(Request::has('search'))
+            @includeIf('admin.barcode_associateds.forms.info')
         @else
-            @includeIf('admin.barcode_associateds.fileds.two_code_exist')
-        @endif
-        <li v-if="showProduct">
-            <div class="liLeft">产品新规格：</div>
-            <div class="liRight">
-                <good-remote-select :url="GoodUrl" ></good-remote-select>
-            </div>
-            <div class="clear"></div>
-        </li>
-        @includeIf('admin.barcode_associateds.fileds.admin')
+            @if(Request::has('searchSelect'))
+                @php $types=config('codeStatus.barcode_associateds_type')[Request::get('type')];@endphp
+                @if($types == '借出还回' || $types == '借转销售')
+                    @includeIf('admin.barcode_associateds.forms.loan_out')
+                @endif
+                @if($types == '进货退货' || $types == '返厂在途' || $types == '报损' || $types == '坏货' || $types == '型号更换')
+                    @includeIf('admin.barcode_associateds.forms.bad')
+                @endif
+                @if($types == '质保返回' || $types == '返厂返回')
+                @includeIf('admin.barcode_associateds.forms.returned_to_the_factory')
+                @endif
+                @if($types == '质保受理' || $types == '销售退货' || $types == '借转更换' || $types == '质保更换')
+                    @includeIf('admin.barcode_associateds.forms.sell')
+                @endif
+                @if($types == '质保取走' || $types == '质保返厂' || $types == '代管转入库' )
+                    @includeIf('admin.barcode_associateds.forms.quality_return')
+                @endif
+                @if($types == '测试品归还' || $types == '测试品转采购')
+                    @includeIf('admin.barcode_associateds.forms.test')
+                @endif
+            @else
+                @includeIf('admin.barcode_associateds.forms.'.$status)
 
-        @includeIf('admin.barcode_associateds.fileds.description')
-        <div class="clear"></div>
+            @endif
+        @endif
+
         {!! Form::close() !!}
     </ul>
 </div>

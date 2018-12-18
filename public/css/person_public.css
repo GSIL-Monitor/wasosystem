@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.body .info_box{padding-bottom:60px;}
+.body .info_box .left{width:18%; float:left;  padding:30px 0; background:#fff;}
+.body .info_box .left dl{margin-bottom:20px;}
+.body .info_box .left dl dt{font-size:18px; padding:0 30px; font-weight:400; line-height: 40px; color:#000;}
+.body .info_box .left dl dd{position:relative;}
+.body .info_box .left dl dd a{font-size:14px; color:#777; display: block; text-align:left; padding:5px 30px 5px 27px;  margin:5px 0; transition: all 0.3s 0s; border-left:3px solid #fff;}
+.body .info_box .left dl dd:hover a{color:#176b86; border-color:#176b86;}
+.body .info_box .left dl dd .active{color:#176b86; border-color:#176b86; }
+.body .info_box .left dl dd img{width:8px; height:8px; position:absolute; right:20px; top:11px;}
+
+.body .info_box .right{width:82%; float:right;}
+.body .info_box .right .info{padding:20px 40px 40px; background: #fff; margin-left:20px;}
+.body .info_box .right .info .bigTit{padding:0 0 30px; }
+.body .info_box .right .info .bigTit h5{font-size:26px; color:#444;}
+.body .info_box .right .info .bigTit p{font-size: 12px; color: #999;  display: none;}
+.body .info_box .right .info .error{color:red; position: absolute; left:0; bottom:-20px; font-size: 12px;}
+.body .info_box .right .info .point{color:red;}
+
+
+@media only screen and (max-width:900px){
+    /*  个人中心页面  */
+    .body .info_box{padding-bottom:0;}
+    .body .info_box .left{display:none;}
+    .body .info_box .right{float:none; width:100%; padding:0; margin-bottom:0;}
+    .body .info_box .right .info{padding:0; background:none; margin:0; border-radius:0; box-shadow:none;}
+    .body .info_box .right .info .tit{padding:10px; font-size:14px;}
+    .body .info_box .right .info .bigTit{display:none!important;}
+    .body .info_box .hot{padding-top:10px;}
+    .body .info_box .hot h5{font-size:14px; line-height:30px; padding:0 10px;}
+    .body .info_box .hot ul{padding:0}
+    .body .info_box .hot ul li{width:50%; border-left:1px solid #dedede; margin:0 0 0 -1px; border-bottom:1px solid #dedede;}
+
+
+}

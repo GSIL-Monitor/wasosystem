@@ -9,8 +9,10 @@
     <title>@yield('title','登录')-网烁信息科技有限公司</title>
     <meta name="keywords" content="@yield('keywords','keywords')"/>
     <meta name="description" content="@yield('description','description')"/>
+    <link rel="stylesheet" href="{{ asset('styles/iview.css') }}" type="text/css">
     <link href="{{ asset('css/public.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css">
+    <script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
 </head>
 <body>
 <div id="login_logo">
@@ -19,6 +21,24 @@
     </div>
 </div>
 <div id="login_body">
+
+    <script>
+        window.onload=function(){
+            var obj = new WxLogin({
+                id: "qrCode",
+                appid: "{{ setting('wechat_open_appid') }}",
+                scope: "snsapi_login",
+                redirect_uri: "{{ setting('wechat_open_redirect_uri') }}",
+                href: "https://www.waso.com.cn/Public/css/qrCode.css",
+                state: "<?php echo time(); ?>",
+
+            });
+        }
+            </script>
+    {{--<div id="qrCode">--}}
+
+    {{--</div>--}}
+
     <div class="wrap">
         <a href="/" class="adLinks"></a>
         <div class="loginBox" id="app">
@@ -32,13 +52,15 @@
                   <h5 class="title">微信登陆 | 便捷安全</h5>
 
                   <div class="code">
-                     <div class="codeBox">
-                       <img src="{{ asset('pic/weixin_hover.jpg') }}">
+                     <div class="codeBox" id="qrCode">
+                       {{--<img src="{{ asset('pic/weixin_hover.jpg') }}">--}}
                      </div>
                   </div>
 
-                  <div class="tips">
-                     <img src="{{ asset('pic/login/login_icon.png') }}"><h5>打开微信扫一扫登陆</h5>
+                  <div class="tips" >
+                     <img src="{{ asset('pic/login/login_icon.png') }}">
+
+                      <h5>打开微信扫一扫登录</h5>
                   </div>
                </div>
 
@@ -121,7 +143,12 @@
 
 <div id="login_foot">
     <div class="wrap">
-        <h5>Copyright © <span class="year"></span> 成都网烁信息科技有限公司 版权所有<br> ICP备案编号：蜀 ICP(备)10025767号</h5>
+        <h5>
+            <a href="http://www.miitbeian.gov.cn">{{ setting('system_website_records') }}</a><br/>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001250" style="display:inline-block;text-decoration:none">
+                <img src="{{ asset('pic/beian.png') }}" style="margin-right:3px; vertical-align:middle;"/>{{ setting('system_ministry_public_security_records') }}</a><br>
+            Copyright © <span class="year">{{ today()->format('Y') }}</span> {{  setting('system_title') }} 版权所有
+        </h5>
     </div>
 </div>
 

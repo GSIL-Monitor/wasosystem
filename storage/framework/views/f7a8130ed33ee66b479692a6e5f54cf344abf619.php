@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <title><?php echo $__env->yieldContent('title','首页'); ?>-网烁信息科技有限公司</title>
-    <meta name="keywords" content="<?php echo $__env->yieldContent('keywords','keywords'); ?>"/>
-    <meta name="description" content="<?php echo $__env->yieldContent('description','description'); ?>"/>
+    <meta name="keywords" content="<?php echo $__env->yieldContent('keywords',setting('system_keyWord')); ?>"/>
+    <meta name="description" content="<?php echo $__env->yieldContent('description', setting('system_description')); ?>"/>
     <?php echo $__env->yieldContent('meta'); ?>
     
     <?php echo $__env->make('site.layouts.css', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -29,5 +29,7 @@
         $("img.lazy").lazyload({effect: "fadeIn"});
     });
 </script>
+<?php echo setting('system_baidu_statistics'); ?>
+
 </body>
 </html>

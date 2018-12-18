@@ -1,4 +1,5 @@
 @extends('admin.layout.default')
+
 @section('content')
     <div class="nowWebBox">
         <div class="PageBtn">
@@ -69,14 +70,21 @@
                                 {{ $order->serial_number }}
                                 @endif
                             </a>
+                            @php  $demand_number=$order->order_demand_management->first();@endphp
+                            @if($demand_number)<br/>
+
+                            <a class="changeWeb" data_url="{{ route('admin.demand_managements.edit',$demand_number->id) }}">
+                               {{ $demand_number->demand_number ?? '' }}
+                            </a>
+                            @endif
                         </td>
-                        <td class=""><a href="{{ route('admin.orders.index') }}?user_id={{ $order->user_id }}&status={{ $status }}{{ Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :'' }}">{{ $order->user->username }} {{ $order->user->nickname }}</a></td>
+                        <td class="tablePhoneShow"><a href="{{ route('admin.orders.index') }}?user_id={{ $order->user_id }}&status={{ $status }}{{ Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :'' }}">{{ $order->user->username }} {{ $order->user->nickname }}</a></td>
                         <td class="">{{ $order->machine_model }}</td>
                         <td class="">{{ $parameters['order_type'][$order->order_type] }}</td>
                         <td class="">{{ $parameters['order_status'][$order->order_status] }}</td>
                         <td class="">{{ $order->num }}</td>
                         <td class="">{{ $order->total_prices }}</td>
-                        <td class="">{{ $parameters['payment_status'][trim($order->payment_status)] }}  </td>
+                        <td class="">{{ $parameters['payment_status'][trim($order->payment_status)] ?? '' }}  </td>
                         <td class="">{{ $parameters['invoice'][$order->invoice_type] }}</td>
                         <td class="">{{ $order->created_at->format('Y-m-d') }}</td>
                         <td class=""><a href="{{ route('admin.orders.index') }}?market={{ $order->user->admins->account }}&status={{ $status }}{{ Request::has('source')? array_to_url(array_except(Request::all(),['status'])) :'' }}">{{ $order->user->admins->name }}</a></td>
@@ -90,8 +98,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 @endforelse
             </table>
-                {{ $orders->appends(Request::has('source')? array_except(Request::all(),['status','page']) :array_except(Request::all(),['page']) )->links() }}
-
+                {{ $orders->appends(Request::except(['page']))->links() }}
             </form>
         </div>
     </div>

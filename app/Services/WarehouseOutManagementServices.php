@@ -70,11 +70,11 @@ class WarehouseOutManagementServices
     {
         $data = $request->all();
         $data['code'] = json_decode($data['code'], true);
-        if ($data['out_number'] == $data['finish_out_number']) {
-            $data['out_status'] = 'finish';
-        } else {
-            $data['out_status'] = 'unfinished';
-        }
+//        if ($data['out_number'] == $data['finish_out_number']) {
+//            $data['out_status'] = 'finish';
+//        } else {
+//            $data['out_status'] = 'unfinished';
+//        }
 
         \DB::transaction(function () use ($warehouse_out_management, $data) {
             if ($warehouse_out_management) {

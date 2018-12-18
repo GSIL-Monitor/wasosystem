@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="<?php echo e(asset('admin/css/select2.min.css')); ?>" type="text/css">
 
 
+<link rel="stylesheet" href="<?php echo e(asset('admin/css/common.css')); ?>">

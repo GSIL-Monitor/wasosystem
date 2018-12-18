@@ -37,7 +37,7 @@
         <li>
             <div class="liLeft">产品类型：</div>
             <div class="liRight">
-                {!!  Form::select('product_id',$parameters['product'],old('product_id'),['placeholder'=>'请选择产品类型',"class"=>'checkNull select2 product',':disabled'=>'isDisabled']) !!}
+                {!!  Form::select('product_id',$parameters['product'],old('product_id'),['placeholder'=>'请选择产品类型',"class"=>'checkNull select2 product',':disabled'=>'isDisabled','data_product_name'=>'product_good_id']) !!}
             </div>
             <div class="clear"></div>
         </li>

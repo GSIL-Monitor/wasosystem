@@ -50,7 +50,8 @@ return [
     'service_directory_type'=>['buying_guide'=>'购买指南','terms_of_service'=>'服务条款','after_sale_policy'=>'售后政策','other_description'=>'其他说明'],
     'information_managements_type'=>['company_dynamic'=>'公司动态','industry_trends'=>'行业动态','technical_expertise'=>'技术知识'],
     'banner_font_float'=>['left'=>'左','right'=>'右','center'=>'居中'],
-    'banner_font_color'=>['B'=>'B','W'=>'W','Logo'=>'Logo'],
+    'banner_font_color'=>['B'=>'B','W'=>'W','LOGO'=>'LOGO'],
+    'mini_program_font_color'=>['white'=>'white','black'=>'black'],
     'service_quality_assurance_status'=>['quality_assurance_apply_for'=>'质保申请',
                                         'quality_assurance_to_accept'=>'质保受理',
                                         'quality_assurance_to_perform'=>'质保执行',
@@ -94,6 +95,7 @@ return [
         'test_to_procurement' => '测试品转采购','product_replacement' => '产品更换','loan_out_return' => '借出还回', 'quality_return' => '质保返回',
         'borrow_to_sales' => '借转销售','models_to_replace'=>'型号更换'
     ],
+    'settings'=>['system'=>'系统设置','wechat'=>'微信相关','contact'=>'联系方式','page_authorization'=>'单页授权图','advantage'=>'首页优势'],
     /*******************************条码关联状态END************************************/
     'WASO'=>[
         'danwei'=>'成都网烁信息科技有限公司',

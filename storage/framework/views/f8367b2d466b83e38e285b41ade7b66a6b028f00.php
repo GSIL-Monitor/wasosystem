@@ -50,7 +50,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 <?php endif; ?>
             </table>
-             <?php echo e($inventory_managements->links()); ?>
+             <?php echo e($inventory_managements->appends(Request::except('page'))->links()); ?>
 
             </form>
 

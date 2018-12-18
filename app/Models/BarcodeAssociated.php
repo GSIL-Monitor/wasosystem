@@ -13,6 +13,13 @@ class BarcodeAssociated extends Model
 
    ];
 
+//   public function setSupplierManagementsIdAttribute($value)
+//   {
+//
+//       return
+//   }
+
+
     public function getTypeAttribute()
     {
         return 'BarcodeAssociated';

@@ -17,7 +17,7 @@
     <div class="wrap" id="app">
 
         <div class="logo_bg">
-            <a class="logo" href="/"><img src="{{ asset('pic/logo.png') }}"></a>
+            <a class="logo" href="/"><img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] }}"></a>
         </div>
         <div v-show="!next_step">
             <h5 class="title">找回密码</h5>
@@ -111,7 +111,12 @@
 
 <div id="forget_foot">
     <div class="wrap">
-        <h5>成都网烁信息科技有限公司 Copyright 2003-2016 <br>ICP备案编号：蜀 ICP(备)10025767号</h5>
+        <h5>
+            <a href="http://www.miitbeian.gov.cn">{{ setting('system_website_records') }}</a><br/>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001250" style="display:inline-block;text-decoration:none">
+                <img src="{{ asset('pic/beian.png') }}" style="margin-right:3px; vertical-align:middle;"/>{{ setting('system_ministry_public_security_records') }}</a><br>
+            Copyright © <span class="year">{{ today()->format('Y') }}</span> {{  setting('system_title') }} 版权所有
+        </h5>
     </div>
 </div>
 

@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  意向订单  通用模版 */
+.editShop{display:none;}
+.Pc_hide{display:none;}
+.orderTable .ComfirInfo .typeTit{background:#f1f1f1; padding:6px 10px;}
+.orderTable i{width: 100%; padding-top:30px; text-align: center; display: block;}
+.orderTable .menu{position: relative;  border-bottom:1px solid #ededed; background: #f5f5f5; display:table; width:100%; padding:0;}
+.orderTable .menu .imgs{min-height: 1px;}
+.orderTable .menu button{display:none; position: absolute; right: 10px; top:10px; background: none; border:none;}
+.orderTable button:hover{cursor:pointer; color:#176b86;}
+.orderTable .menu .TH{width:12%; line-height:35px;text-align: center; min-height: 1px; font-weight:400; color:#666; display:table-cell; vertical-align:middle;}
+.orderTable .menu .links_a{width:35%; text-align:left;}
+.orderTable .menu .check_box{width:5%;}
+.orderTable .menu .total{text-align:right;}
+.orderTable .price{text-align:center;}
+.orderTable .num{text-align:center;}
+.orderTable .num .num_box{margin:0 auto; display:inline-block;}
+.orderTable .num input{width:40px; height:25px; border-top:1px solid #dedede; -webkit-appearance: none;   border-bottom:1px solid #dedede; display:inline-block; float:left; text-align:center;}
+.orderTable .num button{width:25px; height:25px;display:inline-block; float:left;}
+.orderTable .num .none{color:#dedede; cursor:default;}
+.orderTable .control{width:10%; text-align:center;}
+.orderTable .control a{color:#666;}
+.orderTable .typeTit{font-size: 18px; padding:30px 0 10px; color:#666; font-weight: 600;}
+.orderTable .orderList{position: relative; background: #fff; display:table; width:100%; padding:10px 0; border-bottom:1px dashed #ededed;}
+.orderTable .orderList .TD{display:table-cell; vertical-align:middle; width:12%; text-align:center; color:#666;}
+.orderTable .orderList .check_box{width:5%;}
+.orderTable .orderList .links_a{width:35%; text-align:left;}
+.orderTable .orderList .total .to{font-weight:400;}
+.orderTable .orderList .total{width:10%; text-align:right; color:#f04042; font-weight:400;}
+.orderTable .orderList .zhibao span{display:none;}
+
+/* 快速选购配件 */
+.orderTable .AddPeijian{margin-bottom:20px;}
+.orderTable .AddPeijian select{height:36px; overflow: hidden; white-space: nowrap;  text-overflow: ellipsis; width:100%; color:#666; padding-right:20px;}
+.orderTable .AddPeijian .AddType{float:left; margin-right:10px;}
+.orderTable .AddPeijian i{padding:0; width: auto;}
+.orderTable .AddPeijian input[type="text"]{line-height: 36px; border:1px solid rgb(153,153,153); height:36px;}
+.orderTable .AddPeijian .AddName{float:left;}
+.orderTable .AddPeijian .AddName select{max-width: 370px;}
+.orderTable .AddPeijian .AddNums{ display:none;}
+.orderTable .AddPeijian .BuyType{float:right; width: 30%; text-align: right;}
+.orderTable .AddPeijian .BuyType button{border:1px solid #ccc; color:#888; padding:5px 10px; margin-left:10px; background:#fff;}
+.orderTable .AddPeijian .BuyType button i{display:inline-block; padding:0; width:24px; height:24px; vertical-align: middle; margin:0 5px 0 0 ; background:url(../pic/icons.png) no-repeat -35px -510px; }
+.orderTable .AddPeijian .BuyType .checked{border-color:#176b86; color:#176b86;}
+.orderTable .AddPeijian .BuyType .checked i{background:url(../pic/icons.png) no-repeat -59px -510px;}
+.orderTable .AddPeijian form{float:left; width:69%;}
+.orderTable .AddPeijian .AddBtn{float:left; margin-left:10px;}
+.orderTable .AddPeijian .AddBtn button{line-height:34px; text-align: center; padding:0 30px; background: #176b86; color:#fff; cursor: pointer;}
+.orderTable .AddPeijian .AddBtn button:hover{background:#197594;}
+
+
+.info_box .total_control{position: relative; margin:60px auto 40px; background: #f5f5f5;}
+.info_box .total_control li{line-height: 50px; }
+.info_box .total_control a{font-size:12px;}
+.info_box .total_control a:hover{color:#176b86;}
+.info_box .total_control .t_l{float:left; width:50%;}
+.info_box .total_control .t_l ul{margin-left:20px;}
+.info_box .total_control .t_l ul li{float:left; margin-right:20px;}
+.info_box .total_control .t_r{float:right; width: 50%;}
+.info_box .total_control .t_r ul{float:left; width: 70%;}
+.info_box .total_control .t_r ul li{font-size:14px; line-height:50px; color:#333; text-align:right; margin-right:20px; height:50px; overflow:hidden;}
+.info_box .total_control .t_l ul li input{vertical-align: middle; margin:0 5px 3px 0;}
+.info_box .total_control .t_r ul li span{color:#f04042; font-weight:400;}
+.info_box .total_control .t_r b{color:#f04042; font-size:20px; font-weight: bold; line-height: 50px;}
+.info_box .total_control .t_r .confirm_btns{padding:0; border:0; width:30%; margin:0; float:right;}
+.info_box .total_control .t_r .confirm_btns a{background:#176b86; color:#fff; display:inline-block; width:100%; line-height: 50px;  font-size: 16px; -moz-border-radius:0;  -webkit-border-radius:0; border-radius: 0; padding:0; }
+.info_box .total_control .t_r .confirm_btns a:hover{background:#197594;}
+/*  购物车 结束 */
+
+
+
+@media only screen and (max-width: 900px){
+    .editShop{display:block; position:absolute; right:10px; top:10px; z-index:111; background:#176b86; padding:0 10px; line-height:30px; border:none; color:#fff; font-size:14px;}
+    .editShop:hover{cursor: pointer; background:#197594;}
+    #foot{display:none;}
+    .orderTable .menu{display:none;}
+    .orderTable .peijian{padding:0 10px; background:#fff; display:block;}
+    .orderTable .orderList{border-bottom:1px solid #ededed;}
+    .orderTable .orderList .TD{display:block; float:left; line-height:25px; text-align:left;}
+    .orderTable .orderList .check_box{width:10%;}
+    .orderTable .orderList .links_a{width:90%; float:right; font-size:14px; font-weight:400; min-height:40px;}
+    .orderTable .orderList .price{margin:0 20px 0 10%; color:#f04042; width:30%;}
+    .orderTable .orderList .price span{color:#f04042;}
+    .orderTable .orderList .total{display:none;}
+    .orderTable .orderList .zhibao{width:25%;}
+    .orderTable .orderList .zhibao span{display:inline;}
+    .orderTable .orderList .num{min-width:50%; position:absolute; right:0; bottom:10px; text-align:right; height:25px; z-index:10;}
+    .orderTable .orderList .control{position:absolute; height:100%; width:30%; background:#f04042; text-align:center; right:-10px; top:0; display:none; z-index:20;}
+    .orderTable .orderList .control a{color:#FFF; line-height:85px; display:block;}
+    .orderTable .AddPeijian{background:#fff; margin:0; padding:10px; border-bottom:1px solid #dedede;}
+    .orderTable .AddPeijian .AddName{width:30%; overflow:hidden;}
+    .orderTable .AddPeijian .BuyType{float:none; margin:0 0 20px; width: 100%;}
+    .orderTable .AddPeijian .BuyType button{border:none; border-bottom:2px solid #f5f5f5; margin:0; width:50%; height:30px; -moz-border-radius:0;  -webkit-border-radius:0; border-radius:0 0 0 0; float:left;}
+    .orderTable .AddPeijian .BuyType button i{display: none;}
+    .orderTable .AddPeijian select{padding:0; height:25px;}
+    .orderTable .AddPeijian .AddBtn button{line-height: 23px;}
+    .orderTable .AddPeijian form{width:100%; float:none;}
+    .orderTable .AddPeijian input[type="text"]{line-height:25px; border:1px solid rgb(153,153,153); height:25px;}
+
+
+
+    .info_box .total_control{background:#fff; margin:0;}
+    .info_box .total_control .t_l{width:40%;}
+    .info_box .total_control .t_l ul li{margin-right:10px;}
+    .info_box .total_control .t_r{width:60%;}
+    .info_box .total_control .t_r ul{width:50%;}
+    .info_box .total_control .t_r .confirm_btns{width:50%;}
+    .info_box .confirm_btn{margin:0; position: fixed; bottom:0; left:0; width: 100%; background: #fff; z-index:130; border-top:1px solid #dedede;}
+
+}

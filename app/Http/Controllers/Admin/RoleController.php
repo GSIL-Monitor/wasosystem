@@ -31,6 +31,7 @@ class RoleController extends Controller
     public function create()
     {
         $permissions = Permission::all();//得到所有权限
+
         return view('admin.roles.create_and_edit',compact('permissions'));
     }
 
@@ -74,7 +75,9 @@ class RoleController extends Controller
     public function edit(Role $role)
     {
         $permissions = Permission::all();
-
+//       dump($permissions=$permissions->groupBy(function ($item, $key) {
+//        return mb_substr($item['title'], 0,-2);
+//    }));
         return view('admin.roles.create_and_edit', compact('role', 'permissions'));
     }
 

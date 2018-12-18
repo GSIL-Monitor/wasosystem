@@ -121,6 +121,7 @@ class TaskManagementController extends Controller
     //营销统计
     public function marketing_statistics(Request $request)
     {
+
         $parent_id=$request->get('parent_id') ?? 88;
         $year =$request->get('year') ??  date('Y',time());
         $mouth =$request->get('mouth') ?? date('m',time()) ;

@@ -19,22 +19,28 @@
                         @if($completeMachines->isNotEmpty())
                             <li>产品<span>({{ $completeMachines->count() }})</span></li>
                         @endif
-                            @if($informationManagements->isNotEmpty())
+                        @if($informationManagements->isNotEmpty())
                             <li>资讯<span>({{ $informationManagements->count() }})</span></li>
                         @endif
-                            @if($integrations->isNotEmpty())
+                        @if($integrations->isNotEmpty())
 
-                                <li>解决方案<span>({{ $integrations->count() }})</span></li>
-                       @endif
+                            <li>解决方案<span>({{ $integrations->count() }})</span></li>
+                        @endif
                         <div class="clear"></div>
                     </ul>
                 </div>
             @endif
             <div class="searchResultBox">
                 @if($integrations->isNotEmpty() || $informationManagements->isNotEmpty()  || $completeMachines->isNotEmpty() )
-                    @includeIf('site.searchs.search_machine')
-                    @includeIf('site.searchs.search_inforation')
-                    @includeIf('site.searchs.search_integration')
+                    @if($completeMachines->isNotEmpty())
+                        @includeIf('site.searchs.search_machine')
+                    @endif
+                    @if($informationManagements->isNotEmpty())
+                        @includeIf('site.searchs.search_inforation')
+                    @endif
+                    @if($integrations->isNotEmpty())
+                        @includeIf('site.searchs.search_integration')
+                    @endif
                 @else
                     <div class="error">没有您要查询的内容</div>
                 @endif

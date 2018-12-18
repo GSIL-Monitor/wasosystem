@@ -1,10 +1,10 @@
 <div class="companyAdvantage">
     <div class="wrap">
         <ul>
-            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(asset('pic/index/ComAdv1.png')); ?>');"></i><span class="AdvWord">英特尔"中国智<br>造基地"成员</span></a></li>
-            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(asset('pic/index/ComAdv3.png')); ?>')"></i><span class="AdvWord">英特尔中国区域<br>顾问委员会成员</span></a></li>
-            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(asset('pic/index/ComAdv4.png')); ?>');"></i><span class="AdvWord">英特尔SOEM、<br>IIP体系成员</span></a></li>
-            <li><a href="<?php echo e(route('honor')); ?>"><i style="background-image:url('<?php echo e(asset('pic/index/ComAdv5.png')); ?>');"></i><span class="AdvWord">超微授权菁英<br>系统商(STAP)</span></a></li>
+            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(json_decode(getImages(setting('advantage_members_base')),true)[0]['url']); ?>');"></i><span class="AdvWord"><?php echo setting('advantage_members_base_description'); ?></span></a></li>
+            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(json_decode(getImages(setting('advantage_committeeman')),true)[0]['url']); ?>')"></i><span class="AdvWord"><?php echo setting('advantage_committeeman_description'); ?></span></a></li>
+            <li><a href="<?php echo e(route('honor')); ?>"><em></em><i style="background-image:url('<?php echo e(json_decode(getImages(setting('advantage_soem')),true)[0]['url']); ?>');"></i><span class="AdvWord"><?php echo setting('advantage_soem_description'); ?></span></a></li>
+            <li><a href="<?php echo e(route('honor')); ?>"><i style="background-image:url('<?php echo e(json_decode(getImages(setting('advantage_stap')),true)[0]['url']); ?>');"></i><span class="AdvWord"><?php echo setting('advantage_stap_description'); ?></span></a></li>
             <div class="clear"></div>
         </ul>
     </div>

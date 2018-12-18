@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.PowerBox .allPower{line-height: 30px; margin-bottom:10px;}
+.PowerBox .allPower label{font-size: 14px; font-weight: 600; line-height: 30px;}
+.PowerBox .powerList{ margin:0 20px 10px 0; float: left; padding:19px; background: #fff; border:1px solid #d4d4d4;}
+.PowerBox .D1{font-size: 104px; font-weight: 600; }
+.PowerBox .D2{padding-left:30px;}
+.PowerBox .D3{padding-left:60px;}
+.PowerBox .D4{padding-left:60px;}
+.PowerBox .D5{padding-left:60px;}
+
+
+
+
+
+

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 //出库管理Model
 class WarehouseOutManagement extends Model
 {
-   protected $casts=[];
+   protected $casts=['created_at'=>'datetime:Y-m-d'];
    protected $fillable=['user_id','order_id','out_type','out_status','associated_disposal','serial_number','out_number','finish_out_number','admin','postscript'];
 
     public function getTypeAttribute()

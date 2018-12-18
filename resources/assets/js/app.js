@@ -47,6 +47,43 @@ Validator.extend('number_unique', {
         });
     }
 });
+//邮箱电话验证是否存在
+Validator.extend('number_exists', {
+    getMessage: field => field + '不存在！',
+    validate: value => {
+        return axios.post('/binding_authorization/check_number', {
+            '_token': getToken(),
+            'number': value,
+        }).then(function (response) {
+            return {
+                valid: false,
+            };
+        }).catch(function (err) {
+            return {
+                valid: true,
+            };
+        });
+    }
+});
+//验证验证码是否正确
+Validator.extend('check_code', {
+    getMessage: field => field + '不正确！',
+    validate: (value,args) => {
+        return axios.post('/binding_authorization/check_code', {
+            '_token': getToken(),
+            'code': value,
+            'code_name': args[0],
+        }).then(function (response) {
+            return {
+                valid: true,
+            };
+        }).catch(function (err) {
+            return {
+                valid: false,
+            };
+        });
+    }
+});
 //验证码验证
 
 /**

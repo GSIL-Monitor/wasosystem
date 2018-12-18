@@ -7,9 +7,7 @@
 @section('js')
     <script src="{{asset('js/designer.js')}}"></script>
     <script src="{{asset('js/it_outsourcings.js')}}"></script>
-    <script>
 
-    </script>
 @endsection
 @section('content')
      @include('site.it_outsourcings.body')

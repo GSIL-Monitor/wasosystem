@@ -15,6 +15,7 @@
         }
         $(function () {
             sum_prices();
+
         });
         var vm=new Vue({
             el: "#app",
@@ -30,20 +31,19 @@
         <div class="PageBtn">
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
+
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('create demand_managements')): ?>
                     <button class="changeWeb Btn" data_url="<?php echo e(route('admin.demand_managements.create')); ?>">添加</button>
                 <?php endif; ?>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('show demand_filtrates_users')): ?>
                     <button class="changeWeb Btn" data_url="<?php echo e(route('admin.users.index')); ?>?source=demand_managements">会员管理</button>
                 <?php endif; ?>
-
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('delete demand_managements')): ?>
                     <button type="submit" class="red Btn AllDel" form="AllDel"
                             data_url="<?php echo e(url('/waso/demand_managements/destory')); ?>">删除
                     </button>
                 <?php endif; ?>
             </div>
-
             <?php echo $__env->make('admin.common._search',[
            'url'=>route('admin.demand_managements.index'),
            'status'=>array_except(Request::all(),['type','keyword','_token']),
@@ -62,8 +62,8 @@
             'url'=>route('admin.demand_managements.index'),
             'canshu'=>'cate',
             'add'=>[
-            'order_history'=>['url'=>route('admin.orders.index').'?status=arrival_of_goods&source','name'=>'历史订单'],
-             'old_orders'=>['url'=>route('admin.old_orders.index').'?source','name'=>'老订单']
+            'order_history'=>['url'=>route('admin.orders.index').'?status=arrival_of_goods&source=arrival_of_goods','name'=>'历史订单'],
+             'old_orders'=>['url'=>route('admin.old_orders.index').'?source=old_order','name'=>'老订单']
             ]
             ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             <form action="<?php echo e(route('admin.allupdate')); ?>" method="post" id="AllEdit" onsubmit="return false">
@@ -71,7 +71,9 @@
                 <input type="hidden" name="table" value="demand_managements">
             <table class="listTable">
                 <tr>
+                    <?php if($cate == 'demand_consult'): ?>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
+                    <?php endif; ?>
                     <th class="tableInfoDel">序列号</th>
                     <?php if($cate!='demand_consult'): ?>
                     <th class="">关联订单</th>
@@ -94,9 +96,11 @@
                 </tr>
                 <?php $__empty_1 = true; $__currentLoopData = $demand_managements; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $demand_management): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                     <tr>
+                        <?php if($cate == 'demand_consult'): ?>
                         <td class="tableInfoDel">
                             <input class="selectBox selectIds" type="checkbox" name="id[]" value="<?php echo e($demand_management->id); ?>">
                         </td>
+                        <?php endif; ?>
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="changeWeb"
                                                                                data_url="<?php echo e(route('admin.demand_managements.edit',$demand_management->id)); ?>">
                                 <?php if($demand_management->created_at == $demand_management->updated_at): ?>
@@ -109,7 +113,7 @@
                             </a>
                         </td>
                         <?php if($cate!='demand_consult'): ?>
-                        <td  class=""><?php echo $DemandManagementParamenter->orderList($demand_management); ?></td>
+                        <td  class="tablePhoneShow"><?php echo $DemandManagementParamenter->orderList($demand_management); ?></td>
                         <?php endif; ?>
                         <td  class=""><?php echo e($parameters['demand_status'][$demand_management->demand_status]); ?></td>
                         <td  class=""><?php echo e($demand_management->user->username ?? ''); ?> <?php echo e($demand_management->user->nickname ?? ''); ?></td>
@@ -127,7 +131,6 @@
                             <?php echo e($parameters['customer_status'][$demand_management->customer_status]); ?>
 
                         </td>
-
                         <td  class="tableMoreHide"><?php echo e($demand_management->the_next_step_program); ?></td>
                         <td  class=""><?php echo e($demand_management->created_at->format('Y-m-d')); ?></td>
                         <td class="tableMoreHide"><?php echo e($demand_management->updated_at); ?></td>

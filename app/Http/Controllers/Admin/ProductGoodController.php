@@ -111,7 +111,13 @@ class ProductGoodController extends Controller
     public function getseries(Request $request)
     {
         if($request->has('get_good')){
-            $product_series = ProductGood::whereProductId($request->get("parent_id"))->orderBy('name', 'asc')->get(['id', 'name']);
+            $product = ProductGood::with('inventory_management')->whereProductId($request->get("parent_id"))->orderBy('name', 'asc')->get(['id', 'name']);
+            $product_series=[];
+            foreach ($product as $key=>$item){
+                $product_series[$key]['id']=$item->id;
+                $product_series[$key]['name']=$item->name.',新品:'.$item->inventory_management->new.',良品:'.$item->inventory_management->good.',坏货:'.$item->inventory_management->bad;
+            }
+
         }elseif ($request->has('name')){
             $product_series = ProductGood::where('name','like',"%{$request->get("name")}%")->orderBy('name', 'asc')->get(['id', 'name']);
         }else{

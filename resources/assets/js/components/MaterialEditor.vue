@@ -68,7 +68,14 @@
                     </div>
                     <div class="A_detail ">{{ item.parameter }} </div>
                     <div class="clear"></div>
+                    <div class="A_num num" v-if="item.product_id=20 && item.power">
+                        <input  type="hidden" class="PJnum good_num OneNumber" :readonly="item.readonly" style="text-align: center;padding: 0"
+                                :product-name="item.power.title" :product-bianhao="item.power.bianhao" :good-id="item.power.id"
+                                :good-framework="item.power.framework"
+                                :good-jianma="item.power.jianma">
+                    </div>
                 </li>
+
                 <li v-if="goodList.length <= 0">
                     <div class="empty">没有产品</div>
                 </li>
@@ -222,7 +229,6 @@
                     .catch(function (err) {
                         Notice.error({
                             title: '网烁错误！'
-
                         });
                     });
             },
@@ -305,7 +311,7 @@
             this.getProduct();
             this.in_array();
             this.goodList=this.goodLists;
-
+            console.log(this.goodList);
         }
     }
 </script>

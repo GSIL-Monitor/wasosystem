@@ -23,6 +23,7 @@ class ProductParamenterPresenter
                     break;
                 case 'goods':
                     $Canshu = $ProductParamenter->goods()->orderBy('name', 'desc')->pluck('name', "id as id");
+
                     break;
                 case 'paramenters':
                  $Canshu = $ProductParamenter->paramenters()->orderBy('name', 'asc')->pluck('name', "name as id");
@@ -31,8 +32,6 @@ class ProductParamenterPresenter
         }else{
             $Canshu = $ProductParamenter->Childrens->sortBy('name')->pluck('name', "name");
         }
-
-
         return $Canshu;
     }
    //显示参数名

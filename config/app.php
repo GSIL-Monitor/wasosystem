@@ -153,6 +153,7 @@ return [
          */
         App\Providers\ViewComposerServiceProvider::class,
         App\Providers\ExcelExportServiceProvider::class,
+        App\Providers\HelpersServiceProvider::class,
         App\Providers\SiteComposerServiceProvider::class,
         /*
          * Application Service Providers...

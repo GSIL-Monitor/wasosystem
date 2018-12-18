@@ -1,4 +1,4 @@
-@inject('DivisionalManagementParamenter','App\Presenters\DivisionalManagementParamenter')
+@inject('Divisional1ManagementParamenter','App\Presenters\DivisionalManagementParamenter')
 {{--<div class="container">--}}
     {{--<canvas id="chart" width="550" height="500"></canvas>--}}
     {{--<div class="chartData">--}}

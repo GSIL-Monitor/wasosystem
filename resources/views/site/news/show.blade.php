@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="weixin">
-                            <img src="{{ asset('pic/weixin_hover.jpg') }}">
+                            <img src="{{ json_decode(getImages(setting('contact_wechat')),true)[0]['url'] }}">
                             <h5>扫一扫，关注网烁公众号！</h5>
                             <h5>微信搜索“<b>网烁</b>”或“<b>waso-vip</b>”</h5>
                             <div class="weiTeach"><img src="{{ asset('pic/news/weiTeach.jpg') }}"></div>

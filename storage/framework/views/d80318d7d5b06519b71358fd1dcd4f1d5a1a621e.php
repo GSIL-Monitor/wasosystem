@@ -1,5 +1,6 @@
 
 <?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(asset('admin/js/code.js')); ?>"></script>
     <script>
         var vm = new Vue({
             el: "#app",
@@ -96,9 +97,14 @@
                     <?php endif; ?>
                 <?php else: ?>
                     <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('edit put_in_storage_managements')): ?>
-                        <button type="submit" class="Btn common_add" form_id="put_in_storage_managements"
+                        <?php if($put_in_storage_management->procurement_status =='unfinished'): ?>
+                        <button type="submit" class="Btn procurement_plans_add blue" procurement_status="finish" form_id="put_in_storage_managements"
                                 location="top">保存
                         </button>
+                        <button type="submit" class="Btn procurement_plans_add blue" procurement_status="unfinished" form_id="put_in_storage_managements"
+                                location="top">临时保存
+                        </button>
+                        <?php endif; ?>
                     <?php endif; ?>
                 <?php endif; ?>
                 <button class="changeWebClose Btn">返回</button>

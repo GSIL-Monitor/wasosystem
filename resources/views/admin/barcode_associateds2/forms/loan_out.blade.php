@@ -83,7 +83,7 @@
                 $admin_id=$barcode_associated['admin']->pluck('name','id');
                 $order=$barcode_associated['warehouse_out_management']->order;
                 @endphp
-                {!!  Form::text(null,$order->markets->name  ?? $admin_id[$barcode_associated['warehouse_out_management']->user->administrator] ,['placeholder'=>'当前事件',"class"=>'checkNull','readonly']) !!}
+                {!!  Form::text(null,$order->markets->name ?? $admin_id[$barcode_associated['warehouse_out_management']->user->administrator] ,['placeholder'=>'当前事件',"class"=>'checkNull','readonly']) !!}
             </div>
             <div class="clear"></div>
         </li>

@@ -62,8 +62,11 @@ class ServiceController extends Controller
         $services=Service::where('service_event','<>','E')->whereYear('created_at',$year)->whereMonth('created_at',$mouth)->get(['door_and_service_staff']);
 
         $arr=[];
+
         $multiplied = $orders->map(function ($item, $key) use (&$arr) {
-            return array_merge($item->participation_admin,[$item->market]);
+
+            $participation_admin=$item->participation_admin ?? [];
+            return array_merge($participation_admin,[$item->market]);
         });
         $service_multiplied = $services->map(function ($item, $key) use (&$arr) {
             return $item->door_and_service_staff['door'] ?? [];
@@ -99,8 +102,9 @@ class ServiceController extends Controller
                 });
             })->first();
         }
+        $service=[];
         $admins=Admin::oldest('account')->pluck('name','account');
-        return view('admin.services.create_and_edit', compact('order','admins'));
+        return view('admin.services.create_and_edit', compact('order','admins','service'));
     }
 
     //服务管理修改页面

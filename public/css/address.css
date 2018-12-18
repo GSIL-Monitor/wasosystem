@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+.bigTit span{font-size:14px; color:#999;}
+.btns button{padding:0 40px; line-height:40px; color:#fff; background: #176b86; border:none;}
+.btns button:hover{background: #197594; cursor: pointer;}
+.addreses{ background:#fff; padding-bottom:50px;}
+.addreses .zhiTel{color:#666;margin:10px 0 30px;}
+.addreses .zhiTel i{display: inline-block; width:30px; height:30px; margin-right:10px; vertical-align: middle; background-position: center center; background-size: contain; background-repeat: no-repeat; background-image:url('../Pic/tel.png');;}
+.addreses ul{border-top:none; border-left:1px solid #dedede; border-right:1px solid #dedede;}
+.addreses ul li{list-style:none; border-bottom:1px solid #dedede; padding:10px;}
+.addreses ul li em{font-style: normal; display:block;}
+.addreses ul .th{border:1px solid #dedede; background: #f5f5f5; border-left:none; border-right:none;}
+.addreses ul .th span{color:#444; text-decoration:none; cursor:default; font-weight:400;}
+.addreses ul .tr{position:relative;}
+.addreses ul span{display:block; color:#777; float:left; text-overflow:ellipsis; white-space: nowrap; min-height:1px;}
+.addreses ul .tr span a{font-size: 12px; color:#666; margin:0 2px;}
+.addreses ul .tr span b{font-size: 12px; color:#444;}
+.addreses ul .num{width:5%;}
+.addreses ul .name{width:35%; cursor:pointer; color:#2196f3; font-weight:bold;  text-decoration: underline;}
+.addreses ul .person_addr{width:50%; cursor:pointer; color:#2196f3; font-weight:bold;  text-decoration: underline;}
+.addreses ul .type{width:15%;}
+.addreses ul .peo{width:15%;}
+.addreses ul .pho{width:15%;}
+.addreses ul .oth{width:15%;}
+.addreses ul .oth .noteIco{position: absolute; right:10px; top:11px; color:#999; border:none; margin:0; padding:0;}
+.addreses ul .oth .note{color:#007fff;}
+.addreses .empty{background: #fff; padding:100px 0;}
+
+/*  质保公用  */
+.addreses ul .Zorder{width:20%;}
+.addreses ul .Zpro{width:50%;}
+.addreses ul .Znum{width:10%; text-align: center;}
+.addreses ul .Zsitu{width:10%;}
+.addreses ul .Ztime{width:10%; text-align: right;}
+/*  质保公用  */
+
+.addreses ul .LikeBtn{cursor:pointer;}
+.addreses ul dl{display:none; border-collapse:collapse; text-align:center; margin:10px auto 20px;background: #f5f5f5; padding:20px;}
+.addreses ul dl dd{line-height:40px; text-align:left; float:left; color:#666; width:50%; padding-right:20px; box-sizing: border-box;}
+.addreses ul dl dd div{font-size: 12px;}
+.addreses ul dl dd div a{color:#176b86; font-size: 12px;}
+.addreses ul dl dd .taTit{margin-right:20px; float:left; line-height:30px; font-weight:400; color:#444;}
+.addreses ul dl dd .taCon{float:left; min-height:1px; line-height:30px; color:#777;}
+.addreses button{margin-top:20px;}
+
+.edit{background:#fff; padding:20px 40px; margin-left:20px;}
+.edit .title{padding:0 0 20px; font-size:30px; color:#666;}
+.edit ul{width:100%;}
+.edit ul li{margin-bottom:25px;}
+.edit ul li span{line-height:30px; color:#666; display:block; width:15%; margin-right:1%; vertical-align:middle; float:left;}
+.edit ul li span i{color:red; margin-right:5px;}
+.edit ul li .info_in{width:60%; float:left; position:relative; min-height:30px; }
+.edit ul li .error{font-size:12px; color:red; display: none;}
+.edit ul li .info_in dl{display:inline-block; width:80%;}
+.edit ul li .info_in dl{display:inline-block;}
+.edit ul li .info_in dl input{width:100%;}
+.edit ul li .info_in dl b{left:0; width: 100%;}
+.edit ul li .info_in b{position: absolute; left:0; bottom:0; z-index:55; width: 100%; line-height: 30px; color:#999; text-indent: 10px; font-size: 12px; font-weight: 100;}
+.edit ul li .info_in select{height:30px; line-height: 30px; margin-right:15px;}
+.edit ul li .info_in input{position:absolute; background:none; left:0; top:0; z-index:66; border:1px solid #dedede; line-height:20px; padding:5px 0; display:inline-block; width:98%;  text-indent: 10px; border-radius:3px; -moz-border-radius:3px; /* 老的 Firefox */ vertical-align: middle;}
+.edit .btns{border-top:1px solid #dedede; margin:20px 0 0 16%; padding-top:20px;}
+.edit .button{display: inline-block; margin-right:10px;}
+.edit .button a{background:#176b86; color:#fff; display: block; text-align: center; padding:0 40px; line-height:40px;}
+.edit .button a:hover{background:#197594;}
+.edit .close a{background:#f5f5f5; color:#777;}
+.edit .close:hover a{color:#444; background:#f1f1f1;}
+
+
+@media only screen and (max-width: 900px){
+    .addreses .zhiTel{padding:10px 20px; border-top:1px solid #dedede; text-align: center;}
+    .addreses ul{width:auto; padding:0 10px;}
+    .addreses ul .th{display: none; }
+    .addreses ul .tr span a{padding:2px 10px; border:1px solid #dedede; margin:0 0 0 5px;}
+    .addreses ul span{text-align: left; line-height:normal;}
+    .addreses ul li{padding:10px 0;}
+    .addreses ul li em{vertical-align: middle; height: auto; line-height:normal; display:block;}
+    .addreses ul .person_addr{width: 70%}
+    .addreses ul span{float:left; width:50%;}
+
+    .addreses ul .pho{width:100%; font-size:14px; padding-top:5px;}
+    .addreses ul .num{display: none;}
+    .addreses ul .type{display: none;}
+    .addreses ul .peo{display: none;}
+    .addreses ul .name{width:70%; overflow:hidden; padding:0; font-size:14px;}
+    .addreses ul .person_addr{width:100%; overflow:hidden; padding:0; font-size:14px; font-weight: 600;}
+    .addreses ul .oth{width:100%; margin-top:10px; text-align:right; position:relative;}
+    .addreses ul .oth .noteIco{left:0; bottom:0; right:auto; top:auto;}
+    .addreses ul dl{margin:10px auto 0;}
+    .addreses ul dl dd{width:100%; margin-bottom:10px;}
+    .addreses ul dl dd div{float:left;}
+    .addreses ul dl dd .taTit{width:25%; line-height: normal; margin:0;}
+    .addreses ul dl dd .taCon{width:75%; line-height: normal;}
+
+
+    .edit{padding:10px; margin:0 0 100px 0;}
+    .edit .title{display:none;}
+    .edit ul li{margin-bottom:10px;}
+    .edit ul li span{display: block; width: 100%; margin:0; text-align: left; float: none;}
+    .edit ul li .info_in{float:none; width: 100%;}
+    .edit ul li .info_in input{width: 100%; background:#fff; -webkit-appearance: none; border-radius: 0;}
+    .edit ul li .info_in b{width:100%;}
+    .edit ul li .info_in select{border:1px solid #dedede; box-sizing: border-box; width: 100%; margin:0;}
+    .edit .btns{padding:0; margin:0;}
+    .edit .btns .button{float:left; border:none;}
+    .btns{position:fixed; bottom:0px;  background:#fff; height:49px; left:0; width:100%; padding:0; margin:0; z-index:1111; border-top:1px solid #ededed;}
+    .btns .HalfBtn{width:50%; padding:0; height:50px; line-height:50px; margin:0;}
+    .btns .AllBtn{width:100%; padding:0; height:50px; line-height:50px; margin:0;}
+    .btns .button a{ padding:0; line-height:50px;}
+    .btns .close a{background: #fff;}
+    #foot{display:none;}
+
+
+}

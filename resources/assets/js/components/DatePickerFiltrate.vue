@@ -1,13 +1,14 @@
 <template>
         <div>
-        <DatePicker type="daterange" :options="options2"  :value="value2"  editable placement="bottom-end" name="select_date" placeholder="选择时间区间" style="width: 200px;display: inline-block"></DatePicker>
+        <DatePicker type="daterange" :options="options2"  :value="value2"  editable placement="bottom-end" name="select_date" :placeholder="placehoder" style="width: 200px;display: inline-block"></DatePicker>
         </div>
 </template>
 <script>
     export default {
-        props: ['defaultDate'],
+        props: ['defaultDate','place'],
         data () {
             return {
+                placeholder:"选择时间区间",
                 value2: [new Date(), new Date()],
                 options2: {
                     shortcuts: [
@@ -80,6 +81,10 @@
         },mounted () {
           console.log("测试")
             this.value2=this.defaultDate;
+            if(this.place != '' || this.place !=undefined){
+                this.placeholder=this.place;
+            }
+
           console.log(this.value2);
         }
     }

@@ -1,6 +1,7 @@
 <div class="LeftLinks">
 
     <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check("website system")): ?>
+
         <?php $__currentLoopData = $nav['WebMenus']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $navs): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('show '.$navs['url'])): ?>
                 <dl sys="<?php echo e($navs->cats); ?>">

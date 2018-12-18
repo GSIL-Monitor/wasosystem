@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.content{background:#fff; padding-bottom:40px;}
+.content .down_choose{background:#fff; padding:40px;}
+.content .down_choose .big_words{text-align: center; margin:30px auto 60px;}
+.content .down_choose .big_words h5{font-size: 40px; font-weight: bold;}
+.content .down_choose .big_words p{color:#666;}
+.content .down_choose img{margin:0 auto; display: block;}
+.content .down_choose ul{width:100%; padding-top:100px;}
+.content .down_choose ul li{width:25%; text-align: center; float:left;}
+.content .down_choose ul li a{display: block;}
+.content .down_choose ul li img{margin-bottom:30px;}
+
+.body{background:#fff!important; padding-bottom:60px;}
+.body .info_box{padding:20px 0;}
+.body .info_box .down_list{padding-bottom:20px;}
+.body .info_box .down_list h2{padding-bottom:10px; font-size:18px; color:#176b86; border-bottom:1px solid #dedede; cursor: pointer;}
+.body .info_box .down_list h2 i{display: inline-block; margin-right:10px; width:20px; height:20px; background: url('../Pic/icons.png') no-repeat -90px -210px; vertical-align: middle;}
+.body .info_box .down_list ul li{width:20%; float:left; text-align: center; border-right:1px solid #dedede; border-bottom:1px solid #dedede; margin-left:-1px;}
+.body .info_box .down_list ul li a{display: block; width: 100%; padding:30px 0;}
+.body .info_box .down_list ul li a:hover h5{color:#176b86;}
+.body .info_box .down_list ul li img{width:30%; transition: all 0.3s 0s;}
+.body .info_box .down_list ul li a:hover img{transform:translate(0,-10px);  -webkit-transform:translate(0,-10px);  -moz-transform:translate(0,-10px);  -o-transform:translate(0,-10px);  -ms-transform:translate(0,-10px);}
+.body .info_box .down_list ul li h5{color:#999; font-weight:400;}
+
+.body .info_box .Dtop{border-bottom:1px dashed #ccc;}
+.body .info_box .Dtop dl{padding:0 0 20px;}
+.body .info_box .Dtop dl dd{width:10%;  float:left;}
+.body .info_box .Dtop dl dd a{font-size:18px; color:#333; padding:20px 0; display: block;}
+.body .info_box .Dtop dl dd:hover{color:#176b86; cursor:pointer;}
+.body .info_box .Dtop dl .dd2{color:#176b86; }
+
+.body .info_box .Ddown{background:#FFF;}
+.body .info_box .Ddown .info{padding:40px 20px;}
+.body .info_box .Ddown .info .condition_company{padding-bottom:40px;}
+.body .info_box .Ddown .info .condition_series{padding-bottom:40px;}
+.body .info_box .Ddown .info h6{padding-bottom:20px; font-size: 18px; color:#333;}
+.body .info_box .Ddown .info .borderUl li{float:left;  width:19.5%;  height:36px; margin:0 0.5% 10px 0;}
+.body .info_box .Ddown .info .borderUl li a{display: block; border:1px solid #dedede; padding:7px 0; font-size: 12px; color:#999; }
+.body .info_box .Ddown .info .borderUl li img{position:absolute; left:4px; bottom:0; height: 100%;}
+.body .info_box .Ddown .info .borderUl li:hover a{border-color:#176b86; color:#176b86;}
+.body .info_box .Ddown .info .borderUl .li2 a{border-color:#176b86; color:#176b86;}
+.body .info_box .Ddown .info .pro_choose{padding-bottom:40px;}
+.body .info_box .Ddown .info .pro_choose ul li{float:left; width:23%; margin:0 1% 20px;}
+.body .info_box .Ddown .info .pro_choose ul li img{width:100%; }
+.body .info_box .Ddown .info .pro_choose ul li:hover{cursor: pointer;}
+.body .info_box .Ddown .info .pro_choose ul li h5{text-align: center; line-height: 25px;}
+
+.body .info_box .downs{padding:20px 0;}
+.body .info_box .downs h5{ line-height: 40px; border-bottom:1px solid #f1f1f1; font-size: 16px;}
+.body .info_box .downs ul{padding:9px 20px; border:1px solid #eee;}
+.body .info_box .downs ul li{padding:10px 0; margin-bottom:10px; border-bottom:1px dashed #dedede;}
+.body .info_box .downs ul li p{display: block; width:70%; float:left; color:#666;}
+.body .info_box .downs ul li a{display:block; float:right; color:#fff; background: #176b86; padding:3px 15px;}
+
+
+@media screen and (max-width: 1000px) {
+    .wrap {width: 700px;}
+    #header .menu li a{font-size:12px;}
+}

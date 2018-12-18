@@ -14,7 +14,7 @@
                     <?php $admin_role=isset($admin)?$admin->roles:false; ?>
                     <?php $__currentLoopData = $roles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <label class="checkBoxLabel" for="<?php echo e($role->id); ?>">
-                        <?php echo e(Form::checkbox('roles[]',  $role->id,old('roles[]',$admin_role),['id'=> $role->id])); ?><?php echo e($role->title); ?>
+                        <?php echo e(Form::checkbox('roles[]',  $role->id,old('roles[]',$admin_role),['id'=> $role->id,'class'=>'checkNull'])); ?><?php echo e($role->title); ?>
 
                         </label>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

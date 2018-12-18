@@ -7,5 +7,6 @@
     var ue = UE.getEditor('container');
     ue.ready(function() {
         ue.execCommand('serverparam', '_token', '<?php echo e(csrf_token()); ?>'); // 设置 CSRF token.
+        ue.setHeight(350);//设置高度
     });
 </script>

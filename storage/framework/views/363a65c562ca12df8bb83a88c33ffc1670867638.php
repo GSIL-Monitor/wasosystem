@@ -1,5 +1,6 @@
 
 <?php $__env->startSection('js'); ?>
+    <?php echo $__env->make('vendor.ueditor.assets', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <script src="<?php echo e(asset('admin/js/create_order.js')); ?>"></script>
     <script>
         $(function () {
@@ -9,6 +10,29 @@
         });
 
     </script>
+
+        <script>
+            var vm = new Vue({
+                el:"#app",
+                <?php if(Route::is('admin.demand_managements.create')): ?>
+                data:{
+                    user_disabled:false,
+                    visitor_details_disabled:false,
+                    <?php if(isset($user)): ?>
+                    user_disabled:true,
+                    <?php if($user->visitor_details): ?>
+                    visitor_details_disabled:true,
+                    <?php endif; ?>
+
+                    <?php endif; ?>
+                },
+                methods: {
+
+                }
+                <?php endif; ?>
+            });
+        </script>
+
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="nowWebBox">
@@ -35,6 +59,9 @@
         </div>
         <div class="PageBox">
             <?php echo $__env->make('admin.demand_managements.form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        </div>
+
         </div>
     </div>
 

@@ -15,6 +15,7 @@
     @yield('css')
 </head>
 <body>
+<audio id="wavFileId" src="{{ asset('mp3/xiadan.wav') }}" style="display: none;" ></audio>
     {{-- 动态内容 --}}
     @yield('content')
     {{-- 专有js --}}
@@ -26,6 +27,9 @@
                 toastrMessage("{{ $msg }}","{{ session()->get($msg) }}");
             @endif
             @endforeach
+            if($('.new').length > 0){
+                $("#wavFileId").attr("autoplay","autoplay");
+            }
         });
         </script>
 </body>

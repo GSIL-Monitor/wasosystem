@@ -1,4 +1,4 @@
-<?php $DivisionalManagementParamenter = app('App\Presenters\DivisionalManagementParamenter'); ?>
+<?php $Divisional1ManagementParamenter = app('App\Presenters\DivisionalManagementParamenter'); ?>
 
     
     

@@ -109,17 +109,17 @@ class ServerController extends Controller
     {
 
         if (user()->favoriteCompleteMachines()->find($completeMachine->id)) {
+
             return [];
         }
         user()->favoriteCompleteMachines()->attach($completeMachine);
-
         return [];
     }
 
     public function collectRemove(CompleteMachine $completeMachine, Request $request)
     {
         user()->favoriteCompleteMachines()->detach($completeMachine);
-        return [];
+        return ;
     }
 
     public function comparisonShow(Request $request)

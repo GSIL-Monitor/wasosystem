@@ -9,7 +9,7 @@
                         <h5>SERVER</h5>
                         <h5>APPLICATION</h5>
                         <h5>CLASSIFICATION</h5>
-                        <h5>服务器应用分类1</h5>
+                        <h5>服务器应用分类</h5>
                     </div>
                 </div>
             </div>

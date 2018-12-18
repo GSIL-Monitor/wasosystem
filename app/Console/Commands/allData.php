@@ -84,30 +84,30 @@ class allData extends Command
     {
         set_time_limit(0);
         //手动复制的表 complete_machine_frameworks ,roles,role_has_permissions,model_has_roles,permissions,old_goods,old_orders,old_yingpans
-//        $this->admins();//管理员还原
-//        $this->menus();//菜单还原
-//        $this->roles();//角色权限还原
-//         $this->products();//配件还原
-//         $this->product_frameworks();//配件架构还原
-//         $this->product_paramenters();//配件专有项还原
-//         $this->product_goods();//配件产品还原
-//         $this->drives();//配件驱动
-//         $this->self_build_product_goods();//平台自建产品还原
-//        $this->complete_machines();//整机产品还原
-//         $this->complete_machine_goods();//整机产品物料还原
-//        $this->integrations();//软硬一体化还原
-//        $this->members();//会员，会员地址，会员公司还原
-//        $this->orders();//订单还原
-//        $this->marketing_center();//营销中心还原
-//        $this->funds();//资金还原
+        $this->admins();//管理员还原
+        $this->menus();//菜单还原
+        $this->roles();//角色权限还原
+         $this->products();//配件还原
+         $this->product_frameworks();//配件架构还原
+         $this->product_paramenters();//配件专有项还原
+         $this->product_goods();//配件产品还原
+         $this->drives();//配件驱动
+         $this->self_build_product_goods();//平台自建产品还原
+        $this->complete_machines();//整机产品还原
+         $this->complete_machine_goods();//整机产品物料还原
+        $this->integrations();//软硬一体化还原
+        $this->members();//会员，会员地址，会员公司还原
+        $this->orders();//订单还原
+       $this->marketing_center();//营销中心还原
+        $this->funds();//资金还原
         $this->businesses();//企业管理
-//        $this->informations();//资讯管理
-//        $this->suppliers();//供应商管理
-//        $this->purchasings();//采购管理
-//        $this->inventorys();//库存管理
-//        $this->warehouses();//出库管理
-//       $this->barcode_associateds();//条码关联管理
-//        $this->services();//服务管理
+        $this->informations();//资讯管理
+        $this->suppliers();//供应商管理
+        $this->purchasings();//采购管理
+        $this->inventorys();//库存管理
+        $this->warehouses();//出库管理
+          $this->barcode_associateds();//条码关联管理
+        $this->services();//服务管理
     }
 
     public function tables($table)
@@ -685,7 +685,7 @@ class allData extends Command
                     $model->register_ip = $item->regip;
                     $model->last_login_ip = $item->lastip;
                     $model->login_count = $item->loginnum;
-                    $model->last_login_time = date('Y-m-d H:i:s', $item->lastdate);
+                    $model->last_login_time = $item->lastdate ? date('Y-m-d H:i:s', $item->lastdate) : null;
                     $model->deal = $item->chengjiao == 1 ? 1 : 0;
                     $model->avatar = [];
                     $model->parameters = [];
@@ -1074,13 +1074,13 @@ class allData extends Command
                     $model->id = $item->id;
                     $model->name = $item->name;
                     $model->parent_id = $item->pid;
-                    if ($item->status == 1) {
+                    if (str_contains($item->name,['司'])) {
                         $model->identifying = 'company';
                     }
-                    if ($item->status == 2) {
+                    if (str_contains($item->name,['部'])) {
                         $model->identifying = 'department';
                     }
-                    if ($item->status == 3) {
+                    if (str_contains($item->name,['组'])) {
                         $model->identifying = 'group';
                     }
                     $model->save();
@@ -1153,33 +1153,34 @@ class allData extends Command
     {
         \DB::transaction(function () {
             //企业管理
-//            $this->tables('business')->oldest('id')->chunk(100, function ($item) {
-//                $item->each(function ($item, $key) {
-//                    $model = new BusinessManagement();
-//                    if ($item->pname == 'renzheng') {
-//                        $model->id = $item->id;
-//                        $model->type = 'honor';
-//                        $model->sort = $item->sort;
-//                        $model->top = $item->top == 1 ? false : true;
-//                        $model->field = [
-//                            'year' => $item->year,
-//                            'name' => $item->name,
-//                        ];
-//                        if($item->pic){
-//                            $model->pic = [
-//                                'url'=>[$item->pic],
-//                                'name'=>[str_before(str_after($item->pic,'/'),'.')]
-//                            ];
-//                        }
-//                        $model->save();
-//                    }
-//
-//                });
-//            });
-//            $this->info('企业管理还原完成！');
+            $this->tables('business')->oldest('id')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new BusinessManagement();
+                    if ($item->pname == 'renzheng') {
+                        $model->id = $item->id;
+                        $model->type = 'honor';
+                        $model->sort = $item->sort;
+                        $model->top = $item->top == 1 ? false : true;
+                        $model->field = [
+                            'year' => $item->year,
+                            'name' => $item->name,
+                        ];
+                        if($item->pic){
+                            $model->pic = [
+                                'url'=>[$item->pic],
+                                'name'=>[str_before(str_after($item->pic,'/'),'.')]
+                            ];
+                        }
+                        $model->save();
+                    }
+
+                });
+            });
+            $this->info('企业管理还原完成！');
             $this->tables('service')->oldest('id')->chunk(100, function ($item) {
                 $item->each(function ($item, $key) {
                     $model = new BusinessManagement();
+                    if(array_has(config('status.business_management_category'),$item->pid)){
                         $model->id = $item->id;
                         $model->type = 'service_directory';
                         $model->top = 1;
@@ -1189,9 +1190,35 @@ class allData extends Command
                             'content'=> $item->content,
                         ];
                         $model->save();
+                    }
                 });
             });
             $this->info('服务帮助还原完成！');
+            $this->tables('banner')->oldest('id')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new BusinessManagement();
+                    $model->type = 'banner';
+                    $model->top = 1;
+                    $model->sort = $item->sort;
+                    if($item->pcpic){
+                            $model->pic = [
+                                'url'=>['files_images/'.$item->pcpic,'files_images/'.$item->mbpic],
+                                'name'=>[str_before($item->pcpic,'.'),str_before($item->mbpic,'.')]
+                            ];
+                       }
+                    $model->field=[
+                        'color'=>$item->pcbackground,
+                        'url'=>$item->url,
+                        'max_font'=>$item->maxfont,
+                        'min_font'=>$item->minfont,
+                        'font_float'=>$item->float,
+                        'font_color'=>$item->mbbackground,
+                        'more'=>$item->is_show,
+                        ];
+                    $model->save();
+                });
+            });
+            $this->info('焦点图还原完成！');
         });
     }
 
@@ -1331,7 +1358,7 @@ class allData extends Command
                         $model->logistics_number = $item->wldh;
                         $model->code = explode(',', $item->tiaoma);
                         $model->two_code = explode(',', $item->ejtm);
-                        $model->created_at = date('Y-m-d H:i:s', $item->addtime);
+                        $model->created_at = $item->addtime == '' ? date('Y-m-d H:i:s', $item->edittime) : date('Y-m-d H:i:s',$item->addtime);
                         $model->updated_at = date('Y-m-d H:i:s', $item->edittime);
                         $model->save();
                     }
@@ -1440,8 +1467,8 @@ class allData extends Command
                     $admin = Admin::whereAccount($item->czry)->first();
                     if($good) {
                         $ProcurementPlan=ProcurementPlan::where(function ($query) use ($item) {
-                            $query->orWhere('code', 'like', '%' .$item->tiaoma . '%')
-                                ->orWhere('two_code', 'like', '%' . $item->gltm . '%');
+                            $query->where('code', 'like', '%' .$item->tiaoma . '%');
+//                                ->orWhere('two_code', 'like', '%' . $item->gltm . '%');
                         })->first();
                   $WarehouseOutManagement=WarehouseOutManagement::whereHas('codes',function ($query) use ($item){
                         $query->where(function ($query) use ($item) {
@@ -1452,44 +1479,72 @@ class allData extends Command
                             $query->orWhere('code', $item->gltm )
                               ->orWhere('two_code',$item->tiaoma);
                         })->first();
-                        $model->supplier_managements_id=$ProcurementPlan->supplier_managements_id ?? $default_supplier_managements->supplier_managements_id ?? 0;
+                        $model->supplier_managements_id=$ProcurementPlan->supplier_managements_id  ?? $default_supplier_managements->supplier_managements ?? 0;
                         $model->procurement_plans_id=$ProcurementPlan->id ?? $default_supplier_managements->procurement_plans_id ?? 0;
                         $model->warehouse_out_management_id=$WarehouseOutManagement->id ?? $default_supplier_managements->warehouse_out_management_id ?? 0;
                         $model->order_id=$WarehouseOutManagement->order->id ?? $default_supplier_managements->order_id ?? 0;
-                        $model->user_id=$WarehouseOutManagement->user->id ?? $default_supplier_managements->user_id ?? 0;
+                        $model->user_id=$WarehouseOutManagement->user->id ?? 0;
                         $model->product_good_id=$good->id ?? 0;
                         $model->current_state=config('status.barcode_associatedss')[$item->dangqianshijian];
                         $model->code=$item->tiaoma;
+                        if(!empty($item->gltm)){
+                            if(in_array($item->dangqianshijian,[15,24]) && $item->true == 0){
+                                $model->description="换出 有新条码!";
+                            }
+                            if(in_array($item->dangqianshijian,[15,24]) && $item->true == 1){
+                                $model->description="换进 有新条码!";
+                            }
+                            if(in_array($item->dangqianshijian,[11,13]) && $item->xszt ==9){
+                                $model->description="换出!";
+                            }
+                            if(in_array($item->dangqianshijian,[11,13]) && $item->xszt ==10){
+                                $model->description="换进!";
+                            }
 
-
-
-                        if(!empty($item->gltm) && ($item->dangqianshijian ==15 || $item->dangqianshijian ==24)){
-                            $model->description="有新条码!";
                         }
-                        if(!empty($item->gltm) && $item->xszt ==9 && ($item->dangqianshijian ==11 || $item->dangqianshijian ==13)){
-                            $model->description="换出!";
-                        }
-                        if(!empty($item->gltm) && $item->xszt ==5 && $item->true == 1 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian ==16)){
-                            $model->description="换进!";
-                        }
-                        if(!empty($item->gltm)  && $item->true ==0 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian ==15)){
-                            $model->description="换出!";
-                        }
-//                        if(!empty($item->gltm)  && $item->true == 1 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian == 15)){
-//                            $model->description="换进!";
-//                        }
                         if( $item->userid ==0 && $item->ghdw ==0){
                             $model->location="库存";
+                            if($item->dangqianshijian ==26){
+                                $model->description=$good->product->title.'=>'.$good->name;
+                            }
                         }elseif(isset($item->userid) && !empty($item->userid) &&  $item->dangqianshijian== 12 || $item->dangqianshijian == 24 && $item->ghdw == 0){
                             $model->location="代管";
                         }elseif(isset($item->userid) && !empty($item->userid) && $item->dangqianshijian == 16 || $item->dangqianshijian == 24 && $item->ghdw != 0){
                             $model->location="供货商";
-                        }elseif(isset($item->userid) and !empty($item->userid)){
+                        }elseif(isset($item->userid) && !empty($item->userid)){
                             $model->location="客户";
                         }else{
                             $model->location="供货商";
                         }
-                        $model->associated_disposal=$item->xszt > 1 ? true : false;
+
+
+
+
+
+
+
+
+//                        if(!empty($item->gltm) && ($item->dangqianshijian ==15 || $item->dangqianshijian ==24)){
+//                            $model->description="有新条码!";
+//                        }
+//                        if(!empty($item->gltm) && $item->xszt ==9 && ($item->dangqianshijian ==11 || $item->dangqianshijian ==13)){
+//                            $model->description="换出!";
+//                        }
+//                        if(!empty($item->gltm) && $item->xszt ==5 && $item->true == 1 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian ==16)){
+//                            $model->description="换进!";
+//                        }
+//                        if(!empty($item->gltm)  && $item->true ==0 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian ==15)){
+//                            $model->description="换出!";
+//                        }
+//                        if(!empty($item->gltm)  && $item->true == 1 && ( $item->dangqianshijian ==24 ||  $item->dangqianshijian == 15)){
+//                            $model->description="换进!";
+//                        }
+                        if(in_array($item->xszt,[5,2,4,3])){
+                            $model->associated_disposal= true;
+                        }else{
+                            $model->associated_disposal=false;
+                        }
+
                         $model->two_code=$item->gltm;
                         $model->product_colour=config('status.barcode_associatedss')[$item->cpcs] ?? 'new';
                         $model->postscript=$item->bzxx;

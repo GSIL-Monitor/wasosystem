@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+#black{display:none; width:100%; height:100%; background:#000; opacity: 0.4; filter:alpha(opacity=40); position: fixed; left:0; top:0; z-index:999990;}
+.body .info_box .right .info .safe dl{width:80%;}
+.body .info_box .right .info .safe dl dd{margin-bottom:50px;}
+.body .info_box .right .info .safe dl dd span{display: inline-block; vertical-align: top; height:40px; color:#666;}
+.body .info_box .right .info .safe dl dd span h5{color:#333; font-weight:400;}
+.body .info_box .right .info .safe dl dd .control{text-align:right;}
+.body .info_box .right .info .safe dl dd .tit{width:16%;}
+.body .info_box .right .info .safe dl dd .name{width:55%;}
+.body .info_box .right .info .safe dl dd .control{width:20%;}
+.body .info_box .right .info .safe dl dd .control a{color:#176b86;}
+/*  列表 */
+
+.boxTit{font-size: 16px; color:#999; padding:10px 0;}
+.editBox{width:50%; margin-bottom:40px;}
+.editBox .button{cursor:pointer; width:48%; float:left; text-align:center; background: #176b86; color:#fff; line-height: 50px; font-size: 16px;}
+.editBox .button:hover{background: #197594;}
+.editBox .cancel{float:right; background: #f5f5f5; color:#666;}
+.editBox .cancel:hover{background:#ededed; color:#444;}
+.safeUl{position: relative;}
+.safeUl li{border:1px solid #dedede; margin:10px 0 30px 0; position:relative; height:48px;}
+.safeUl li label{line-height: 50px; width:25%; display: inline-block; text-indent: 20px; color:#666;}
+.safeUl li b{position: absolute; left:-20px; top:50%; color:red; margin-top:-8px;}
+.safeUl li span{color:#ccc; position: absolute; left:120px;  top:50%; margin-top:-10px; z-index: 10;}
+.safeUl li input{height:46px; background:none!important; display:block; position: absolute; left:25%; border:none; top:1px; z-index: 16; width:75%; padding:0;}
+.safeUl li .dis{color:#999;}
+.safeUl .repSend{position:absolute; right:20px; bottom:0; color:#999; font-size: 12px; border-left:1px solid #f1f1f1; line-height: 50px; padding-left:20px; z-index: 99;}
+
+.checkUser{display:none; width:320px; position: fixed; left:50%; margin-left:-200px; top:35%; background: #fff; padding:29px 39px 0; border:1px solid #f0f0f0; z-index: 999992;}
+.checkUser .editBox{width:100%;}
+
+
+@media only screen and (max-width: 900px){
+    .body .info_box .right .info{background:#fff;}
+    .body .info_box .right .info .safe dl{width:auto; margin:0; background:#fff; padding:10px;}
+    .body .info_box .right .info .safe dl dd{margin:0; padding:10px 0;}
+    .body .info_box .right .info .safe dl dd span{height:30px;}
+    .checkUser{top:30%;}
+    .editBox{width:100%;}
+
+
+    #foot{display:none;}
+}

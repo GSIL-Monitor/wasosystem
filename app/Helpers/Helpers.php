@@ -7,19 +7,22 @@ if (!function_exists('getImages')) {
     function getImages($images)
     {
         $pics = [];
-        if (!empty($images)) {
-            $max_images = json_decode($images, true);
-
-            if (isset($max_images['url']) && is_array(array_filter($max_images['url']))) {
-                foreach ($max_images['url'] as $k => $v) {
-                    if (Storage::disk('public')->exists($v)) { //检查图片是否存在  不存在则不输出
-                        $pics[$k]['url'] = env('IMAGES_URL') . $v;
-                        $pics[$k]['url_name'] = $v;
-                        $pics[$k]['name'] = $max_images['name'][$k];
+        if (!str_contains(request()->url(),['/api/'])) {
+            if (!empty($images)) {
+                $max_images = json_decode($images, true);
+                if (isset($max_images['url']) && is_array(array_filter($max_images['url']))) {
+                    foreach ($max_images['url'] as $k => $v) {
+                        if (Storage::disk('public')->exists($v)) { //检查图片是否存在  不存在则不输出
+                            $pics[$k]['url'] = env('IMAGES_URL') . $v;
+                            $pics[$k]['url_name'] = $v;
+                            $pics[$k]['name'] = $max_images['name'][$k];
+                        }
                     }
+                    return json_encode($pics, true);
                 }
-                return json_encode($pics, true);
             }
+        } else {
+            return json_decode($images, true);
         }
         return json_encode($pics, true);
     }
@@ -81,7 +84,7 @@ if (!function_exists('json_filter')) {
     function json_filter($collect, $query, $operator, $condition)
     {
         return collect($collect->filter(function ($item, $key) use ($query, $operator, $condition) {
-            return assert($item->details[$query].$operator.$condition);
+            return assert($item->details[$query] . $operator . $condition);
         })->all());
     }
 }
@@ -305,32 +308,33 @@ if (!function_exists('randomColor')) {
     if (!function_exists('drive')) {
         function drive($product_goods)
         {
-            $arr=collect([]);
-            foreach ($product_goods as $product_good){
-                if($product_good->drive->isNotEmpty()){
-                    $arr=$arr->push($product_good->drive);
+            $arr = collect([]);
+            foreach ($product_goods as $product_good) {
+                if ($product_good->drive->isNotEmpty()) {
+                    $arr = $arr->push($product_good->drive);
                 }
-                if($product_good->series->drive->isNotEmpty()){
-                    $arr=$arr->push($product_good->series->drive);
+                if ($product_good->series->drive->isNotEmpty()) {
+                    $arr = $arr->push($product_good->series->drive);
                 }
             }
 
-           // $filtered=[];
+            // $filtered=[];
 //            foreach ($arr->collapse() as $product_good){
 //                $filtered[$product_good->file['url']]=$product_good->file['name'];
 //            }
 //            dd($filtered);dsad
-        return $arr->collapse();
+            return $arr->collapse();
         }
     }
     //生成随机用户名
     if (!function_exists('send_baidu_url')) {
-        function send_baidu_url($url){
-            if($url){
-                $urls =$url;
+        function send_baidu_url($url)
+        {
+            if ($url) {
+                $urls = $url;
                 $api = 'http://data.zz.baidu.com/urls?site=https://www.waso.com.cn&token=FmbEWJq9CfnlbgUs';
                 $ch = curl_init();
-                $options =  array(
+                $options = array(
                     CURLOPT_URL => $api,
                     CURLOPT_POST => true,
                     CURLOPT_RETURNTRANSFER => true,
@@ -339,11 +343,40 @@ if (!function_exists('randomColor')) {
                 );
                 curl_setopt_array($ch, $options);
                 $result = curl_exec($ch);
-                return json_decode($result,true);
-            }else{
+                return json_decode($result, true);
+            } else {
                 return false;
             }
         }
     }
 
+}
+if(!function_exists('is_mobile')){
+    /**
+     * 检测是否是手机访问
+     */
+    function is_mobile()
+    {
+        $useragent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
+        $useragent_commentsblock = preg_match('|\(.*?\)|', $useragent, $matches) > 0 ? $matches[0] : '';
+        function _is_mobile($substrs, $text)
+        {
+            foreach ($substrs as $substr)
+                if (false !== strpos($text, $substr)) {
+                    return true;
+                }
+            return false;
+        }
+
+        $mobile_os_list = array('Google Wireless Transcoder', 'Windows CE', 'WindowsCE', 'Symbian', 'Android', 'armv6l', 'armv5', 'Mobile', 'CentOS', 'mowser', 'AvantGo', 'Opera Mobi', 'J2ME/MIDP', 'Smartphone', 'Go.Web', 'Palm', 'iPAQ');
+        $mobile_token_list = array('Profile/MIDP', 'Configuration/CLDC-', '160×160', '176×220', '240×240', '240×320', '320×240', 'UP.Browser', 'UP.Link', 'SymbianOS', 'PalmOS', 'PocketPC', 'SonyEricsson', 'Nokia', 'BlackBerry', 'Vodafone', 'BenQ', 'Novarra-Vision', 'Iris', 'NetFront', 'HTC_', 'Xda_', 'SAMSUNG-SGH', 'Wapaka', 'DoCoMo', 'iPhone', 'iPod');
+
+        $found_mobile = _is_mobile($mobile_os_list, $useragent_commentsblock) ||
+            _is_mobile($mobile_token_list, $useragent);
+        if ($found_mobile) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

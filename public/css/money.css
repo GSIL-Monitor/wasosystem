@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+.TotalPrice{padding:10px 20px; background: #f5f5f5; margin-bottom:20px; color:#444;}
+.TotalPrice .HaveDept{font-size:18px; font-weight:400; color:#f04042; line-height:40px;}
+.TotalPrice .HaveDept b{font-size:18px; font-weight:400; color:#f04042; line-height:40px;}
+.TotalPrice .NotDept{font-size:18px; font-weight:400; color:#88B14B; line-height:40px;}
+
+.moneyBox{position: relative; margin-top:80px;}
+.PageSelect{position: absolute; left:0; top:-41px; z-index:10; }
+.PageSelect li{float:left; border:1px solid #dedede; border-bottom:none; padding:0 20px; background: #f1f1f1; color:#777;}
+.PageSelect li span{display:block; color:#666; cursor:pointer; line-height:40px; }
+.PageSelect li span:hover{color:#176b86;}
+.PageSelect .last{border-left:none;}
+.PageSelect .active{background:#fff; color:#777; border-top:3px solid #176b86;}
+.PageSelect .active span{color:#176b86;}
+
+.MoneyBox{border:1px solid #dedede; padding:20px; box-sizing: border-box;}
+.MoneyBox .Table .Th{padding:5px; background: #f1f1f1; }
+.MoneyBox .Table .Th span{line-height:35px; font-weight: 100;}
+.MoneyBox .Table span{display:inline-block; vertical-align:middle; float:left; overflow:hidden; color:#777; padding:0 1%; word-wrap:break-word ;}
+.MoneyBox .Table span a{color:#007fff; text-decoration:underline;}
+.MoneyBox .Table .Th span{color:#444;}
+.MoneyBox .Table .Td{padding:10px 0; border-bottom:1px solid #dedede; position:relative;}
+.MoneyBox .JL .Table .MoneyNum{width:13%;}
+.MoneyBox .JL .Table .MoneyType{width:13%; color:#444; font-weight:400;}
+.MoneyBox .JL .Table .MoneyTime{width:18%;}
+.MoneyBox .JL .Table .MoneyInfo{width:48%;}
+.MoneyBox .JL .Table .Th .MoneyType{color:#666;}
+.MoneyBox .QK .Table .MoneyNum{width:23%;}
+.MoneyBox .QK .Table .MoneySitu{width:13%;}
+.MoneyBox .QK .Table .MoneyTotal{width:18%;}
+.MoneyBox .QK .Table .MoneyMSitu{width:18%;}
+.MoneyBox .QK .Table .MoneyTime{width:18%;}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .TotalPrice{padding:30px 0; display:table; width:100%; background:#66BC99; margin-bottom:10px; color:#fff; background-size:cover; background-repeat:no-repeat; background-position: left bottom; background-image: url(../Pic/money.png) }
+    .TotalPrice .PriceTable{width: 100%; display: table-cell; vertical-align: middle; padding-left:20px; font-size:16px;}
+    .TotalPrice i{display:none;}
+    .TotalPrice .HaveDept{display: block; font-weight:100; color:#fff; font-size:20px;}
+    .TotalPrice .HaveDept b{font-weight:100; color:#fff; font-size:20px;}
+    .TotalPrice .NotDept{display: block; font-weight:100; color:#fff; font-size:20px;}
+
+    .PageSelect{border-bottom:1px solid #dedede; background: #fff; margin:0; position: static;}
+    .PageSelect li{background:#fff; border:none; width:50%; margin:0; text-align: center; padding:0;}
+    .PageSelect li span{border:none; border-bottom:2px solid #fff; background:#fff; font-size:14px; font-weight:100; line-height: 40px;}
+    .PageSelect li span:hover{background:#fff; color:#176b86;}
+    .PageSelect .active{background:#fff; border-top:none;}
+    .PageSelect .active span{border-color:#176b86;}
+
+    .moneyBox{margin:0;}
+    .MoneyBox{padding:10px; margin-bottom:60px; background: #fff; border:none;}
+    .MoneyBox .Table .Th{display:none;}
+    .MoneyBox .Table{border:none;}
+    .MoneyBox .Table span a{font-size:14px; }
+    .MoneyBox .QK .Table .Td{min-height:40px; border-bottom:1px dashed #dedede; border-top:none;}
+    .MoneyBox .Table .Td{ border-bottom:1px dashed #dedede; border-top:none;}
+    .MoneyBox .QK .Table span{padding:0;}
+    .MoneyBox .QK .Table .MoneyNum{width:70%; line-height:20px; margin-right:30%;}
+    .MoneyBox .QK .Table .MoneyTotal{width:30%; height:30px; line-height:30px; margin-top:-15px; position:absolute; right:0; top:50%; font-size:16px; color:#444; text-align:right; font-weight:400;}
+    .MoneyBox .QK .Table .MoneyMSitu{display: none;}
+    .MoneyBox .QK .Table .MoneySitu{display: none;}
+    .MoneyBox .QK .Table .MoneyTime{width:70%; color:#999; line-height:20px; margin-right:30%;}
+    .MoneyBox .JL .Table .MoneyType{width:70%; font-size:14px;}
+    .MoneyBox .JL .Table .MoneyNum{width:30%; height:30px; line-height:30px; margin-top:-15px; position:absolute; right:0; top:50%; font-size:16px; color:#444; text-align:right; font-weight:400;}
+    .MoneyBox .JL .Table .MoneyTime{width:70%; color:#999;}
+    .MoneyBox .JL .Table .MoneyInfo{width:70%; color:#999; word-wrap:break-word; white-space:pre-wrap;  word-break:break-all;}
+    #foot{display:none;}
+
+
+}

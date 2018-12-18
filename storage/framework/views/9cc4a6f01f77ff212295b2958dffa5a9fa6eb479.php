@@ -12,7 +12,7 @@
     </tr>
     <?php $__empty_1 = true; $__currentLoopData = $productGoods; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $productGood): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
         <?php if($productGood->product->title == '机箱' && $productGood->details['kun_bang_dian_yuan']): ?>
-            <?php $power=$productGood->find($productGood->details['kun_bang_dian_yuan']);?>
+            <?php $power=$product_good->whereProductId(21)->where('oldid',$product_good->details['kun_bang_dian_yuan'])->first();?>
         <?php endif; ?>
         <tr>
             <td class="tableInfoDel"  <?php if($cate != 'parts' && $productGoods->isNotEmpty()): ?> hidden <?php endif; ?>>  <input class="selectBox selectIds" <?php if($cate != 'parts' && $productGoods->isNotEmpty()): ?> checked <?php endif; ?> type="checkbox" name="id[]" value="<?php echo e($productGood->id); ?>"></td>

@@ -9,6 +9,7 @@
     <title>@yield('title','账号审核中')-网烁信息科技有限公司</title>
     <meta name="keywords" content="@yield('keywords','keywords')"/>
     <meta name="description" content="@yield('description','description')"/>
+    <link rel="stylesheet" href="{{ asset('styles/iview.css') }}" type="text/css">
     <link href="{{ asset('css/public.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/register.css') }}" rel="stylesheet" type="text/css">
 </head>
@@ -32,7 +33,12 @@
 
 <div id="register_foot">
     <div class="wrap">
-        <h5>Copyright © <span class="year"></span> 成都网烁信息科技有限公司 版权所有<br> ICP备案编号：蜀 ICP(备)10025767号</h5>
+        <h5>
+            <a href="http://www.miitbeian.gov.cn">{{ setting('system_website_records') }}</a><br/>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001250" style="display:inline-block;text-decoration:none">
+                <img src="{{ asset('pic/beian.png') }}" style="margin-right:3px; vertical-align:middle;"/>{{ setting('system_ministry_public_security_records') }}</a><br>
+            Copyright © <span class="year">{{ today()->format('Y') }}</span> {{  setting('system_title') }} 版权所有
+        </h5>
     </div>
 </div>
 </body>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+/*.writeInput{outline: none; padding:0 25px 0 10px; line-height:26px; vertical-align: middle; border:1px solid #d6dee3;}*/
+/*.orderInfo ul{width: 100%;}*/
+/*.orderInfo ul li{margin-bottom:10px;}*/
+/*.orderInfo ul li span{width:120px; text-align: right; font-size:14px; display:block; color:#444; line-height:28px; float:left; font-weight: 600; margin-right:10px;}*/
+/*.orderInfo ul li .info span{width:auto; text-align: left; font-size:12px; display: inline; line-height: normal; float:none; font-weight:100; margin:0;}*/
+/*.orderInfo ul li .info{float:left;  line-height: 26px; color:#444; max-width:80%}*/
+/*.orderInfo ul li .info input[type="text"]{min-width:360px;}*/
+/*.orderInfo ul li .info input[name="zhibao"]{min-width: 50px; width: 50px;}*/
+/*.orderInfo ul li .info textarea{min-width:360px; min-height: 50px;}*/
+/*.orderInfo ul li .info .price{display: inline-block; float:left; line-height: 26px; color:#444; margin-right:40px;}*/
+/*.orderInfo ul li .info .price input{text-align: center; color:#D12E2E; font-weight: 600; width:100px; min-width: 60px; line-height:26px;}*/
+/*.orderInfo ul li .info b{font-weight: 100; color:#444; line-height: 26px;}*/
+/*.orderInfo ul li .info label{display: inline-block; margin-right:30px; line-height: 26px; color:#444;}*/
+/*.orderInfo ul li .info label input{margin-right:5px;}*/
+/*.orderInfo ul li .info a{color:#176b86; display: inline-block; margin-right:30px; line-height: 26px; font-weight:600;}*/
+/*.orderInfo ul li .info a:hover{text-decoration: underline;}*/
+/*.orderInfo ul li .info .orderTable{width:100%; min-width:900px;  max-width: 1000px;}*/
+/*.orderInfo ul li .info .orderTable .PJnum{min-width:45px;}*/
+/*.orderInfo ul li .info .orderTable .raid{width:45px; min-width:40px; margin:0 10px;}*/
+/*.orderInfo ul li .pics span{width: auto; text-align: center; float:none; line-height: 26px; color:#f00;}*/
+/*.orderInfo ul li .info table{width: 100%; min-width: 900px; max-width: 1000px;}*/
+/*.orderInfo ul li .textBox{float:left; max-width:80%;}*/
+/*.orderInfo ul li .textBox textarea{padding:10px; resize:vertical; max-width:800px; min-width:360px; }*/
+/*.orderInfo ul li .info select{width: auto; height:26px; border:1px solid #d6dee3; min-width:360px; }*/
+/*.orderInfo ul li .info table .num select{min-width:inherit; float:left; height:inherit;}*/
+/*.orderInfo ul li .orderHide{width: 90%; float:right; line-height: 26px; color:#444; display: none;}*/
+/*.orderTit input{color:#444;}*/
+/*.orderTit .orderNum{width:30%; float: left; line-height: 26px; color:#444;}*/
+/*.orderTit .orderDate{width:30%; float: right;  line-height: 26px; color:#444;}*/
+/*.orderTable{width:100%;}*/
+/*.orderTable table tr td .addPro{margin:10px 0;}*/
+/*.orderTable table tr td .addPro select{float:left; border:1px solid #d6dee3; height:26px; line-height: 26px; margin-right:5px;}*/
+/*.orderTable table tr td .addPro .addType{ min-width: inherit;}*/
+/*.orderTable table tr td .addPro .addName[type="text"]{width:auto; float:left; padding:0 4px; line-height: 24px; border:1px solid #d6dee3; margin:0 10px;}*/
+/*.orderTable table tr td .addPro .addNum{float:left; line-height:24px; margin-right:10px;}*/
+/*.orderTable table tr td .addPro .addNum input[type="text"]{border:1px solid #d6dee3; line-height: 26px; height: 24px; text-align: center; padding:0 10px; width:60px; min-width: 30px;}*/
+/*.orderTable table tr td .addPro .addPJBtn{float:left; padding:0 6px;  background: #176b86;  color:#fff; font-weight: 600; line-height:26px; vertical-align: middle; display: block; margin:0 5px 0 0;}*/
+/*.orderTable table tr td .addPro .addPJBtn:hover{cursor: pointer; background:#145D76;}*/
+/*.orderTable table tr td .addPro .AlertConfirm{height:26px; float: left; }*/
+
+
+
+@media only screen and (max-width: 900px) {
+    .writeInput{border:none;}
+    .orderInfo ul {  width: 100% !important; }
+    .orderInfo ul li span {  float: none!important;  margin: 0!important;  width: 100%!important;  line-height: 25px;  text-align: left;}
+    .orderInfo ul li .info {  float: none;  max-width: 100%!important;  width: 100%!important; min-width: 100%!important;  }
+    .orderInfo ul li .info .orderTable{min-width: 100%!important; max-width: 100%!important; overflow-x: scroll;}
+    .orderInfo ul li .info table{min-width: 100%; max-width: 100%; width: 1300px;}
+    .orderInfo ul li .info input[type="text"]{width:100%!important; max-width:100%!important; padding:0!important; text-indent: 5px;}
+    .orderInfo ul li .info select{width: 100%; max-width: 100%; border:none;}
+    .orderInfo ul li .info textarea{  max-width: 96%!important;  width:96%!important; padding:0 2%; min-width: 96%!important;  }
+
+    .orderInfo ul li .textBox{max-width: 100%; width: 100%;}
+    .orderInfo ul li .textBox textarea{width:96%; max-width:96%; padding:10px 2%; min-width:96%;}
+    .orderInfo ul li .textBox textarea:disabled{background: none; resize: none; min-height: inherit;}
+}
+
+
+
+
+
+

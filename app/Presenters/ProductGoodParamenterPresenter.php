@@ -87,6 +87,16 @@ class ProductGoodParamenterPresenter
                    $rong_liang= $product_good->details['rong_liang'];
                   $arr[$key]['parameter']="单条：" . $rong_liang . "G；总容量：" . ($rong_liang * $product_good->pivot->product_good_num) . "G";
                 }
+                if($product_good->product_id == 20){
+                   if($product_good->details['kun_bang_dian_yuan']){
+                       $power=$product_good->with('product')->whereProductId(21)->where('oldid',$product_good->details['kun_bang_dian_yuan'])->first() ?? [];
+                       if($power){
+                           $arr[$key]['power']=$power;
+                           $arr[$key]['power']['title']=$power->product->title;
+                           $arr[$key]['power']['bianhao']=$power->product->bianhao;
+                       }
+                   }
+                }
                 if($product_good->product_id == 15){
                     $arr[$key]=array_merge($arr[$key],$this->hard_disk($TerraceOrMainboard,$raid,$crate));//参数
                     $arr[$key]['parameter']=$this->hard_disk_parameter($product_good);

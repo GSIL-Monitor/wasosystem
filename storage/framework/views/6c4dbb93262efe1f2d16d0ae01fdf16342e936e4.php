@@ -735,7 +735,10 @@ mso-line-height-rule:exactly'><b><span style='font-size:15.0pt;font-family:
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'></td>
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'>
+                    <?php echo implode("\n",$order->warehouseOut->codes->pluck('code','id')->collapse()->toArray() ?? []); ?>
+
+                </td>
             </tr>
                 <?php else: ?>
                 <?php $product_goods=$order->order_product_goods()->oldest('product_number')->get();?>
@@ -771,13 +774,16 @@ mso-line-height-rule:exactly'><b><span style='font-size:15.0pt;font-family:
   padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'>
                             <p class=MsoNormal align=center style='text-align:center;mso-outline-level:
   1'><b style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:
-  9.5pt;font-family:"微软雅黑","sans-serif";mso-bidi-font-family:宋体;color:black'><?php echo e($item->pivot->product_good_num / $order->num); ?><o:p></o:p></span></b></p>
+  9.5pt;font-family:"微软雅黑","sans-serif";mso-bidi-font-family:宋体;color:black'><?php echo e($item->pivot->product_good_num); ?><o:p></o:p></span></b></p>
                         </td>
                         <td width=138 nowrap style='width:103.7pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'></td>
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'>
+                            <?php echo implode("\n",$order->warehouseOut->codes[$loop->index]->code ?? []); ?>
+
+                        </td>
                     </tr>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                     <?php endif; ?>

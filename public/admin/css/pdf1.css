@@ -1,0 +1,58 @@
+*{-webkit-text-size-adjust: none; color:#444; margin:0; padding:0;  font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; outline: none; transition: all 0.3s 0s; -moz-transition: all 0.3s 0s; -webkit-transition: all 0.3s 0s; -o-transition: all 0.3s 0s;;}
+h1,h2,h3,h4,h5,h6{font-weight: 100;}
+i{font-style: normal; display: inline-block; vertical-align: middle; background-repeat: no-repeat; background-size: cover; background-position: center center;}
+a{color:#40454a; text-decoration:none; cursor:pointer;}
+a:hover{cursor:pointer; color:#000; text-decoration:none;}
+li{list-style:none; *white-space: nowrap;}
+img{border:none; outline:none;}
+input{border:none; border:0; outline:none; vertical-align:middle; border-radius: 0;}
+select{border:none; border:0; outline:none; }
+textarea{border:none; border:0; outline:none; transition: none; resize: vertical;}
+button{outline:none; border:1px solid #dedede; cursor:pointer;}
+body{position: relative;background:#fff;}
+table{border-collapse: collapse;}
+table th{border-collapse: collapse;}
+table td{border-collapse: collapse;}
+.clear{clear:both; display:block;}
+.wrap{padding:0 20px;}
+.radius{-moz-border-radius:5px;  -webkit-border-radius:5px; border-radius:5px 5px 5px 5px;}
+.round{-moz-border-radius:50%;  -webkit-border-radius:50%; border-radius:50% 50% 50% 50%;}
+
+
+.bg{position:relative;margin:0 auto; width:1280px; height:1811px; background-size: contain; background-position: left top; background-repeat: no-repeat; background-image: url('../pic/bg.png');}
+.bg .tit{position:absolute; left:60px; top:60px; z-index: 10;}
+.bg .tit h5{color:#106381; font-weight: bold; font-size:40px; height:40px; line-height: 40px;}
+.bg .tit p{color:#666; font-weight: bold; font-size:30px;}
+.bg .ling{position: absolute; top:160px; left:60px; z-index: 10;}
+.bg .ling p{color:#444; font-size:20px; line-height:25px; height:25px;}
+.bg .ling p b{color:#106381; font-weight:bold; font-size:20px;}
+
+.bg .pics{text-align: right; width:1190px; overflow: hidden;}
+.bg .pics img{width:375px; margin-left:20px;}
+
+.bg .canshu{position:absolute; left:60px; top:695px; z-index: 10;}
+.bg .canshu ul{width:1190px;}
+.bg .canshu ul li{border-bottom:1px solid #777; display: table;}
+.bg .canshu ul li span{display: table-cell; vertical-align: middle; color:#333; padding:6px 0;}
+.bg .canshu ul li .liT{width:180px; text-align: center; font-size:18px;}
+.bg .canshu ul li .liC{width:920px; padding:10px 20px 10px 40px; font-size:18px;}
+
+
+
+.bg2{position:relative;margin:0 auto; width:1280px; height:1811px; background-size: contain; background-position: left top; background-repeat: no-repeat; background-image: url('../pic/bg2.png');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

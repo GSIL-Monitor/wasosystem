@@ -27,6 +27,7 @@
     </div>
 
     <div id="C_right">
+
         @include('admin.index.i_top')  {{-- 顶部Tab--}}
         @include('admin.index.i_body')  {{-- 内容--}}
         @include('admin.index.i_foot')  {{-- 底部统计信息--}}

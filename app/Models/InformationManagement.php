@@ -9,6 +9,7 @@ class InformationManagement extends Model
    protected $casts=['pic'=>'array','marketing'=>'array'];
    protected $fillable=['type','name','description','content','pic','marketing','read_count'];
 
+
     public function getSearchTypeAttribute()
     {
         return 'informationManagement';
@@ -29,6 +30,7 @@ class InformationManagement extends Model
     {
         return visits($this);
     }
+
     /*----------------绑定整机-------------------------*/
     public function information_management_complete_machines()
     {

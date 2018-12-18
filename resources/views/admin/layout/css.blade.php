@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="{{ asset('admin/css/select2.min.css') }}" type="text/css">
 {{--<link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">--}}
 {{--<link rel="stylesheet" href="{{ asset('admin/jquery-ui/jquery-ui.min.css') }}" type="text/css">--}}
+<link rel="stylesheet" href="{{ asset('admin/css/common.css') }}">

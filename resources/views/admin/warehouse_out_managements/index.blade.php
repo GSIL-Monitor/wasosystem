@@ -76,7 +76,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 @endforelse
             </table>
-            {!! $warehouse_out_managements->appends(Request::all())->render() !!}
+                {!! $warehouse_out_managements->appends(Request::except('page'))->render() !!}
             </form>
 
         </div>

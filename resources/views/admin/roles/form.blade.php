@@ -28,6 +28,17 @@
                         {{ Form::checkbox('permissions[]',$permission->id,$permiss,['id'=>$permission->id,'class'=>'checkBox']) }}{{ $permission->title }}
                         </label>
                     @endforeach
+                    {{--@foreach ($permissions  as $key=>$permission)--}}
+                        {{--<label class="checkBoxLabel">--}}
+                            {{--{{ $key }}--}}
+                        {{--</label>--}}
+                        {{--@foreach ($permission  as $item)--}}
+                        {{--<label class="checkBoxLabel" for="{{ $item->id }}">--}}
+                            {{--|--------{{ Form::checkbox('permissions[]',$item->id,$permiss,['id'=>$item->id,'class'=>'checkBox']) }}{{ $item->title }}--}}
+                        {{--</label>--}}
+                            {{--<br/>--}}
+                        {{--@endforeach--}}
+                    {{--@endforeach--}}
                 </div>
                 <div class="clear"></div>
             </li>

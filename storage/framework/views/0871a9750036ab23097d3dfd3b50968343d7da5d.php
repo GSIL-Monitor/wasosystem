@@ -4,8 +4,10 @@
     <?php $ZDCanShus=$ProductParamenterPresenter->showCanShu($childCanShu);
         $detailsPinYin=strtolower($pinyin->permalink($childCanShu->name,'_'));
     ?>
-    <li>
-        <div class="liLeft"><?php echo e($childCanShu->name); ?>：<?php echo e($loop->iteration); ?></div>
+    <li class=" <?php if($childCanShu->type === 'checkbox'): ?> allLi <?php endif; ?>">
+        
+        <div class="liLeft"><?php echo e($childCanShu->name); ?>：</div>
+
         <div class="liRight">
             <?php if($childCanShu->type === 'input'): ?>
                 <?php echo e(Form::text('details['.$detailsPinYin.']',old('details['.$detailsPinYin.']'),['placeholder'=>'请输入'.$childCanShu->name])); ?>

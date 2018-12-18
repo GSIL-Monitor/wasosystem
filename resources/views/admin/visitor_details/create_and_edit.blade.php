@@ -1,5 +1,13 @@
 @extends('admin.layout.default')
 @php $grade=$visitor_detail->user->grade ?? '';@endphp
+@section('js')
+    @include('vendor.ueditor.assets')
+    <script>
+        var vm=new Vue({
+            el:'#app'
+        });
+    </script>
+@endsection
 @section('content')
     <div class="nowWebBox">
         <div class="PageBtn">

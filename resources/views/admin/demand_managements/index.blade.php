@@ -15,6 +15,7 @@
         }
         $(function () {
             sum_prices();
+
         });
         var vm=new Vue({
             el: "#app",
@@ -29,20 +30,19 @@
         <div class="PageBtn">
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
+
                 @can('create demand_managements')
                     <button class="changeWeb Btn" data_url="{{ route('admin.demand_managements.create') }}">添加</button>
                 @endcan
                 @can('show demand_filtrates_users')
                     <button class="changeWeb Btn" data_url="{{ route('admin.users.index') }}?source=demand_managements">会员管理</button>
                 @endcan
-
                 @can('delete demand_managements')
                     <button type="submit" class="red Btn AllDel" form="AllDel"
                             data_url="{{ url('/waso/demand_managements/destory') }}">删除
                     </button>
                 @endcan
             </div>
-
             @include('admin.common._search',[
            'url'=>route('admin.demand_managements.index'),
            'status'=>array_except(Request::all(),['type','keyword','_token']),
@@ -61,8 +61,8 @@
             'url'=>route('admin.demand_managements.index'),
             'canshu'=>'cate',
             'add'=>[
-            'order_history'=>['url'=>route('admin.orders.index').'?status=arrival_of_goods&source','name'=>'历史订单'],
-             'old_orders'=>['url'=>route('admin.old_orders.index').'?source','name'=>'老订单']
+            'order_history'=>['url'=>route('admin.orders.index').'?status=arrival_of_goods&source=arrival_of_goods','name'=>'历史订单'],
+             'old_orders'=>['url'=>route('admin.old_orders.index').'?source=old_order','name'=>'老订单']
             ]
             ])
             <form action="{{ route('admin.allupdate') }}" method="post" id="AllEdit" onsubmit="return false">
@@ -70,7 +70,9 @@
                 <input type="hidden" name="table" value="demand_managements">
             <table class="listTable">
                 <tr>
+                    @if($cate == 'demand_consult')
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
+                    @endif
                     <th class="tableInfoDel">序列号</th>
                     @if($cate!='demand_consult')
                     <th class="">关联订单</th>
@@ -93,9 +95,11 @@
                 </tr>
                 @forelse($demand_managements as $demand_management)
                     <tr>
+                        @if($cate == 'demand_consult')
                         <td class="tableInfoDel">
                             <input class="selectBox selectIds" type="checkbox" name="id[]" value="{{ $demand_management->id }}">
                         </td>
+                        @endif
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="changeWeb"
                                                                                data_url="{{ route('admin.demand_managements.edit',$demand_management->id) }}">
                                 @if($demand_management->created_at == $demand_management->updated_at)
@@ -107,7 +111,7 @@
                             </a>
                         </td>
                         @if($cate!='demand_consult')
-                        <td  class="">{!!   $DemandManagementParamenter->orderList($demand_management) !!}</td>
+                        <td  class="tablePhoneShow">{!!   $DemandManagementParamenter->orderList($demand_management) !!}</td>
                         @endif
                         <td  class="">{{ $parameters['demand_status'][$demand_management->demand_status] }}</td>
                         <td  class="">{{ $demand_management->user->username ?? ''}} {{ $demand_management->user->nickname ?? ''}}</td>
@@ -123,7 +127,6 @@
                         <td  class="">
                             {{ $parameters['customer_status'][$demand_management->customer_status] }}
                         </td>
-
                         <td  class="tableMoreHide">{{ $demand_management->the_next_step_program }}</td>
                         <td  class="">{{ $demand_management->created_at->format('Y-m-d') }}</td>
                         <td class="tableMoreHide">{{ $demand_management->updated_at }}</td>

@@ -12,12 +12,6 @@ npm-debug.log
 yarn-error.log
 _ide_helper.php
 .env
-/public/admin
-/public/css
-/public/js
-/public/jquery-ui
-/public/hangyeSelect
-/public/areaSelect
-/public/video
+
 
 

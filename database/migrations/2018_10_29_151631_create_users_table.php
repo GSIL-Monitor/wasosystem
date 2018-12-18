@@ -31,9 +31,9 @@ class CreateUsersTable extends Migration {
 			$table->string('industry')->nullable()->comment('行业');
 			$table->string('address')->nullable()->comment('地址');
 			$table->string('grade', 30)->default('unverified')->index()->comment('级别');
-			$table->integer('administrator')->comment('管理员');
+			$table->integer('administrator')->index()->comment('管理员');
 			$table->integer('payment_days')->unsigned()->default(0)->comment('账期');
-			$table->integer('tax_rate')->default(1)->comment('税率');
+			$table->integer('tax_rate')->default(1)->index()->comment('税率');
 			$table->enum('message_type', array('all_receiving','no_receiving','email_receiving','phone_receiving'))->default('all_receiving')->comment('信息接收方式');
 			$table->boolean('parts_buy')->default(0)->comment('是否开启配件选购');
 			$table->string('register_ip', 45)->nullable()->comment('注册IP');

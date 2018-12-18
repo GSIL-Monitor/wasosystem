@@ -49,7 +49,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 @endforelse
             </table>
-             {{ $inventory_managements->links() }}
+             {{ $inventory_managements->appends(Request::except('page'))->links() }}
             </form>
 
         </div>

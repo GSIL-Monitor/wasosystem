@@ -17,7 +17,7 @@ return [
     'back_office' => [
         'enabled' => env('OTHER_DING_ENABLED',true),
 
-        'token' => env('OTHER_DING_TOKEN','af15e7555affe27138d2b11661dc0ca5f7804e0f7babf9a9f6b59da64da68c3c'),
+        'token' => env('OTHER_DING_TOKEN','a3e4795b8b254b13a782435b85d210333b8266b432754d8d598b87eab556fd20'),
 
         'timeout' => env('OTHER_DING_TIME_OUT',2.0)
     ],
@@ -25,7 +25,7 @@ return [
     'service_section' => [
         'enabled' => env('OTHER_DING_ENABLED',true),
 
-        'token' => env('OTHER_DING_TOKEN','17ed6a032f0bfb8631bd1f513d950ec41b8326cb8d092185da7afbd08aebaae7'),
+        'token' => env('OTHER_DING_TOKEN','a3e4795b8b254b13a782435b85d210333b8266b432754d8d598b87eab556fd20'),
 
         'timeout' => env('OTHER_DING_TIME_OUT',2.0)
     ],
@@ -33,7 +33,7 @@ return [
     'registered_customer' => [
         'enabled' => env('OTHER_DING_ENABLED',true),
 
-        'token' => env('OTHER_DING_TOKEN','8838985bddff8f07af1c250240213f4e8c2939400fa1d80ae8c3ac8ca2794d74'),
+        'token' => env('OTHER_DING_TOKEN','f16e5d6ea9ea544eaa5e941c45a67ff2ff864dc88c58b8ebc25c598c8135a097'),
 
         'timeout' => env('OTHER_DING_TIME_OUT',2.0)
     ],
@@ -41,7 +41,7 @@ return [
     'demand_collaboration' => [
         'enabled' => env('OTHER_DING_ENABLED',true),
 
-        'token' => env('OTHER_DING_TOKEN','4e9e4d121bac04fc04ff86ed2e5ddf741f3faffd6e62849eb22fe08eeaff2180'),
+        'token' => env('OTHER_DING_TOKEN','16f9190bbe966fbfe0b8fa2d9b3b54c5fa508239629931fd15a2c47b134e0362'),
 
         'timeout' => env('OTHER_DING_TIME_OUT',2.0)
     ],

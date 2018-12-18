@@ -69,6 +69,7 @@ class CompleteMachineController extends Controller
     {
 
         if ($request->has('product_good_id') && $request->has('product_good_num')) {
+
             $good_id = $request->get('product_good_id');
             $good_num = $request->get('product_good_num');
             $good = ProductGood::findOrFail($good_id);//如果没有配件 则添加 如果选择了相同的配件  则以当前添加的数量为准

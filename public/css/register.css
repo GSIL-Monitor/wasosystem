@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-size: cover; background-repeat: no-repeat; background-position:center center; background-image: url(../pic/register_bg.jpg); background-color: #f5f5f5; }
+
+
+.button{width:100%; text-align: center; line-height: 50px; background:#176b86; transition: all 0.3s 0s; margin-bottom:10px; color: #fff; position: relative;}
+.button:hover{cursor:pointer; background:#197594;}
+.button a{font-size:16px; color:#fff; line-height: 46px;}
+.goback{background:none; }
+.goback a{color:#999;}
+.goback:hover{background:none;}
+
+/* 审核信息页面  */
+.company_info{display:none;}
+.infoBtn{color:#999; padding-bottom:40px;}
+.infoBtn:hover{ color:#176b86; text-decoration: underline; }
+/*.register_process{margin:40px auto 0; position: relative; height:70px; width: 70%; display: none;}*/
+/*.register_process ul{position: absolute; left:0; top:0; z-index: 999; width: 100%;}*/
+/*.register_process li{float:left; width:20%; text-align: center;}*/
+/*.register_process li h5{color:#999; line-height: 30px;}*/
+/*.register_process li span{background:#ddd; width:30px; height:30px; display: block; margin:0 auto;-moz-border-radius: 15px;  -webkit-border-radius: 15px; border-radius: 15px 15px 15px 15px;}*/
+/*.register_process li span i{font-size:18px; color:#fff; line-height:30px; font-family: "微软雅黑", "Microsoft Yahei", Arial, Helvetica, sans-serif, "宋体";  font-style: normal; }*/
+/*.register_process .now span{background:#176b86; color:#fff;}*/
+/*.register_process .now h5{color:#176b86;}*/
+/*.register_process .process_line_bg{position:absolute; z-index:9; left:10%; width:80%; height:4px; background:#ddd; top:13px;}*/
+/*.register_process .process_line{position:absolute; z-index:99; left:10%; background:#176b86; top:13px; height:4px; width:10%;}*/
+#register_body{padding-bottom:180px; }
+#register_body .wrap{box-shadow: 0 5px 50px 0 rgba(0,0,0,.15);}
+#register_body .wrap a{display:block; margin:0 auto;}
+#register_body .wrap .logo{width:120px; height:auto;}
+#register_body .wrap .logo img{width:100%;}
+#register_body .wrap{width:700px; background:#FFF; padding:60px 40px; margin-top:100px;}
+#register_body .wrap .register_type{width:60%; margin:30px auto; text-align: center; border-bottom:1px solid #dedede;}
+#register_body .wrap .register_type li{float:left; width: 50%; line-height:40px; font-size:16px; text-align:center; transition: all 0.3s 0s; border-bottom:2px solid #fff; color:#333; cursor: pointer;}
+#register_body .wrap .register_type .active{color:#176b86; border-bottom-color:#176b86; }
+#register_body .wrap .register_type li:hover{  border-bottom-color:#176b86; color:#176b86;}
+#register_body .wrap .method_box{width:60%; margin:0 auto; text-align:left;}
+#register_body .wrap .typeName{font-size:30px; text-align: center; color:#666; width: 40%; margin:40px auto 0;}
+#register_body .wrap .otherWay{color:#999; text-align:left; display:inline-block; line-height:inherit; height:auto;}
+#register_body .wrap .otherWay:hover{color:#176b86;}
+#register_body .wrap .method_box ul{width:100%; margin:0 auto;}
+#register_body .wrap .method_box ul .agree{border:none; line-height: 20px; color: #666; margin:40px 0 0 0;}
+#register_body .wrap .agrees  a{display: inline-block; margin:0 3px; color:#176b86;}
+#register_body .wrap button a{height:40px; line-height: 40px; color: #fff;}
+#register_body .wrap .method_box .loginNow{color:#999; text-align: center; margin-top:40px;}
+#register_body .wrap .method_box .loginNow a{color:#176b86; display: inline; text-decoration: underline;}
+
+#login_wait{padding-bottom:180px;}
+#login_wait .wrap{width:700px; background:#FFF; padding:60px 40px 40px; margin-top:100px; box-shadow: 0 5px 50px 0 rgba(0,0,0,.15);}
+#login_wait .wrap .logo_bg a{display:block; margin:0 auto; width:120px; height:auto;}
+#login_wait .wrap .logo img{width:100%;}
+#login_wait .title h5{font-size:30px; text-align: center; color:#666; width: 40%; margin:40px auto 0;}
+#login_wait .big_bg{font-size: 200px; color: #f5f5f5; position: absolute; right:-10px; bottom:-65px;}
+#login_wait .thanks{margin:40px 0; position:relative; text-align: center;}
+#login_wait .thanks p{color:#999; line-height: 40px; text-align: center; font-size: 16px;}
+#login_wait .thanks .other_way{text-align: left; position:absolute; bottom:0; left:20px; width:70%;}
+#login_wait .thanks .other_way p{text-align: left;}
+#login_wait .thanks .other_way ul li{ color: #666;}
+#login_wait .thanks .other_way ul li a{display: inline-block; line-height: 25px; color:#176b86;}
+#login_wait .thanks .go_index{width:60px; line-height: 30px; color: #fff; background:#176b86; padding:5px 20px; margin-top:20px;}
+#login_wait .thanks .go_index:hover{background:#197594;}
+#login_wait .thanks h6{text-align:center; color:#333; line-height:40px;}
+#login_wait .thanks h6 a{color:#176b86; margin:0 5px; font-weight:bold; text-decoration: underline;}
+#login_wait .thanks .goBackIndex{display: inline-block; margin:40px auto; color:#176b86; text-decoration: underline; font-weight:bold;}
+
+#register_foot{width:100%; position: absolute; bottom:40px; left:0;}
+#register_foot .wrap{width:1000px;}
+#register_foot .wrap .links{padding-bottom:10px; text-align:center;}
+#register_foot .wrap .links span{display:inline-block; margin:0 10px; color:#333;}
+#register_foot .wrap .links a{color:#333;}
+#register_foot .wrap .links a:hover{color:#176b86;}
+#register_foot .wrap h5{color:#333; text-align:center;}
+
+.repSend {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #999;
+    font-size: 12px;
+    border-left: 1px solid #f1f1f1;
+    line-height: 50px;
+    padding-left: 20px;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 900px){
+    body{background:#fff; background-image:none;}
+
+
+    #screenControl{display: none!important;}
+
+    #register_body{padding:20px 0 60px; background: #fff;}
+    #register_body .wrap{width:auto; padding:20px 0; margin:0 auto; box-shadow: none;}
+    #register_body .wrap .logo{width:100px;}
+    #register_body .wrap .typeName{width: 100%; font-size:18px; margin:40px auto 0;}
+    #register_body .wrap .method_box{width:90%;}
+
+    #register_body .wrap .register_type{width:90%; margin:10px auto 20px;}
+    #register_body .wrap .register_type li a h5{font-size:14px;}
+    #register_foot{background: #fff;}
+    #register_foot .wrap{width:100%;}
+
+    #login_wait{padding:20px 0 60px; background: #fff; box-shadow: none;}
+    #login_wait .wrap{width:auto; padding:20px 0; margin:0 auto; box-shadow: none;}
+    #login_wait .wrap .logo_bg a{width:100px;}
+    #login_wait .title h5{width: 100%; font-size:18px; margin:40px auto 0;}
+    #login_wait .thanks{width: 90%; margin:40px auto;}
+    #login_wait .thanks h6{font-size:14px;}
+    #login_wait .wrap .method_box{width:90%;}
+}
+
+

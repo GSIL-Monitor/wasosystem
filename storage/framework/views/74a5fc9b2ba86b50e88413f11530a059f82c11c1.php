@@ -74,8 +74,6 @@
                <div class="clear"></div>
             </li>
           </ul>
-
-
             <?php endif; ?>
         </div>
     </div>

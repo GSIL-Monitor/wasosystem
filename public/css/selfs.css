@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.detail_info ul li{margin-bottom:10px; position: relative; color:#666;}
+.detail_info ul li span{color:#666; display:block; float:left; line-height: 30px; position: relative; width:60%;}
+.detail_info ul li span i{position: absolute; top:7px; right:10px;}
+.detail_info ul li span a{color:#176b86; margin-left:10px; font-weight:400; font-size:12px;}
+.detail_info ul li .liTit{width:10%;}
+.detail_info ul li input[type="text"]{min-width: 200px; height: 33px; line-height: 35px;}
+.detail_info ul li .born_choose div{float:left; width:30%; position: relative; margin-right:1%;}
+.detail_info ul li .born_choose div em{width:80%; text-align:center; line-height:30px; position: absolute; left:1px; top:1px; z-index: 99; font-style: normal; color:#999; background:#f5f5f5;}
+.detail_info ul li .sex_choose label{ color:#666; line-height:30px; margin-right:30px;}
+.detail_info ul li .sex_choose label input{background-size: cover!important;}
+.detail_info ul li .sex_choose label input[checked='checked']{background-image:url(../pic/choosed.png)!important; }
+.detail_info ul li .sex_choose .check input{background-image:url(../pic/choosed.png)!important; }
+.detail_info ul li .error_msg{position:static;}
+.detail_info .person_info{padding-bottom:30px;}
+.detail_info .person_info .info_cont li{border:1px solid #dedede;}
+.detail_info .person_info .info_cont .check_info_box{border:none; color:red;}
+.detail_info .person_info .info_cont .noBorder{border:none;}
+.detail_info .person_info .info_cont .sex_choose{padding:5px 0;}
+.detail_info .button{display:inline-block;}
+.detail_info .button a{background: #176b86; display:inline-block;  line-height:40px; color:#fff; padding:0 40px; transition: ALL 0.3s 0s;}
+.detail_info .button a:hover{background: #197594; cursor: pointer;}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .body .info_box .right .info{background:#fff;}
+    .detail_info .person_info{padding:0;}
+    .detail_info ul li span i{right:auto; left:-7px;}
+    .detail_info{padding:10px; margin-bottom:60px;}
+    .detail_info ul li{margin-bottom:10px;}
+    .detail_info ul li span{line-height:25px; width:100%; float:none; position: relative;}
+    .detail_info ul li span input[type='text']{width: 100%;}
+    .detail_info ul li span a{position: absolute; right:10px; top:50%; line-height: 20px; margin-top:-10px;}
+    .detail_info ul li .liTit{margin:0; width:100%; font-weight:bold; font-size:14px;}
+    .detail_info .button{margin:0; width:100%; position:fixed; bottom:0; left:0; height:49px; border-top:1px solid #ededed; z-index:111;}
+    .detail_info .button a{width:100%; line-height:50px; padding:0;}
+    #foot{display:none;}
+}

@@ -25,4 +25,3 @@
         <div class="orderTotal">合计：<span><b class="AllPri"></b>.00元</span></div>
     </div>
     <!--购物车订单 结束-->
-</div>

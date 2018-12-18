@@ -1,4 +1,58 @@
 
+<?php $__env->startSection('js'); ?>
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                is_show: false,
+                typed: '',
+                xilied: '',
+                series_name:'',
+                framework_name:'',
+                series: [],
+                <?php if(Route::is('admin.product_goods.create')): ?>
+                defaultList: [],
+                <?php else: ?>
+                defaultList:<?php echo $productGood->pic; ?>,
+                <?php endif; ?>
+                actionImageUrl: "<?php echo env('ActionImageUrl'); ?>",
+                imageUrl: "<?php echo env('IMAGES_URL'); ?>",
+                deleteImageUrl: "<?php echo env('DeleteImageUrl'); ?>",
+                fileCount:5,
+            },
+            methods: {
+                getCanshus: function () {
+                    this.framework_name=$('.framework_name option:selected').text();
+                    const Notice = this.$Notice;
+                    axios.post("<?php echo e(route('admin.product_goods.getseries')); ?>", {
+                        "_token": $('meta[name="csrf-token"]').attr('content'),
+                        "parent_id": this.typed,
+                    }).then(function (response) {
+                        vm.series = response.data;
+                    })
+                        .catch(function (err) {
+                            Notice.error({
+                                title: err.message
+                            });
+                        });
+                },
+                series_names: function () {
+                    this.series_name=$('.series_name option:selected').text();
+                }
+            },
+            mounted: function () {
+                <?php if(!Route::is('admin.product_goods.create')): ?>
+                    this.typed = "<?php echo e($productGood->jiagou_id); ?>",
+                    this.xilied = "<?php echo e($productGood->xilie_id); ?>",
+                    this.series_name="<?php echo e($productGood->series_name); ?>",
+                    this.series = this.getCanshus(),
+                    this.framework_name="<?php echo e($productGood->framework_name); ?>"
+                <?php endif; ?>
+
+            },
+        });
+    </script>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="nowWebBox">
         <div class="PageBtn">

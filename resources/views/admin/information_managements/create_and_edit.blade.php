@@ -1,4 +1,29 @@
 @extends('admin.layout.default')
+@section('js')
+    <script>
+
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                @if(Route::is('admin.information_managements.create'))
+                defaultList: [],
+                @else
+                defaultList:{!! $information_management->pic !!},
+                @endif
+                actionImageUrl: "{!! env('ActionImageUrl') !!}",
+                imageUrl: "{!! env('IMAGES_URL') !!}",
+                deleteImageUrl: "{!! env('DeleteImageUrl') !!}",
+                fileCount:1,
+            },
+            methods: {
+
+            },
+            mounted: function () {
+            },
+        });
+
+    </script>
+@endsection
 @section('content')
     <div class="nowWebBox">
         <div class="PageBtn">

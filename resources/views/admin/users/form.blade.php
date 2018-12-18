@@ -1,5 +1,5 @@
 <div class="JJList">
-    <ul class="maxUl" id="app">
+    <ul class="halfTwoUl" id="app">
         @if(Route::is('admin.users.create'))
             {!! Form::open(['route'=>'admin.users.store','method'=>'post','id'=>'users','onsubmit'=>'return false']) !!}
         @else

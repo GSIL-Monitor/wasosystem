@@ -1,7 +1,8 @@
 
-
+<?php $WarehouseOutManagementParamenter = app('App\Presenters\WarehouseOutManagementParamenter'); ?>
 
 <?php $__env->startSection('js'); ?>
+    <script src="<?php echo e(asset('admin/js/code.js')); ?>"></script>
     <script>
         function cteate_codes() {
             var arr={};
@@ -25,7 +26,7 @@
                 }
 
             })
-//            console.log(JSON.stringify(arr));
+           console.log(JSON.stringify(arr));
             $('.codes').val(JSON.stringify(arr));
             return codes;
         }
@@ -112,9 +113,8 @@
             },
             mounted: function () {
                 $('.out_storage').focus();
-                <?php if(!Route::is('admin.warehouse_out_managements.create')): ?>
+
                 this.codes=cteate_codes();
-                <?php endif; ?>
                 <?php if(!Route::is('admin.warehouse_out_managements.create') && $warehouse_out_management->out_status == 'finish'): ?>
                     this.disabled = true;
                 $('.listTable').find('button').hide()
@@ -131,13 +131,24 @@
                 <button class="Btn Refresh ">刷新</button>
                 <?php if(Route::is('admin.warehouse_out_managements.create')): ?>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('create warehouse_out_managements')): ?>
-                    <button type="submit" class="Btn common_add" form_id="warehouse_out_managements"
-                            location="top">添加</button>
+
+                        <button type="submit" class="Btn warehouse_out_add blue" out_status="finish" form_id="warehouse_out_managements"
+                                location="top">保存
+                        </button>
+                        <button type="submit" class="Btn warehouse_out_add blue" out_status="unfinished" form_id="warehouse_out_managements"
+                                location="top">临时保存
+                        </button>
                  <?php endif; ?>
                 <?php else: ?>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('edit warehouse_out_managements')): ?>
-                    <button type="submit" class="Btn common_add" form_id="warehouse_out_managements"
-                            location="top">修改</button>
+                      <?php if($warehouse_out_management->out_status =='unfinished'): ?>
+                        <button type="submit" class="Btn warehouse_out_add blue" out_status="finish" form_id="warehouse_out_managements"
+                                location="top">保存
+                        </button>
+                        <button type="submit" class="Btn warehouse_out_add blue" out_status="unfinished" form_id="warehouse_out_managements"
+                                location="top">临时保存
+                        </button>
+               <?php endif; ?>
                 <?php endif; ?>
                 <?php endif; ?>
                 <button class="changeWebClose Btn">返回</button>

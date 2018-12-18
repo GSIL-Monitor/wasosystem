@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class NewsController extends Controller
 {
+
     public function index(Request $request)
     {
         $type=str_before(str_after($request->url(),'news_'),'.html')    ;
@@ -26,7 +27,10 @@ class NewsController extends Controller
     }
     public function show(Request $request,InformationManagement $informationManagement)
     {
+
         $informationManagement->visits()->increment();
+        $informationManagement->increment('read_count');
+
         $type=array_flip(config('site.news_type_en'))[$informationManagement->type];
         $hot_news=InformationManagement::where([
             ['type',$informationManagement->type],['marketing->hot',1]

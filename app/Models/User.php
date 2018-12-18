@@ -17,7 +17,7 @@ class User extends Authenticatable
         'username', 'password', 'clear_text', 'nickname', 'sex', 'birthday', 'phone', 'email', 'telephone',
         'wechat', 'qq', 'unit', 'industry', 'address', 'grade', 'administrator', 'payment_days',
         'tax_rate', 'message_type', 'parts_buy', 'register_ip', 'last_login_ip', 'login_count',
-        'last_login_time', 'deal', 'avatar', 'parameters',
+        'last_login_time', 'deal', 'avatar', 'parameters','wechat_openid',
     ];
 
     public function notification()

@@ -24,7 +24,7 @@ class CompleteMachineRequest extends Request
                case 'PATCH':
                {
                    return [
-                       'name'=>'required|unique:complete_machines,name,'.$this->route('complete_machine')->id
+                       'name'=>'sometimes|required|unique:complete_machines,name,'.$this->route('complete_machine')->id
                    ];
                }
                case 'GET':

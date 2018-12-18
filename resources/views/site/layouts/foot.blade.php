@@ -43,9 +43,8 @@
             </div>
 
             <div class="f_right">
-                <h1>400-028-1968</h1>
-                <h1>13980996979</h1>
-                <h5>周一至周六 09:00～18:00</h5>
+                <h1>{{  setting('contact_telephone') }}</h1>
+                <h5>{{ setting('contact_working_time') }}</h5>
                 <a  name="F_news"  class="talkBtn"data-src="http://p.qiao.baidu.com/cps/chat?siteId=1281749&userId=2178125">在线客服</a>
                 <div class="clear"></div>
             </div>
@@ -56,9 +55,9 @@
             <div class="wrap">
                 <div class="f_d_left">
                     <div class="copyrights">
-                        <h5>Copyright © <span class="year">{{ today()->format('Y') }}</span> 成都网烁信息科技有限公司 版权所有</h5>
-                        <h5><a href="http://www.miitbeian.gov.cn">蜀 ICP(备)10025767号</a></h5>
-                        <h5><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001250" style="display:inline-block;text-decoration:none"><img src="{{ asset('pic/beian.png') }}" style="margin-right:3px; vertical-align:middle;"/>川公网安备 51010702001250号</a></h5>
+                        <h5>Copyright © <span class="year">{{ today()->format('Y') }}</span> {{  setting('system_title') }} 版权所有</h5>
+                        <h5><a href="http://www.miitbeian.gov.cn">{{ setting('system_website_records') }}</a></h5>
+                        <h5><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001250" style="display:inline-block;text-decoration:none"><img src="{{ asset('pic/beian.png') }}" style="margin-right:3px; vertical-align:middle;"/>{{ setting('system_ministry_public_security_records') }}</a></h5>
                         <a href="{{ route('service_support.copyright') }}">版权声明</a>
                         <a href="{{ route('service_support.feedback') }}" target="_blank">问题反馈</a>
                     </div>
@@ -73,7 +72,7 @@
                         </li>
                         <li class="weixin">
                             <img title="网烁公众号" src="{{ asset('pic/P_weixin.png') }}"/>
-                            <img class="hidePic" src="{{ asset('pic/weixin_hover.jpg') }}"/>
+                            <img class="hidePic" src="{{ json_decode(getImages(setting('contact_wechat')),true)[0]['url'] }}"/>
                         </li>
                         <div class="clear"></div>
                     </ul>
@@ -86,12 +85,3 @@
 </div>
 
 @includeIf('site.layouts.top')
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?2483bc8dc2795e527dd78c5387be514c";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>

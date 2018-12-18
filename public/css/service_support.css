@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+.body .big_pic{height:460px;
+    background:#f5f5f5;
+    display: table; width: 100%;
+    background-image:url('../pic/support.jpg');
+    background-position:center center;
+    background-repeat: no-repeat; background-size: cover;
+}
+.body .big_pic .surTXT{display: table-cell; vertical-align: middle; text-align: center;}
+.body .big_pic .surTXT h5{color:#fff; font-size:40px;}
+.body .big_pic .surTXT p{color:#fff; font-size:20px;}
+
+
+.body .borderFour li{float:left; width:20%; text-align:center; position: relative;  }
+.body .borderFour li span{display:block; width: 100%; height:20px;}
+.body .borderFour li img{display: block; width:50px; margin:0 auto 20px;  transition:All 0.3s ease-in-out;  -webkit-transition:All 0.3s ease-in-out;  -moz-transition:All 0.3s ease-in-out;  -o-transition:All 0.3s ease-in-out;}
+.body .borderFour .last{margin-right:0;}
+.body .borderFour li a{color:#666; display:block; width:100%; padding:30px 0;}
+.body .borderFour li:hover img{
+    transform:translate(0,-10px);
+    -webkit-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
+}
+.body .last{border:none; margin:0;}
+
+.body .Bigtit{font-size:24px; font-weight: 100;  line-height:60px; color:#444; text-align: center; margin-bottom:20px; }
+/*  通用结束 */
+
+.body .sup_box{padding:50px 0; background: #fff;}
+/*   自助结束 */
+
+.body .drive_box{padding:50px 0 70px;}
+.body .drive_box .borderFour li{width:32%; margin:0; background: #fff; padding:10px 0;}
+.body .drive_box .borderFour .midLi{margin:0 2%;}
+.body .drive_box ul li img{height:160px; width:auto; margin:0 auto 40px;}
+.body .drive_box .driveBot{margin-top:20px;}
+.body .drive_box .driveBot a{height:158px; display:block; width: 49%; float:left; background-image: url(../pic/drive1.jpg); position: relative;}
+.body .drive_box .driveBot a .tableDiv{height:158px;}
+.body .drive_box .driveBot a .tableDiv .tdDiv{color:#fff; font-size:18px;}
+.body .drive_box .driveBot a span{transition:all 0.3s 0s; display: block; width: 100%; height:100%; background: #fff; opacity: 0; filter:alpha(opacity=0); position: absolute; left:0; top:0; z-index: 99;}
+.body .drive_box .driveBot .right{margin-left:2%;  background-image: url(../pic/drive2.jpg);}
+.body .drive_box .driveBot a:hover span{opacity: 0.15; filter:alpha(opacity=15);}
+/*   驱动结束 */
+
+.body .tedian .four{padding:40px 0 20px; text-align:center;}
+.body .tedian .four .ico_box{margin:0 auto; display:inline-block; width:60%;}
+.body .tedian .four .ico_box img{margin:0 auto 20px; width:50px;}
+.body .tedian .four .ico_box h5{color:#666; font-weight:400; }
+.body .tedian .four li{float:left; width:25%; text-align:center; padding:20px 0 0; }
+/*  特色 */
+
+.body .tedian{padding:60px 0 30px; display:none;}
+.body .other_box{padding:50px 0; background: #fff;}
+.body .other_box .borderTwo li{float:left; width:25%; position: relative;}
+.body .other_box .borderTwo li a{text-align:center; display: block; width:100%; margin:0 auto;}
+.body .other_box .borderTwo li img{width:100px; transition: all 0.3s 0s;}
+.body .other_box .borderTwo li .hideP{position: absolute; left:50%; margin-left:-50px; top:0; display:none; }
+.body .other_box .borderTwo li .txt{margin-bottom:35px; }
+.body .other_box .borderTwo li .txt h5{color:#666; transition: all 0.3s 0s;}
+.body .other_box .borderTwo li .txt p{padding:10px 0; color:#999; width:60%; margin:0 auto; font-size:12px;}
+.body .other_box .borderTwo .MoveLi:hover img{transform:translate(0,-10px);
+    -webkit-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
+}
+
+
+@media only screen and (max-width: 900px){
+    .body .big_pic{display: table !important; height:300px;}
+    .body .big_pic .surTXT h5{font-size:30px;}
+    .body .big_pic .surTXT p{font-size:18px;}
+    .body .Bigtit{font-size:16px; padding:0 10px; display: none;}
+
+    .body .borderFour li{width:33%; margin-right:0;}
+    .body .borderFour li a{font-size:12px; padding:20px 0; font-weight: 100;}
+    .body .borderFour li a img{width:30px; margin:0 auto 15px;}
+
+    .body .sup_box{padding:0;}
+    .body .drive_box{margin:0;}
+    .body .drive_box ul li{padding:10px 0;}
+    .body .drive_box ul li img{width: 60%; margin:0 auto;}
+    .body .sup_box{margin:0; background:#fff;}
+    .body ul li img{width:30%; margin:0 auto;}
+    .body .question_box{display: none;}
+    .body .question_box .tit{padding:0 10px; font-size: 16px;}
+    .body .question_box .dl_box{padding:0 10px;}
+    .body .question_box .dl_box .dl_hide{display: none; padding:0;}
+    .body .question_box dl{width:100%; padding:10px 0; float:none; border-bottom:1px solid #dedede; margin:0 auto; border-right:none;}
+    .body .question_box dl dt{font-size:14px; padding:0 0 5px 0; cursor: pointer;}
+    .body .question_box dl dd{padding:5px 0 5px 10px;}
+    .body .question_box dl dd a{color:#999;}
+    .body .question_box .last{border:none;}
+    .body .question_box dl dt span{display: block;}
+    .body .other_box{display: none;}
+    .body .tedian{display: none;}
+
+
+}
+

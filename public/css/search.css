@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+.body{background:#fff;}
+.body .search{padding:40px 0; }
+.body .search h5{ padding-bottom:20px; color:#666; font-size: 30px;}
+.body .search form{border:1px solid #dedede; width:50%; position: relative; height:40px; background: #fff;}
+.body .search input{height:30px; text-indent:10px; padding:5px 0; position: absolute; left:5px; top:0; z-index: 20; }
+.body .search .search_text{width:100%; background: none; color:#444; border:none; line-height: 40px; height:38px;}
+.body .search .search_btn{padding:0; text-indent: 0; -webkit-appearance:none; width:120px; transition: all 0.3s 0s; background: #176b86; color:#fff;  height:40px; position: absolute; left:auto; right:0; bottom:0; display: block; z-index: 30;}
+.body .search .search_btn:hover{cursor:pointer; background:#197594;}
+
+.body .result_div{padding:40px 0 100px; background:#fff;}
+.body .result_div .searchTypePage ul{border-bottom:1px solid #dedede; padding:0 19px;}
+.body .result_div .searchTypePage ul li{margin:0 50px 0 0; padding-bottom:15px; color:#666; font-size:16px; display: block; float:left; cursor: pointer;}
+.body .result_div .searchTypePage ul li span{display: inline-block; font-size:16px;}
+.body .result_div .searchTypePage ul .active{border-bottom:3px solid #176b86; color:#176b86; font-weight:600;}
+.body .result_div .searchTypePage ul li:hover{color:#176b86;}
+.body .result_div .error{text-align: center; padding:40px 0;}
+
+
+.body .result_div .searchResultBox .searchResultPage{display: none;}
+.body .result_div .searchResultBox .active{display: block;}
+.body .result_div .searchResultBox .searchPro dl{padding:40px 0 0;}
+.body .result_div .searchResultBox .searchPro dl dd{float:left; width: 25%; background: #fff; transition: all 0.3s 0s; border:1px solid #fff; box-sizing: border-box;}
+.body .result_div .searchResultBox .searchPro dl dd a{display: block; padding:20px;}
+.body .result_div .searchResultBox .searchPro dl dd a .pic{width:100%; }
+.body .result_div .searchResultBox .searchPro dl dd a .pic img{width:80%; margin:0 auto;}
+.body .result_div .searchResultBox .searchPro dl dd a:hover b{color:#176b86;}
+.body .result_div .searchResultBox .searchPro dl dd a:hover b span{color:#176b86;}
+.body .result_div .searchResultBox .searchPro dl dd:hover{border-color:#176b86;}
+.body .result_div .searchResultBox .searchPro dl dd .infos{margin-top:20%;}
+.body .result_div .searchResultBox .searchPro dl dd .infos b{font-size:16px; font-weight:600; color:#666; transition: all 0.3s 0s; width: auto; display: block; text-align: center;}
+.body .result_div .searchResultBox .searchPro dl dd .infos b span{display: inline-block; color:#fe0000; font-size:16px; font-weight:600;  transition: all 0.3s 0s;}
+.body .result_div .searchResultBox .searchPro dl dd .infos p{color:#999; line-height:20px; height:60px; overflow: hidden; margin:10px 0 15px; font-size:12px; text-align: center;}
+.body .result_div .searchResultBox .searchPro dl dd .infos p span{font-size:12px;}
+.body .result_div .searchResultBox .searchPro dl dd span{color:#fe0000; font-weight:bold; font-size:14px;}
+.body .result_div .searchResultBox .searchPro dl dd img{width:100%; vertical-align: middle;}
+
+
+.body .result_div .searchResultBox .searchSol{padding:0 19px;}
+.body .result_div .searchResultBox .searchSol ul{padding:40px 0;}
+.body .result_div .searchResultBox .searchSol ul li{float:left; margin:0 5% 40px 0; width: 30%;}
+.body .result_div .searchResultBox .searchSol ul .last{margin:0 0 20px 0;}
+.body .result_div .searchResultBox .searchSol ul li a{display: block;}
+.body .result_div .searchResultBox .searchSol ul li .pic{width: 100%; margin-bottom:15px; height:220px; overflow: hidden;}
+.body .result_div .searchResultBox .searchSol ul li .pic img{width: 100%; transition: all 0.3s 0s;}
+.body .result_div .searchResultBox .searchSol ul li .infos{text-align: left;}
+.body .result_div .searchResultBox .searchSol ul li .infos b{text-align: left; font-size:18px; color:#666; font-weight:600;}
+.body .result_div .searchResultBox .searchSol ul li .infos b span{display: inline-block; color:#fe0000; font-size:18px; font-weight:600;  transition: all 0.3s 0s;}
+.body .result_div .searchResultBox .searchSol ul li .infos p{line-height:20px; color:#999; height:40px; overflow: hidden; margin:10px 0 15px;}
+.body .result_div .searchResultBox .searchSol ul li .infos .time{display: inline-block; padding:1px 10px; background: #ccc; color:#fff; font-size:12px;}
+.body .result_div .searchResultBox .searchSol ul li a:hover img{transform:scale(1.05);-ms-transform:scale(1.05);  -webkit-transform:scale(1.05);  -o-transform:scale(1.05);  -moz-transform:scale(1.05);}
+.body .result_div .searchResultBox .searchSol ul li a:hover b{color:#176b86;}
+.body .result_div .searchResultBox .searchSol ul li a:hover b span{color:#176b86;}
+
+.body .result_div .searchResultBox .searchNews{padding:0 19px;}
+.body .result_div .searchResultBox .searchNews dl dd{padding:40px 0; border-bottom:1px dashed #dedede;}
+.body .result_div .searchResultBox .searchNews dl dd a{display: inline-block; font-size:18px; color:#666; font-weight:600;}
+.body .result_div .searchResultBox .searchNews dl dd a span{display: inline-block; color:#fe0000; font-size:18px; font-weight:600; transition: all 0.3s 0s;}
+.body .result_div .searchResultBox .searchNews dl dd a:hover{color:#176b86;}
+.body .result_div .searchResultBox .searchNews dl dd a:hover span{color:#176b86;}
+.body .result_div .searchResultBox .searchNews dl dd p{margin:10px 0 15px; color:#999; line-height:25px; height:50px; overflow: hidden;}
+.body .result_div .searchResultBox .searchNews dl dd .time{display: inline-block; padding:1px 10px; background: #ccc; color:#fff; font-size:12px;}
+
+.body .result_div .lookAll{color:#666;  cursor: pointer; line-height: 30px; text-align: center; display: block; width: 100%; margin:50px auto 0; transition: all 0.3s 0s;}
+.body .result_div .lookAll:hover{color:#333;}
+.body .result_div .more_hide{display: none;}
+.body .result_div .noMore{text-align: center; font-size: 12px; color:#999; padding:40px 0; display: block;}
+
+
+
+@media only screen and (max-width: 900px){
+    #foot{display:none;}
+    .body .wrap{padding:10px 0 0;}
+    .body .search h5{display:none;}
+    .body .search{margin-top:0; padding:0;}
+    .body .search input{padding:0;}
+    .body .search form{width: 96%; margin:0 auto;}
+    .body .search .search_text{left:0;}
+    .body .search .search_btn{width:80px;}
+
+    .body .result_div{padding:10px 0 60px; margin:10px 0 0;}
+    .body .result_div .searchTypePage ul{padding:0;}
+    .body .result_div .searchTypePage ul li{width:29.33%; margin:0 2%; text-align: center; padding-botton:10px; font-size:14px;}
+    .body .result_div .searchTypePage ul li span{font-size:14px;}
+
+    .body .result_div .searchResultBox .searchPro dl{padding:10px 0 0;}
+    .body .result_div .searchResultBox .searchPro dl dd{width: 50%; margin:0; background: #fff; border-bottom:1px solid #dedede; border-right:1px solid #dedede; box-sizing: border-box;}
+    .body .result_div .searchResultBox .searchPro dl dd a{padding:20px 10px;}
+    .body .result_div .searchResultBox .searchPro dl dd .infos{margin-top:10px;}
+    .body .result_div .searchResultBox .searchPro dl dd .infos b{ font-size: 14px; }
+    .body .result_div .searchResultBox .searchPro dl dd .infos b span{font-size: 14px;}
+    .body .result_div .searchResultBox .searchPro dl dd .infos .lookPro{display: none;}
+    .body .result_div .searchResultBox .searchPro dl .last{width: 50%;}
+
+    .body .result_div .searchResultBox .searchSol{padding:0 10px;}
+    .body .result_div .searchResultBox .searchSol ul{padding:20px 0; }
+    .body .result_div .searchResultBox .searchSol ul li{float:none; width: 100%;}
+    .body .result_div .searchResultBox .searchSol ul li .infos b{font-size:14px;}
+    .body .result_div .searchResultBox .searchSol ul li .infos b span{font-size:14px;}
+
+    .body .result_div .searchResultBox .searchNews{padding:0 10px;}
+    .body .result_div .searchResultBox .searchNews dl dd{padding:20px 0;}
+    .body .result_div .searchResultBox .searchNews dl dd a{font-size:14px; text-align: left;}
+    .body .result_div .searchResultBox .searchNews dl dd a span{font-size:14px;}
+    .body .result_div .searchResultBox .searchNews dl dd p{margin:10px 0;}
+
+    .body .result_div .lookAll{margin:20px auto; padding:0; background: #176b86; color:#fff; line-height: 40px; width: 50%;}
+    .body .result_div .noMore{padding:20px 0;}
+
+}
+
+

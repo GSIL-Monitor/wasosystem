@@ -30,8 +30,6 @@ class WarehouseOutManagementParamenter
             } else {
                 for ($i = 0; $i < $item->product_good_num; $i++) {
                     $class=!empty($item->code[$i]) ? 'good' : '';
-//                    $readonly=!empty($item->code[$i]) ? 'readonly' : '';
-//                    $show=!empty($item->code[$i]) ? 'block' : 'none';
                     echo '<tr>
                      <td><input type="text" readonly value="' . $item->code[$i] . '" class="good_'.$item->product_good_id.' '.$class.'"  data-number="'.$item->product_good_number.'"  data-id="'.$item->product_good_id.'" data-num="'.$item->product_good_num.'"></td>
                      <td>' . $item->product_good->product->title . '</td>
@@ -48,7 +46,6 @@ class WarehouseOutManagementParamenter
                  </tr>';
                 }
             }
-
         }
 
     }
@@ -117,7 +114,7 @@ class WarehouseOutManagementParamenter
                 $arr[$item->id] = ['type' => $item->product->title, 'name' => $item->name, 'product_good_id' => $item->id, 'product_good_num' => $item->pivot->product_good_num, 'product_good_number' => $item->product->bianhao, 'code' => $code[$item->id]];
             }
         }
-        return json_encode($arr, true);
+        return json_encode($arr, JSON_UNESCAPED_UNICODE);
     }
 
     public function checkSelfBuild($goods)

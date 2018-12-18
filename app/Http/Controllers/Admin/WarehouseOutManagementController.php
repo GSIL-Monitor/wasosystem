@@ -52,7 +52,8 @@ class WarehouseOutManagementController extends Controller
             'order_product_goods',
             'warehouse_out'
         ])
-            ->whereOrderStatus('order_acceptance')->latest()->paginate(20);
+            ->whereOrderStatus('order_acceptance')->doesntHave('warehouse_out')->latest()->paginate(20);
+
         $warehouse_out_model = $this->warehouse_out_managementServices->get_inventory_machine($this->warehouse_out_management);
         return view('admin.warehouse_out_managements.out_order', compact('out_orders', 'warehouse_out_model'));
     }

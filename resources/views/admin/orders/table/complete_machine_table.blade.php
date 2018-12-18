@@ -12,13 +12,14 @@
         <td class="A_type">
             {{  $good['good']->product->title }}
         </td>
-        <td class="tableInfoDel  tablePhoneShow  tableName A_name">
+        <td class="tableInfoDel  tablePhoneShow  tableName   A_name">
             @php $goods=$good['good']->product->good; @endphp
             @if(str_contains($good['good']->product_id, [13,20,21,23]) && !auth('admin')->user()->can('super edit'))
                 {{ $good['good']->name }}
             @else
                 {{ Form::select('name',$good['good']->parameters['list'] ?? $all_goods->pluck('name','id'),old('name',$good['good']->id),['class'=>'select2 product_select','data_url'=>route('admin.orders.add_modified_temporary_materials',$order->id),'old_id'=>$good['good']->id]) }}
             @endif
+            <div class="clear"></div>
         </td>
         <td class="A_price" data-id="{!! $good['good']->addiator['terrace_price'] ?? '' !!}">{{ $good['good']->pivot->product_good_price }}</td>
         <td class="A_num num">

@@ -24,14 +24,14 @@
                 <tr>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
                     <th class="">排序</th>
-                    <th class="">PC端图片</th>
-                    <th class="">手机端图片</th>
-                    <th class="">背景色</th>
-                    <th class="">链接</th>
                     <th class="tableInfoDel">大字</th>
                     <th class="tableMoreHide">小字</th>
+                    <th class="">背景色</th>
+                    <th class="">链接</th>
                     <th class="tableMoreHide">对齐方向</th>
                     <th class="tableMoreHide">手机端变色</th>
+                    <th class="">PC端图片</th>
+                    <th class="">手机端图片</th>
                     <th class="">展示更多</th>
                     <th  class="tableMoreHide">修改时间</th>
                     <th class="">发布时间</th>
@@ -45,16 +45,18 @@
                         </td>
                         
                         <td><input  type="text" name="edit[{{ $banner->id }}][sort]" value="{{ $banner->sort }}" style="width:40px;"></td>
-                        <td><img src="{{ $pics[0]['url'] }}" alt="" style="height: 100px;"></td>
-                        <td><img src="{{ $pics[1]['url'] }}" alt="" style="height: 100px;"></td>
-                        <td>{{ $banner->field['color'] }}</td>
-                        <td>{{ $banner->field['url'] }}</td>
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="changeWeb"
                                                                                data_url="{{ route('admin.business_managements.edit',$banner->id) }}?type=banner">{{ $banner->field['max_font'] }}</a>
                         </td>
-                        <td class="tableMoreHide">{{ $banner->field['min_font'] }}</td>
                         <td class="tableMoreHide">{{ config('status.banner_font_float')[$banner->field['font_float']] }}</td>
                         <td class="tableMoreHide">{{ config('status.banner_font_color')[$banner->field['font_color']] }}</td>
+
+                        <td>{{ $banner->field['color'] }}</td>
+                        <td>{{ $banner->field['url'] }}</td>
+
+                        <td class="tableMoreHide">{{ $banner->field['min_font'] }}</td>
+                        <td><img src="{{ $pics[0]['url'] ?? '' }}" alt="" style="height: 100px;"></td>
+                        <td><img src="{{ $pics[1]['url'] ?? ''}}" alt="" style="height: 100px;"></td>
                        <td> {!! Form::checkbox("edit[{$banner->id}][field->more]",$banner->field['more'],old("edit[{$banner->id}][field->more]",$banner->field['more']),['class'=>'radio']) !!}</td>
                         <td class="tableMoreHide">{{ $banner->updated_at->format('Y-m-d') }}</td>
                         <td class="">{{ $banner->created_at->format('Y-m-d') }}</td>

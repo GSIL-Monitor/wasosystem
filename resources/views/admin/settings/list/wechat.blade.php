@@ -1,0 +1,27 @@
+<fieldset>
+    <legend>开放平台</legend>
+<li>
+    <div class="liLeft">AppID：</div>
+    <div class="liRight">
+        <input type="text" name="{{ $type }}_open_appid" value="{{ old($type.'_open_appid',setting($type.'_open_appid')) }}" >
+        <span class="greenWord">用法: setting('{{ $type }}_open_appid') </span>
+    </div>
+    <div class="clear"></div>
+</li>
+<li>
+    <div class="liLeft">AppSecret：</div>
+    <div class="liRight">
+        <input type="text" name="{{ $type }}_open_secret" value="{{ old($type.'_open_secret',setting($type.'_open_secret')) }}" >
+        <span class="greenWord">用法: setting('{{ $type }}_open_secret') </span>
+    </div>
+    <div class="clear"></div>
+</li>
+<li>
+    <div class="liLeft">RedirectUri：</div>
+    <div class="liRight">
+        <input type="text" name="{{ $type }}_open_redirect_uri" value="{{ old($type.'_open_redirect_uri',setting($type.'_open_redirect_uri')) }}" >
+        <span class="greenWord">用法: setting('{{ $type }}_open_redirect_uri') </span>
+    </div>
+    <div class="clear"></div>
+</li>
+</fieldset>

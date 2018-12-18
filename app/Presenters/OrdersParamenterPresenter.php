@@ -24,7 +24,7 @@ class OrdersParamenterPresenter
             $arr[$key]=$product_good->product_good;
             $arr[$key]=$product_good;
         }
-        dump($arr);
+     //   dump($arr);
         return collect($arr);
     }
 

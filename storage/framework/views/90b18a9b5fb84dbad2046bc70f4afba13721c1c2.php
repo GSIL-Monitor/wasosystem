@@ -33,12 +33,12 @@
 <div id="header">
     <div class="wrap headWrap ">
         <div class="logo">
-            <a href="/"><img src="<?php echo e(asset('pic/logo.png')); ?>"/></a>
+            <a href="/"><img src="<?php echo e(json_decode(getImages(setting('system_logo')),true)[0]['url']); ?>"/></a>
         </div>
 
         <div class="user_control">
             <div class="headPhone">
-                <a href="/"><img src="<?php echo e(asset('pic/headPhone.png')); ?>"></a>
+                <a href="/"><img src="<?php echo e(json_decode(getImages(setting('contact_custome_hotline')),true)[0]['url']); ?>"></a>
             </div>
 
             <div class="headIcon">

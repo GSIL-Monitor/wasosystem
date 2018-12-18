@@ -1,6 +1,7 @@
 
 
 <?php $__env->startSection('js'); ?>
+    <?php echo $__env->make('vendor.ueditor.assets', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <script src="<?php echo e(asset('admin/js/completeMachinesPrice.js')); ?>" type="text/javascript"></script>
     <script>
         $(function () {

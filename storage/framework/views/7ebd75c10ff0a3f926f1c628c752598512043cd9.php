@@ -57,6 +57,14 @@
     <div class="clear"></div>
 </li>
 <li>
+    <div class="liLeft">小程序字体颜色</div>
+    <div class="liRight">
+        <?php echo Form::select('field[mini_program_font_color]',config('status.mini_program_font_color'),old('field[mini_program_font_color]'),['class'=>'checkNull']); ?>
+
+    </div>
+    <div class="clear"></div>
+</li>
+<li>
     <div class="liLeft">“了解更多”</div>
     <div class="liRight">
         <?php echo Form::checkbox('field[more]',$business_management->field['more'] ?? 1,old('field[more]',$business_management->field['more'] ?? 1),['class'=>'radio']); ?>

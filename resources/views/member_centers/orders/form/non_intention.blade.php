@@ -2,11 +2,13 @@
     <div class="body orderBody">
         <div class="wrap infowrap">
             <div id="crumbs">
-                <a href="/">首页</a> > <a href="{{ route('orders.index') }}?order_status={{ $order->order_status }}" target="_blank;"> 我的订单 </a> > {{ $order->serial_number }}
+                <a href="/">首页</a> > <a href="{{ route('orders.index') }}?order_status={{ $order->order_status }}"
+                                        target="_blank;"> 我的订单 </a> > {{ $order->serial_number }}
             </div>
 
             <div class="NowSituation">
-                <input type="hidden" value="{{ $parameters['order_status_code'][$order->order_status] }}" class="Svalue">
+                <input type="hidden" value="{{ $parameters['order_status_code'][$order->order_status] }}"
+                       class="Svalue">
                 <!--   流程图  -->
                 <div class="p_icon">
                     <ul class="icons">
@@ -38,12 +40,18 @@
             <div class="order_info">
                 <h5 class="orderTit">订单信息</h5>
                 <ul class="infoTable">
-                    <li><span class="infoTit">创建时间：</span><span>{{ $order->created_at }}</span><div class="clear"></div></li>
-                    <li><span class="infoTit">服务模式：</span>{{ $parameters['service'][$order->service_status] }}<div class="clear"></div></li>
-                   @if($order->market)
+                    <li><span class="infoTit">创建时间：</span><span>{{ $order->created_at }}</span>
+                        <div class="clear"></div>
+                    </li>
+                    <li><span class="infoTit">服务模式：</span>{{ $parameters['service'][$order->service_status] }}
+                        <div class="clear"></div>
+                    </li>
+                    @if($order->market)
                         <li><span class="infoTit">指定客服：</span><span>
-                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={{ $order->markets->qq }}&amp;site=qq&amp;menu=yes">
-                                        <img title="与我交流" border="0" src="http://wpa.qq.com/pa?p=2:{{ $order->markets->qq }}:52 &amp;r=0.20370674575679004">
+                                <a target="_blank"
+                                   href="http://wpa.qq.com/msgrd?v=3&amp;uin={{ $order->markets->qq }}&amp;site=qq&amp;menu=yes">
+                                        <img title="与我交流" border="0"
+                                             src="http://wpa.qq.com/pa?p=2:{{ $order->markets->qq }}:52 &amp;r=0.20370674575679004">
                                 </a>
                                  <em class="P_hide"><i></i>{{ $order->markets->phone }}</em>
                                 <div class="PC_hide"><a href="tel:{{ $order->markets->phone }}">点击通话</a></div>
@@ -55,71 +63,102 @@
             </div>
 
 
-                <div class="order_info">
-                    <h5 class="orderTit">票据信息</h5>
-                    <ul class="infoTable">
-                        @if($order->invoice_type != 'no_invoice')<li><span class="infoTit">开票单位：</span><span>{{ $order->company->name }}</span><div class="clear"></div></li>  @endif
-                        <li><span class="infoTit">含税模式：</span><span>   @if($order->invoice_type != 'no_invoice') 单位采购 @else 个人采购 @endif </span><div class="clear"></div></li>
+            <div class="order_info">
+                <h5 class="orderTit">票据信息</h5>
+                <ul class="infoTable">
+                    @if($order->invoice_type != 'no_invoice')
+                        <li><span class="infoTit">开票单位：</span><span>{{ $order->company->name }}</span>
+                            <div class="clear"></div>
+                        </li>  @endif
+                    <li><span class="infoTit">含税模式：</span><span>   @if($order->invoice_type != 'no_invoice') 单位采购 @else
+                                个人采购 @endif </span>
                         <div class="clear"></div>
-                    </ul>
-                </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
 
             <!-- 付款后显示 税票 -->
 
-                   @if(str_contains($order->order_status,['in_transportation','arrival _of_goods']))
-                    <div class="order_info">
-                        <h5 class="orderTit">物流信息</h5>
-                        <ul class="infoTable">
-                                @if($order->logistics_info)<li><span class="infoTit">物流信息：</span><span>{{ $order->logistics_info }}</span><div class="clear"></div></li>@endif
-                                <li><span class="infoTit">商品件数：</span><span> {{ $order->parcel_count }} 件</span><div class="clear"></div></li>
+            @if(str_contains($order->order_status,['in_transportation','arrival _of_goods']))
+                <div class="order_info">
+                    <h5 class="orderTit">物流信息</h5>
+                    <ul class="infoTable">
+                        @if($order->logistics_info)
+                            <li><span class="infoTit">物流信息：</span><span>{{ $order->logistics_info }}</span>
                                 <div class="clear"></div>
-                               @if($order->address)
-                                <div class="infoDetail">
-                                    <li><span class="infoTit">收&nbsp;&nbsp;货&nbsp;&nbsp;人：</span><span>{{ $order->address->name }}</span><div class="clear"></div></li>
-                                    <li><span class="infoTit">联系电话：</span><span>{{ $order->address->phone }}</span><div class="clear"></div></li>
-                                    <li><span class="infoTit">收货地址：</span><span>{{ $order->address->address }}</span><div class="clear"></div></li>
-                                    <li class="P_hide"><span class="infoTit">&nbsp;</span><span>&nbsp;</span><div class="clear"></div></li>
-                                    <div class="OpenDetail"><span>更多信息</span></div>
-                                </div>
-                                @endif
-                                    @if($order->user_remark)
-                                     <li><span class="infoTit">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span><span>{{ $order->user_remark }}</span><div class="clear"></div></li>
-                                    @endif
+                            </li>@endif
+                        <li><span class="infoTit">商品件数：</span><span> {{ $order->parcel_count }} 件</span>
+                            <div class="clear"></div>
+                        </li>
+                        <div class="clear"></div>
+                        @if($order->address)
+                            <div class="infoDetail">
+                                <li>
+                                    <span class="infoTit">收&nbsp;&nbsp;货&nbsp;&nbsp;人：</span><span>{{ $order->address->name }}</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li><span class="infoTit">联系电话：</span><span>{{ $order->address->phone }}</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li><span class="infoTit">收货地址：</span><span>{{ $order->address->address }}</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="P_hide"><span class="infoTit">&nbsp;</span><span>&nbsp;</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <div class="OpenDetail"><span>更多信息</span></div>
+                            </div>
+                        @endif
+                        @if($order->user_remark)
+                            <li>
+                                <span class="infoTit">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span><span>{{ $order->user_remark }}</span>
+                                <div class="clear"></div>
+                            </li>
+                        @endif
+                        <div class="clear"></div>
+                    </ul>
+
+                    @if($order->company_remark)
+                        <h5 class="orderTit">订单要求 </h5>
+                        <ul class="infoTable">
+                            <li>
+                                <span class="infoTit">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span><span>{{ $order->company_remark }}</span>
+                                <div class="clear"></div>
+                            </li>
                             <div class="clear"></div>
                         </ul>
-
-                        @if($order->company_remark)
-                            <h5 class="orderTit">订单要求 </h5>
-                            <ul class="infoTable">
-                                <li><span class="infoTit">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span><span>{{ $order->company_remark }}</span><div class="clear"></div></li>
-                                <div class="clear"></div>
-                            </ul>
-                        @endif
-                    </div>
+                    @endif
+                </div>
             @endif
-            <!-- 付款后显示 物流信息-->
+        <!-- 付款后显示 物流信息-->
 
             <div class="otherInfo">
                 <h5 class="orderTit">备注信息</h5>
-                <textarea name="user_remark" placeholder="字数请限制在300字以内，如有特殊要求，请与在线客服取得联系。" disabled>{{ $order->company_remark }}</textarea>
+                <textarea name="user_remark" placeholder="字数请限制在300字以内，如有特殊要求，请与在线客服取得联系。"
+                          disabled>{{ $order->company_remark }}</textarea>
             </div>
-
-           @if($order->flow_pic)
+            @php   $flow_chart=json_decode($order->pic,true);@endphp
+            @if(!empty($flow_chart))
                 <div class="liuPic">
                     <h5 class="orderTit">装机流程图</h5>
-                    <div class="picsBox">
-                        <div class="buy_left">
-                            <div class="main_pic" title="点击查看大图">
+                    <div class="picsBox ">
+                        <div class="buy_left ">
+                            <div class="main_pic " title="点击查看大图">
                                 <span data-close="" class="close" title="关闭">×</span>
                                 <span class="arrow leftArrow">‹</span>
                                 <span class="arrow rightArrow">›</span>
-                                @php   $flow_chart=json_decode($order->pic,true);@endphp
+
                                 <ul>
-                                        @forelse($flow_chart as $item)
-                                            <li data-number="{{ $loop->index }}" class="@if($loop->index ==0 ) active @endif"><img class="lazy" data-original="{{ $item['url'] }}" src="{{ $item['url'] }}"></li>
-                                       @empty
+                                    @forelse($flow_chart as $item)
+                                        <li data-number="{{ $loop->index }}"
+                                            class="@if($loop->index ==0 ) active @endif"><img class="lazy"
+                                                                                              data-original="{{ $item['url'] }}"
+                                                                                              src="{{ $item['url'] }}">
+                                        </li>
+                                    @empty
                                         <li> 没有流程图</li>
-                                        @endforelse
+                                    @endforelse
 
                                     <div class="clear"></div>
                                 </ul>
@@ -128,7 +167,11 @@
                             <div class="picsBox">
                                 <ul class="scroll_pic">
                                     @forelse($flow_chart as $item)
-                                        <li data-number="{{ $loop->index }}" class="@if($loop->index ==0 ) active @endif"><img class="lazy" data-original="{{ $item['url'] }}" src="{{ $item['url'] }}"></li>
+                                        <li data-number="{{ $loop->index }}"
+                                            class="@if($loop->index ==0 ) active @endif"><img class="lazy"
+                                                                                              data-original="{{ $item['url'] }}"
+                                                                                              src="{{ $item['url'] }}">
+                                        </li>
                                     @empty
                                         <li> 没有流程图</li>
                                     @endforelse
@@ -142,7 +185,7 @@
                         <div class="phone_lookMore">查看全部</div>
                     </div>
                 </div>
-          @endif
+            @endif
 
             <div class="confirmInfo">
                 <div class="erweiBox">
@@ -156,11 +199,20 @@
                     <div class="editOpen"></div>
                     <div class="orderPrice">
                         <ul>
-                            <li><span class="bottomTit">单套价格：</span><span class="bottomContent">{{ $order->unit_price }}.00元</span><div class="clear"></div></li>
+                            <li><span class="bottomTit">单套价格：</span><span class="bottomContent">{{ $order->unit_price }}
+                                    .00元</span>
+                                <div class="clear"></div>
+                            </li>
                             @if($order->service_status > 0)
-                                <li><span class="bottomTit">服务费：</span><span class="bottomContent">{{ $order->service_status }}.00元</span><div class="clear"></div></li>
+                                <li><span class="bottomTit">服务费：</span><span class="bottomContent">{{ $order->service_status }}
+                                        .00元</span>
+                                    <div class="clear"></div>
+                                </li>
                             @endif
-                            <li><span class="bottomTit">总金额：</span><span class="bottomContent"><b>{{ $order->total_prices }}.00元</b></span><div class="clear"></div></li>
+                            <li><span class="bottomTit">总金额：</span><span class="bottomContent"><b>{{ $order->total_prices }}
+                                        .00元</b></span>
+                                <div class="clear"></div>
+                            </li>
                             <li><span class="bottomTit">款项状态：</span>
                                 <span class="bottomContent">
                                     @if($order->payment_status == 'account_paid')
@@ -182,8 +234,9 @@
                     <a class="P_hide goBack" href="{{ route('orders.index') }}?order_status={{ $order->order_status }}">返回</a>
                     @if($order->order_status == 'placing_orders')
 
-                        <a class="phoneAllBtn  order_save" data-status="intention_to_order"   data-url="{{ route('orders.update',$order->id) }}">取消下单</a>
-                   @endif
+                        <a class="phoneAllBtn  order_save" data-status="intention_to_order"
+                           data-url="{{ route('orders.update',$order->id) }}">取消下单</a>
+                    @endif
                     {!! Form::open(['onsubmit'=>'return false','method'=>'put','class'=>'order_edit']) !!}
                     <input type="hidden" value="cancel_the_order" name="status">
                     {!! Form::close() !!}

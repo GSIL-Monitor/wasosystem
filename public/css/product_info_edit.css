@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+body{overflow-x: hidden;}
+.pro_detail{ position:fixed; width:1000px; background:#fff; left:50%; max-height: 80%; margin-left:-500px; z-index:1001; transition: all 0.3s 0s;  opacity: 0; filter:alpha(opacity=0); transform: scale(0.3);}
+.pro_detail::-webkit-scrollbar {display:none}
+.showProDetail{opacity: 1; filter:alpha(opacity=1); transform: scale(1);}
+
+.editBoxWrap{position: relative; height:100%;}
+.editBoxWrap::-webkit-scrollbar {display:none}
+
+.ivu-select-dropdown{z-index: 1007!important;}
+/*   购物车产品弹出框编辑 */
+
+.editBox {height:100%;}
+.editBox .editInfo{ background: #fff; position: absolute; left:0; top:0; z-index: 10; width: 100%;}
+.editBox .editInfo .DoneInfo{position:relative; padding:20px 20px 0;}
+.editBox .editInfo .DoneInfo .headPic{width:15%; background:#fff; float:left; border:1px solid #dedede;}
+.editBox .editInfo .DoneInfo .headPic img{width:100%;}
+.editBox .editInfo .DoneInfo .editName{float:left; width:85%;}
+.editBox .editInfo .DoneInfo .editName .name{font-size:20px; padding-left:20px;}
+.editBox .editInfo .DoneInfo .editName h5{padding:0;}
+.editBox .editInfo .DoneInfo .editName h5 input{font-size:18px; color:#333; font-weight:400; line-height:25px; background: none!important;}
+.editBox .editInfo .DoneInfo .editName .p_hide{font-size:12px; color:#999;}
+.editBox .editInfo .DoneInfo .editName .p_hide input{color:#999; vertical-align:middle; width:100%;}
+.editBox .editInfo .DoneInfo .editName .price{margin:10px 0 0; color:#f04042; line-height:25px; padding-left:20px;}
+.editBox .editInfo .DoneInfo .editName .price b{font-size:20px; color:#f04042;}
+.editBox .editInfo .DoneInfo .editName .price i{font-size:12px; color:#777;}
+.editBox .editInfo .DoneInfo .editName #peizhi{position: absolute; right:20px; bottom:0;}
+.editBox .editInfo .DoneInfo::after{content:"."; height:0; visibility: hidden; display:block; clear: both; }
+
+.editBox .DoneControl{margin:20px 0 0 20px;  width: 100%;}
+.editBox .DoneControl span{display:block; padding:5px 20px; width:auto; text-align:center; cursor:pointer; font-size:14px; background:#176b86; color:#fff; float:left;}
+.editBox .DoneControl span:hover{background:#197594;}
+.editBox .DoneControl .reset{/*background:#E9F7FB; */ background:#f5f5f5; color:#777;}
+.editBox .DoneControl .reset:hover{/*background:#D4EEF7;*/ background:#f1f1f1;}
+.editBox .DoneControl::after{content:"."; height:0; clear:both; visibility: hidden; display: block;}
+
+.editBox .edit_Cancel{cursor: pointer; display: block; text-align: center; width:40px; height:40px; position:absolute; top:0; right:0; z-index:1112; font-size:36px; line-height:40px; background:#f5f5f5; color:#777;}
+.editBox .edit_Cancel:hover{background:#f04042; color:#fff;}
+
+
+.editBox .editInfo .editName .peizhiIcon h5{font-size:14px; line-height:normal; color:#999; cursor:pointer;}
+.editBox .editInfo .editName .peizhiIcon #peizhi{display:none; position:absolute; top:-15px; background:#fff; z-index:111; left:-15px; border:1px solid #dedede;}
+.editBox .editInfo .tableTh{background:#f5f5f5; margin-top:10px;}
+.editBox .editInfo .tableTh div{font-weight:400; text-align:center; float:left; line-height: 40px;}
+.editBox .editInfo .tableTh div:nth-child(1){width: 5%;}
+.editBox .editInfo .tableTh div:nth-child(2){width: 10%;}
+.editBox .editInfo .tableTh div:nth-child(3){width: 40%;}
+.editBox .editInfo .tableTh div:nth-child(4){width: 10%;}
+.editBox .editInfo .tableTh div:nth-child(5){width: 10%;}
+.editBox .editInfo .tableTh div:nth-child(6){width: 25%;}
+.editBox .editInfo .tableTh .A_Total{color:#444;}
+.editBox .editInfo .tableTh .A_detail{color:#444;}
+.editBox .editInfo .tableTh::after{content:"."; height:0; clear:both; visibility: hidden; display: block;}
+
+
+
+
+.detail_inner{border-top:1px solid #dedede; background:#fff; overflow-y: scroll;}
+.pro_detail .detail_inner ul{padding:0;}
+
+.detail_inner ul li{border-bottom:1px solid #efefef; padding:10px 0;  position:relative;}
+.detail_inner ul li div{line-height:27px; font-size:12px;  text-align:left; width: 99%;}
+.detail_inner ul li .A_caozuo{width:5%; float:left; height:30px;}
+.detail_inner ul li .A_caozuo i{display:block; vertical-align:middle; margin:0 auto; height:20px; cursor:pointer; width:20px; background:url(../pic/icons.png) no-repeat -90px -330px;}
+.detail_inner ul li .A_caozuo i:hover{background-position:-90px -355px;}
+.detail_inner ul li .A_caozuo input{display: none}
+.detail_inner ul li .A_caozuo button{background: none; border:none;}
+.detail_inner ul li .A_type{float:left; width:10%; text-align:center;}
+.detail_inner ul li .A_name{float:left; width:79%; white-space: nowrap; text-overflow: ellipsis; font-size: 12px;}
+.detail_inner ul li .A_easy_name{float:left; width:40%; display:block; white-space:nowrap; }
+.detail_inner ul li .A_easy_name select{width:90%; height:30px; border-color:#dedede;}
+.detail_inner ul li .A_easy_name .select2{width:90%!important;}
+.detail_inner ul li .A_easy_name .select2 input{border:none;}
+.detail_inner ul li .A_easy_name .ivu-col input{border:none;}
+.detail_inner ul li .A_p{display:none;}
+.detail_inner ul li .A_num{float:left; width:10%; text-align:center; }
+.detail_inner ul li .A_num .A_numbox{font-size: 14px; line-height:28px; border:1px solid #dedede;}
+.detail_inner ul li .A_num .A_numbox button{border:none; box-sizing: content-box; float:left; width:30%; cursor: pointer; background:#f5f5f5; color:#333; height:25px; line-height:25px;}
+.detail_inner ul li .A_num .A_numbox button:hover{background:#dedede;}
+.detail_inner ul li .A_num .A_numbox input{float:left; width:40%; -webkit-appearance:none; /*去除input默认样式*/ background:#fff; -webkit-text-fill-color:#333;  -webkit-opacity:1;  opacity: 1; box-sizing: border-box; border-left:1px solid #dedede; border-right:1px solid #dedede; text-align: center; color:#333!important; font-size: 12px; line-height:25px; height:25px;}
+.detail_inner ul li .A_num .A_numbox .none{color:#f1f1f1; cursor: default; background: #f5f5f5;}
+.detail_inner ul li .A_num .A_numbox .none:hover{background:#f5f5f5;}
+.detail_inner ul li .A_radius{float:left; width:10%; text-align:center; height:30px;}
+.detail_inner ul li .A_radius select{height:30px; width:90%; margin:0 auto; display:block;}
+.detail_inner ul li .A_detail{float:left; width:25%; color:#777;}
+.detail_inner ul li .A_price{display:none;}
+.detail_inner ul li .A_Total{display:none;}
+.detail_inner ul li .A_total{float:left; width:14%; color:#176b86;}
+.detail_inner ul li .ivu-col-span-12{width:92%;}
+.detail_inner ul li .ivu-col-span-12 input{height:27px; line-height: 27px;}
+.detail_inner ul li .ivu-select-single .ivu-select-selection{height:27px;}
+
+.addPro{position:absolute; left:0; bottom:0; z-index:1006; padding:9px 0 10px; width: 100%; border-radius:5px; background: #fff; border-top:1px solid #dedede}
+.addPro > select{width:20%; line-height:30px; height:30px; float:left; margin:0 20px; border-radius: 5px 5px;}
+.addPro > div{width: 40%; float:left;}
+.addPro > div input{line-height: 30px; border:1px solid rgb(153,153,153); border-radius: 3px; height:30px;}
+.addPro > div .ivu-select-single .ivu-select-selection{height:30px; border-color: #999;}
+.addPro > div .ivu-col-span-12{width: 100%;}
+.addPro::after{content:"."; height:0; clear:both; visibility: hidden; display: block;}
+.addPro .addNumBox{float:left; margin:0 10px; line-height: 30px; max-width: 15%;}
+.addPro span{display:inline-block; vertical-align:middle;}
+.addPro .addNumBox input{border:1px solid rgb(153,153,153); height:30px; line-height:30px; border-radius: 3px; color: red; text-align: center; max-width: 80px;}
+.addPro .addBtnBox button{width:auto; padding:0 10px; border:none; text-align:center; color:#fff; background:#62B135; cursor:pointer; font-weight:400; line-height:30px;}
+.addPro .addBtnBox button:hover{background:#6BC039;}
+
+/*.addPro .addTypeBox{overflow:hidden;}*/
+/*.addPro .addTypeBox input{border:1px solid #d4d4d4; line-height: 24px; max-width:65%; width:20%;}*/
+
+
+
+@media only screen and (max-width:700px){
+    .pro_detail{padding:0; left:0; bottom:0!important; margin:0!important; width: 100%; top:auto!important; height: 80%!important;}
+    .editBox .editInfo .DoneInfo{padding:10px;}
+    .editBox .editInfo .DoneInfo .editName .name{font-size:14px; padding-left:10px;}
+    .editBox .editInfo .DoneInfo .editName h5 input{line-height: inherit;}
+    .editBox .editInfo .DoneInfo .editName .price{margin-top:0; padding-left:10px;}
+    .editBox .editInfo .DoneInfo .editName .price b{font-size:14px;}
+    .editBox .DoneControl{margin:5px 0 0 10px; padding:0;}
+    .editBox .editInfo .DoneInfo .editName #peizhi{display: none;}
+    .editBox .editInfo .tableTh{display: none;}
+    .pro_detail .editBox .detail_inner{padding-bottom:40px;}
+    .pro_detail .editBox .detail_inner ul{width: 100%; overflow-x: hidden;}
+    .pro_detail .editBox .detail_inner ul li .A_caozuo{width: 10%;}
+    .pro_detail .editBox .detail_inner ul li .A_type{width: 15%;}
+    .pro_detail .editBox .detail_inner ul li .A_name{width: 75%;}
+    .pro_detail .editBox .detail_inner ul li .A_num{width: 20%; margin:5px 0 5px 15%;}
+    .pro_detail .editBox .detail_inner ul li .A_radius{width: 80%; margin-left:15%;}
+    .pro_detail .editBox .detail_inner ul li .A_detail{width: 80%; margin-left:15%;}
+    .detail_inner ul li .ivu-col-span-12{width: 98%;}
+    .addPro{padding:5px 10px; box-sizing: border-box;}
+    .addPro > select{width: 30%; margin:0;}
+    .addPro .addNumBox{display: none;}
+    .addPro > div{width: 50%; box-sizing: border-box; padding-left:10px;}
+    .addPro span{width: 20%;}
+    .addPro span button{width: 100%; margin-left:10px;}
+    /*.editBox .editInfo .p_hide{display:none;}*/
+    /*.editBox .editInfo{padding:10px; width:auto;}*/
+    /*.editBox .editInfo .DoneInfo{float:none; width:100%;}*/
+    /*.editBox .editInfo .DoneInfo .headPic{width:50px;}*/
+    /*.editBox .editInfo .DoneInfo .editName h5{font-size:14px;}*/
+    /*.editBox .editInfo .DoneInfo .editName .price{padding-bottom:5px;}*/
+    /*.editBox .editInfo .DoneInfo .editName .price b{font-size:12px;}*/
+    /*.editBox .editInfo .DoneInfo .peizhiIcon{display:none;}*/
+    /*.editBox .editInfo .DoneControl{float:none; position:fixed; bottom:0; left:0; width:100%;}*/
+    /*.editBox .editInfo .DoneControl span{height:49px; border-top:1px solid #ededed; line-height:50px;}*/
+    /*.addPro{bottom:60px; left:10px;}*/
+    /*.addPro .addNumBox{display:none;}*/
+    /*.detail_inner{border-bottom:1px solid #dedede;}*/
+    /*.detail_inner ul .tit{display:none;}*/
+    /*.detail_inner ul li{padding:10px;}*/
+    /*.detail_inner ul li .A_caozuo i:hover{background:none;}*/
+    /*.detail_inner ul li .A_type{width:19%; min-height:65px; line-height: 65px;}*/
+    /*.detail_inner ul li .A_easy_name{width:75%;}*/
+    /*.detail_inner ul li .A_detail{width:75%; margin-bottom:5px;}*/
+    /*.detail_inner ul li .A_num{width:102px;}*/
+    /*.detail_inner ul li .A_radius{width:100px;}*/
+    /*.detail_inner ul li .A_caozuo{position:absolute; right:10px; bottom:12px; width:20px;}*/
+}

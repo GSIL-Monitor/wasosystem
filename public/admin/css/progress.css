@@ -1,0 +1,244 @@
+.PersonInfo{border-bottom:1px solid #999; margin-bottom:20px; padding-bottom:10px;}
+.PersonInfo dl{position: relative; width: 33.33%; float:left;}
+.PersonInfo dl:nth-child(3n){margin-right:0;}
+.PersonInfo dl dt{font-weight:bold; float:left; line-height:25px; width:15%;}
+.PersonInfo dl dd{padding:0 40px 0 20px;  float:left; width: 85%; box-sizing: border-box;}
+.PersonInfo dl dd a{display: block; margin: 0 10px 10px 0;  float: left;  line-height:25px;  cursor: pointer;  color: #444;  padding: 0 5px;  }
+.PersonInfo dl .active {border-radius:5px 5px; font-weight: bold; background: #176b86;  color: #fff;  }
+.PersonInfo dl::after{clear: both; visibility: hidden; height:0; content: "."; display: block;}
+.PersonInfo::after{clear: both; visibility: hidden; height:0; content: "."; display: block;}
+.tips{color:#c9120f;}
+.total .numTotal {  margin: 30px 0 20px 0;  }
+.total .numTotal h5 {  font-size: 20px;  font-weight: bold;  }
+
+/*.total .numTotal ul li .liName{box-sizing:border-box; width:50%; float:left; text-align: center; line-height:40px; padding:0 2%; border-right:1px solid #999; font-weight:bold;}*/
+/*.total .numTotal ul li .liCont{box-sizing:border-box; width:50%; float:left; line-height:40px; padding:0 2%;}*/
+.total .picTotal {  width: 100%;  position: relative;  }
+
+
+
+.total .picTotal .LeftNum ul li {
+    line-height: 40px;
+    border-bottom: 1px dashed #999;
+    margin: 0 0 20px 5%;
+    height: 19px;
+    position: relative;
+}
+
+.total .picTotal .LeftNum ul li b {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    color: #666;
+    text-align: right;
+    width: 8%;
+}
+
+.total .picTotal .LeftNum ul .zero {
+    border-bottom-style: solid;
+}
+
+.total .picTotal .lines {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.total .picTotal .lines ul {
+    position: relative;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.total .picTotal .lines ul li {
+    width: 6%;
+    margin: 0 2%;
+    float: left;
+    height: 480px;
+    position: relative;
+}
+
+.total .picTotal .lines ul li em {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s 1s;
+    height: 1px;
+    z-index: 100;
+}
+
+.total .picTotal .lines ul li em h5 {
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: -20px;
+    line-height: 20px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+
+.total .picTotal .lines ul li:hover {
+    background: #B3BCD0;
+}
+
+.total .picTotal .lines ul .down em {
+    background: red;
+    top: 37.5%;
+}
+
+.total .picTotal .lines ul .down em h5 {
+    color: red;
+}
+
+.total .picTotal .lines ul .up em {
+    background: green;
+    bottom: 37.5%;
+}
+
+.total .picTotal .lines ul .up em h5 {
+    color: green;
+}
+
+.total .picTotal .BotNum {
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    margin-left: 5%;
+}
+
+.total .picTotal .BotNum dl {
+    width: 100%;
+}
+
+.total .picTotal .BotNum dl dd {
+    width: 6%;
+    margin: 0 2%;
+    float: left;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+}
+
+.total .picTotal .BotNum dl dd h5 {
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hide {
+    display: none
+}
+
+.picTotal th i{display: inline-block; width:15px; height:15px; margin:0 5px 0 10px; vertical-align: middle;}
+.picTotal .MBI{ background:#ccc }
+.picTotal .MBIWords{ color:#999 }
+.picTotal .YHI{background:#228B22;}
+.picTotal .YHIWords{color:#228B22;}
+.picTotal .BDI{background: #FF4500;}
+.picTotal .BDIWords{color: #FF4500;}
+.picTotal .JDBox{height:10px; margin:20px 0 20px 50px; position: relative;}
+.picTotal .JDBox i{display: block; position: absolute; top:0; right:0; padding:10px 3px 0 0; line-height:18px; font-weight:bold;}
+.picTotal .JDBox .goal{height:10px; width:100%; position: absolute; left:0; bottom:0; z-index: 1; background: #ccc;}
+.picTotal .JDBox .goal i{border-right:1px solid #ccc; color:#999; padding:0 3px 10px 0; top:auto; bottom:0;}
+.picTotal .JDBox .guaranteed_task{height:10px; position: absolute; left:0; bottom:0; z-index:5; background:#FF4500;}
+.picTotal .JDBox .guaranteed_task i{border-right:1px solid #FF4500; color:#FF4500; padding:0 3px 10px 0; top:auto; bottom:0;}
+.picTotal .JDBox .returned_money{height:10px; position: absolute; left:0; bottom:0; z-index:10; background: #228B22;}
+.picTotal .JDBox .returned_money i{border-right:1px solid #228B22; color:#228B22; }
+.picTotal tr:hover .JDBox{opacity: 1;}
+
+
+
+/*chart*/
+.chartData{height:500px; overflow-y: scroll; width:200px;border: 1px solid #333}
+#chart, #chartData { background: #ebedf2 url("../charts/images/gradient.png") repeat-x 0 0;  }
+#chart {  display: block;  margin: 0 0 50px 0;  float: left;  cursor: pointer;  }
+#chartData {
+    width: 180px;
+    margin: 0 5px 0 0;
+    float: left;
+    border-collapse: collapse;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    background-position: 0 -100px;
+}
+#chartData th, #chartData td { border: 1px dotted #666;  text-align: left;  }
+#chartData th {  border-bottom: 2px solid #333;  text-transform: uppercase;  }
+#chartData td {  cursor: pointer; font-weight:bolder; }
+#chartData td .highlight {background: #e8e8e8;  }
+#chartData tr:hover td {  background: #f0f0f0;  }
+
+.container{float:left;}
+.bingBox{padding:40px 20px; margin-right:20px; background: #fff;}
+.bingBox .pieBigMode{position: relative; float:left; width:40%;}
+.bingBox .pieBigMode .bindBox{width: 100%;}
+.bingBox .pieBigMode .bindBox li{width: 100%; text-align: right; background: #fff;}
+.bingBox .pieBigMode .bindBox li .bindZhi{width:20%; float:left;  padding:10px 2% 10px 0; border-right:1px solid #999; text-align: left; position: relative;}
+.bingBox .pieBigMode .bindBox li .bindLine{width:75%; float:left; margin-top:10px;}
+.bingBox .pieBigMode .bindBox li::after{content:"."; height:0; visibility: hidden; clear: both; display: block;}
+.bingBox .pieBigMode .bindBox .lines{height:20px; background: #0E9CFA; margin:0; transition: width 0.3s 1s; width:0; position: relative;}
+.bingBox .pieBigMode .bindBox .lines .zhi{position: absolute; right:-20px; bottom:0px; line-height: 20px; width: 10px;}
+.bingBox .pieBigMode .bindBox::after{content:"."; height:0; visibility: hidden; clear: both; display: block;}
+.bingBox .pieBigMode::after{content:"."; height:0; visibility: hidden; clear: both; display: block;}
+.bingBox .pieBigMode .bottomLines{width:80%; margin-left:20%; border-top:1px solid #999;}
+.bingBox .pieBigMode .bottomLines i{display: block; float: left; width: 33.33%;}
+.bingBox .pieBigMode .bottomLines i:nth-child(2){text-align: center;}
+.bingBox .pieBigMode .bottomLines i:last-child{text-align: right;}
+.bingBox canvas{
+    -webkit-transform: rotateZ(-270deg);
+    transform:rotateZ(-270deg);
+    -webkit-animation:ani01 1s ease 0s both;
+    animation:ani01 1s ease 0s both;
+}
+.bingBox .pies{float:left; width:60%;}
+.bingBox .pies li{float:left; width:33.33%; overflow: hidden; margin:20px 0;}
+.bingBox .pies li > div{margin:0 auto; text-align: center;position:relative; width: 100%;}
+.bingBox .pies li .txtBox{display: block; width: 100%; position: absolute; left:0; top:50%; margin-top:-40px; z-index: 20; text-align: center;}
+.bingBox .pies li .txtBox .bigTxt{font-size:30px; font-weight:bold; color:#0E9CFA; line-height: 40px;}
+.bingBox .pies li .txtBoxBottom{display: block; text-align: center; font-size:14px; width: 100%; margin-top:10px;}
+.bingBox::after{content:"."; height:0; visibility: hidden; clear: both; display: block;}
+.bingBox .pies::after{content:"."; height:0; visibility: hidden; clear: both; display: block;}
+
+@-webkit-keyframes ani01 {
+    0%{
+        -webkit-transform:scale(.5,.5) rotateZ(-270deg);
+        transform:scale(.5,.5) rotateZ(-270deg);
+    }
+    100%{
+        -webkit-transform:scale(1,1) rotateZ(-90deg);
+        transform:scale(1,1) rotateZ(-90deg);
+    }
+}
+@keyframes ani01 {
+    0%{
+        -webkit-transform:scale(.5,.5) rotateZ(-270deg);
+        transform:scale(.5,.5) rotateZ(-270deg);
+    }
+    100%{
+        -webkit-transform:scale(1,1) rotateZ(-90deg);
+        transform:scale(1,1) rotateZ(-90deg);
+    }
+}
+
+
+
+
+
+figure{margin:0 auto; display:block!important;}
+
+
+@media only screen and (max-width: 900px){
+    .PersonInfo{padding:0 10px;}
+    .PersonInfo dl{width: 100%; float:none;}
+    .PersonInfo dl dt{width: 20%;}
+    .PersonInfo dl dd{width: 80%; padding:0;}
+    .total .listTable{width: 100%;}
+    .tips{padding:10px;}
+
+    .bingBox{margin:0; padding:0;}
+    .bingBox .pieBigMode{width: 100%; padding:10px;}
+    .bingBox .pies{width: 100%;}
+    .bingBox .pies li .txtBox .bigTxt{font-size:16px!important;}
+}

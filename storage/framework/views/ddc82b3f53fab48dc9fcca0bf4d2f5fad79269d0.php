@@ -76,7 +76,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 <?php endif; ?>
             </table>
-            <?php echo $warehouse_out_managements->appends(Request::all())->render(); ?>
+                <?php echo $warehouse_out_managements->appends(Request::except('page'))->render(); ?>
 
             </form>
 

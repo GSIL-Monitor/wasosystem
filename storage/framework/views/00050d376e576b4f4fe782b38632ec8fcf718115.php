@@ -113,7 +113,7 @@
                         </tr>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </table>
-                <?php echo e($users->appends(Request::has('source')? array_to_url(Request::all()) :'')->links()); ?>
+                <?php echo e($users->appends(Request::except('page'))->links()); ?>
 
 
             </form>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+.body .info_box .right .info button{padding:0 40px; line-height:40px; color:#fff; background: #176b86; border:none;}
+.body .info_box .right .info button:hover{background: #197594; cursor: pointer;}
+.safe{padding-bottom:40px;}
+.safe li{margin-bottom:20px;}
+.safe li .tit{line-height:35px; color:#666; float:left; width:10%;}
+.safe li .con{min-width:200px; float:left; line-height: 35px; position: relative;}
+.safe li input[type='password']{line-height: 35px; height:33px; min-width: 200px;}
+.safe li .error_msg{bottom:auto; top:50%; left:auto; right:-150px; width:140px; margin-top:-11px;}
+
+@media only screen and (max-width: 900px){
+    .body .info_box .right .info{background:#fff; padding:10px;}
+    .body .info_box .right .info button{width:100%; position: fixed; bottom: 0; left:0; z-index: 999; line-height: 50px;  padding:0; margin:0 auto; display: block;}
+    .safe li{margin-bottom:0;}
+    .safe li .tit{float:none; width: 100%; display: block; padding:0!important; font-weight:bold; }
+    .safe li .con{float:none; width: 100%; display: block; padding-bottom:30px;}
+    .safe li input[type='password']{width: 100%; line-height: 45px; height:43px;}
+    .safe li .suc_msg{left:0; right:auto; top:auto; bottom:5px;}
+    .safe li .error_msg{left:0; right:auto; bottom:5px; top:auto; margin:0; line-height: 20px; height:20px;}
+    #foot{display:none;}
+}

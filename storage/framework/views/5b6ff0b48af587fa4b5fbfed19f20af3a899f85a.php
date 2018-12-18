@@ -1,5 +1,13 @@
 
 <?php $grade=$visitor_detail->user->grade ?? '';?>
+<?php $__env->startSection('js'); ?>
+    <?php echo $__env->make('vendor.ueditor.assets', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <script>
+        var vm=new Vue({
+            el:'#app'
+        });
+    </script>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="nowWebBox">
         <div class="PageBtn">

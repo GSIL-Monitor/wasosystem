@@ -1,4 +1,29 @@
 
+<?php $__env->startSection('js'); ?>
+    <script>
+
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                <?php if(Route::is('admin.information_managements.create')): ?>
+                defaultList: [],
+                <?php else: ?>
+                defaultList:<?php echo $information_management->pic; ?>,
+                <?php endif; ?>
+                actionImageUrl: "<?php echo env('ActionImageUrl'); ?>",
+                imageUrl: "<?php echo env('IMAGES_URL'); ?>",
+                deleteImageUrl: "<?php echo env('DeleteImageUrl'); ?>",
+                fileCount:1,
+            },
+            methods: {
+
+            },
+            mounted: function () {
+            },
+        });
+
+    </script>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="nowWebBox">
         <div class="PageBtn">

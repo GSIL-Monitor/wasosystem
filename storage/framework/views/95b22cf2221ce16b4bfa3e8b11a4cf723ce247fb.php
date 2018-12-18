@@ -1,11 +1,12 @@
 
 <?php $__env->startSection('css'); ?>
+
     <style>
         .maxUl li .liRight table tr td label{display: block;}
-        .maxUl li .liRight table tr td .openBtn{color:#176b86; margin:0 20px; cursor: pointer;}
-        .maxUl li .liRight table tr td .openTM:hover{text-decoration: underline;}
-        .maxUl li .liRight table tr td .TMBox{display: none;}
-        .maxUl li .liRight table tr td .TMBox label{margin:0; display: block; text-align: center;}
+        .openBtn{color:#176b86;  cursor: pointer;width: 100px}
+       .openTM:hover{text-decoration: underline;}
+       .TMBox{display: none;}
+       .TMBox label{margin:0; display: block; text-align: center;}
     </style>
  <?php $__env->stopSection(); ?>
 <?php $__env->startSection('js'); ?>
@@ -29,12 +30,18 @@
                 <?php if(!Route::is('admin.orders.create')): ?>
                 <button class="Btn orders_for_the_transfer" @click="orders_for_the_transfer">订单过户</button>
                 <?php endif; ?>
+
+
                 <button class="changeWebClose Btn">返回</button>
             </div>
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">
-            <?php echo $__env->make('admin.orders.form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php if(is_mobile()): ?>
+             <?php echo $__env->make('admin.orders.mobile_form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+             <?php else: ?>
+             <?php echo $__env->make('admin.orders.form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endif; ?>
         </div>
     </div>
 

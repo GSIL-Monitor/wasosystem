@@ -20,12 +20,17 @@ class PutInStorageManagementServices
     public function code_in_storage($put_in_storage_management,$data)
     {
         $data['code']=explode(',',$data['code']);
-        if($data['procurement_number'] == $data['finish_procurement_number']){
-            $data['procurement_status']='finish';
-        }else{
-            $data['procurement_status']='unfinished';
-        }
+//        if($data['procurement_number'] == $data['finish_procurement_number']){
+//            if(){
+//                $data['procurement_status']='unfinished';
+//            }else{
+//                $data['procurement_status']='finish';
+//            }
+//        }else{
+//            $data['procurement_status']='unfinished';
+//        }
         if($put_in_storage_management){
+
             $put_in_storage_management->update($data);
         }else{
             $put_in_storage_management=ProcurementPlan::create($data);

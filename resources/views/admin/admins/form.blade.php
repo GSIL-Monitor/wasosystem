@@ -12,7 +12,7 @@
                     @php $admin_role=isset($admin)?$admin->roles:false; @endphp
                     @foreach ($roles as $role)
                         <label class="checkBoxLabel" for="{{  $role->id }}">
-                        {{ Form::checkbox('roles[]',  $role->id,old('roles[]',$admin_role),['id'=> $role->id]) }}{{ $role->title }}
+                        {{ Form::checkbox('roles[]',  $role->id,old('roles[]',$admin_role),['id'=> $role->id,'class'=>'checkNull']) }}{{ $role->title }}
                         </label>
                     @endforeach
                 </div>

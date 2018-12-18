@@ -15,6 +15,7 @@
     <?php echo $__env->yieldContent('css'); ?>
 </head>
 <body>
+<audio id="wavFileId" src="<?php echo e(asset('mp3/xiadan.wav')); ?>" style="display: none;" ></audio>
     
     <?php echo $__env->yieldContent('content'); ?>
     
@@ -26,6 +27,9 @@
                 toastrMessage("<?php echo e($msg); ?>","<?php echo e(session()->get($msg)); ?>");
             <?php endif; ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            if($('.new').length > 0){
+                $("#wavFileId").attr("autoplay","autoplay");
+            }
         });
         </script>
 </body>

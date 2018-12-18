@@ -50,7 +50,7 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 @endforelse
             </table>
-             {{ $old_orders->links() }}
+             {{ $old_orders->appends(Request::except('page'))->links() }}
             </form>
 
         </div>

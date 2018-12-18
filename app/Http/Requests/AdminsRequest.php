@@ -20,6 +20,14 @@ class AdminsRequest extends Request
             case 'POST':
             {
                 return [
+                    'roles.*'=>[
+                        function($attribute, $value, $fail){
+                            if(empty(array_filter(request('roles')))){
+                                return    $fail('角色必须选择');
+                            }
+                            return ;
+                        }
+                    ],
                     'account' => 'required|numeric|unique:admins,account',
                     'name' => 'required|unique:admins,name',
                     'password' => 'required|min:6',
@@ -30,6 +38,14 @@ class AdminsRequest extends Request
             case 'PATCH':
             {
                 return [
+                    'roles.*'=>[
+                        function($attribute, $value, $fail){
+                            if(empty(array_filter(request('roles')))){
+                                return    $fail('角色必须选择');
+                            }
+                            return ;
+                        }
+                    ],
                     'account' =>"required|unique:admins,account,".$this->route('admin')->id,  //排除自己的唯一
                     'name' =>"required|unique:admins,name,".$this->route('admin')->id,  //排除自己的唯一
                 ];

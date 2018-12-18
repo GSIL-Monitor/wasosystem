@@ -53,7 +53,7 @@ class MaterialCodeSheetExport implements WithEvents
                $sheet->setCellValue('A'.($key + 5), $item->product->title);
                $sheet->setCellValue('B'.($key + 5), $item->name);
                $sheet->setCellValue('C'.($key + 5), $item->pivot->product_good_num);
-               $sheet->setCellValue('D'.($key + 5), '')->mergeCells('D' . ($key + 5) . ':' . 'E' . ($key + 5));
+               $sheet->setCellValue('D'.($key + 5),  implode("\n",self::$order->warehouseOut->codes[$key]->code ?? []))->mergeCells('D' . ($key + 5) . ':' . 'E' . ($key + 5));
                $sheet->getRowDimension(($key + 5))->setRowHeight(20);
                $event->sheet->styleCells('B'.($key + 5), [ 'alignment' => ['wrapText'=>true,'horizontal' => Alignment::HORIZONTAL_LEFT]]);
                $event->sheet->styleCells('E'.($key + 5), [ 'alignment' => ['wrapText'=>true,'horizontal' => Alignment::HORIZONTAL_LEFT]]);

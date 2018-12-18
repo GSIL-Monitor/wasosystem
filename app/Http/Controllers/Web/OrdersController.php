@@ -68,7 +68,8 @@ class OrdersController extends Controller
                 $this->machineServices->set_user_product($order->order_product_goods);
                 $user_products=$this->machineServices->get_user_product();
             }
-            return view('member_centers.orders.intention_details',compact('order','service_status','order_details','user_products'));
+            $parameters = $this->orderServices->getParameters();
+            return view('member_centers.orders.intention_details',compact('order','service_status','order_details','user_products','parameters'));
         }
     }
     public function reset(Request $request,Order $order)
@@ -91,7 +92,7 @@ class OrdersController extends Controller
             $order_details=BaseSheetExport::material_details($order);
         }
 
-//        dump($parameters,$order);
+    // dump($parameters,$order);
         return view('member_centers.orders.intention_details',compact('order','parameters','service_status','order_details','user_products'));
     }
     //订单复制

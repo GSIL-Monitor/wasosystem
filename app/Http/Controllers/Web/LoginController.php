@@ -51,20 +51,23 @@ class LoginController extends Controller
         $emailRule= function ($attribute, $value, $fail) {
             $email=User::whereEmail(\request('email'))->first();
             if ($email && $email->grade == 'blocked_account') {
-                $fail('邮箱已被禁用！请联系管理员');
+                $fail('邮箱已被禁用！请联系客服人员');
             }
+
         };
         $phoneRule= function ($attribute, $value, $fail) {
             $phone=User::wherePhone(\request('phone'))->first();
             if ($phone && $phone->grade == 'blocked_account') {
-                $fail('手机号已被禁用！请联系管理员');
+                $fail('手机号已被禁用！请联系客服人员');
             }
+
         };
         $usernameRule= function ($attribute, $value, $fail) {
             $username=User::whereUsername(\request('username'))->first();
             if ($username && $username->grade == 'blocked_account') {
-                $fail('账号已被禁用！请联系管理员');
+                $fail('账号已被禁用！请联系客服人员');
             }
+
         };
         $map=[
             'email'=>['rule'=>[

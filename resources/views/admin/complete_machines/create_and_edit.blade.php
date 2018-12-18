@@ -1,6 +1,7 @@
 @extends('admin.layout.default')
 
 @section('js')
+    @include('vendor.ueditor.assets')
     <script src="{{ asset('admin/js/completeMachinesPrice.js') }}" type="text/javascript"></script>
     <script>
         $(function () {

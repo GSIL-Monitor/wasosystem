@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.tonggao{background:#fff; padding-bottom:60px;}
+.tonggao ul li{border-bottom:1px solid #dedede; position:relative; padding:20px 0; cursor:pointer;}
+.tonggao ul li .headPic{float:left; width:25%;}
+.tonggao ul li .headPic .headImg{float:left; width:40px; vertical-align: middle; height:40px;}
+.tonggao ul li .headPic .headImg img{width:100%;}
+.tonggao ul li .headPic .headInfo{display: table-cell; vertical-align: middle; padding-left:10px;}
+.tonggao ul li .headPic .headInfo span{display: block;}
+.tonggao ul li .headPic .headInfo .names{color:#444; line-height: 20px;}
+.tonggao ul li .headPic .headInfo .time{font-size:12px; color:#999; font-weight:100;}
+.tonggao ul li .infos{width:75%; float:left;}
+.tonggao ul li .infos i{display:inline-block; margin-right:10px; color:#999; font-size:16px;}
+.tonggao ul li .infos .name{text-align:left; color:#444; display:block; font-weight:600; font-size:16px; line-height:40px;}
+.tonggao ul li .infos a{display:block;}
+.tonggao ul li .infos p{color:#777; font-size:14px; line-height:25px; padding:5px 0 0; display: none;}
+.tonggao ul li .infos .notRead{color:#fff; background: #176b86; padding:0 8px; font-weight: 600; font-size:14px;}
+.tonggao ul li:hover .infos .name{color:#176b86;}
+
+@media only screen and (max-width: 900px){
+    .tonggao{padding:0 10px 60px;}
+    .tonggao .PersonTit{display:block; font-size:14px; margin:0;}
+    .tonggao ul li{padding:15px 0 30px;}
+    .tonggao ul li .headPic{float:none; width:100%; margin-bottom:10px;}
+    .tonggao ul li .headPic .headImg{float:left; width:35px; vertical-align: middle; height:35px;}
+    .tonggao ul li .headPic .headInfo .names{font-size:14px;}
+    .tonggao ul li .infos{width:100%; float:none;}
+    .tonggao ul li .infos .name{line-height: inherit;}
+    .tonggao ul li .infos i{font-size:14px;}
+    .tonggao ul li .infos .name{font-size:14px;}
+    .tonggao ul li:hover .infos .name{color:#444;}
+    #foot{display:none;}
+}
+

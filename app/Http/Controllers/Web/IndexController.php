@@ -11,13 +11,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 
-
 class IndexController extends Controller
 {
     public function index()
     {
 
-        $banners = BusinessManagement::whereType('banner')->get();
+        $banners = BusinessManagement::where([
+            ['type','banner'],['top',1]
+        ])->oldest('sort')->get();
         $complete_machine_works=CompleteMachineFrameworks::where([
             ['category','framework'],['parent_id','<>',null]
         ])->get();
@@ -31,6 +32,7 @@ class IndexController extends Controller
         $new_lists = InformationManagement::where('marketing->show', 1)->take(18)->get();
         $friends = BusinessManagement::where('type', 'friend')->get();
         $integrations=IntegrationCategory::with('child')->get();
+
         return view('site.index.index', compact('banners', 'complete_machines', 'new_boutiques', 'new_lists', 'friends','complete_machine_works','integrations'));
     }
 }

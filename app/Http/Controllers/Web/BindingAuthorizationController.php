@@ -45,7 +45,9 @@ class BindingAuthorizationController extends Controller
     {
         $code_name = $request->input('code_name');
         $code = $request->input('code');
+
         $check = $this->message_send->checkCode($code_name, $code);
+
         if ($check == 'overdue') return error('验证码已经过期！请重新发送验证码');
         return $check == 'success' ? success('验证成功！') : error('验证码不正确！');
     }

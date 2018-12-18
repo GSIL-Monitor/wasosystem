@@ -22,28 +22,51 @@
         <div class="WEB">
             <div class="indexL">
                 <div class="faxtLinks index_links">
-                    @foreach($nav['TiaoMenus'] as $navs)
-                        @can('show '.$navs['url'])
-                            <dl>
-                                <dt>{{ $navs->name }}<i></i></dt>
-                                <div class="linksHide">
-                                    @php $childMenus=$navs->childMenus;@endphp
-                                    @if(count($childMenus) >0)
-                                        <dd>
-                                            @foreach($childMenus as $childMenu)
-                                                @can('show '.$childMenu->slug)
-                                                    @php $pic=array_flatten(json_decode($childMenu->pic,true));@endphp
-                                                    <a sys="tiao" href="javascript:;" url="{{ $childMenu->slug }}"><em>{{ $childMenu->name }}</em></a>
-                                                @endcan
-                                            @endforeach
-                                            <div class="clear"></div>
-                                        </dd>
-
-                                    @endif
+                    <dl>
+                        <div class="">
+                            <dd>
+                                <div class="chart">
+                                    <h4>供货商统计</h4>
+                                    <iframe src="{{ url('/waso/supplie_chart') }}" style="border: none"></iframe>
                                 </div>
-                            </dl>
-                        @endcan
-                    @endforeach
+                                <div class="chart">
+                                        <h4>采购统计</h4>
+                                        <iframe src="{{ url('/waso/procurement_plans_chart') }}" style="border: none"></iframe>
+                                </div>
+                                <div class="chart">
+                                    <h4>出库统计</h4>
+                                    <iframe src="{{ url('/waso/out_chart') }}" style="border: none"></iframe>
+                                </div>
+                                <div class="chart" style="height:380px">
+                                    <h4>库存统计</h4>
+                                    <iframe src="{{ url('/waso/inventory_chart') }}" style="border: none;width: 1050px;"></iframe>
+                                </div>
+                                <div class="clear"></div>
+                            </dd>
+                        </div>
+                    </dl>
+                    {{--@foreach($nav['TiaoMenus'] as $navs)--}}
+                        {{--@can('show '.$navs['url'])--}}
+                            {{--<dl>--}}
+                                {{--<dt>{{ $navs->name }}<i></i></dt>--}}
+                                {{--<div class="linksHide">--}}
+                                    {{--@php $childMenus=$navs->childMenus;@endphp--}}
+                                    {{--@if(count($childMenus) >0)--}}
+                                        {{--<dd>--}}
+                                            {{--@foreach($childMenus as $childMenu)--}}
+                                                {{--@can('show '.$childMenu->slug)--}}
+                                                    {{--@php $pic=array_flatten(json_decode($childMenu->pic,true));@endphp--}}
+                                                    {{--<a sys="tiao" href="javascript:;" url="{{ $childMenu->slug }}"><em>{{ $childMenu->name }}</em></a>--}}
+                                                {{--@endcan--}}
+                                            {{--@endforeach--}}
+                                            {{--<div class="clear"></div>--}}
+                                        {{--</dd>--}}
+
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</dl>--}}
+                        {{--@endcan--}}
+                    {{--@endforeach--}}
                 </div>
             </div>
 

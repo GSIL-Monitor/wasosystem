@@ -12,7 +12,7 @@
     </tr>
     @forelse($productGoods as $productGood)
         @if($productGood->product->title == '机箱' && $productGood->details['kun_bang_dian_yuan'])
-            @php $power=$productGood->find($productGood->details['kun_bang_dian_yuan']);@endphp
+            @php $power=$product_good->whereProductId(21)->where('oldid',$product_good->details['kun_bang_dian_yuan'])->first();@endphp
         @endif
         <tr>
             <td class="tableInfoDel"  @if($cate != 'parts' && $productGoods->isNotEmpty()) hidden @endif>  <input class="selectBox selectIds" @if($cate != 'parts' && $productGoods->isNotEmpty()) checked @endif type="checkbox" name="id[]" value="{{ $productGood->id }}"></td>

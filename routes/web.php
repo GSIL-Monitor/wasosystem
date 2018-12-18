@@ -12,9 +12,18 @@ use Overtrue\Pinyin\Pinyin;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home',function () {
-    return view('home');
-});
+
+
+
+
+
+
+
+
+Route::get('/intel.html',function () {return view('site.index.page')->with(['name'=>'Intel']);})->name('intel');
+Route::get('/intelAD.html',function () {return view('site.index.page')->with(['name'=>'IntelAD']);})->name('intelAD');
+Route::get('/asus.html',function () {return view('site.index.page')->with(['name'=>'Asus']);})->name('asus');
+Route::get('/supermicro.html',function () {return view('site.index.page')->with(['name'=>'Supermicro']);})->name('supermicro');
 //所有的前台路由
 Route::get('downloadFile',function () {
     $File = public_path('storage/'.request()->input('file'));
@@ -24,12 +33,25 @@ Route::get('downloadFile',function () {
 });
 Route::group(['namespace' => 'Web'], function ($router) {
     $router->get('/', 'IndexController@index'); //主页
+    Route::group(['middleware' => ['wechat.oauth']], function ($router) {
+        $router->get('wechat/auth',"RegisterController@wechat_auth");
+        $router->get('account/setting',function(){
+            return view('site.registers.wechat');
+        })->name('account.setting');
+        $router->get('account/bind',function(){
+            return view('site.registers.wechat_bind');
+        })->name('account.bind');
+        $router->post('registers/wechat_store', 'RegisterController@wechat_store')->name('register.wechat_store'); //微信账号设置
+        $router->post('registers/wechat_bind', 'RegisterController@wechat_bind')->name('register.wechat_bind'); //微信账号设置
+
+    });
+    $router->get('registers/check/{user}', 'RegisterController@check')->name('register.check'); //注册页
     $router->get('login', 'LoginController@showLoginForm')->name('login'); //登录页
     $router->post('login', 'LoginController@login')->name('site.login'); //登录
     $router->get('logout', 'LoginController@logout'); //退出登录
     $router->get('registers', 'RegisterController@index')->name('register'); //注册页
     $router->post('registers/create', 'RegisterController@store')->name('register.create'); //注册页
-    $router->get('registers/check/{user}', 'RegisterController@check')->name('register.check'); //注册页
+
     $router->get('reset_password', 'ResetPasswordController@index')->name('reset_password.index'); //找回密码
     $router->post('reset_password/reset', 'ResetPasswordController@reset')->name('reset_password.reset'); //找回密码
     $router->get('search', 'SearchController@index')->name('search'); //搜索
@@ -47,6 +69,7 @@ Route::group(['namespace' => 'Web'], function ($router) {
     $router->get('solutionif_{integration}.html', 'SolutionController@show')->name('solution.show'); //解决方案详情
     /*-----------------------------IT外包-----------------------------*/
     $router->get('IT_easy.html', 'ItOutsourcingController@index')->name('it_outsourcing'); //
+    $router->post('it_outsourcing/{product_good}/save', 'ItOutsourcingController@save')->name('it_outsourcing.save'); //
     /*-----------------------------关于我们-----------------------------*/
     $router->get('About/about.html', 'AboutController@about')->name('about'); //关于我们
     $router->get('About/qualified.html', 'AboutController@honor')->name('honor'); //荣誉资质
@@ -133,6 +156,27 @@ Route::group(['namespace' => 'Web'], function ($router) {
 Route::group(['namespace' => 'Admin', 'prefix' => 'waso', 'as' => 'admin.', 'middleware' => ['operation.log'],], function ($router) {
     $router->get('/', 'IndexController@index')->name('waso'); //主页
     $router->get('home', 'IndexController@home')->name('home'); //网站系统首页
+
+    /**********统计***********/
+    $router->get('all_data_chart','IndexController@allData'); //主页
+    $router->get('user_chart','IndexController@userCount'); //主页
+    $router->get('self_user_chart','IndexController@selfUserCount'); //主页
+    $router->get('order_chart','IndexController@orderCount'); //主页
+    $router->get('self_order_chart','IndexController@selfOrderCount'); //主页
+    $router->get('order_price_chart','IndexController@orderPriceChart'); //主页
+    $router->get('self_order_price_chart','IndexController@selfOrderPriceChart'); //主页
+    $router->get('product_goods_chart','IndexController@productGoods'); //主页
+    $router->get('articles_chart','IndexController@articles'); //主页
+
+    $router->get('supplie_chart','CodeController@supplie_chart'); //主页
+    $router->get('procurement_plans_chart','CodeController@procurement_plans_chart'); //主页
+    $router->get('out_chart','CodeController@out_chart'); //主页
+    $router->get('inventory_chart','CodeController@inventory_chart'); //主页
+
+    /*********************/
+
+
+
     $router->get('tiao', 'IndexController@tiao')->name('tiao'); //条码系统首页
     /*登录*/
     $router->get('login', 'LoginController@showLoginForm')->name('login'); //登录页
@@ -208,6 +252,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'waso', 'as' => 'admin.', 'mid
 
     /*-----------------------------部门管理-----------------------------*/
     $router->resource('divisional_managements', 'DivisionalManagementController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
+    $router->resource('marketing_statistics', 'MarketingStatisticsController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
 
     /*-----------------------------销售任务管理-----------------------------*/
 

@@ -111,13 +111,13 @@ class DivisionalManagementParamenter
             echo '<dl>';
             echo '<dt>' . $item . '：</dt>';
             echo '<dd>';
+
             foreach ($arr[$key] as $key2 => $item2) {
                 if ($key2 == $parent_id) {
-                    echo ' <a href="' . route('admin.task_managements.marketing_statistics') . '?parent_id=' . $key2 .array_to_url(\request()->only(['year','mouth'])). '" class="active">' . $item2 . '</a>';
+                    echo ' <a href="' . route('admin.task_managements.marketing_statistics') . '?parent_id=' . $key2 . array_to_url(\request()->only(['year', 'mouth'])) . '" class="active">' . $item2 . '</a>';
                 } else {
-                    echo ' <a href="' . route('admin.task_managements.marketing_statistics') . '?parent_id=' . $key2 .array_to_url(\request()->only(['year','mouth'])). '" >' . $item2 . '</a>';
+                    echo ' <a href="' . route('admin.task_managements.marketing_statistics') . '?parent_id=' . $key2 . array_to_url(\request()->only(['year', 'mouth'])) . '" >' . $item2 . '</a>';
                 }
-
             }
             echo '</dd>';
             echo ' <div class="clear"></div>';
@@ -129,7 +129,6 @@ class DivisionalManagementParamenter
 
     public function chart($data)
     {
-
         $arr = [];
         $sources = [];
         $source = [];
@@ -152,6 +151,7 @@ class DivisionalManagementParamenter
         foreach ($sources as $key => $item) {
             $source[$key] = array_sum($item);
         }
+
         if ($source) {
             echo '<ul class="bindBox">';
             foreach (array_reverse(array_sort($source)) as $key => $item) {
@@ -171,22 +171,23 @@ class DivisionalManagementParamenter
         $guaranteed_task = [];
         $traverse = function ($DivisionalManagement, $parent_id, $year, $mouth) use (&$traverse, &$arr, &$returned_money, &$outstanding, &$guaranteed_task) {
             foreach ($DivisionalManagement as $category) {
-//                if ($category->admins && $category->task) {
+                if ($category->admins) {//&& $category->task
                     if ($category->admins->demand->isNotEmpty()) {
                         $arr['first_effective'][$category->admins->account] = self::first_effective($category->admins->demand, $year, $mouth);
                         $arr['demand_finish'][$category->admins->account] = self::demand_finish($category->admins->demand, $year, $mouth);
                         $returned_money[$category->admins->account] = $category->admins->funds->sum('price');
-                        if($category->admins->order){
-                           $outstanding[$category->admins->account] = self::outstanding($category->admins, $year, $mouth);
+                        if ($category->admins->order) {
+                            $outstanding[$category->admins->account] = self::outstanding($category->admins, $year, $mouth);
                         }
                         $guaranteed_task[$category->admins->account] = self::calculation($category->task->guaranteed_task ?? 0);
                         $arr['new_customer'][$category->admins->account] = self::new_customer($category->admins->users, $year, $mouth);
                     }
-//                }
+                }
                 $traverse($category->children, $parent_id, $year, $mouth);
             }
         };
         $traverse($data, $parent_id, $year, $mouth);
+        //dump($arr);
         $arrs['receivable_outstanding'] = self::receivable_outstanding($returned_money, $outstanding, $guaranteed_task);
         foreach ($arr as $key => $item) {
             $item = collect($item);
@@ -200,28 +201,27 @@ class DivisionalManagementParamenter
             }
 
         }
+
         $arrs['returned_money'] = $arrs['receivable_outstanding']['returned_money'];
         $arrs['outstanding'] = $arrs['receivable_outstanding']['outstanding'];
 
         unset($arrs['receivable_outstanding']);
         $i = 1;
         $name = ['first_effective' => '初次有效转化比例', 'returned_money' => '任务完成进度比例', 'outstanding' => '发出未结收款比例', 'demand_finish' => '需求成单转化比例', 'new_customer' => '本期新增客户比例'];
-
-        foreach ($arrs as $key => $item) {
-            $i++;
-            echo '<li>
+        if (array_filter($arrs)) {
+            foreach (array_filter($arrs) as $key => $item) {
+                $i++;
+                echo '<li>
             <div class="pieMode">
                 <canvas data-percent="' . $item . '" class="perCanvas">您的浏览器不支持canvas标签。</canvas>
                 <div class="txtBox"><span class="bigTxt">' . $item . '%</span></div>
                 <div class="txtBoxBottom">' . $name[$key] . '</div>
             </div>
         </li>';
-//            echo '<div class="bingBox">
-//        <figure id="pie' . $i . '" data-behavior="pie-chart" data="' . $item . '"></figure>
-//        <h1>' . $name[$key] . '</h1>
-//        </div>';
+            }
+        } else {
+            echo '没有数据！';
         }
-
     }
 
 
@@ -445,16 +445,16 @@ class DivisionalManagementParamenter
         $arr['outstanding'] = 0;
         $returned_money_sum = array_sum($returned_money);
         $guaranteed_task_sum = array_sum($guaranteed_task);
-        $task_sum=$guaranteed_task_sum;
+        $task_sum = $guaranteed_task_sum;
         $outstanding_sum = array_sum($outstanding);
 
-        if ($returned_money_sum  && $outstanding_sum) {
-            if($task_sum <= 0){
-                $guaranteed_task_sum=$returned_money_sum;
+        if ($returned_money_sum && $outstanding_sum) {
+            if ($task_sum <= 0) {
+                $guaranteed_task_sum = $returned_money_sum;
             }
             $arr['returned_money'] = number_format(($returned_money_sum / $guaranteed_task_sum) * 100, 2);
-            if($task_sum <= 0){
-                $guaranteed_task_sum=$outstanding_sum;
+            if ($task_sum <= 0) {
+                $guaranteed_task_sum = $outstanding_sum;
             }
             $arr['outstanding'] = number_format(($outstanding_sum / $guaranteed_task_sum) * 100, 2);
         }

@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.body{padding-bottom:60px; }
+.detail_box{background:#fff;}
+.detail_box .detail_ul{background:#fff;  position: fixed; width: 1280px; top:0; left:50%; margin-left:-640px;box-shadow: 0 5px 10px -5px  #999; opacity: 0.9;}
+.detail_box .detail_ul tr td{padding:0;}
+.detail_box .detail_ul tr a{line-height:40px;}
+
+/*  固定名称  */
+.fixLinks{position:fixed; top:0; left:0; background:#FFF; width:100%; padding:20px 0; border-bottom:1px solid #dedede; display:none;}
+.fixLinks .wrap{position:relative;}
+.fixLinks ul{margin-left:10%;}
+.fixLinks ul li{width:25%; float:left; text-align:center;}
+.fixLinks ul li a{color:#176b86; font-weight:400; font-size:18px; }
+
+.detail_box table{width:100%; margin-bottom:40px;}
+.detail_box table tr{border-bottom:1px solid #dedede; width: 100%;}
+.detail_box table .big_tit{text-align:right; font-size: 16px; color:#176b86; font-weight: 600; width:10%; padding:20px 0;}
+.detail_box table tr td{vertical-align: top; padding:20px 30px; font-size: 12px; color:#666; width:20%; *border-bottom:1px solid #dedede;}
+.detail_box table .pic{height:180px;}
+.detail_box table #add td a{display:block;}
+.detail_box table #add td .name{margin:0 auto 10px; font-weight:400; color:#777;}
+.detail_box table #add td select{font-size:12px; display: block; margin:0 auto; width:70%; vertical-align: top; color:#999; border-color:#ccc;}
+.detail_box table #add td .control{text-align:center;}
+.detail_box table #add td .control a{display:inline-block; margin:0; padding:0px 10px; color:#999; border:1px solid #ccc;}
+.detail_box table #add td .control a:hover{color:#176b86; border-color:#176b86; text-decoration: none;}
+.detail_box table #add td img{width:100px; height:auto;}
+.detail_box table #add td{vertical-align: middle;}
+
+@media screen and (max-width: 1000px) {
+    #foot{display:none;}
+
+    .wrap {width: 700px;}
+    #header .menu li a{font-size:12px;}
+
+
+}

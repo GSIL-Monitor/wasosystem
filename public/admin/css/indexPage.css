@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+*{transition: none;}
+.PageBox{padding:20px 0 0 20px;!important;}
+.PageBox dl{margin-bottom:40px;}
+/*.PageBox dl dt{font-size:16px; font-weight:bold; color:#111; margin-bottom:10px; border-left:3px solid #176b86; padding:0 0 0 10px;}*/
+/*.PageBox dl dd a{border-radius: 5px 5px; min-width: 140px; overflow: hidden; display: block; background: #f1f1f1; color:#333; float:left; padding:10px 30px; margin:10px 20px 10px 0; text-align: center; transition: none;}*/
+/*.PageBox dl dd a em{display: block;}*/
+.PageBox dl dd .chart{text-align: center;height:320px;border-radius: 5px 5px; min-width: 140px; overflow: hidden;  background: #f1f1f1; color:#333; float:left; margin:10px 20px 10px 0;  transition: none;
+
+}
+/*.PageBox dl dd h4{*/
+    /*font-size:16px;font-weight: bold;*/
+/*}*/
+.PageBox dl dd p{
+    float: left;margin-right: 10%;font-weight: bold;
+}
+.PageBox dl dd a:hover{background: #ddd;}
+.PageBox dl dd a:hover em{color:#333;}
+.PageBox dl .linksHide{display: none}
+@media only screen and (max-width: 900px) {
+    .PageBox dl .linksHide{display: block}
+    .PageBox{padding:0;!important;}
+    .PageBox dl dt{font-size:14px!important; margin-bottom:10px; }
+    .PageBox dl dd a{width:32%; margin:0 2% 10px 0; background: #fff; color:#333; min-width:inherit; padding:6px 6px;}
+    .PageBox dl dd a:nth-child(3n){margin:0 0 10px 0;}
+}
+
+
+
+
+
+

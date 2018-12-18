@@ -42,9 +42,12 @@
                                 @endif ">
                              {{--<i></i><em>取消收藏</em>--}}
                                 @if(!empty(user()) && $falg)
-                                    <i></i><em data_url="{{ route('server.collectRemove',$server->id) }}">取消收藏</em>
+                                    <i></i><em data_add_url="{{ route('server.collect',$server->id) }}"
+                                               data_del_url="{{ route('server.collectRemove',$server->id) }}">取消收藏</em>
                                 @else
-                                    <i></i><em data_url="{{ route('server.collect',$server->id) }}">添加收藏</em>
+                                    <i></i><em data_add_url="{{ route('server.collect',$server->id) }}"
+                                               data_del_url="{{ route('server.collectRemove',$server->id) }}"
+                                    >添加收藏</em>
                                 @endif
                             </span>
                     <span class="ComBtn    @if(array_has(session()->get('complete_machines'),[$server->id]))

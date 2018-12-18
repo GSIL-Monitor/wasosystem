@@ -94,7 +94,7 @@ class CompleteMachineServices
         $data['total_prices']=$total_prices;
         $data['price_spread']=request()->input('price_spread');
         $data['num']=1;
-        $data['order_type']=request()->input('order_type');;
+        $data['order_type']=request()->input('order_type');
         $data['order_status']='intention_to_order';
         $data['message_status']='intention_to_order';
         $data['payment_status']='pay_first';

@@ -34,5 +34,8 @@ class SendCollaborationNotification implements ShouldQueue
                 ->text('测试信息！！！！'.$event->demandManagement->administrator->account."发出需求号：".$event->demandManagement->demand_number.'需要协同完成，收到信息后请尽快配合！');
             $event->demandManagement->update(['send'=>true]);
         }
+        if(!empty($event->demandManagement->demand_management_order)){
+            $event->demandManagement->update(['demand_status'=>'preliminary_scheme']);
+        }
     }
 }

@@ -2,7 +2,13 @@
     <ul class="halfTwoUl" id="app">
         @if(Route::is('admin.procurement_plans.create'))
             {!! Form::open(['route'=>'admin.procurement_plans.store','method'=>'post','id'=>'procurement_plans','onsubmit'=>'return false']) !!}
-
+            <li>
+                <div class="liLeft">预购序列号：</div>
+                <div class="liRight">
+                    {!!  Form::text('serial_number',old('serial_number',$procurement_plan->serial_number ?? 'YG'.date('YmdHis',time())),['placeholder'=>'procurement_plan',"class"=>'checkNull','readonly']) !!}
+                </div>
+                <div class="clear"></div>
+            </li>
         @else
             {!! Form::model($procurement_plan,['route'=>['admin.procurement_plans.update',$procurement_plan->id],'id'=>'procurement_plans','method'=>'put','onsubmit'=>'return false']) !!}
             <li>
@@ -108,9 +114,10 @@
     var vm=new Vue({
         el:"#app",
         data:{
-            @if(isset($procurement_plan) && $procurement_plan->procurement_status == 'procurement')
+            @if(isset($procurement_plan) && $procurement_plan->procurement_status == 'procurement' && $procurement_plan->purchase != auth('admin')->user()->id)
             isDisabled:true,
             isShow:true,
+            isFinishDisabled:true,
             @elseif(isset($procurement_plan) && $procurement_plan->procurement_status == 'finish')
             isDisabled:true,
             isShow:true,

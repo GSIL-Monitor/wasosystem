@@ -158,6 +158,7 @@ class OrderController extends Controller
     public function export(Order $order, Request $request, Excel $excel)
     {
 
+
         if ($request->has('export')) {
             $default_company = $order->user->user_company()->whereDefault(1)->first();
             $company = !empty($order->invoice_info) ? $order->company->name : $default_company->name ?? $order->user->unit;

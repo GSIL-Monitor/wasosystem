@@ -5,7 +5,7 @@
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
                 @can('create put_in_storage_managements')
-                    <button class="changeWeb Btn" data_url="{{ route('admin.put_in_storage_managements.create') }}">添加</button>
+                    {{--<button class="changeWeb Btn" data_url="{{ route('admin.put_in_storage_managements.create') }}">添加</button>--}}
                 @endcan
                 @can('delete put_in_storage_managements')
                     <button type="submit" class="red Btn AllDel" form="AllDel"
@@ -69,6 +69,7 @@
                         <tr><td><div class='error'>没有数据</div></td></tr>
                     @endforelse
                 </table>
+         {{  $put_in_storage_managements->appends(Request::except('page'))->links() }}
             </form>
         </div>
     </div>

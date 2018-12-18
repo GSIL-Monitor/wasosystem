@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 设计师电脑 广告  */
+.body .designAD{background:#fff; width: 100%;  transition:all 0.3s 0s;}
+.body .big_bg{background:url('../pic/Design/designer_bg.jpg') no-repeat center center; border-top:1px solid #555; background-color: #37363c; transition: all 0.3s 0s;}
+.body .big_bg .wrap .big_bg_button span:hover{color:#fff !important; background:#176b86 !important; border-color:#176b86 !important;}
+.body .designAD .txtCon .threeLine li{float:left; width:25%; padding:0 0 40px; text-align: center; box-sizing: border-box;}
+.body .designAD .txtCon .threeLine li h5{font-size:16px; color:#333; margin:0 30px 10px;}
+.body .designAD .txtCon .threeLine li p{margin:0 40px; color:#999; text-align: left;}
+.body .designAD .txtCon .threeLine li img{width:80px; margin:30px auto;}
+.body .designAD .txtCon .hoverPic{margin-top:50px;}
+.body .designAD .txtCon .hoverPic ul li{width:25%; float:left; position: relative; overflow: hidden; height:300px;}
+.body .designAD .txtCon .hoverPic ul li .bgIMG{height:100%; transition: all 0.3s 0s;}
+.body .designAD .txtCon .hoverPic ul li .black{transition:all 0.3s 0s; width:100%; height:100%; background: #000; position: absolute; left:0; bottom:0; z-index: 10; opacity: 0.5; filter:alpha(opacity=50);}
+.body .designAD .txtCon .hoverPic ul li .txtBox{position: absolute; left: 0; bottom:0;  z-index: 20; width:100%; height:100%;}
+.body .designAD .txtCon .hoverPic ul li .txtBox .txtTable{ width:100%; height:100%; display: table;}
+.body .designAD .txtCon .hoverPic ul li .txtBox .txtTd{display: table-cell; vertical-align: middle; text-align: center;}
+.body .designAD .txtCon .hoverPic ul li .txtBox .txtTd img{width:50px; margin:0 auto;}
+.body .designAD .txtCon .hoverPic ul li .txtBox .txtTd h5{color:#fff; margin:20px 0 0; font-size:16px;}
+.body .designAD .txtCon .hoverPic ul li:hover .bgIMG{transform:scale(1.06); -webkit-transform:scale(1.06);  -moz-transform:scale(1.03); -o-transform:scale(1.06); -ms-transform:scale(1.06);}
+.body .designAD .txtCon .hoverPic ul li:hover .black{background:#176b86; opacity: 0.8; filter:alpha(opacity=80);}
+.body .designAD .txtCon .imgs{vertical-align:middle;}
+.body .designAD .txtCon .imgs img{width:50%;}
+.body .designAD .ConEven{background:#f5f5f5;}
+.body .designAD .SJStxt0{padding:80px 0 60px !important;}
+.body .designAD .SJStxt0 .ShowLi ul li{float:left; width:25%; text-align: center; padding:20px 0; position: relative; cursor: pointer;}
+.body .designAD .SJStxt0 .ShowLi ul li i{display:none; position:absolute; bottom:0; left:50%; width:35px; height:15px; margin-left:-18px; background-size:cover; background-repeat: no-repeat; background-position: center center; background-image: url('../pic/Design/liIcon.png');}
+.body .designAD .SJStxt0 .ShowLi ul li div{width:50px; height:50px;  margin:0 auto; background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic1{background-image:url('../pic/Design/WANGZHAN_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic2{background-image:url('../pic/Design/GUANGGAO_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic3{background-image:url('../pic/Design/YINGSHI_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic4{background-image:url('../pic/Design/JIANZHU_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic5{background-image:url('../pic/Design/JINGGUAN_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic6{background-image:url('../pic/Design/DONGMAN_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic7{background-image:url('../pic/Design/CHANPIN_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li .liPic8{background-image:url('../pic/Design/GONGYE_W.png');}
+.body .designAD .SJStxt0 .ShowLi ul li h5{margin-top:10px; color:#444;}
+.body .designAD .SJStxt0 .ShowLi ul .active i{display: block;}
+.body .designAD .SJStxt0 .ShowLi ul .active h5{color: #176b86; font-weight: bold;}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic1{background-image:url('../pic/Design/WANGZHAN.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic2{background-image:url('../pic/Design/GUANGGAO.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic3{background-image:url('../pic/Design/YINGSHI.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic4{background-image:url('../pic/Design/JIANZHU.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic5{background-image:url('../pic/Design/JINGGUAN.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic6{background-image:url('../pic/Design/DONGMAN.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic7{background-image:url('../pic/Design/CHANPIN.png');}
+.body .designAD .SJStxt0 .ShowLi ul .active .liPic8{background-image:url('../pic/Design/GONGYE.png');}
+.body .designAD .SJStxt0 .ShowLi ul li:hover h5{color:#176b86;}
+.body .designAD .SJStxt0 .ShowLi .induceDl{ background: #f0f0f0;}
+.body .designAD .SJStxt0 .ShowLi .induceDl dl{height:0; width:80%; margin:0 auto; transition: all 0.5s 0s; overflow: hidden; opacity: 0;}
+.body .designAD .SJStxt0 .ShowLi .induceDl dl dt{font-size:20px; font-weight: bolder; color:#444; text-align:left; margin-bottom:20px;}
+.body .designAD .SJStxt0 .ShowLi .induceDl dl dd{line-height: 30px; text-align:left; color:#777;}
+.body .designAD .SJStxt0 .ShowLi .induceDl dl img{display: block; width: 100%; margin-bottom:40px;}
+.body .designAD .SJStxt0 .ShowLi .induceDl .active{height:auto; padding:60px 0; opacity: 1;}
+.body .designAD .SJStxt1{height:800px; background-position: center bottom; background-repeat:no-repeat; background-size: cover; background-image: url('../pic/Design/Conbg1.jpg');}
+.body .designAD .SJStxt1 .txtTit{vertical-align: top !important; padding-top:120px; }
+.body .designAD .SJStxt1 .txtTit h5{color:#fff !important;}
+.body .designAD .SJStxt1 .txtTit p{color:#fff !important;}
+.body .designAD .SJStxt4{height:800px; background-position: center bottom; background-repeat:no-repeat; background-size: cover; background-image: url('../pic/Design/Conbg2.jpg');}
+.body .designAD .SJStxt4 .txtTit h5{color:#fff !important;}
+.body .designAD .SJStxt4 .txtTit p{color:#fff !important;}
+
+.body .designAD .goStart{text-align: center; padding:80px 0; background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url(../pic/Design/DesignBg.jpg);}
+.body .designAD .goStart .goNow{padding:7px 20px; border:1px solid #fff; display:inline-block;  transition:all 0.3s 0s; color:#fff; font-size:16px; cursor: pointer;}
+.body .designAD .goStart .goNow:hover{background:#fff; color:#176b86;}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+
+
+    /*  设计师电脑  广告  */
+    .body .big_bg{background-size: cover;}
+    .body .designAD .txtCon .threeLine{padding:0;}
+    .body .designAD .txtCon .threeLine li{width:50%; padding:0;}
+    .body .designAD .txtCon .threeLine li img{width:60px;}
+    .body .designAD .txtCon .threeLine li h5{font-size:14px;}
+    .body .designAD .txtCon .threeLine li p{font-size:12px; margin:0 20px;}
+    .body .designAD .txtCon .hoverPic ul li{height:150px;}
+    .body .designAD .txtCon .hoverPic ul li .txtBox .txtTd img{width:40%;}
+    .body .designAD .txtCon .hoverPic ul li .txtBox .txtTd h5{font-size:14px;}
+    .body .designAD .txtCon .txtTable .txts{width:100%; display: block; margin:0;}
+    .body .designAD .txtCon .txtTable .txts p{font-size:14px; width:100%;}
+    .body .designAD .txtCon .txtTable .imgs{width:100%; display: block;}
+
+    .body .designAD .SJStxt0{padding:40px 0 !important;}
+    .body .designAD .SJStxt0 .ShowLi ul li div{width:30px; height:30px;}
+    .body .designAD .SJStxt0 .ShowLi .induceDl dl{width:auto; margin:0 30px;}
+    .body .designAD .SJStxt0 .ShowLi .induceDl dl dt{font-size:16px;}
+    .body .designAD .SJStxt0 .ShowLi .induceDl .active{padding:20px 0; }
+    .body .designAD .SJStxt0 .Dpc img{width:80%;}
+    .body .designAD .SJStxt1{height:400px;}
+    .body .designAD .SJStxt1 .txtTit{padding-top:20px;}
+    .body .designAD .SJStxt4{height:360px;}
+
+    .body .designAD .goStart{padding:30px 0;}
+    .body .designAD .goStart .goNow{border:none; font-size:16px;}
+
+
+
+
+
+}

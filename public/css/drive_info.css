@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.body{background:#fff; padding-bottom:40px;}
+.body .info_box{background: #fff; padding:40px;}
+.body .info_box .pro_pic img{float:left; width:30%; margin-right:20px;}
+.body .info_box .pro_pic .infos{float:right; width: 65%;}
+.body .info_box .infos{margin-top:40px;}
+.body .info_box .infos h5{font-size:36px; color:#444;}
+.body .info_box .infos a{color:#999; font-size: 12px;}
+.body .info_box .downs{margin-top:40px;}
+.body .info_box .downs h6{color:#444; font-size:16px; line-height:60px;}
+
+.body .info_box .downs ul li{float:left; width: 25%; margin-bottom:20px; }
+.body .info_box .downs ul li a{padding:5px 30px; display:inline-block;  color:#00a7ea; -moz-border-radius:10px;  -webkit-border-radius:10px; border-radius:10px 10px 10px 10px; border:1px solid #00a7ea; transition: all 0.3s 0s;}
+.body .info_box .downs ul li a:hover{background:#00a7ea; color:#fff;}
+
+@media screen and (max-width: 1000px) {
+    .wrap {width: 700px;}
+
+    #header .menu li a{font-size:12px;}
+
+
+}

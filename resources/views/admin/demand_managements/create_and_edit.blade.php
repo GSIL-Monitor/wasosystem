@@ -1,5 +1,6 @@
 @extends('admin.layout.default')
 @section('js')
+    @include('vendor.ueditor.assets')
     <script src="{{ asset('admin/js/create_order.js') }}"></script>
     <script>
         $(function () {
@@ -9,6 +10,29 @@
         });
 
     </script>
+
+        <script>
+            var vm = new Vue({
+                el:"#app",
+                @if(Route::is('admin.demand_managements.create'))
+                data:{
+                    user_disabled:false,
+                    visitor_details_disabled:false,
+                    @if(isset($user))
+                    user_disabled:true,
+                    @if($user->visitor_details)
+                    visitor_details_disabled:true,
+                    @endif
+
+                    @endif
+                },
+                methods: {
+
+                }
+                @endif
+            });
+        </script>
+
 @endsection
 @section('content')
     <div class="nowWebBox">
@@ -35,6 +59,9 @@
         </div>
         <div class="PageBox">
             @include('admin.demand_managements.form')
+
+        </div>
+
         </div>
     </div>
 

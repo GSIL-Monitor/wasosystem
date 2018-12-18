@@ -6,7 +6,6 @@ use anlutro\LaravelSettings\SettingStore;
 use App\Http\Requests\SettingsRequest;
 use App\Http\Requests\Request;
 use App\Services\SettingsServices;
-//use App\Models\Settings;
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Controllers\Controller;
 class SettingsController extends Controller
@@ -22,20 +21,24 @@ class SettingsController extends Controller
     //设置列表
     public function index(Request $request)
     {
+        $type=$request->get('type') ?? 'system';
         $settings =  setting()->all();
 
-       return view('admin.settings.index',compact('settings'));
+       return view('admin.settings.index',compact('settings','type'));
 
     }
     //设置添加
     public function store(SettingsRequest $request)
     {
-        $key=$request->input('key');
-        $value=$request->input('value');
-        session()->flash('success','添加成功');
-        setting([$key => $value])->save();
-//        Settings::create($request->all());
-       return back();
+
+         foreach ($request->except('_token') as $key=>$value){
+             if(is_array($value)){
+                 setting([$key=>json_encode($value)])->save();
+             }else{
+                 setting([$key=>$value])->save();
+             }
+         }
+         return success('更新成功');
     }
   //设置添加页面
     public function create(Request $request)

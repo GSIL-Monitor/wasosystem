@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+.body{padding:0 0 50px 0;}
+.body .big_bg{background:url('../pic/Three/three_bg.jpg') no-repeat center center; border-top:1px solid #555; background-color: #37363c;}
+.body .big_bg .wrap .big_bg_button span:hover{color:#fff !important; background:#176b86 !important; border-color:#176b86 !important;}
+
+.body .ZBtable{margin-top:50px; border:1px solid #dedede;}
+.body .ZBtable .ZBtype li{float:left; width: 33%; text-align: center; line-height:50px; background: #f5f5f5; border-top:2px solid #f5f5f5; cursor: pointer;}
+.body .ZBtable .ZBtype li:hover{border-color:#176b86;}
+.body .ZBtable .ZBtype .active{background: #fff; border-color:#176b86; color:#176b86; }
+.body .ZBtable .ZBtype .mid{width: 34%; }
+.body .ZBList{background: #fff; padding:0 50px 100px;}
+.body .ZBList .tablePage{display: none; }
+.body .ZBList .activeTable{display: block;}
+.body .ZBList .activeTable table{width: 100%;}
+.body .ZBList .tablePage .tips{padding:50px 0;}
+.body .ZBList .tablePage .tips p{color:#333; font-size:16px;}
+.body .ZBList table tr .tableMoreHide{display: none;}
+.body .ZBList table tr th{line-height:50px; text-align: left; background: #176b86; padding:0 10px; color:#fff; cursor: pointer;}
+.body .ZBList table tr th .thTxt{display: inline-block; padding:10px 5px 10px 0;}
+.body .ZBList table tr th .paiIcon{display: inline-block; width: 10px; vertical-align: middle; opacity:0; filter:alpha(opacity=0);}
+.body .ZBList table tr th .paiIcon i{opacity:0.4; filter:alpha(opacity=40); display: inline-block; width:10px; height:10px; vertical-align: middle; margin-left:5px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-image: url("../pic/pop-tips-info-arr.gif");}
+.body .ZBList table tr th .paiIcon .ZtoA{ transform:rotate(180deg);  -ms-transform:rotate(180deg); -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg);  -o-transform:rotate(180deg);  }
+.body .ZBList table tr th .paiIcon i:hover{opacity:1; filter:alpha(opacity=100);}
+.body .ZBList table tr th .paiIcon .active{opacity:1; filter:alpha(opacity=100);}
+.body .ZBList table tr th:hover .paiIcon{opacity:1; filter:alpha(opacity=100);}
+.body .ZBList table tr .activeTh .paiIcon{opacity:1; filter:alpha(opacity=100);}
+.body .ZBList table .fixedTh{position: fixed; top:0; z-index: 1002;}
+.body .ZBList table tr td{line-height:50px; text-align: left; border-bottom:1px solid #dedede; color:#444; padding:0 10px; position: relative;}
+.body .ZBList table tr td .tableDetailBtn{margin:0 10px 3px 0;  display: inline-block; width:16px; height:16px; vertical-align: middle;  cursor: pointer; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+.body .ZBList table tr td .tableOpenBtn{background-image: url(../pic/showIcon.png);}
+.body .ZBList table tr td .tableCloseBtn{background-image: url(../pic/closeIcon.png);}
+.body .ZBList table tr td .tableTopXu{position: absolute; left:-15px; top:-15px; display: block; width:80px; height:80px; vertical-align: middle; background-position: center center; background-repeat: no-repeat; background-size: contain; background-image: url('../pic/tableTopXu.png');}
+.body .ZBList table tr .tableXu{font-weight:bold; font-size:20px; color:#176b86; font-style: italic;}
+.body .ZBList table tr .tableSitu{display: inline-block; width:20px; height:20px; vertical-align: middle; background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.body .ZBList table tr .goHold{background-image: url('../pic/tableGoHold.png');}
+.body .ZBList table tr .goUp{background-image: url('../pic/tableGoUp.png');}
+.body .ZBList table tr .goDown{background-image: url('../pic/tableGoDown.png');}
+.body .ZBList table .showTr{border:none;}
+.body .ZBList table .detailTableTr{border-bottom:1px solid #dedede; background: #fff;}
+.body .ZBList table .detailTableTr td{padding:0;}
+.body .ZBList table .detailTableTr td .detailTable{background: #fff; border-bottom:none;}
+.body .ZBList table .detailTableTr td .detailTable .detaileLine{border-bottom:1px solid #dedede;}
+.body .ZBList table .detailTableTr td .detailTable .detaileLine:nth-child(odd){background: #f1f1f1;}
+.body .ZBList table .detailTableTr td .detailTable .detaileLine .detailName{float:left; width:120px; text-align: right; font-weight:bold; line-height: 25px;}
+.body .ZBList table .detailTableTr td .detailTable .detaileLine .detailContent{float:left; width:50%;  text-align: left; line-height: 25px;}
+.body .ZBList table .detailTableTr td .detailTable .detaileLine:after{clear: both; content:"."; display:block; height:0; visibility:hidden;}
+.body .ZBList table tr:hover{background:#D6F2FE; }
+.body .ZBList table .detailTableTr:hover{background: #fff;}
+
+.body .ZBList #page{margin-top:50px;}
+
+
+
+@media only screen and (max-width: 900px){
+    .body .ZBtable{background: #fff; padding:10px; margin-top:0;}
+    .body .ZBtable .ZBtype li{line-height: 40px;}
+    .body .ZBList{padding:5px;}
+    .body .ZBList .tablePage .tips{padding:20px 0;}
+    .body .ZBList .tablePage .tips p{font-size:12px;}
+    .body .ZBList table tr th{display: none; line-height: 40px;}
+    .body .ZBList table tr th .paiIcon{opacity:1; filter:alpha(opacity=100);}
+    .body .ZBList table tr td{display: none; line-height: 30px;}
+    .body .ZBList table tr .tableName{display: table-cell; position: relative;}
+    .body .ZBList table tr .tablePhoneShow{display:table-cell;}
+    .body .ZBList table tr td{line-height: 40px;}
+    .body .ZBList table tr td .tableDetailBtn{margin:0 10px 0 0;}
+    .body .ZBList table tr .tableXu{font-size:16px;}
+    .body .ZBList table tr td .tableTopXu{width:60px; height:60px; top:-10px; left:-10px;}
+    .body .ZBList table .detailTableTr{border:none;}
+    .body .ZBList table .detailTableTr td{display: table-cell;}
+    .body .ZBList table .detailTableTr td .detailTable{margin:10px 0 20px;}
+    .body .ZBList table .detailTableTr td .detailTable .detaileLine{padding:0 10px;}
+    .body .ZBList table .detailTableTr td .detailTable .detaileLine .detailName{width: 30%; text-align: left;}
+    .body .ZBList table .detailTableTr td .detailTable .detaileLine .detailContent{width:70%;}
+
+}

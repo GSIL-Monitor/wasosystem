@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.body{padding-bottom:60px;}
+.body .jobBox{background:#fff; padding:40px;}
+.body .big_pic{width:100%; background: #f5f5f5;}
+.body .big_pic img{width: 100%;}
+.body .job_type{position: relative; }
+.body .job_type dt{position: absolute; left:0; top:0; color:#666; line-height: 30px; font-weight:bold;}
+.body .job_type dd{padding-left:100px;}
+.body .job_type dd ul li{float:left; text-align:center; margin:0 30px 0 0;}
+.body .job_type dd ul li a{color:#666; line-height: 30px;}
+.body .job_type dd ul .li2 a{color:#176b86;}
+.body .job_type .move_line{width:100px; display: block; height:2px; position: absolute; left:20px; bottom:0; background:#176b86; }
+.body .jobs{margin-top:20px; padding-top:30px; border-top:1px solid #dedede;}
+.body .jobs dt{color:#444; border:1px solid #ebebeb;}
+.body .jobs span{display: block;}
+.body .jobs dt span{float:left; box-sizing: border-box; background:#f5f5f5; font-size:16px; color:#666; text-align: center; line-height: 40px;}
+.body .jobs dd{border:1px solid #ebebeb; border-bottom:none; border-top:none;}
+.body .jobs dd span{color:#666; float:left; display: block; line-height:30px; text-align: center;}
+.body .jobs dd a{display: block; padding:5px 0; border-bottom:1px solid #ebebeb;}
+.body .jobs dd a:hover{background:#ECF7FE;}
+.body .jobs .name{width:40%; text-align: left; text-indent: 20px;}
+.body .jobs dt .name{text-indent: 20px;}
+.body .jobs .type{width:15%;}
+.body .jobs .addr{width:15%;}
+.body .jobs .num{width:15%;}
+.body .jobs .time{width:15%;}
+.body .empty{width:100%; float:none;  text-align: center; background: #fff; line-height:inherit; padding:40px 0;}
+
+.body .job_contact{padding:40px; background: #fff;}
+.body .job_contact .jobName{font-size:28px;}
+.body .job_contact .jobType{margin:20px 0;}
+.body .job_contact .jobType li{float:left; margin-right:50px; color:#666; font-size:16px;}
+.body .job_contact .jobCon{padding:40px 0; margin-top:40px; border-top:1px solid #dedede; color:#444; line-height:40px; font-size:16px;}
+.body .job_contact .prep{padding-top:40px; margin-top:40px;}
+.body .job_contact .prep a{color:#176b86; border:1px solid #176b86; padding:5px 20px; transition: all 0.3s 0s; display: inline-block;}
+.body .job_contact .prep a:hover{color:#fff; background:#176b86;}
+
+@media only screen and (max-width: 900px){
+    #foot{display: none;}
+    .body .wrap{padding:0;}
+    .body .jobBox{padding:10px;}
+    .body .job_type dt{display:none;}
+    .body .job_type dd{padding:0;}
+    .body .jobs{padding-top:0; margin-top:0; border:none;}
+    .body .jobs dt{display:none;}
+    .body .jobs dd{border:none;  padding-top:10px;}
+    .body .jobs dd a{padding:15px 0; border-top:1px solid #ebebeb; }
+    .body .jobs dd a span{text-align: left; line-height: inherit; color:#999; text-indent:0!important;}
+    .body .jobs dd ul{ border-top:1px solid #dedede;}
+    .body .jobs dd .name{width:100%; font-size:1.3em; margin-bottom:5px; color:#444;}
+    .body .jobs dd .phoneBox{float:left; width:70%; text-align: left;}
+    .body .jobs dd .phoneBox span{width:30%; float:none; display:inline-block; margin:0;}
+    .body .jobs dd .time{width:30%; text-align: right;}
+
+    .body .job_contact{padding:20px 10px; background: #fff;}
+    .body .job_contact .jobName{font-size:16px;}
+    .body .job_contact .jobType{margin:10px 0;}
+    .body .job_contact .jobType li{font-size:12px; margin-right:20px;}
+    .body .job_contact .jobCon{padding-top:20px; margin-top:20px; line-height: 30px; font-size:14px;}
+    .body .prep{display: none;}
+} 

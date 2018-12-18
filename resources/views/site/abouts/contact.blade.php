@@ -16,19 +16,18 @@
 
             <div class="aboutBox">
                 @includeIf('site.abouts.about_link')
-
                 <div class="tab_box">
                     <div class="PC_show"><div class="map" id="dituContent"></div></div>
                     <div class="P_show"><img class="lazy" src="{{ asset('pic/map.jpg') }}"></div>
                     <div class="contact">
                         <ul class="phones" >
                             <h5>联系方式</h5>
-                            <li>公司全称：成都网烁信息科技有限公司</li>
-                            <li>服务热线：400-028-1968 &nbsp;&nbsp;&nbsp;&nbsp; (028)-85099673 &nbsp;&nbsp;&nbsp;&nbsp; 13881950196</li>
-                            <li>工作时间：周一至周六 &nbsp;&nbsp;&nbsp;&nbsp; 09:00-18:00（北京时间）</li>
-                            <li>传真号码：(028)-85098783</li>
-                            <li>邮政编码：610093</li>
-                            <li>公司地址：四川省成都市高新区 高朋东路2号 搏润科技园101号</li>
+                            <li>公司全称：{{ setting('system_title') }}</li>
+                            <li>服务热线：{{ setting('contact_telephone') }}</li>
+                            <li>工作时间：{{ setting('contact_working_time') }}</li>
+                            <li>传真号码：{{ setting('contact_fax') }}</li>
+                            <li>邮政编码：{{ setting('contact_zip') }}</li>
+                            <li>公司地址：{{ setting('contact_address') }}</li>
                             <h5 class="lineH5">客服</h5>
                             <li>在线客服：<a href="{{ route('service_support.online') }}">开始咨询 ></a></li>
                             <h5 class="lineH5">建议/意见</h5>

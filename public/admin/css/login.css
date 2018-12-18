@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.bgPic { background-color:#fff; width: 100%;  overflow: hidden;  position: relative;  z-index: 1; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url(../pic/login.jpg); }
+video{width: 100%; position: absolute; z-index: 100; left:0; top:0;}
+input[type='text']{border:none!important;}
+input[type='password']{border:none!important;}
+.glass{width:30%;  position: fixed;  right:0;  top:0;  background:rgba(255,255,255,0.9);  z-index: 200; height:100%; box-shadow:-5px 0 50px rgba(0,0,0,0.15);}
+.loginBox{position: relative; width:80%; height:100%; display: table; margin:0 auto; }
+.loginBox .container{display: table-cell; vertical-align: middle;}
+.loginBox .logo{padding-bottom:50px;  width: 100%;  text-align: center;  }
+.loginBox .logo img{width: 200px;  display: inline-block;  margin: 0 auto;  }
+.loginBox .logo h5{color: #333;  text-align: center;  line-height: 40px;  font-size: 18px;  }
+.loginBox .login .Up{margin: 0 auto;  width:60%;  background: #fff; border:1px solid #dedede; }
+.loginBox .login .Up .userName{width:100%;  font-size: 14px;  padding:0 15px;  line-height:50px;  height:50px;  }
+.loginBox .login .Mid {margin:10px auto;  width:60%;  background: #fff; border:1px solid #dedede; }
+.loginBox .login .Mid .pwd{background: none;  width:100%;  font-size: 14px;  padding: 0 15px;  line-height:50px;  height: 50px;  border:none;  }
+.loginBox .login .Down{margin: 0 auto;  width:60%;  background: #fff; border:1px solid #dedede;  }
+.loginBox .login .Down .checkCode{width:60%;  float: left;  font-size: 14px;  padding:0 15px;  line-height: 50px;  height: 50px;  }
+.loginBox .login .Down .checkPic{width:40%;  float: right; text-align: right;}
+.loginBox .login .Down .checkPic img{width: 100px;  height: 50px;  background: #f5f5f5;  border: none;  outline: none;  }
+.loginBox .login .rememberBox {margin:10px auto;  width:60%; line-height: 20px;}
+.loginBox .login .rememberBox label{display: inline-block; line-height: 20px;}
+.loginBox .login .rememberBox input{vertical-align: middle; margin:0 5px 5px 0!important;}
+.loginBox .login .loginNow {  width:60%;  margin: 30px auto;  cursor: pointer;  display: none;   position:relative;  }
+.loginBox .login .loginNow b{display:block; -moz-border-radius:3px;  -webkit-border-radius:3px; border-radius: 3px 3px 3px 3px; width:100%; height:50px; background:#176b86; color:#fff; text-align:center; font-size:16px; line-height:50px;}
+.loginBox .login .loginNow:hover b{background:#197594;}
+.loginBox .login .loginNow img{width:30px; height:30px; position:absolute; left:50%; top:50%; margin:-15px 0 0 -15px; z-index:111; display:none;}
+.loginBox .login .error { -moz-border-radius:3px;  -webkit-border-radius:3px; border-radius: 3px 3px 3px 3px; display: none;  color: #dd4e4e;  line-height: 30px;  background: #FAE9A3;  width:60%;  padding: 3px 15px;  margin: 15px auto;  border: 1px solid #F8DD72;  font-size: 14px;  }
+.Loginfoot {  position: absolute;  bottom:30px;  left:0;  z-index: 900;  width:100%;  text-align: center;  color: #666;  }
+
+
+
+@media only screen and (max-width: 900px){
+    *{transition: none;}
+    .bgPic{background-image: none;}
+    .glass{width: 100%; position: static; box-shadow: none; background: #343643; display: table; height:100%;}
+    .glass input{background: none; font-size:14px!important; color:#fff;}
+    .loginBox .logo img{width:130px;}
+    .glass .loginBox{display: table-cell; vertical-align: middle; padding-bottom:40px;}
+    .glass .loginBox .container{width: 100%; padding:0 40px; display: block;}
+    .glass .loginBox .logo h5{font-size:20px!important; color:#fff;}
+    .loginBox .login .error{margin:15px 0; width: 100%;}
+    .loginBox .login .Up{width: 100%; background:#474955; border-color:#474955;}
+    .loginBox .login .Mid{width: 100%; background:#474955; border-color:#474955;}
+    .loginBox .login .Down{width: 100%; background:#474955; border-color:#474955; overflow: hidden;}
+    .loginBox .login .rememberBox{width: 100%; color:#ccc}
+    .loginBox .login .loginNow{width: 100%;}
+    .loginBox .login .loginNow b{width: 100%;}
+    .Loginfoot{bottom:20px; color:#565864;}
+}
+
+

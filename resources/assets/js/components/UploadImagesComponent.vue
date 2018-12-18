@@ -4,7 +4,7 @@
             <!--<transition-group>-->
         <div class="demo-upload-list " v-for="item in uploadList" :key="item.name" v-dragging="{ item: item, list: uploadList, group: 'item' }" >
             <div  style="display: none" >
-                <Input type="text" name="pic[url][]"  :value="item.url_name"></Input>
+                <Input type="text" :name="pic_url"  :value="item.url_name"></Input>
             </div>
             <template v-if="item.status === 'finished'">
                 <img :src="item.url" >
@@ -17,7 +17,7 @@
                 <Progress v-if="item.showProgress" :percent="item.percentage" hide-info></Progress>
             </template>
            <div class="pic_name">
-               <Input type="text" style="width: 100px;"  name="pic[name][]" :value="item.name"></Input>
+               <Input type="text" style="width: 100px;"  :name="pic_name" :value="item.name"></Input>
            </div>
         </div>
             <!--</transition-group>-->
@@ -50,10 +50,11 @@
 <script>
 //    import draggable from 'vuedraggable'
     export default {
-        props: ['defaultList','actionImageUrl','imageUrl','deleteImageUrl','fileCount'],
+        props: ['defaultList','actionImageUrl','imageUrl','deleteImageUrl','fileCount','picUrl','picName'],
         data () {
             return {
-                pic_name:[],
+                pic_url:'pic[url][]',
+                pic_name:'pic[name][]',
                 modal: false,
                 imgName: '',
                 visible: false,
@@ -131,15 +132,21 @@
                 return check;
             }
         },
-//        components: {
-//            draggable,
-//        },
+        computed: {
+            // 计算属性的 getter
+            isMultiple: function () {
+                return this.fileCount > 1 ;
+            }
+        },
         mounted () {
+            this.pic_url=this.picUrl ? this.picUrl : this.pic_url;
+            this.pic_name=this.picName ? this.picName : this.pic_name;
+
 //            console.log("测试")
 //            console.log(this.defaultList)
 //            console.log(this.actionImageUrl)
 //            console.log(this.imageUrl)
-//            console.log(this.deleteImageUrl)
+            //console.log(this.picUrl,this.picName,this.pic_url,this.pic_name)
             this.uploadList = this.$refs.upload.fileList;
 
         }

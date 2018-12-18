@@ -15,8 +15,9 @@ class BusinessManagement extends Model
    }
     public function getPicAttribute($value)
     {
-        return getImages($value);
+        return  getImages($value);
     }
+
     public function setFieldAttribute($value)
     {
         return $this->attributes['field']=json_encode($value,JSON_UNESCAPED_UNICODE);

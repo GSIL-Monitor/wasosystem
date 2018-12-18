@@ -1,5 +1,6 @@
 @extends('admin.layout.default')
 @section('js')
+    <script src="{{ asset('admin/js/code.js') }}"></script>
     <script>
         var vm = new Vue({
             el: "#app",
@@ -96,9 +97,14 @@
                     @endcan
                 @else
                     @can('edit put_in_storage_managements')
-                        <button type="submit" class="Btn common_add" form_id="put_in_storage_managements"
+                        @if($put_in_storage_management->procurement_status =='unfinished')
+                        <button type="submit" class="Btn procurement_plans_add blue" procurement_status="finish" form_id="put_in_storage_managements"
                                 location="top">保存
                         </button>
+                        <button type="submit" class="Btn procurement_plans_add blue" procurement_status="unfinished" form_id="put_in_storage_managements"
+                                location="top">临时保存
+                        </button>
+                        @endif
                     @endcan
                 @endif
                 <button class="changeWebClose Btn">返回</button>
