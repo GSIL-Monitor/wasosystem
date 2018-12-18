@@ -15,7 +15,7 @@
               <?php $__currentLoopData = $integrations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $integration): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <li>
                         <div class="solBox">
-                            <div class="typesPic" style="background-image:url('<?php echo e(pic($integration->pic)[0]['url']); ?>');"></div>
+                            <div class="typesPic" style="background-image:url('<?php echo e(pic($integration->pic)[0]['url'] ?? ''); ?>');"></div>
                             <div class="typeName"><?php echo e($integration->name); ?></div>
                             <div class="typesWords">
                                 <dl>

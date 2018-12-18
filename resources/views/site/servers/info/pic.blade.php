@@ -23,8 +23,8 @@
                 <li class="@if($loop->index == 0)active @endif"
                     data-number="{{ $loop->index }}">
                     <img class="lazy"
-                         data-original="{{ $item['url'] }}"
-                         data-src="{{ $item['url'] }}">
+                         data-original="{{ $item['url'] ?? '' }}"
+                         data-src="{{ $item['url'] ?? ''}}">
                 </li>
               @empty
           @endforelse
@@ -35,7 +35,7 @@
     <div class="picsBox">
         <ul class="scroll_pic">
             @forelse($pics as $item)
-                <li class="@if($loop->index == 0)active @endif" data-number="{{ $loop->index }}"><img src="{{ $item['url'] }}"></li>
+                <li class="@if($loop->index == 0)active @endif" data-number="{{ $loop->index }}"><img src="{{ $item['url'] ?? '' }}"></li>
             @empty
             @endforelse
             <div class="clear"></div>

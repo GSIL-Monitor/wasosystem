@@ -7,7 +7,7 @@
                     @php $recommendPic=order_complete_machine_pic($recommend->complete_machine_product_goods) ?? [];@endphp
                     <li class="@if($loop->index ==2) last @endif">
                         <a href="{{ route('server.show',$recommend->id) }}">
-                            <img class="lazy" data-original="{{ $recommendPic }}">
+                            <img class="lazy" data-original="{{ $recommendPic ?? '' }}">
                             <h5>网烁{{ $recommend->name }}</h5><span>立即查看</span>
                         </a>
                     </li>

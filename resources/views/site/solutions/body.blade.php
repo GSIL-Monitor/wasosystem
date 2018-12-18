@@ -15,7 +15,7 @@
               @foreach($integrations as $integration)
                     <li>
                         <div class="solBox">
-                            <div class="typesPic" style="background-image:url('{{ pic($integration->pic)[0]['url'] }}');"></div>
+                            <div class="typesPic" style="background-image:url('{{ pic($integration->pic)[0]['url'] ?? ''}}');"></div>
                             <div class="typeName">{{ $integration->name }}</div>
                             <div class="typesWords">
                                 <dl>

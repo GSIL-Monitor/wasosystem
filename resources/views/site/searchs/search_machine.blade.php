@@ -9,7 +9,7 @@
                              {{ route('server.designer',$search->id) }}
                             @endif
                             ">
-                        <div class="pic"><img class="lazy" data-original="{{ order_complete_machine_pic($search->complete_machine_product_goods) }}"></div>
+                        <div class="pic"><img class="lazy" data-original="{{ order_complete_machine_pic($search->complete_machine_product_goods) ?? '' }}"></div>
                         <div class="infos">
                             <b>
                                 {!! str_ireplace(Request::get('key'), "<font style='color:#f00;font-size:16px;font_weight:bold'>".Request::get('key')."</font>",$search->name) !!}
@@ -32,7 +32,7 @@
                         @if($loop->index > 7)
                         <dd>
                             <a href="">
-                                <div class="pic"><img class="lazy" data-original="{{ order_complete_machine_pic($search->complete_machine_product_goods) }}">
+                                <div class="pic"><img class="lazy" data-original="{{ order_complete_machine_pic($search->complete_machine_product_goods) ?? '' }}">
                                 </div>
                                 <div class="infos">
                                     <b>

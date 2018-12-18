@@ -10,7 +10,7 @@
                     @foreach($new_boutiques as $new_boutique)
                     <li>
                         <a href="{{ route('news.show',$new_boutique->id) }}">
-                            <div class="newsPic"><img src="{{ pic($new_boutique->pic)[0]['url'] }}"></div>
+                            <div class="newsPic"><img src="{{ pic($new_boutique->pic)[0]['url'] ?? '' }}"></div>
                             <div class="newsName">{{ $new_boutique->name }}</div>
                             <div class="newsTime"><span>{{ $new_boutique->created_at->format('Y-m-d') }}</span></div>
                             <div class="newsTxt">{{ str_limit($new_boutique->description,100) }}</div>

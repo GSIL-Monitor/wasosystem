@@ -31,17 +31,17 @@
                 <div class="clear"></div>
             </div>
         </div>
+
         <?php if($integration->Integration_complete_machines->isNotEmpty()): ?>
             <div class="hotSolutions">
                 <div class="wrap">
                     <h5 class="tit">产品解决方案</h5>
                     <ul class="proSolution">
-
                             <?php $__currentLoopData = $integration->Integration_complete_machines; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $complete_machine): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li>
-                                <a href=" {:U($url)}" >
-                                    <img src="__PUBLIC__/Uploads/"/>
-                                    <h3><?php echo e($complete_machine); ?></h3><p><?php echo e($complete_machine->additional_arguments['product_description']); ?></p><h6>查看更多</h6>
+                                <a href="<?php if($complete_machine->parent_id ==1 ): ?><?php echo e(route('server.show',$complete_machine->id)); ?><?php else: ?><?php echo e(route('server.designer',$complete_machine->id)); ?><?php endif; ?>" >
+                                    <img src="<?php echo e(order_complete_machine_pic($complete_machine->complete_machine_product_goods) ?? ''); ?>"/>
+                                    <h3><?php echo e($complete_machine->name); ?></h3><p><?php echo e($complete_machine->additional_arguments['product_description']); ?></p><h6>查看更多</h6>
                                 </a>
                             </li>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

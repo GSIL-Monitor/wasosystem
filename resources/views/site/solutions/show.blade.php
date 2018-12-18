@@ -31,17 +31,17 @@
                 <div class="clear"></div>
             </div>
         </div>
+
         @if($integration->Integration_complete_machines->isNotEmpty())
             <div class="hotSolutions">
                 <div class="wrap">
                     <h5 class="tit">产品解决方案</h5>
                     <ul class="proSolution">
-
                             @foreach($integration->Integration_complete_machines as $complete_machine)
                             <li>
-                                <a href=" {:U($url)}" >
-                                    <img src="__PUBLIC__/Uploads/"/>
-                                    <h3>{{ $complete_machine }}</h3><p>{{ $complete_machine->additional_arguments['product_description'] }}</p><h6>查看更多</h6>
+                                <a href="@if($complete_machine->parent_id ==1 ){{ route('server.show',$complete_machine->id) }}@else{{ route('server.designer',$complete_machine->id) }}@endif" >
+                                    <img src="{{ order_complete_machine_pic($complete_machine->complete_machine_product_goods) ?? '' }}"/>
+                                    <h3>{{ $complete_machine->name }}</h3><p>{{ $complete_machine->additional_arguments['product_description'] }}</p><h6>查看更多</h6>
                                 </a>
                             </li>
                             @endforeach

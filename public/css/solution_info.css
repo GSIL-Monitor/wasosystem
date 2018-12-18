@@ -31,7 +31,7 @@
 .body .sol_box .news_info .go_back a{display:inline-block; color:#176b86; transition: all 0.3s 0s; border:1px solid #176b86; padding:5px 25px; -moz-border-radius:5px;  -webkit-border-radius:5px; border-radius:5px 5px 5px 5px;}
 .body .sol_box .news_info .go_back a:hover{background:#176b86; color:#fff;}
 
-.body .hotSolutions{background: #f5f5f5; height:1px; overflow: hidden;}
+.body .hotSolutions{background: #f5f5f5; height:auto; overflow: hidden;}
 .body .hotSolutions .tit{color:#333; font-size:24px;}
 .body .hotSolutions .proSolution{margin-top:20px;}
 .body .hotSolutions .proSolution li{float:left; width:25%; margin:0 0 20px;}

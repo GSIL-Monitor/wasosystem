@@ -19,7 +19,7 @@
 
             <div class="info_box">
                 <div class="pro_pic">
-                    <img class="lazy" data-original="{{ order_complete_machine_pic($completeMachine->complete_machine_product_goods) }}"/>
+                    <img class="lazy" data-original="{{ order_complete_machine_pic($completeMachine->complete_machine_product_goods) ?? '' }}"/>
                     <div class="infos">
                         <h5>{{ $completeMachine->name }}</h5>
                         <a href="{{ route('server.show',$completeMachine->id) }}" target="_blank">查看产品详情</a>

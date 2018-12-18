@@ -23,7 +23,7 @@
             <h5 class="Bigtit">驱动下载</h5>
             <ul class="borderFour">
              @foreach($complete_machines as $complete_machine)
-                    <li><a href="{{ route('drive.index') }}"><img class="lazy" data-original="{{ pic($complete_machine->pic)[0]['url'] }}">{{ $complete_machine->name }}</a></li>
+                    <li><a href="{{ route('drive.index') }}"><img class="lazy" data-original="{{ pic($complete_machine->pic)[0]['url'] ?? '' }}">{{ $complete_machine->name }}</a></li>
             @endforeach
                 <div class="clear"></div>
             </ul>

@@ -3,7 +3,7 @@
         @foreach($integrations->take(10) as $search)
             <li>
                 <a href="{{ route('solution.show',$search->id) }}">
-                    <div class="pic"><img  class="lazy" src="{{ json_decode($search->pic,true)[0]['url'] }}"></div>
+                    <div class="pic"><img  class="lazy" src="{{ json_decode($search->pic,true)[0]['url'] ?? '' }}"></div>
                     <div class="infos">
                         <b>
                             {!! str_ireplace(Request::get('key'), "<font  style='color:#f00;font-size:20px;font_weight:bold'>".Request::get('key')."</font>",$search->name) !!}
@@ -23,7 +23,7 @@
                     @if($loop->index > 9)
                     <li>
                         <a href="{{ route('solution.show',$search->id) }}">
-                            <div class="pic"><img  class="lazy" src="{{ json_decode($search->pic,true)[0]['url'] }}"></div>
+                            <div class="pic"><img  class="lazy" src="{{ json_decode($search->pic,true)[0]['url'] ?? '' }}"></div>
                             <div class="infos">
                                 <b>
                                     {!! str_ireplace(Request::get('key'), "<font style='color:#f00;font-size:20px;font_weight:bold'>".Request::get('key')."</font>",$search->name) !!}

@@ -9,8 +9,8 @@
                 <i class="videoBtns play"></i>
                 <div class="playscreen"></div>
                 <video controls id="video1">
-                    <source src="{{ asset('storage/'.$video->file['url'][0]) }}" type="video/mp4">
-                    <source src="{{ asset('storage/'.$video->file['url'][0]) }}" type="video/ogg">
+                    <source src="{{ asset('storage/'.$video->file['url'][0] ?? '') }}" type="video/mp4">
+                    <source src="{{ asset('storage/'.$video->file['url'][0] ?? '') }}" type="video/ogg">
                 </video>
             </div>
         </notempty>

@@ -5,9 +5,9 @@
         <ul class="news">
           @foreach($completeMachine->information_management_complete_machines as $new)
                 <li>
-                    <a href="{:U('/news_'.$v['id'])}">
+                    <a href="{{ route('news.show',$new->id) }}">
                         <div class="newsPic"><img alt="" class="lazy"
-                                                  data-original="{{ pic($new->pic)[0]['url'] }}"></div>
+                                                  data-original="{{ pic($new->pic)[0]['url'] ?? '' }}"></div>
                         <h6>{{ $new->name }}</h6>
                         <span>{{ $new->created_at->format('Y-m-d') }}</span>
                     </a>

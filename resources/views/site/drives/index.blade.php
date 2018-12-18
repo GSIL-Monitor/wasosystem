@@ -13,7 +13,7 @@
     <div class="body">
 
         <div id="crumbs">
-            <div class="wrap"><a href="{:U('Support/support')}">服务支持</a> > <span>整机驱动</span></div>
+            <div class="wrap"><a href="{{ route('service_support.index') }}">服务支持</a> > <span>整机驱动11</span></div>
         </div>
 
         <div class="wrap">
@@ -26,7 +26,7 @@
                                 @forelse($complete_machine as $key2=>$item)
                                     @if(drive($item->complete_machine_product_goods)->isNotEmpty())
                                         <li><a class="radius" href="{{ route('drive.show',$item->id) }}"><img
-                                                        class="lazy" data-original="{{ order_complete_machine_pic($item->complete_machine_product_goods) }}"/>
+                                                        class="lazy" data-original="{{ order_complete_machine_pic($item->complete_machine_product_goods) ?? '' }}"/>
                                                 <h5>{{ $item->name }}</h5></a></li>
                                     @endif
                                 @empty

@@ -5,7 +5,7 @@
      @foreach($server_selections as $selection)
             <li class="@if(str_contains($loop->index,[3,7,11,15])) last @endif">
                 <a href="" target="_blank">
-                    <img src="{{ order_complete_machine_pic($selection->good->complete_machine_product_goods ?? $selection->complete_machine_product_goods) }}">
+                    <img src="{{ order_complete_machine_pic($selection->good->complete_machine_product_goods ?? $selection->complete_machine_product_goods) ?? '' }}">
                     <h5>{{ $selection->name }}</h5>
                 </a>
                 <a class="savePro" href="">查看详情</a>

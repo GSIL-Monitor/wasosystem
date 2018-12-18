@@ -20,7 +20,7 @@
                             @foreach($honor_tops as $honor_top)
                                 <li class="main_pic">
                                     <div>
-                                        <img class="lazy" data-original="{{ pic($honor_top->pic)[0]['url'] }}" title="如需大图资料，请联系客服人员！"><h5>{{ $honor_top->field['name'] }}</h5>
+                                        <img class="lazy" data-original="{{ pic($honor_top->pic)[0]['url'] ?? ''  }}" title="如需大图资料，请联系客服人员！"><h5>{{ $honor_top->field['name'] }}</h5>
                                     </div>
                                 </li>
                             @endforeach
@@ -34,7 +34,7 @@
                                 @foreach($honor as $item)
                                     <li class="main_pic">
                                         <div>
-                                            <img class="lazy" data-original="{{ pic($item->pic)[0]['url'] }}" title="如需大图资料，请联系客服人员！"><h5>{{ $item->field['name'] }}</h5>
+                                            <img class="lazy" data-original="{{ pic($item->pic)[0]['url'] ?? ''  }}" title="如需大图资料，请联系客服人员！"><h5>{{ $item->field['name'] }}</h5>
                                         </div>
                                     </li>
                                 @endforeach
@@ -54,7 +54,7 @@
                                         @foreach($honor as $item)
                                             <li class="main_pic">
                                                 <div>
-                                                    <img class="lazy" data-original="{{ pic($item->pic)[0]['url'] }}" title="如需大图资料，请联系客服人员！"><h5>{{ $item->field['name'] }}</h5>
+                                                    <img class="lazy" data-original="{{ pic($item->pic)[0]['url'] ?? ''  }}" title="如需大图资料，请联系客服人员！"><h5>{{ $item->field['name'] }}</h5>
                                                 </div>
                                             </li>
                                         @endforeach

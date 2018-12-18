@@ -3,10 +3,10 @@
         @foreach($banners as $banner)
             @php $pic=json_decode($banner->pic,true); @endphp
             <div class="bannerPage " name="{{ $loop->index }}" data-ppic="{{ $pic[0]['url'] ?? '' }}"
-                 data-mpic="{{ $pic[0]['url'] ?? '' }}" target="_blank" data-color="{{ $banner['field']['color'] }}">
-                <div class="moveBox"><span class="{{ $banner['field']['font_color'] }}" data-float="{{ $banner['field']['font_float'] }}"><em><h5>{{ $banner['field']['max_font'] }}</h5><h1>{{ $banner['field']['min_font'] }}</h1>
+                 data-mpic="{{ $pic[0]['url'] ?? '' }}" target="_blank" data-color="{{ $banner['field']['color'] ?? '' }}">
+                <div class="moveBox"><span class="{{ $banner['field']['font_color'] ?? '' }}" data-float="{{ $banner['field']['font_float'] ?? '' }}"><em><h5>{{ $banner['field']['max_font'] ?? '' }}</h5><h1>{{ $banner['field']['min_font'] ?? '' }}</h1>
                             @if($banner['field']['more'] == '1' && !empty($banner['field']['url']))
-                                <a href="http://{{ $banner['field']['url'] }}" target="_blank"><i></i><b>了解更多</b></a>
+                                <a href="http://{{ $banner['field']['url'] ?? '' }}" target="_blank"><i></i><b>了解更多</b></a>
                             @endif
                     </em></span></div>
             </div>

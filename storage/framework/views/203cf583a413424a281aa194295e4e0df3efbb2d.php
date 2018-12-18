@@ -7,7 +7,7 @@
                         <div class="pro_pic">
                             <a href="<?php echo e(route('server.index','storage')); ?>">
                                 <h5><?php echo e($key); ?></h5>
-                                <img src="<?php echo e(order_complete_machine_pic($item->first()->complete_machine_product_goods)); ?>">
+                                <img src="<?php echo e(order_complete_machine_pic($item->first()->complete_machine_product_goods) ?? ''); ?>">
                             </a>
                         </div>
                         <div class="proLinks">

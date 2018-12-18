@@ -4,7 +4,7 @@
         <span class="edit_Cancel">×</span>
     <div class="editInfo">
         <div class="DoneInfo">
-            <div class="headPic radius"><img src="{{ order_complete_machine_pic($completeMachine->complete_machine_product_goods) }}"></div>
+            <div class="headPic radius"><img src="{{ order_complete_machine_pic($completeMachine->complete_machine_product_goods) ?? '' }}"></div>
             <div class="editName">
                 <form id="completeMachine">
                 {!!  Form::hidden('null',$completeMachine->id,["class"=>'order_id']) !!}
