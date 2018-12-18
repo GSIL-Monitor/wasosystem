@@ -12,8 +12,8 @@
 
                 <ul>
                     <li class="f_tit">产品服务 <i>+</i></li>
-                    <li class="f_hideUl"><a href="{:U('Products/Server')}">服务器</a></li>
-                    <li class="f_hideUl"><a href="{:U('Products/Designer')}">图工及设计师电脑</a></li>
+                    <li class="f_hideUl"><a href="<?php echo e(route('server.index','complete_machine')); ?>">服务器</a></li>
+                    <li class="f_hideUl"><a href="<?php echo e(route('server.index','graphic_workstation_designer_computer')); ?>">图工及设计师电脑</a></li>
                     <li class="f_hideUl"><a href="<?php echo e(route('in_depth_customization')); ?>">深度定制</a></li>
                     <li class="f_hideUl"><a href="<?php echo e(route('solution')); ?>">解决方案</a></li>
                     <li class="f_hideUl"><a href="<?php echo e(route('it_outsourcing')); ?>">服务外包</a></li>
