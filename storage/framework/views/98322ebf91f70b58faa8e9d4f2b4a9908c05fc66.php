@@ -157,7 +157,7 @@
                             </li>
                             <li class="weixin">
                                 <img title="网烁公众号" src="<?php echo e(asset('pic/P_weixin.png')); ?>"/>
-                                <img class="hidePic" src="<?php echo e(json_decode(getImages(setting('contact_wechat')),true)[0]['url']); ?>"/>
+                                <img class="hidePic" src="<?php echo e(json_decode(getImages(setting('contact_wechat')),true)[0]['url1']); ?>"/>
                             </li>
                             <div class="clear"></div>
                         </ul>
