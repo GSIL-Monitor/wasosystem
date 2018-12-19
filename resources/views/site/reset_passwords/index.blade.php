@@ -17,7 +17,7 @@
     <div class="wrap" id="app">
 
         <div class="logo_bg">
-            <a class="logo" href="/"><img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] }}"></a>
+            <a class="logo" href="/"><img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] ?? ''}}"></a>
         </div>
         <div v-show="!next_step">
             <h5 class="title">找回密码</h5>
