@@ -104,9 +104,16 @@ class CommonEquipmentController extends Controller
   //常用配置管理修改
     public function update(CommonEquipmentRequest $request,  CommonEquipment $common_equipment)
     {
-        $this->commonEquipmentServices->place_an_order($common_equipment);
-        //$common_equipment->update($request->all());
-         return response()->json(['info'=>'修改成功'],Response::HTTP_CREATED);
+        if($request->has('type') && $request->type == 'edit_name' ){
+            $common_equipment->update($request->all());
+            return response()->json(['info'=>'修改成功'],Response::HTTP_CREATED);
+        }else{
+            $this->commonEquipmentServices->place_an_order($common_equipment);
+            return response()->json(['info'=>'下单成功'],Response::HTTP_CREATED);
+        }
+
+
+
     }
   //常用配置管理删除
     public function destroy(CommonEquipmentRequest $request)
