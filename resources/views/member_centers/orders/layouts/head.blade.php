@@ -10,7 +10,7 @@
     <div class="wrap">
         <div class="logo order_logo">
             <a href="/">
-                <img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] }}"/>
+                <img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] ?? '' }}"/>
             </a>
         </div>
 
