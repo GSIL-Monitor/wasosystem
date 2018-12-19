@@ -17,7 +17,7 @@
 <div id="register_body" >
     <div class="wrap" id="app">
         <div class="logo_bg">
-            <a class="logo" href="/"><img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] }}"></a>
+            <a class="logo" href="/"><img src="{{ json_decode(getImages(setting('system_logo')),true)[0]['url'] ?? '' }}"></a>
         </div>
         <h5 class="typeName">注册新用户</h5>
         <ul class="register_type">
