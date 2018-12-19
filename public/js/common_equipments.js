@@ -12,6 +12,7 @@ $(function () {
            axios.post(url,{
             "_method":'PUT',
              "_token":getToken(),
+              "type":"edit_name",
              "name":  name
            }).then(function (response) {
                toastrMessage('success',response.data.info)
