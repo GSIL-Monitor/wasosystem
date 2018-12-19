@@ -57,7 +57,7 @@
             if(val==""||val==" "){
                 val = reval;
             }
-            location.href="/search.html?key="+val;
+            location.href="/search?key="+val;
         });
     });
 </script>
