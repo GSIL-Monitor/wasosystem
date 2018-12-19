@@ -429,9 +429,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['defaultDate'],
+    props: ['defaultDate', 'place'],
     data: function data() {
         return {
+            placeholder: "选择时间区间",
             value2: [new Date(), new Date()],
             options2: {
                 shortcuts: [{
@@ -497,6 +498,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     mounted: function mounted() {
         console.log("测试");
         this.value2 = this.defaultDate;
+        if (this.place != '' || this.place != undefined) {
+            this.placeholder = this.place;
+        }
+
         console.log(this.value2);
     }
 });
@@ -57836,8 +57841,6 @@ var render = function() {
                     [
                       _vm._v(
                         "\n                " +
-                          _vm._s(item.id ? item.id : index) +
-                          "----" +
                           _vm._s(item.name ? item.name : item) +
                           "\n            "
                       )
@@ -58455,7 +58458,7 @@ var render = function() {
           editable: "",
           placement: "bottom-end",
           name: "select_date",
-          placeholder: "选择时间区间"
+          placeholder: _vm.placehoder
         }
       })
     ],
