@@ -27,7 +27,11 @@ class BindingAuthorizationController extends Controller
         return view('member_centers.binding_authorizations.index');
 
     }
-
+    //验证用户密码是否正确
+    public function check_password(Request $request)
+    {
+       return decrypt(user()->clear_text)===$request->password ? success('密码正确') :error('密码错误');
+    }
     public function send(Request $request)
     {
         $number = $request->input('number');

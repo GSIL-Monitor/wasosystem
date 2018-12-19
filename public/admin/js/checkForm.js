@@ -202,17 +202,15 @@ function checkError(a) {
     return result;
 }
     function add_form(action,method,form_data,form_id,location){
-        console.log(method);  console.log(action); console.log(form_id);
-        console.log(form_data);
+        // console.log(method);  console.log(action); console.log(form_id);
+        // console.log(form_data);
         $("button[form_id='"+form_id+"']").attr('disabled',true)
         $(window.top.document).find(".loadPage").not(":hidden").children(".loadingWeb").show();
         axios.post(action,form_data).then(function(response) {
-            console.log(response);
-             toastrMessage('success',response.data.info,location)
+             // toastrMessage('success',response.data.info,location)
         }).catch(function(err) {
-            console.log(err.response.data.info)
             if(err.response.data.info){
-               toastrMessage('error',err.response.data.info)
+               // toastrMessage('error',err.response.data.info)
             }
                 if(err.response.data.errors !=undefined){
                     $.each(err.response.data.errors,function (name,errMsg) {

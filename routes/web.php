@@ -149,7 +149,7 @@ Route::group(['namespace' => 'Web'], function ($router) {
         /*-----------------------------绑定授权管理-----------------------------*/
         $router->get('binding_authorization', 'BindingAuthorizationController@index')->name('binding_authorization.index');
         $router->post('binding_authorization/bind', 'BindingAuthorizationController@bind')->name('binding_authorization.bind');
-
+        $router->post('binding_authorization/user/check_password', 'BindingAuthorizationController@check_password')->name('binding_authorization.check_password');
     });
 });
 //所有的后台路由

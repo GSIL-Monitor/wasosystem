@@ -27,7 +27,7 @@ var vm = new Vue({
                 self.content = self.totalTime + 's后重新发送';
                 if (self.totalTime < 0) {
                     window.clearInterval(clock)
-                    self.content = '重新发送验证码'
+                    self.content = '发送验证码'
                     self.totalTime = 30
                     self.canClick = true  //这里重新开启
                 }
@@ -87,8 +87,9 @@ var vm = new Vue({
                         'code': code,
                         'code_name': type
                     }).then(function (response) {
-                        self.content = '发送验证码'; // 按钮里显示的内容
-                        self.otalTime = 30;    //记录具体倒计时时间
+                        self.content = '发送验证码'
+                        self.totalTime = 0
+                        this.canClick = true  //这里重新开启
                         if (type == 'email_code') {
                             self.edit_email = false
                             self.new_email = true
@@ -121,7 +122,7 @@ var vm = new Vue({
             }
         },
         bind_new: function (type) {
-            this.aa = '1';
+
             if (type == 'email') {
                 this.new_email = true
                 this.new_phone = false

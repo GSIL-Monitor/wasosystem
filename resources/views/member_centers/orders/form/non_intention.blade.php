@@ -1,9 +1,9 @@
-<div class="order_xiadan">
+<div class="order_xiadan" >
     <div class="body orderBody">
         <div class="wrap infowrap">
             <div id="crumbs">
                 <a href="/">首页</a> > <a href="{{ route('orders.index') }}?order_status={{ $order->order_status }}"
-                                        target="_blank;"> 我的订单 </a> > {{ $order->serial_number }}
+                                        target="_blank;"> 我的订单</a> > {{ $order->serial_number }}
             </div>
 
             <div class="NowSituation">

@@ -51,7 +51,7 @@
                                                 <div class="pic">
                                                     <dl>
                                                         <dd>
-                                                            <div class="orderPic"><img src="{{ order_complete_machine_pic($item->order_product_goods) }}"></div>
+                                                            <div class="orderPic"><img src="{{ order_complete_machine_pic($item->order_product_goods) ?? '' }}"></div>
                                                             <div class="proInfoTab">
                                                                 <h5 class="canshu">{{ $item->machine_model }}</h5>
                                                                 <h6 class="num">× {{ $item->num }}</h6>

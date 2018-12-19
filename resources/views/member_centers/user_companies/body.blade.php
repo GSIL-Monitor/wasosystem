@@ -31,8 +31,9 @@
                                             <a class="change_edit" @click="edit('{{ route('user_companies.edit',$user_company->id) }}')"> 编辑</a>
                                             @if(!$user_company->default)
                                             <a class="Del" data_title="{{ $user_company->name }}" data_url="{{ url('/user_companies/destory') }}" data_id="{{ $user_company->id }}"> 删除 </a>
+                                                <a class="noteIco @if(!$user_company->default) note @endif" @click="set_default('{{ route('user_companies.update',$user_company->id) }}')"> 设为默认 </a>
                                              @endif
-                                             <a class="noteIco @if(!$user_company->default) note @endif" @click="set_default('{{ route('user_companies.update',$user_company->id) }}')"> 设为默认 </a>
+
                                         </span>
                                         <div class="clear"></div>
                                     </em>

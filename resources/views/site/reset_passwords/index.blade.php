@@ -21,7 +21,7 @@
         </div>
         <div v-show="!next_step">
             <h5 class="title">找回密码</h5>
-            <ul class="forget_box tab_box tab">
+            <ul class="safeUl">
                 <li>
                     <label>
                         <select v-model="type">
@@ -81,18 +81,18 @@
                     <div class="vee_error" v-show="errors.has('password')"><i></i>
                         <p>@{{ errors.first('password') }}</p></div>
                 </li>
-                <li :class="{ errorBorder: errors.has('password_confirmation ') }">
+                <li :class="{ errorBorder: errors.has('password_confirmation') }">
                     <label>
                         <input type="password"
-                               v-model="password_confirmation "
-                               name="password_confirmation "
+                               v-model="password_confirmation"
+                               name="password_confirmation"
                                v-validate="'required|alpha_num|min:6|max:20|confirmed:password'"
                                data-vv-as="确认密码"
                                placeholder="再次输入密码"
                         >
                     </label>
-                    <div class="vee_error" v-show="errors.has('password_confirmation ')"><i></i>
-                        <p>@{{ errors.first('password_confirmation ') }}</p></div>
+                    <div class="vee_error" v-show="errors.has('password_confirmation')"><i></i>
+                        <p>@{{ errors.first('password_confirmation') }}</p></div>
                 </li>
             </ul>
 

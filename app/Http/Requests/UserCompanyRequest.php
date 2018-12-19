@@ -15,7 +15,20 @@ class UserCompanyRequest extends Request
                case 'POST':
                {
                    return [
-                        'name'=>'required'
+                        'name'=>'sometimes|required',
+                        'info.number'=>[
+                           'sometimes',
+                           function ($attribute, $value, $fail) {
+                               $number=$this->input('info')['number'];
+                               $id=$this->input('info')['id'] ?? '';
+                               $first=user()->user_company->filter(function ($item) use($id){
+                                   return $id ? $item['id'] !=$id : true;
+                               })->firstWhere('number',$number);
+                               if ($first) {
+                                   $fail('序号重复了！');
+                               }
+                           }
+                        ]
                    ];
                }
                // UPDATE

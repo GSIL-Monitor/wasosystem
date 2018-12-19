@@ -5,6 +5,7 @@
                         <p>完善个人资料，以便我们及时与您取得联系</p>
                     </div>
 
+
                     <div class="detail_info">
                         <div class="person_info">
                             <ul class="tab">
@@ -72,7 +73,6 @@
                                                 {!! Form::radio('sex',$key,old('sex',true),['id'=>$key]) !!} {{ $item }}
                                                </label>
                                             @endforeach
-                                            <HoHtml:radio name="sex" radios="sex" class="sex" checked="info['sex']"/>
                                         </div>
                                       </span>
                                         <div class="clear"></div>

@@ -43,7 +43,7 @@ class CommonEquipmentController extends Controller
         CommonEquipment::create($request->all());
         return response()->json(['info'=>'保存意向成功'],Response::HTTP_CREATED);
     }
-  //常用配置管理添加页面
+   //常用配置管理添加页面
     public function create()
     {
        return view('admin.common_equipments.create_and_edit');

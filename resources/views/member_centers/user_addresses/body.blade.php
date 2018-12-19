@@ -29,8 +29,9 @@
                                             <a class="change_edit" @click="edit('{{ route('user_addresses.edit',$user_address->id) }}')"> 编辑</a>
                                             @if(!$user_address->default)
                                             <a class="Del" data_title="{{ $user_address->name }}" data_url="{{ url('/user_addresses/destory') }}" data_id="{{ $user_address->id }}"> 删除 </a>
+                                                <a class="noteIco @if(!$user_address->default) note @endif" @click="set_default('{{ route('user_addresses.update',$user_address->id) }}')"> 设为默认 </a>
                                              @endif
-                                             <a class="noteIco @if(!$user_address->default) note @endif" @click="set_default('{{ route('user_addresses.update',$user_address->id) }}')"> 设为默认 </a>
+
                                         </span>
                                         <div class="clear"></div>
                                     </em>

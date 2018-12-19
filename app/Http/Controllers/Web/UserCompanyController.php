@@ -26,12 +26,15 @@ class UserCompanyController extends Controller
     //会员单位管理添加
     public function store(UserCompanyRequest $request)
     {
-        if($request->input('id')){
-            $user_company=UserCompany::findOrFail($request->input('id'));
-            $info=$user_company->update($request->all());
+
+        $info=$request->input('info');
+        if(isset($info['id'])){
+            $user_address=UserCompany::findOrFail($info['id']);
+            $info=$user_address->update($info);
         }else{
-          $info=UserCompany::create($request->all());
+            $info=user()->user_company()->updateOrCreate($info);
         }
+        return response()->json(['info'=>'保存成功','data'=>$info],Response::HTTP_CREATED);
         return response()->json(['info'=>'保存成功','data'=>$info],Response::HTTP_CREATED);
     }
 

@@ -24,11 +24,12 @@ class UserAddressController extends Controller
     //会员物流地址管理添加
     public function store(UserAddressRequest $request)
     {
-        if($request->input('id')){
-            $user_address=UserAddress::findOrFail($request->input('id'));
-            $info=$user_address->update($request->all());
+        $info=array_except($request->input('info'),['tax_mode']);
+        if(isset($info['id'])){
+            $user_address=UserAddress::findOrFail($info['id']);
+            $info=$user_address->update($info);
         }else{
-            $info=UserAddress::create($request->all());
+            $info=user()->user_address()->updateOrCreate($info);
         }
         return response()->json(['info'=>'保存成功','data'=>$info],Response::HTTP_CREATED);
     }

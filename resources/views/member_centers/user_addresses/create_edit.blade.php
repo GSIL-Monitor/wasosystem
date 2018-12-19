@@ -1,69 +1,91 @@
 <div class="edit" v-show="create_edit">
-    <div class="addres_edit" >
+
+    <div class="editNum emailBox" >
         <h5 class="title">@{{ title }}信息</h5>
-        <ul class="tab">
-              {!! Form::open(['route'=>'user_addresses.store','method'=>'post','id'=>'address','onsubmit'=>'return false']) !!}
-                <li class="words"><span><i>*</i>设置编号：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::hidden('user_id',old('user_id',user()->id)) !!}
-                        {!!  Form::hidden('id',old('id'),['v-if'=>'info.id','v-model'=>'info.id']) !!}
-                    {!!  Form::select('number',letter(),old('number'),['placeholder'=>'序号',"class"=>'checkNull','v-model'=>'info.number']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
-                <li class="words"><span><i>*</i>收 货 人：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::text('name',old('name'),['placeholder'=>'例：成都网烁',"class"=>'checkNull','v-model'=>'info.name']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
-                <li><span>收货地址：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::text('address',old('address'),['placeholder'=>'例：成都市高新区高朋东路2号搏润科技园101号',"class"=>'checkNull','v-model'=>'info.address']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
-                <li><span>联系电话：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::text('phone',old('phone'),['placeholder'=>'例：028-68881968',"class"=>'checkNull','v-model'=>'info.phone']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
-                <li ><span>备用电话：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::text('alternative_phone',old('alternative_phone'),['placeholder'=>'例：028-68881968',"class"=>'','v-model'=>'info.alternative_phone']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
+        <div  >
+            <div class="editBox">
+                {!! Form::open(['route'=>'user_addresses.store','method'=>'post','id'=>'address','onsubmit'=>'return false']) !!}
+                <ul class="safeUl">
+                    {!!  Form::hidden('info.id',old('info.id'),['v-if'=>'info.id','v-model'=>'info.id']) !!}
+                    <li :class="{ errorBorder: errors.has('info.number')}">
+                        <label>序号 </label>
+                        {!!  Form::select('info.number',letter(),old('info.number'),[
+                        'placeholder'=>'请选择序号',
+                        "v-validate"=>"'required'",
+                        'v-model'=>'info.number',
+                         'data-vv-as'=>"序号"
+                        ]) !!}
 
-                <li><span>指定物流：</span>
-                    <div class="info_in">
-                        <div class="suc_msg"></div>
-                        <div class="error_msg"><i></i><p></p></div>
-                        {!!  Form::text('logistics',old('logistics'),['placeholder'=>'例：顺丰快递、EMS',"class"=>'','v-model'=>'info.logistics']) !!}
-                    </div>
-                    <div class="clear"></div>
-                </li>
+                        <div class="vee_error" v-show="errors.has('info.number')"><i></i>
+                            <p>@{{ errors.first('info.number') }}</p></div>
+                    </li>
+                    <li :class="{ errorBorder: errors.has('info.name') }">
+                        <label>收 货 人</label>
+                        <input type="text"
+                               v-model="info.name"
+                               name="info.name"
+                               v-validate="'required'"
+                               data-vv-as="收 货 人"
+                               placeholder="例：成都网烁"
+                        >
+                        <div class="vee_error" v-show="errors.has('info.name')"><i></i>
+                            <p>@{{ errors.first('info.name') }}</p></div>
+                    </li>
+                    <li :class="{ errorBorder: errors.has('info.address') }">
+                        <label>收货地址</label>
+                        <input type="text"
+                               v-model="info.address"
+                               name="info.address"
+                               v-validate="'required'"
+                               data-vv-as="收货地址"
+                               placeholder="例：成都市高新区高朋东路2号搏润科技园101号"
+                        >
+                        <div class="vee_error" v-show="errors.has('info.address')"><i></i>
+                            <p>@{{ errors.first('info.address') }}</p></div>
+                    </li>
+                    <li :class="{ errorBorder: errors.has('info.phone') }">
+                    <label>联系电话</label>
+                    <input type="text"
+                           v-model="info.phone"
+                           name="info.phone"
+                           v-validate="'required|mobile'"
+                           data-vv-as="联系电话"
+                           placeholder="例：028-68881968"
+                    >
+                    <div class="vee_error" v-show="errors.has('info.phone')"><i></i>
+                        <p>@{{ errors.first('info.phone') }}</p></div>
+                    </li>
+                    <li :class="{ errorBorder: errors.has('info.alternative_phone') }">
+                        <label>备用电话</label>
+                        <input type="text"
+                               v-model="info.alternative_phone"
+                               name="info.alternative_phone"
+                               v-validate="'mobile'"
+                               data-vv-as="备用电话"
+                               placeholder="例：028-68881968"
+                        >
+                        <div class="vee_error" v-show="errors.has('info.alternative_phone')"><i></i>
+                            <p>@{{ errors.first('info.alternative_phone') }}</p></div>
+                    </li>
+                    <li :class="{ errorBorder: errors.has('info.logistics') }">
+                        <label>指定物流</label>
+                        <input type="text"
+                               v-model="info.logistics"
+                               name="info.logistics"
+                               placeholder="例：顺丰快递、EMS"
+                        >
+                        <div class="vee_error" v-show="errors.has('info.logistics')"><i></i>
+                            <p>@{{ errors.first('info.logistics') }}</p></div>
+                    </li>
+                </ul>
                 {!! Form::close() !!}
-            <div class="clear"></div>
-        </ul>
-
-        <div class="btns">
-            <div class="button HalfBtn" @click="save()"><a>保存</a></div>
-            <div class="button HalfBtn close" @click="cancel()"><a>取消</a></div>
-            <div class="clear"></div>
+                <div class="button goStep2" style="width: 45%" @click="save()">保存</div>
+                <div class="button cancel"@click="cancel()"> 取 消</div>
+                <div class="clear"></div>
+            </div>
         </div>
-
-        </form>
+        <!--   解绑 -->
     </div>
+
+
 </div>

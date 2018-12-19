@@ -70041,7 +70041,7 @@ __WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].extend('mobile',
         return field + '格式不正确';
     },
     validate: function validate(value, args) {
-        return value.length == 11 && /^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value);
+        return value.length == 11 && (/^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value) || /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(value).test(value));
     }
 });
 //邮箱电话验证唯一
@@ -70105,8 +70105,26 @@ __WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].extend('check_co
         });
     }
 });
-//验证码验证
-
+//验证用户密码
+__WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].extend('user_password', {
+    getMessage: function getMessage(field) {
+        return field + '不正确！';
+    },
+    validate: function validate(value, args) {
+        return axios.post('/binding_authorization/user/check_password', {
+            '_token': getToken(),
+            'password': value
+        }).then(function (response) {
+            return {
+                valid: true
+            };
+        }).catch(function (err) {
+            return {
+                valid: false
+            };
+        });
+    }
+});
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

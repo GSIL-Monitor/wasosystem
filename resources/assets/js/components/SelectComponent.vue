@@ -5,7 +5,7 @@
             <Select v-model="good_id"  :name="names" clearable filterable transfer >
                 <Option v-for="(item,index) in goodList" :value="item.id ? item.id :index"
                         :key="item.id ? item.id :index">
-                    {{item.id ? item.id :index}}----{{item.name ? item.name : item}}
+                    {{item.name ? item.name : item}}
                 </Option>
             </Select>
             </Col>

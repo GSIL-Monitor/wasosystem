@@ -1,4 +1,4 @@
-function vee_errors(vee,key,err_msg) {
+function vee_errors(vee, key, err_msg) {
     var field = vee.$validator.fields.find({name: key, scope: vee.$options.scope});
     if (!field) return;
     vee.$validator.errors.add({
@@ -8,6 +8,7 @@ function vee_errors(vee,key,err_msg) {
         scope: vee.$options.scope,
     });
 }
+
 function isset(arr, name) {
     if (arr.indexOf(name) != -1) {
         return true;
@@ -113,7 +114,7 @@ function zheng_JiXingHao_Create() {
             }
             if (product_name == 'CPU') {
                 cpuCode = good_jianma;
-                console.log(cpuCode+'cpu')
+                console.log(cpuCode + 'cpu')
             }
             if (product_name == '机箱') {
                 crateCode = good_jianma.split(',');
@@ -143,7 +144,7 @@ function zheng_JiXingHao_Create() {
             }
 
         })
-        console.log(cpuCode+'cpu')
+        console.log(cpuCode + 'cpu')
         if (isset(products, '平台')) {
             count = nums(network_mouthLCount, network_mouthTCount, network_mouthGcount, terraceCodeThreeFrist, terraceCodeThreeLast, count);
             //有平台专用卡情况
@@ -234,12 +235,12 @@ function zheng_JiXingHao_Create() {
                             }
                         }
                     }
-                    console.log(cpuCode+'cpu')
+                    console.log(cpuCode + 'cpu')
                     Model = 'N' + '' + mainboardOrDisplayCard + '' + crateCode[1] + '' + display_cardTotal + '' + crateTotal + '-' + '' + cpuCode + '' + count + raidCard + powerCode + mainboardModel;
-               console.log(Model+'11',cpuCode)
+                    console.log(Model + '11', cpuCode)
                 } else {
                     Model = 'N' + '' + 'D' + '' + crateCode[1] + '' + display_cardTotal + '' + display_cardCode[1] + cpuCode.substr(1, 1) + '-' + '' + memoryNum + '' + count + raidCard + powerCode + mainboardModel;
-                    console.log(Model+'22')
+                    console.log(Model + '22')
                 }
                 $(".name").val(Model);
 
@@ -342,6 +343,7 @@ function orderMaterialsTaxAndNotTax() {
 
 //toastr 消息提示
 function toastrMessage(status, message, location) {
+
     var url = $(window.parent.frameElement).attr('src');
     toastr.options = {
         "closeButton": true,
@@ -381,7 +383,8 @@ function getCheckedCheckBox() {
     });
     return ids;
 }
-function warning(title,str) {
+
+function warning(title, str) {
     swal({
         title: title,
         type: 'warning',
@@ -392,6 +395,7 @@ function warning(title,str) {
         customClass: 'animated tada'
     })
 }
+
 //Iframe 弹窗
 $(function () {
     //复制提交
@@ -406,15 +410,15 @@ $(function () {
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: '确定'+name,
-            cancelButtonText: '取消'+name
+            confirmButtonText: '确定' + name,
+            cancelButtonText: '取消' + name
         }).then(function (dismiss) {
             axios.get(url)
                 .then(function (response) {
-                    toastrMessage('success', name+'成功!')
+                    toastrMessage('success', name + '成功!')
                 })
                 .catch(function (err) {
-                    toastrMessage('error', name+'失败!')
+                    toastrMessage('error', name + '失败!')
                 });
         });
     });
@@ -448,12 +452,12 @@ $(function () {
     //单个删除提交
     $(document).on('click', '.Del', function () {
         var url = $(this).attr('data_url');
-        var id =  $(this).attr('data_id');
-        var title =  $(this).attr('data_title');
-        var condition =  $(this).attr('data_condition');
+        var id = $(this).attr('data_id');
+        var title = $(this).attr('data_title');
+        var condition = $(this).attr('data_condition');
         var csrf_token = getToken();
         swal({
-            title: '您确定要删除 '+title+' <br/>这条信息吗？',
+            title: '您确定要删除 ' + title + ' <br/>这条信息吗？',
             text: '删除后将无法恢复，请谨慎操作！',
             type: 'warning',
             showCancelButton: true,
@@ -466,7 +470,7 @@ $(function () {
                 "_token": csrf_token,
                 "_method": "delete",
                 "id": id,
-                "condition":condition ? condition : ''
+                "condition": condition ? condition : ''
             })
                 .then(function (response) {
                     toastrMessage('success', '删除成功')
@@ -493,17 +497,17 @@ $(function () {
                 confirmButtonText: '确定删除！',
                 cancelButtonText: '取消删除'
             }).then(function (dismiss) {
-                    axios.post(url, {
-                        "_token": csrf_token,
-                        "_method": "delete",
-                        "id": ids
+                axios.post(url, {
+                    "_token": csrf_token,
+                    "_method": "delete",
+                    "id": ids
+                })
+                    .then(function (response) {
+                        toastrMessage('success', '删除成功')
                     })
-                        .then(function (response) {
-                            toastrMessage('success', '删除成功')
-                        })
-                        .catch(function (err) {
-                            toastrMessage('error', '删除失败')
-                        });
+                    .catch(function (err) {
+                        toastrMessage('error', '删除失败')
+                    });
             });
         } else {
             warning('你需要选择删除参数');
@@ -596,12 +600,12 @@ $(function () {
                 confirmButtonText: '确定更新！',
                 cancelButtonText: '取消更新'
             }).then(function (dismiss) {
-                    add_form(action, method, form_data, form_id);
+                add_form(action, method, form_data, form_id);
             });
         }
     });
     //select2 多选 加上 multiple="multiple"
-    if($('.select2').length > 0){
+    if ($('.select2').length > 0) {
         $('.select2').select2({
             placeholder: '请选择一个',
             // allowClear: true
