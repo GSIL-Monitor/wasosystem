@@ -12,8 +12,7 @@
     @yield('meta')
     {{-- 公用css --}}
     @include('site.layouts.css')
-    {{-- 公用js --}}
-    @include('site.layouts.js')
+
     {{-- 专有css --}}
     @yield('css')
 </head>
@@ -23,6 +22,8 @@
 @yield('content')
 @include('site.layouts.foot',['common_solutions'=>$common_solutions])
 {{-- 专有js --}}
+{{-- 公用js --}}
+@include('site.layouts.js')
 @yield('js')
 <script>
     $(function () {
