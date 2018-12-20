@@ -94,19 +94,12 @@
                             <td class="tableMoreHide">{{ $user->created_at->format('Y-m-d') }}</td>
                             <td>{{ $user->last_login_time }}</td>
                             <td>
-                                @can('show user_addresses')
-                                <a class="changeWeb"
-                                   data_url="{{ route('admin.user_addresses.index') }}?user_id={{ $user->id }}">物流</a>
-                                @endcan
-                                    @can('show user_companies')
+                                    <a class="changeWeb"
+                                       data_url="{{ route('admin.user_addresses.index') }}?user_id={{ $user->id }}">物流</a>
                                     <a class="changeWeb"
                                        data_url="{{ route('admin.user_companies.index') }}?user_id={{ $user->id }}">单位</a>
-                                     @endcan
-                                    @can('show common_equipments')
-                                        <a class="changeWeb"
-                                           data_url="{{ route('admin.common_equipments.index') }}?user_id={{ $user->id }}">常用</a>
-                                    @endcan
-
+                                    <a class="changeWeb"
+                                       data_url="{{ route('admin.common_equipments.index') }}?user_id={{ $user->id }}">常用</a>
                             </td>
                         </tr>
                     @endforeach

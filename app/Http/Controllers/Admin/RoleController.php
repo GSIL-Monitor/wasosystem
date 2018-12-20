@@ -89,7 +89,7 @@ class RoleController extends Controller
     public function update(RoleRequest $roleRequest, Role $role)
     {
         $permissions=array_filter($roleRequest->get('permissions'));
-        $role->fill($roleRequest->except(['permissions']))->save();
+        $role->fill($roleRequest->except(['permissions','undefined']))->save();
         $permission_all = Permission::get();///获得所有权限。
         if(!empty($permissions)){
             foreach ($permission_all as $permission_a) {

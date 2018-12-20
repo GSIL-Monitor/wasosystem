@@ -9,7 +9,6 @@
     @yield('meta')
     {{-- 公用css --}}
     @include('admin.layout.css')
-    {{-- 公用js --}}
     @include('admin.layout.js')
     {{-- 专有css --}}
     @yield('css')
@@ -19,6 +18,8 @@
     {{-- 动态内容 --}}
     @yield('content')
     {{-- 专有js --}}
+   {{-- 公用js --}}
+
     @yield('js')
     <script>
         $(function() {

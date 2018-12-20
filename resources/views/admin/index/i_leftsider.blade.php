@@ -1,7 +1,6 @@
 <div class="LeftLinks">
 
     @can("website system")
-
         @foreach($nav['WebMenus'] as $navs)
             @can('show '.$navs['url'])
                 <dl sys="{{ $navs->cats }}">

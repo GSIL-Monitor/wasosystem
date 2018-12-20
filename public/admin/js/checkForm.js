@@ -207,16 +207,15 @@ function checkError(a) {
         $("button[form_id='"+form_id+"']").attr('disabled',true)
         $(window.top.document).find(".loadPage").not(":hidden").children(".loadingWeb").show();
         axios.post(action,form_data).then(function(response) {
-             // toastrMessage('success',response.data.info,location)
+             toastrMessage('success',response.data.info,location)
         }).catch(function(err) {
             if(err.response.data.info){
-               // toastrMessage('error',err.response.data.info)
+               toastrMessage('error',err.response.data.info)
             }
                 if(err.response.data.errors !=undefined){
                     $.each(err.response.data.errors,function (name,errMsg) {
-
                         var names=name.split('.');
-                        console.log(names[0]);
+                      //  console.log(names[0]);
                         if(names.length>1){
                             if($('select[name="'+names[0]+'[]"]').length >=1){
                                 showError($('select[name="'+names[0]+'[]"]'),errMsg[0]);
