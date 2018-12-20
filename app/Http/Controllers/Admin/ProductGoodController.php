@@ -140,7 +140,7 @@ class ProductGoodController extends Controller
     {
 
         $product =Product::with(['paramenters','paramenters'])->findOrFail($productGood->product_id);
-
+        dd($productGood);
         return view('admin.product_goods.create_and_edit', compact('product', 'productGood'));
     }
     public function copy(Request $request,ProductGood $productGood)

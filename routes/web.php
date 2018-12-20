@@ -13,34 +13,20 @@ use Overtrue\Pinyin\Pinyin;
 |
 */
 
-
-
-
-
-
-
-
-Route::get('/intel.html',function () {return view('site.index.page')->with(['name'=>'Intel']);})->name('intel');
-Route::get('/intelAD.html',function () {return view('site.index.page')->with(['name'=>'IntelAD']);})->name('intelAD');
-Route::get('/asus.html',function () {return view('site.index.page')->with(['name'=>'Asus']);})->name('asus');
-Route::get('/supermicro.html',function () {return view('site.index.page')->with(['name'=>'Supermicro']);})->name('supermicro');
 //所有的前台路由
-Route::get('downloadFile',function () {
-    $File = public_path('storage/'.request()->input('file'));
-    $time=today()->format('Y-m-d');
-    $FileName= request()->input('name').$time.'.'.str_after(request()->input('file'),'.');
-    return response()->download($File,$FileName);
-});
+
 Route::group(['namespace' => 'Web'], function ($router) {
     $router->get('/', 'IndexController@index'); //主页
-    Route::group(['middleware' => ['wechat.oauth']], function ($router) {
+    $router->post('parts_buy/get_product', 'CommonController@get_product'); //主页
+    $router->get('/intel.html', 'CommonController@intel')->name('intel');
+    $router->get('/intelAD.html', 'CommonController@intelAD')->name('intelAD');
+    $router->get('/asus.html', 'CommonController@asus')->name('asus');
+    $router->get('/supermicro.html', 'CommonController@supermicro')->name('supermicro');
+    $router->get('downloadFile','CommonController@downloadFile');
+    $router->group(['middleware' => ['wechat.oauth']], function ($router) {
         $router->get('wechat/auth',"RegisterController@wechat_auth");
-        $router->get('account/setting',function(){
-            return view('site.registers.wechat');
-        })->name('account.setting');
-        $router->get('account/bind',function(){
-            return view('site.registers.wechat_bind');
-        })->name('account.bind');
+        $router->get('account/setting', 'CommonController@account_setting')->name('account.setting');
+        $router->get('account/bind', 'CommonController@account_bind')->name('account.bind');
         $router->post('registers/wechat_store', 'RegisterController@wechat_store')->name('register.wechat_store'); //微信账号设置
         $router->post('registers/wechat_bind', 'RegisterController@wechat_bind')->name('register.wechat_bind'); //微信账号设置
 

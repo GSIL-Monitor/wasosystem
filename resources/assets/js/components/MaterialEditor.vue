@@ -221,14 +221,14 @@
             getProduct: function () {
                 const Notice = this.$Notice;
                 var self = this;
-                axios.post("/member_center/parts_buy/get_product", {
+                axios.post("/parts_buy/get_product", {
                     "_token": $('meta[name="csrf-token"]').attr('content'),
                 }).then(function (response) {
                     self.products = response.data;
                 })
                     .catch(function (err) {
                         Notice.error({
-                            title: '网烁错误！'
+                            title: '网络错误！'
                         });
                     });
             },

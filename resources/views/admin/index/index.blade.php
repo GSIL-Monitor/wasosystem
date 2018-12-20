@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <title>网烁信息综合管理系统</title>
-    <link href="{{ asset('admin/css/public.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('admin/css/icons.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('admin/css/update.css') }}" rel="stylesheet" type="text/css">
-    <script src="{{ asset('admin/js/jquery-2.1.1.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('admin/js/public.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('admin/js/jquery.rotate.min.js') }}" type="text/javascript"></script>
+    {{--<link href="{{ asset('admin/css/public.css') }}" rel="stylesheet" type="text/css">--}}
+    {{--<link href="{{ asset('admin/css/icons.css') }}" rel="stylesheet" type="text/css">--}}
+    {{--<link href="{{ asset('admin/css/update.css') }}" rel="stylesheet" type="text/css">--}}
+    <link rel="stylesheet" href="{{ asset('admin/common/backend_index.css') }}" type="text/css">
+    {{--<script src="{{ asset('admin/js/jquery-2.1.1.min.js') }}" type="text/javascript"></script>--}}
+    {{--<script src="{{ asset('admin/js/public.js') }}" type="text/javascript"></script>--}}
+    {{--<script src="{{ asset('admin/js/jquery.rotate.min.js') }}" type="text/javascript"></script>--}}
     @include('admin.index.IE')
 </head>
 <body id="SysBody">
@@ -35,6 +36,6 @@
     <div class="clear"></div>
 </div>
 
-
+<script src="{{ asset('admin/common/backend_index.js') }}" type="text/javascript"></script>
 </body>
 </html>

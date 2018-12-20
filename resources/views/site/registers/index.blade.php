@@ -9,9 +9,7 @@
     <title>@yield('title','注册网烁帐号')-网烁信息科技有限公司</title>
     <meta name="keywords" content="@yield('keywords','keywords')"/>
     <meta name="description" content="@yield('description','description')"/>
-    <link rel="stylesheet" href="{{ asset('styles/iview.css') }}" type="text/css">
-    <link href="{{ asset('css/public.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/register.css') }}" rel="stylesheet" type="text/css">
+    @include('site.layouts.css')
 </head>
 <body>
 <div id="register_body" >

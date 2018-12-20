@@ -78,6 +78,7 @@ class ServerController extends Controller
         }else{
             $video=$completeMachine->complete_machine_video->first() ?? [];
         }
+
         return view('site.servers.show', compact('completeMachine', 'parent', 'sales_records', 'sales_srecord_count', 'recommends','user_products','video'));
     }
 

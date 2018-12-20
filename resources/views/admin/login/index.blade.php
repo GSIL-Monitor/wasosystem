@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=0,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"/>
-    <script src="{{ asset('admin/js/jquery-2.1.1.min.js') }}" type="text/javascript"></script>
-    <link rel="stylesheet" href="{{ asset('admin/css/public.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('admin/css/login.css') }}" type="text/css">
-    <script src="{{ asset('admin/js/axios.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('admin/js/xuliehua.js') }}" type="text/javascript"></script>
+    {{--<script src="{{ asset('admin/js/jquery-2.1.1.min.js') }}" type="text/javascript"></script>--}}
+    {{--<link rel="stylesheet" href="{{ asset('admin/css/public.css') }}" type="text/css">--}}
+    {{--<link rel="stylesheet" href="{{ asset('admin/css/login.css') }}" type="text/css">--}}
+    <link rel="stylesheet" href="{{ asset('admin/common/backend.css') }}" type="text/css">
+    {{--<script src="{{ asset('admin/js/axios.min.js') }}" type="text/javascript"></script>--}}
+    {{--<script src="{{ asset('js/app.js') }}" type="text/javascript"></script>--}}
+    {{--<script src="{{ asset('admin/js/xuliehua.js') }}" type="text/javascript"></script>--}}
     <title>登录 —— 成都网烁信息科技有限公司OA系统</title>
     <!--[if  IE]>
     <div class="IEBlack"></div>
@@ -53,7 +54,7 @@
         <div class="loginBox">
             <div class="container">
                 <div class="logo">
-                    <img src="{{ asset('admin/pic/logo.png') }}">
+                    <img src="{{ asset('admin/pic/menu.png') }}">
                     <h5>网烁综合管理系统</h5>
                 </div>
 
@@ -81,6 +82,7 @@
 </div>
 </body>
 </html>
+<script src="{{ asset('admin/common/backend.js') }}" type="text/javascript"></script>
 <script>
     $(document).ready(function () {
         /*  调整背景  */

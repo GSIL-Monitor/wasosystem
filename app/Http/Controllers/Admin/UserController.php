@@ -22,6 +22,7 @@ class UserController extends Controller
         $status = $request->get('status') ?? 'VerifiedUser';
         switch ($status) {
             case 'Unverified': {
+
                 $users =  $this->user->Unverified()->paginate(20);
                 break;
             }

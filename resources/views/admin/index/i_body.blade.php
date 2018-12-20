@@ -1,6 +1,6 @@
 <div id="C_body">
 
-    {{--<div class="loadPage" id="yuanhome" sys="yuan"><iframe frameborder="no" name="home" src=""></iframe></div>--}}
+    <div class="loadPage" id="yuanhome" sys="yuan"><iframe frameborder="no" name="home" src=""></iframe></div>
         @can("barcode system")
                 <div class="loadPage" id="tiaohome" sys="tiao"><iframe frameborder="no" name="home" src="{{ route('admin.tiao') }}"></iframe></div>
         @endcan

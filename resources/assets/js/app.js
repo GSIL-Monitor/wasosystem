@@ -8,6 +8,7 @@
 // require('./bootstrap');
 
 window.Vue = require('vue');
+//引入iview插件
 import iView from 'iview';
 // import '../styles/iview.css'
 //import Distpicker from 'v-distpicker'

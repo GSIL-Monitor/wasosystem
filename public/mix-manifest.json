@@ -1,4 +1,9 @@
 {
-    "/js/app.js": "/js/app.js?id=0e6d7cccc26adcb0f9dc",
-    "/js/axios.js": "/js/axios.js?id=b1c7d9ba14ae24240cd8"
+    "/js/app.js": "/js/app.js?id=059412232bfea14e85b9",
+    "/common/frontend.js": "/common/frontend.js?id=9e36e8a2a8c830eebeba",
+    "/admin/common/backend.js": "/admin/common/backend.js?id=1fc90d07fa05d836054b",
+    "/admin/common/backend_index.js": "/admin/common/backend_index.js?id=1afb2c88b1b1b91558a8",
+    "/common/frontend.css": "/common/frontend.css?id=bd97df0fc69499999907",
+    "/admin/common/backend.css": "/admin/common/backend.css?id=da6d1b59ce7e40aa5e51",
+    "/admin/common/backend_index.css": "/admin/common/backend_index.css?id=84e478f9dd6bcafe1b32"
 }

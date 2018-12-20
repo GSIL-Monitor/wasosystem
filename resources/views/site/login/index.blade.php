@@ -9,9 +9,10 @@
     <title>@yield('title','登录')-网烁信息科技有限公司</title>
     <meta name="keywords" content="@yield('keywords','keywords')"/>
     <meta name="description" content="@yield('description','description')"/>
-    <link rel="stylesheet" href="{{ asset('styles/iview.css') }}" type="text/css">
-    <link href="{{ asset('css/public.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css">
+    {{--<link rel="stylesheet" href="{{ asset('styles/iview.css') }}" type="text/css">--}}
+    {{--<link href="{{ asset('css/public.css') }}" rel="stylesheet" type="text/css">--}}
+    {{--<link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css">--}}
+    @include('site.layouts.css')
     <script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
 </head>
 <body>
@@ -153,16 +154,18 @@
 </div>
 
 </body>
-<script type="text/javascript" src="{{ asset('js/jquery-1.7.2.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/placehold.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/public.js') }}"></script>
-<script src="{{ asset('admin/js/xuliehua.js') }}" type="text/javascript"></script>
-
-<script type="text/javascript" src="{{ asset('js/jquery.qrcode.min.js') }}"></script>
-<script src="{{ asset('admin/js/axios.min.js') }}" type="text/javascript"></script>
-
-<script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
+@include('site.layouts.js')
 <script type="text/javascript" src="{{ asset('js/login.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('js/jquery-1.7.2.min.js') }}"></script>--}}
+{{--<script type="text/javascript" src="{{ asset('js/placehold.js') }}"></script>--}}
+{{--<script type="text/javascript" src="{{ asset('js/public.js') }}"></script>--}}
+{{--<script src="{{ asset('admin/js/xuliehua.js') }}" type="text/javascript"></script>--}}
+
+{{--<script type="text/javascript" src="{{ asset('js/jquery.qrcode.min.js') }}"></script>--}}
+{{--<script src="{{ asset('admin/js/axios.min.js') }}" type="text/javascript"></script>--}}
+
+{{--<script type="text/javascript" src="{{ mix('js/app.js') }}"></script>--}}
+
 
 <script>
         var location_url="{!! url()->previous() !!}";

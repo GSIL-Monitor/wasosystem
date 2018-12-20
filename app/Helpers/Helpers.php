@@ -258,11 +258,14 @@ if (!function_exists('randomColor')) {
             $terrace = $goods->firstWhere('product_id', 23);
             if ($terrace) {
                 $pic = json_decode($terrace->pic, true);
+
             } else {
                 if ($crate) {
                     $pic = json_decode($crate->pic, true);
                 }
+
             }
+
             if ($pic && $all) {
                 return $pic;
             } else {

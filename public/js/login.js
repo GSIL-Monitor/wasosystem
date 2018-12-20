@@ -62,6 +62,9 @@ var vm=new Vue({
 });
 /*  判断验证码 */
 $(document).ready(function () {
+
+
+
     /* 默认高度  */
     var windW = $(window).width();
     if (windW < 900) {
