@@ -1,52 +1,51 @@
 <div class="LeftLinks">
-
+    @php $permissions=admin()->getAllPermissions()->pluck('name','name');@endphp
     @can("website system")
         @foreach($nav['WebMenus'] as $navs)
-            @can('show '.$navs['url'])
+            @if($permissions->get('show '.$navs['url']))
                 <dl sys="{{ $navs->cats }}">
                     <dt><span class=""></span>{{ $navs->name }}<i></i></dt>
                     <div class="linksHide">
                         @php $childMenus=$navs->childMenus;@endphp
                         @if(count($childMenus) >0)
                             @foreach($childMenus as $childMenu)
-                                @can('show '.$childMenu->slug)
+                                @if($permissions->get('show '.$childMenu->slug))
                                     <dd>
                                         <a sys="web" href="javascript:;" class="{{ $childMenu->slug }}"
                                            name="{{ $childMenu->slug }}"
                                            pagelink="{{ route($childMenu->url) }}">{{ $childMenu->name }}</a>
                                     </dd>
-                                @endcan
+                                @endif
                             @endforeach
                         @endif
                     </div>
                 </dl>
-            @endcan
+            @endif
         @endforeach
     @endcan
-
-        @can("barcode system")
-            @foreach($nav['TiaoMenus'] as $navs)
-                @can('show '.$navs['url'])
+    @can("barcode system")
+        @foreach($nav['TiaoMenus'] as $navs)
+            @if($permissions->get('show '.$navs['url']))
                 <dl sys="{{ $navs->cats }}">
                     <dt><span class=""></span>{{ $navs->name }}<i></i></dt>
                     <div class="linksHide">
                         @php $childMenus=$navs->childMenus;@endphp
                         @if(count($childMenus) >0)
                             @foreach($childMenus as $childMenu)
-                                @can('show '.$childMenu->slug)
-                                <dd>
-                                    <a sys="tiao" href="javascript:;" class="{{ $childMenu->slug }}"
-                                       name="{{ $childMenu->slug }}"
-                                       pagelink="{{ route($childMenu->url) }}">{{ $childMenu->name }}</a>
-                                </dd>
-                                @endcan
+                                @if($permissions->get('show '.$childMenu->slug))
+                                    <dd>
+                                        <a sys="web" href="javascript:;" class="{{ $childMenu->slug }}"
+                                           name="{{ $childMenu->slug }}"
+                                           pagelink="{{ route($childMenu->url) }}">{{ $childMenu->name }}</a>
+                                    </dd>
+                                @endif
                             @endforeach
                         @endif
                     </div>
                 </dl>
-                @endcan
-            @endforeach
-        @endcan
+            @endif
+        @endforeach
+    @endcan
 
 </div>
 

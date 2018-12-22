@@ -45,15 +45,19 @@ class RoleController extends Controller
         $data=['name'=>$name,'title'=>$roleRequest->get('title')];
         $role=Role::create($data);
         $permissions=array_filter($roleRequest->get('permissions'));
-        //循环通过选择权限
-        if(!empty($permissions)) {
-            foreach ($permissions as $permission) {
-                $permiss = Permission::where('id', '=', $permission)->firstOrFail();
-                //获取新创建的角色并分配权限。
-                $role = Role::where('name', '=', $name)->first();
-                $role->givePermissionTo($permiss);
-            }
+
+        if(!empty($permissions)){
+            $role->syncPermissions($permissions);
         }
+//        //循环通过选择权限
+//        if(!empty($permissions)) {
+//            foreach ($permissions as $permission) {
+//                $permiss = Permission::where('id', '=', $permission)->firstOrFail();
+//                //获取新创建的角色并分配权限。
+//                $role = Role::where('name', '=', $name)->first();
+//                $role->givePermissionTo($permiss);
+//            }
+//        }
         return response()->json(['info'=>'添加'.$role->title.'成功'],Response::HTTP_CREATED);
     }
 
@@ -90,15 +94,9 @@ class RoleController extends Controller
     {
         $permissions=array_filter($roleRequest->get('permissions'));
         $role->fill($roleRequest->except(['permissions','undefined']))->save();
-        $permission_all = Permission::get();///获得所有权限。
+
         if(!empty($permissions)){
-            foreach ($permission_all as $permission_a) {
-                $role->revokePermissionTo($permission_a); //删除与角色相关的所有权限。
-            }
-            foreach ($permissions as $permission) {
-                $p = Permission::where('id', '=', $permission)->firstOrFail(); //在数据库中获得相应的表单//权限。
-                $role->givePermissionTo($p);  //将权限分配给角色
-            }
+            $role->syncPermissions($permissions);
         }
 
         return response()->json(['info'=>'修改成功'],Response::HTTP_CREATED);

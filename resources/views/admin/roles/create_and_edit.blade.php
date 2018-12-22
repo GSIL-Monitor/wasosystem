@@ -6,6 +6,8 @@
             <button class="Btn Refresh ">刷新</button>
             @if(isset($role) && $role->id !== 1)
             <button type="submit" class="Btn common_add" form_id="roles" location="top" >@if(Route::is('admin.roles.create'))添加@else修改@endif</button>
+            @else
+            <button type="submit" class="Btn common_add" form_id="roles" location="top" >@if(Route::is('admin.roles.create'))添加@else修改@endif</button>
             @endif
             <button class="alertWebClose Btn">返回</button>
             </div>

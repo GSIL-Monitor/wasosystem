@@ -54,6 +54,7 @@ function check(){
 
 $(document).ready(function(){
 
+
     var bodyWidth = $(document).width();
 
     /* 每个模板执行动画  */

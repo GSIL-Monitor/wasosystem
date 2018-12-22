@@ -45,7 +45,16 @@
 
                 })
             });
+            /* 提交选项*/
+            $(document).on("click",".gotoNEXT",function(){
+                if(check()=="ok"){
+                    $(".designAD").hide();
+                    $('html,body').animate({scrollTop:0},1000);
+                    $(".body .checkDiy").hide().siblings(".proShowList").show();
 
+                    time();
+                }
+            });
 
         });
     </script>

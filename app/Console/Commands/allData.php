@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\BarcodeAssociated;
 use App\Models\BusinessManagement;
 use App\Models\CompleteMachine;
+use App\Models\CompleteMachineFrameworks;
 use App\Models\DemandFiltrate;
 use App\Models\DemandManagement;
 use App\Models\DivisionalManagement;
@@ -490,6 +491,24 @@ class allData extends Command
     public function complete_machines()
     {
         \DB::transaction(function () {
+            $this->table2('complete_machine_frameworks')->oldest('id')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new CompleteMachineFrameworks();
+                    $model->id=$item->id;
+                    $model->order=$item->order;
+                    $model->name=$item->name;
+                    $model->description=$item->description;
+                    $model->category=$item->category;
+                    $model->pic=$item->pic;
+                    $model->select_type=$item->select_type;
+                    $model->child_id=$item->child_id;
+                    $model->child_category=$item->child_category;
+                    $model->parent_id=$item->parent_id;
+                    $model->select_type=$item->select_type;
+                    $model->save();
+                });
+            });
+            $this->info('整机架构还原完成！');
             $this->tables('zjcp')->oldest('id')->chunk(100, function ($item) {
                 $item->each(function ($item, $key) {
                     $model = new CompleteMachine();
@@ -553,6 +572,7 @@ class allData extends Command
     public function complete_machine_goods()
     {
         \DB::transaction(function () {
+
             $this->tables('zjlswl')->oldest('wliaoid')->chunk(100, function ($item) {
                 $item->each(function ($item, $key) {
                     $model = new CompleteMachine;

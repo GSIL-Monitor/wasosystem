@@ -25,8 +25,8 @@
                    <td class=""><span class="MBIWords">{{ $DivisionalManagementParamenter->calculation($divisional_management_list->task->goal ?? 0) }}</span></td>
                    <td class=""><span class="BDIWords">{{ $DivisionalManagementParamenter->calculation($divisional_management_list->task->guaranteed_task ?? 0) }}</span></td>
                    {{--<td class=""><span class="YHIWords">{{ $DivisionalManagementParamenter->returned_money($divisional_management_list->admins) }}</span></td>--}}
-                   <td class=""><span class="monthly_sales">{{ $DivisionalManagementParamenter->monthly_sales($divisional_management_list->admins,$year,$mouth) }}</span></td>
-                   <td class=""><span class="outstanding">{{ $DivisionalManagementParamenter->outstanding($divisional_management_list->admins,$year,$mouth) }}</span></td>
+                   {{--<td class=""><span class="monthly_sales">{{ $DivisionalManagementParamenter->monthly_sales($divisional_management_list->admins,$year,$mouth) }}</span></td>--}}
+{{--                   <td class=""><span class="outstanding">{{ $DivisionalManagementParamenter->outstanding($divisional_management_list->admins,$year,$mouth) }}</span></td>--}}
 
                    <td class=""><span class="">{{ $DivisionalManagementParamenter->RewardsAndPunishment(
                    $divisional_management_list,
