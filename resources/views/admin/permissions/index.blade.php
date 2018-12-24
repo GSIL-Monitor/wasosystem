@@ -7,6 +7,14 @@
                 <button class="alertWeb Btn" data_url="{{ route('admin.permissions.create') }}">添加权限</button>
                 <button  type="submit" class="red Btn AllDel" form="AllDel" data_url="{{ url('/waso/permissions/destory') }}">删除</button>
             </div>
+            @include('admin.common._search',[
+           'url'=>route('admin.permissions.index'),
+           'status'=>array_except(Request::all(),['type','keyword','_token']),
+           'condition'=>[
+               'title'=>'权限名',
+               'name'=>'权限',
+           ]
+           ])
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">

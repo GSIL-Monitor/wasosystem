@@ -51,8 +51,9 @@
                      <tr><td><div class='error'>没有数据</div></td></tr>
                 @endforelse
             </table>
+                {{ $financial_details->links('vendor.pagination.bootstrap-4',['data'=>array_to_url(Request::all())]) }}
             </form>
-            {{ $financial_details->links('vendor.pagination.bootstrap-4',['data'=>array_to_url(Request::all())]) }}
+
         </div>
     </div>
 

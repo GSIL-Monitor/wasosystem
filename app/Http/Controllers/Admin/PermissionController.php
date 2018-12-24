@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use function foo\func;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Permission\Models\Role;
@@ -18,7 +19,12 @@ class PermissionController extends Controller
      */
     public function index()
     {
-       $permissions=Permission::paginate(20);
+       $permissions=Permission::where(function ($query){
+           $query->when(\request('keyword'),function ($query){
+               $keyword=\request('keyword');
+               $query->where(\request('type'),'like',"%$keyword%");
+           });
+       })->paginate(20);
        return view('admin.permissions.index',compact('permissions'));
     }
 

@@ -26,12 +26,12 @@
             @if(Route::is('admin.divisional_managements.create'))
             <transition name="fade">
                 <li>
-                    <div class="liLeft">部门类型：</div>
+                    <div class="liLeft">类型：</div>
                     <div class="liRight" >
-                        <label for="one"><input type="radio" class='checkNull' id="one" name="identifying"  value="company" v-model="picked">公司</label>
-                        <label for="three"><input type="radio" class='checkNull' id="three" name="identifying" value="department" v-model="picked">部门</label>
-                        <label for="four"><input type="radio" class='checkNull' id="four" name="identifying" value="group" v-model="picked">分组</label>
-                        <label for="two"><input type="radio" class='checkNull' id="two" name="identifying" value="member"  v-model="picked">成员</label>
+                        <label for="one" v-show="company"><input type="radio" class='checkNull' id="one" name="identifying"  value="company" v-model="picked">公司</label>
+                        <label for="three" v-show="department"><input type="radio" class='checkNull' id="three" name="identifying" value="department" v-model="picked">部门</label>
+                        <label for="four" v-show="group"><input type="radio" class='checkNull' id="four" name="identifying" value="group" v-model="picked">分组</label>
+                        <label for="two" v-show="member"><input type="radio" class='checkNull' id="two" name="identifying" value="member"  v-model="picked">成员</label>
                     </div>
                     <div class="clear"></div>
                 </li>
@@ -59,17 +59,28 @@
         el:"#app",
         data:{
             typed:'',
+            company:true,
+            department:true,
+            group:true,
+            member:true,
             @if(Route::is('admin.divisional_managements.create'))
             @if($parent->identifying =='company')
                  picked: 'department',
+                 company:false,
             @elseif($parent->identifying =='department')
                  picked: 'group',
+                 company:false,
+                 department:false,
            @elseif($parent->identifying =='group')
                  picked: 'member',
+                 company:false,
+                 department:false,
+                 group:false,
             @else
                 picked: 'member',
             @endif
             @endif
+
         },
         methods: {
 

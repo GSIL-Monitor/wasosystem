@@ -10,6 +10,14 @@ class DivisionalManagement extends Model
    protected $casts=[];
    protected $fillable=['name','identifying','admin_id','parent_id'];
 
+    public function children()
+    {
+        return $this->hasMany($this,'parent_id','id');
+    }
+    public function allChildrens()
+    {
+        return $this->children()->with('allChildrens');
+    }
 
     public function admins()
     {

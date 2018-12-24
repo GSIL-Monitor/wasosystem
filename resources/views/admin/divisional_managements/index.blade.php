@@ -26,14 +26,41 @@
             <table class="listTable">
                 <tr>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
-                    <th class="tableInfoDel">名称</th>
+                    <th class="tableInfoDel">对象</th>
+                    <th class="">模式</th>
+                    <th class="">目标任务(万)</th>
+                    <th class="">保底任务(万)</th>
+                    <th class="">奖励系数(%)</th>
+                    <th  class="tableMoreHide">目标阶段二(万)</th>
+                    <th  class="tableMoreHide">奖励系数二(%)</th>
+                    <th  class="tableMoreHide">目标阶段三(万)</th>
+                    <th  class="tableMoreHide">奖励系数三(%)</th>
+                    <th class="">单位指标(万)</th>
+                    <th class="">处罚指标(元)</th>
+                    <th class="">奖励标准(元)</th>
                     <th  class="tableMoreHide">添加时间</th>
                     <th class="">修改时间</th>
                     <th class="">操作</th>
-
                 </tr>
+                  @foreach($divisional_managements as $management)
+                    @include('admin.divisional_managements.child',['management'=>$management,'level'=>0])
+                    @if($management->allChildrens->isNotEmpty())
+                        @foreach($management->allChildrens as $department)
+                            @include('admin.divisional_managements.child',['management'=>$department,'level'=>1])
+                            @if($department->allChildrens->isNotEmpty())
+                                @foreach($department->allChildrens as $group)
+                                    @include('admin.divisional_managements.child',['management'=>$group,'level'=>2])
+                                    @if($group->allChildrens->isNotEmpty())
+                                        @foreach($group->allChildrens as $member)
+                                            @include('admin.divisional_managements.child',['management'=>$member,'level'=>3])
+                                        @endforeach
+                                    @endif
+                                @endforeach
+                            @endif
+                        @endforeach
+                    @endif
+                  @endforeach
 
-                {!! $DivisionalManagementParamenter->tree($divisional_managements,$prefix='',88) !!}
             </table>
             </form>
 
