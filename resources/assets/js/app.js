@@ -13,7 +13,6 @@ import iView from 'iview';
 // import '../styles/iview.css'
 //import Distpicker from 'v-distpicker'
 
-Vue.use(Vuetify)
 import VueDND from 'awe-dnd';
 import VeeValidate , { Validator }from 'vee-validate';
 import zh from './zh_CN'
