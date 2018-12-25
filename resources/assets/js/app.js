@@ -10,8 +10,7 @@
 window.Vue = require('vue');
 //引入iview插件
 import iView from 'iview';
-// import '../styles/iview.css'
-//import Distpicker from 'v-distpicker'
+
 
 import VueDND from 'awe-dnd';
 import VeeValidate , { Validator }from 'vee-validate';
@@ -119,6 +118,7 @@ Vue.component('good-remote-select', require('./components/GoodRemoteSelect.vue')
 Vue.component('date-picker-filtrate', require('./components/DatePickerFiltrate.vue'));
 Vue.component('date-picker-select', require('./components/DatePicker.vue'));
 Vue.component('material_editor', require('./components/MaterialEditor.vue'));
+Vue.component('v-chart', ECharts)
 //Vue.component('v-distpicker', Distpicker) 地址选择器   现在选用仿京东选择器
 // const app = new Vue({
 //     el: '#app'

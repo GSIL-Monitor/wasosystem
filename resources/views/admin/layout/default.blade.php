@@ -19,7 +19,9 @@
     @yield('content')
     {{-- 专有js --}}
    {{-- 公用js --}}
-
+@if (config('app.debug'))
+    @include('sudosu::user-selector')
+@endif
     @yield('js')
     <script>
         $(function() {

@@ -10,7 +10,7 @@
     <div class="animsition">
         <div style="overflow: hidden;">
             <div id="main" ></div>
-            <div id="main2" style="height:250px; width: 600px; float: left;overflow: hidden;"></div>
+            <div id="main2" style="height:290px; width: 560px; float: left;overflow: hidden;"></div>
         </div>
     </div>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
@@ -71,7 +71,7 @@
             legend: {
                 orient: 'horizontal', // 'vertical'
                 icon:'pie',
-                 orient: 'vertical',
+//                 orient: 'vertical',
                 x: 'right',
                 y: 'bottom',
                 selectedMode:true,
@@ -80,7 +80,7 @@
             series: [
                 {
                     name:'各级别会员人数',
-                    center:['30%','55%'],
+                    center:['50%','35%'],
                     type:'pie',
                     radius: ['50%', '65%'],
                     avoidLabelOverlap: false,

@@ -10,7 +10,7 @@
     <div class="animsition">
         <div style="overflow: hidden;">
             <div id="main" ></div>
-            <div id="main2" style="height:250px; width: 280px; float: left;overflow: hidden;"></div>
+            <div id="main2" style="height:290px; width: 280px; float: left;overflow: hidden;"></div>
         </div>
     </div>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>

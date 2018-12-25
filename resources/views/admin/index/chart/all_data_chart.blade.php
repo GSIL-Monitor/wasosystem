@@ -10,7 +10,7 @@
     <div class="animsition">
         <div style="overflow: hidden;">
             <div id="main" ></div>
-            <div id="main2" style="height:250px; width: 280px; float: left;overflow: hidden;"></div>
+            <div id="main2" style="height:290px; width: 250px; float: left;overflow: hidden;"></div>
         </div>
     </div>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
@@ -51,11 +51,6 @@
             tooltip: {
                 trigger: 'item',
                 formatter: function(data){
-//                    myChart2.setOption({
-//                        title : {
-//                            text: '会员数量' + data.value,
-//                        }
-//                    });
                     return data.name + '</br>' + '数量：' + data.value + '</br>占比：' + data.percent + '%'+'</br>';
                 }
             },
@@ -69,9 +64,8 @@
                 }
             },
             legend: {
-                orient: 'horizontal', // 'vertical'
+                orient: 'horizontal',
                 icon:'pie',
-//                 orient: 'vertical',
                 x: 'right',
                 y: 'bottom',
                 selectedMode:true,

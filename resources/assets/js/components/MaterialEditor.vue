@@ -22,7 +22,7 @@
                             <Select v-else  :placeholder="item.name"   clearable filterable transfer  @on-change="v=>{ changeSelect(v,item.product_good_id,item.num,item.product_good_raid,'good',index)}">
                                 <Option v-for="(item2,index2) in item.list" :value="index2"
                                         :key="index2" >
-                                    {{index2}}----{{item2}}
+                                    {{item2}}
                                 </Option>
                             </Select>
                     </div>

@@ -1,6 +1,9 @@
 <div class="my">
     <div class="phoneIndex">主页</div>
     <div class="myPic">
+        @if (config('app.debug'))
+            @include('sudosu::user-selector')
+        @endif
         <span><img src="{{ asset('admin/pic/logo.jpg') }}"/></span>
     </div>
     <div class="myName">
@@ -22,5 +25,6 @@
             @endcan
         </ul>
     </div>
+
     <div class="clear"></div>
 </div>
