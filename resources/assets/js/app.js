@@ -27,7 +27,7 @@ Vue.use(VeeValidate, {
 Validator.extend('mobile', {
     getMessage: field => field + '格式不正确',
     validate: (value, args) => {
-        return value.length == 11 && (/^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value) || /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(value).test(value))
+        return value.length == 11 && (/^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value) || /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(value))
     }
 });
 //邮箱电话验证唯一
