@@ -16,7 +16,7 @@
 .addreses ul .tr span a{font-size: 12px; color:#666; margin:0 2px;}
 .addreses ul .tr span b{font-size: 12px; color:#444;}
 .addreses ul .num{width:5%;}
-.addreses ul .name{width:35%; cursor:pointer; color:#2196f3; font-weight:bold;  text-decoration: underline;}
+.addreses ul .name{width:35%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor:pointer; color:#2196f3; font-weight:bold;  text-decoration: underline;}
 .addreses ul .person_addr{width:50%; cursor:pointer; color:#2196f3; font-weight:bold;  text-decoration: underline;}
 .addreses ul .type{width:15%;}
 .addreses ul .peo{width:15%;}
