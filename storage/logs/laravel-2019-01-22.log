@@ -381,3 +381,4 @@ Did you mean this?
 [2019-01-22 18:30:04] local.INFO: 最新数据库备份发送邮件成功  
 [2019-01-22 18:39:04] local.NOTICE: 813-周应伟 | POST waso/product_goods/getseries | 提交的参数：{"parent_id":"278"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
 [2019-01-22 19:00:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 19:30:05] local.INFO: 最新数据库备份发送邮件成功  
