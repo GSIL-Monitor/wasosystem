@@ -30,6 +30,7 @@ class AssemblyManufacturingSheetExport implements WithEvents
     {
         $comm_info=BaseSheetExport::commInfo(self::$order);
         $company=$comm_info['company'];
+        $pic=str_after(order_complete_machine_pic(self::$order->order_product_goods),'storage/');
         if(self::$order->order_type != 'parts' ) {
             $machine_model = explode('-', self::$order->machine_model);
             $complete_machine = CompleteMachine::where('name', 'like', '%' . $machine_model[0] . '%')->first();
@@ -123,7 +124,7 @@ class AssemblyManufacturingSheetExport implements WithEvents
         $event->sheet->styleCells('D' . ($count + 11) . ':' . 'D' . ($count + 18), ['font' => ['bold' => true],'alignment' => ['horizontal' =>Alignment::HORIZONTAL_LEFT]]);
         $event->sheet->styleCells('A' . ($count + 18), ['alignment' => ['horizontal' =>Alignment::HORIZONTAL_RIGHT]]);
         if(self::$order->order_type != 'parts' ){
-            BaseSheetExport::setImages($sheet,public_path('pic/about/about1.jpg'),'G1',50,50);
+            BaseSheetExport::setImages($sheet,public_path('storage/'.$pic),'G1',50,50);
         }
     }
 }

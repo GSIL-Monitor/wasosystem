@@ -810,15 +810,20 @@ mso-font-kerning:22.0pt'><o:p></o:p></span></b></p>
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:205.05pt'>
                 <p class=MsoNormal align=center style='margin-right:-.5pt;mso-para-margin-right:
-  -.05gd;text-align:center;line-height:150%'><span lang=EN-US style='mso-bidi-font-size:
-  10.5pt;line-height:150%;font-family:宋体;mso-no-proof:yes'><img width=268
-                                                                height=268 id="_x0000_i1026"
-                                                                src="https://www.waso.com.cn/public/Uploads/PINGTAI/278/342/34/59f2f51929987.png"
-                                                                alt="https://www.waso.com.cn/public/Uploads/PINGTAI/278/342/34/59f2f51929987.png"></span><span
-                            lang=EN-US style='mso-bidi-font-size:10.5pt;line-height:150%;font-family:
-  宋体;mso-no-proof:yes'><img width=268 height=268 id="_x0000_i1025"
-                            src="https://www.waso.com.cn/public/Uploads/PINGTAI/278/342/34/59f2f51eaf1c2.png"
-                            alt="https://www.waso.com.cn/public/Uploads/PINGTAI/278/342/34/59f2f51eaf1c2.png"></span><span
+  -.05gd;text-align:center;line-height:150%'>
+                    @php $pics=order_complete_machine_pic($order->order_product_goods,'all') ?? [];@endphp
+                    @forelse($pics as $item)
+                        @if($loop->index >=1)
+                        <span
+                                lang=EN-US style='mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+  宋体;mso-no-proof:yes'><img width=268 height=268 id="_x0000_i102{{ $loop->index }}"
+                            src="{{ $item['url'] }}"
+                            alt="{{ $item['url'] }}">
+                    </span>
+                        @endif
+                    @empty
+                    @endforelse
+                    <span
                             lang=EN-US style='mso-bidi-font-size:10.5pt;line-height:150%'><o:p></o:p></span></p>
             </td>
         </tr>

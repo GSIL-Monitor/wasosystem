@@ -1,0 +1,383 @@
+[2019-01-22 00:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 00:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 01:00:12] local.INFO: 创建数据库备份成功  
+[2019-01-22 01:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 02:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 02:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 03:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 03:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 04:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 04:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 05:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 05:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 06:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 06:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 07:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 07:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-22 08:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-22 08:00:09] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 08:00:09] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 08:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-22 09:00:10] local.INFO: 创建数据库备份成功  
+[2019-01-22 09:00:10] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 09:00:10] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 09:51:05] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"bgg","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:51:10] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"ezx","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:51:28] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"e9y","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:51:34] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"78q","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:51:41] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"813","captcha":"trp","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:51:41] local.NOTICE: 813-周应伟 | GET waso | 提交的参数：[] | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:58:27] local.NOTICE: 813-周应伟 | PUT waso/roles/2 | 提交的参数：{"name":"planners","title":"企划人员","permissions":["1","2","3","4","7","8","9","10","11","12","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","64","65","66","67","68","69","70","71","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","107","108","110","111","112","113","114","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195","196","197","198","199","200","201","202","203","204","205","206","207","208","209","210","211","212","213","214","215","216","217","218","219","220","221","222","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238","239","240"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:58:54] local.NOTICE: 813-周应伟 | POST waso/notifications | 提交的参数：{"title":"测试","user":["1992"],"content":"1122","to_user":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 09:59:06] local.NOTICE: 813-周应伟 | POST waso/notifications | 提交的参数：{"title":"测试1","user":["1992"],"content":"收拾所","to_user":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 10:00:10] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 10:00:11] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 10:00:11] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 10:30:06] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 11:00:10] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 11:00:11] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 11:00:11] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 11:30:05] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 12:00:06] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 12:00:07] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 12:00:07] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 12:04:52] local.NOTICE: 813-周应伟 | DELETE waso/notifications/destory | 提交的参数：{"id":["2","3","4","5","6","7","1"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 12:05:01] local.NOTICE: 813-周应伟 | POST waso/notifications | 提交的参数：{"title":"11","user":["1992"],"content":"22","to_user":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 12:30:05] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 13:00:05] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 13:00:05] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 13:00:06] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 13:30:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 13:51:55] local.NOTICE: 813-周应伟 | POST waso/notifications | 提交的参数：{"title":"11","user":["1801"],"content":"11","to_user":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 13:51:58] local.ERROR: Call to a member function notification() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function notification() on null at /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/MessagesController.php:25)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\Api\\MessagesController->index(Object(Dingo\\Api\\Http\\Request))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\MessagesController), 'index')
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#21 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#23 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#42 {main}
+"} 
+[2019-01-22 13:56:11] local.ERROR: Call to a member function notification() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function notification() on null at /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/MessagesController.php:25)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\Api\\MessagesController->index(Object(Dingo\\Api\\Http\\Request))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\MessagesController), 'index')
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#21 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#23 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#42 {main}
+"} 
+[2019-01-22 13:58:28] local.ERROR: Call to a member function notification() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function notification() on null at /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/MessagesController.php:25)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\Api\\MessagesController->index(Object(Dingo\\Api\\Http\\Request))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\MessagesController), 'index')
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#21 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#23 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#42 {main}
+"} 
+[2019-01-22 13:58:44] local.ERROR: Call to a member function notification() on null {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function notification() on null at /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/MessagesController.php:25)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\Api\\MessagesController->index(Object(Dingo\\Api\\Http\\Request))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\MessagesController), 'index')
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#21 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#23 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#42 {main}
+"} 
+[2019-01-22 14:00:06] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 14:00:06] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 14:00:06] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 14:19:41] local.NOTICE: 813-周应伟 | PUT waso/notifications/8 | 提交的参数：{"title":"22","user":["1992"],"content":"22","to_user":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 14:30:05] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 14:39:04] local.ERROR: SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`waso_database`.`users`.`notification_count` - 1)' (SQL: update `users` set `notification_count` = `notification_count` - 1, `updated_at` = 2019-01-22 14:39:04 where `id` = 1992) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22003): SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`waso_database`.`users`.`notification_count` - 1)' (SQL: update `users` set `notification_count` = `notification_count` - 1, `updated_at` = 2019-01-22 14:39:04 where `id` = 1992) at /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 22003): SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`waso_database`.`users`.`notification_count` - 1)' at /home/vagrant/Code/wasosystem/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:144, PDOException(code: 22003): SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`waso_database`.`users`.`notification_count` - 1)' at /home/vagrant/Code/wasosystem/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:142)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('update `users` ...', Array, Object(Closure))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Connection.php(490): Illuminate\\Database\\Connection->run('update `users` ...', Array, Object(Closure))
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Connection.php(423): Illuminate\\Database\\Connection->affectingStatement('update `users` ...', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2508): Illuminate\\Database\\Connection->update('update `users` ...', Array)
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2567): Illuminate\\Database\\Query\\Builder->update(Array)
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(809): Illuminate\\Database\\Query\\Builder->decrement('notification_co...', 1, Array)
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(521): Illuminate\\Database\\Eloquent\\Builder->decrement('notification_co...', 1, Array)
+#7 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(497): Illuminate\\Database\\Eloquent\\Model->incrementOrDecrement('notification_co...', 1, Array, 'decrement')
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1567): Illuminate\\Database\\Eloquent\\Model->decrement('notification_co...')
+#9 /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/MessagesController.php(41): Illuminate\\Database\\Eloquent\\Model->__call('decrement', Array)
+#10 [internal function]: App\\Http\\Controllers\\Api\\MessagesController->show(Object(Dingo\\Api\\Http\\Request), '8')
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('show', Array)
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\MessagesController), 'show')
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#15 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#16 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#25 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#27 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#41 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#42 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#43 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#44 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#46 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#47 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 {main}
+"} 
+[2019-01-22 15:00:07] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 15:00:08] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 15:00:08] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 15:17:27] local.ERROR: Class 'App\Http\Controllers\Api\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\Api\\User' not found at /home/vagrant/Code/wasosystem/app/Http/Controllers/Api/UserAddressController.php:12)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\Api\\UserAddressController->index(Object(Dingo\\Api\\Http\\Request))
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\UserAddressController), 'index')
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#6 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#14 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#17 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#21 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#23 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#42 {main}
+"} 
+[2019-01-22 15:30:06] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 16:00:07] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 16:00:08] local.INFO: 整机产品更新价格成功！  
+[2019-01-22 16:00:08] local.INFO: 自建产品更新价格成功！  
+[2019-01-22 16:30:07] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 17:00:07] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 17:30:05] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 17:35:20] local.NOTICE: 813-周应伟 | POST waso/user_addresses | 提交的参数：{"user_id":"1992","number":"B","name":"这是第二个地址","phone":"15208128210","address":"123456","alternative_phone":"123456","logistics":"123456","zip":"123456"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 18:00:06] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 18:20:20] local.ERROR: There are no commands defined in the "make:install" namespace.
+
+Did you mean this?
+    make {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"make:install\" namespace.
+
+Did you mean this?
+    make at /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php:578)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(618): Symfony\\Component\\Console\\Application->findNamespace('make:install')
+#1 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('make:install:al...')
+#2 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/vagrant/Code/wasosystem/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-01-22 18:20:31] local.ERROR: There are no commands defined in the "install" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"install\" namespace. at /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php:578)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(618): Symfony\\Component\\Console\\Application->findNamespace('install')
+#1 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('install:allData')
+#2 /home/vagrant/Code/wasosystem/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /home/vagrant/Code/wasosystem/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-01-22 18:30:04] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-22 18:39:04] local.NOTICE: 813-周应伟 | POST waso/product_goods/getseries | 提交的参数：{"parent_id":"278"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-22 19:00:13] local.INFO: 最新数据库备份发送邮件成功  

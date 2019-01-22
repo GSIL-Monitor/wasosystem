@@ -19,7 +19,7 @@ class ItServiceController extends Controller
     }
     public function index(ProductGoodRequest $request)
     {
-        $it_services = ProductGood::with(['series','framework'])->whereJiagouId(162)->oldest()->paginate(20);
+        $it_services = ProductGood::with(['series','framework'])->whereJiagouId(162)->whereXilieId(172)->oldest()->paginate(20);
 
        return view('admin.it_services.index',compact('it_services'));
 

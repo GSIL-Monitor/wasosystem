@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\BarcodeAssociated;
 use App\Models\BusinessManagement;
+use App\Models\CommonEquipment;
 use App\Models\CompleteMachine;
 use App\Models\CompleteMachineFrameworks;
 use App\Models\DemandFiltrate;
@@ -772,6 +773,7 @@ class allData extends Command
                 });
             });
             $this->info('会员公司地址还原完成！');
+
         });
     }
 
@@ -941,7 +943,49 @@ class allData extends Command
                 });
             });
             $this->info('订单物料还原完成！');
+            $this->tables('changyong')->oldest('id')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new CommonEquipment();
+                    $a = User::whereId($item->userid)->first();
+                    $b = Order::whereId($item->orderid)->first();
+                    if ($a && $b) {
+                        $model->id = $item->id;
+                        $model->order_id = $b->id;
+                        $model->user_id = $a->id;
+                        $model->name = $item->name;
+                        $model->machine_model = $item->xinghao;
+                        $model->code = $item->peizhi;
+                        $model->unit_price = $item->danjia;
+                        $model->total_prices = $item->price;
+                        $model->old_prices = $item->oldprice;
+                        $model->num = $item->dgshu;
+                        $model->order_type = [2=>'waso_complete_machine',3=>'custom_complete_machine',4=>'designer_computer'][$item->orderms];
+                        $model->service_status = [0=>0,1=>1,2=>2,3=>3][$item->fwstatus];
+                        $model->invoice_type = [0=>'no_invoice',1=>'vat_special_invoice',2=>'tax_invoice'][$item->fptype];
+                        $model->user_remark = $item->ddyaoqiu;
+                        $model->company_remark = $item->des;
+                        $model->market = $item->xiaoshou;
+                        $model->save();
+                    }
+                });
+            });
+            $this->info('常用配置还原完成！');
+            $this->tables('changyongwl')->oldest('wliaoid')->chunk(100, function ($item) {
+                $item->each(function ($item, $key) {
+                    $model = new CommonEquipment();
+                    $good = new ProductGood();
+                    if ($item->orderid) {
+                        $common_equipment = $model->find($item->orderid);
+                        $common_equipment_good = $good->with('product')->whereProductId($item->type)->whereOldid($item->cpid)->first();
+                        if ($common_equipment && $common_equipment_good) {
+                            $common_equipment->common_equipment_product_goods()->attach($common_equipment_good->id, ['product_good_price' => $item->danjia ?? 0, 'product_good_num' => $item->num, 'product_number' => $common_equipment_good->product->bianhao, 'product_good_raid' => $item->raid]);
+                        }
+                    }
+                });
+            });
+            $this->info('常用配置物料还原完成！');
         });
+
     }
 
     //营销中心

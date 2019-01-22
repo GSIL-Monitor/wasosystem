@@ -39,7 +39,7 @@ class OrderSendNotification implements ShouldQueue
     {
         if (!empty($event->order->message_status) && $event->order->message_status == 'intention_to_order') {
             ding()->with('registered_customer')->at(explode(',',$event->order->markets->phone))
-                ->text('测试信息！！！！ 前台有新订单！请客服人员尽快受理！');
+                ->text(config('ding.test_message').' 前台有新订单！请客服人员尽快受理！');
             $event->order->update(['message_status' => 'placing_orders']);
         }
     }
@@ -47,7 +47,7 @@ class OrderSendNotification implements ShouldQueue
     {
         if (!empty($event->order->message_status) && $event->order->message_status == 'intention_to_order' && $event->order->order_status == 'placing_orders') {
             ding()->with('back_office')
-                ->text('测试信息！！！！ 有新订单！序列号：' . $event->order->serial_number . '需要受理 ！收到信息后请尽快处理！');
+                ->text(config('ding.test_message').' 有新订单！序列号：' . $event->order->serial_number . '需要受理 ！收到信息后请尽快处理！');
             $event->order->update(['message_status' => 'placing_orders']);
         }
     }
@@ -56,7 +56,7 @@ class OrderSendNotification implements ShouldQueue
     {
         if (!empty($event->order->message_status) && $event->order->message_status == 'placing_orders' && $event->order->order_status == 'order_acceptance') {
             ding()->with('technical_section_collaboration')
-                ->text('测试信息！！！！ 有新订单！序列号：' . $event->order->serial_number . '需要技术参与，请尽快配合安排！');
+                ->text(config('ding.test_message').' 有新订单！序列号：' . $event->order->serial_number . '需要技术参与，请尽快配合安排！');
             $event->order->update(['message_status' => 'order_acceptance']);
         }
     }

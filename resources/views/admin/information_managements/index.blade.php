@@ -16,6 +16,10 @@
                     </button>
                 @endcan
             </div>
+            @include('admin.common._search',[
+           'url'=>route('admin.information_managements.index'),
+           'status'=>array_except(Request::all(),['keyword','_token']),
+           ])
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">

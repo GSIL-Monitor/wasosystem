@@ -1,9 +1,7 @@
 <div class="my">
     <div class="phoneIndex">主页</div>
     <div class="myPic">
-        @if (config('app.debug'))
-            @include('sudosu::user-selector')
-        @endif
+
         <span><img src="{{ asset('admin/pic/logo.jpg') }}"/></span>
     </div>
     <div class="myName">
@@ -17,12 +15,12 @@
     </div>
     <div class="sys_links">
         <ul class="radiusBtn">
-            @can("barcode system")
+            @if($permissions->get('barcode system'))
             <li sys="tiao"><a href="javascript:;"><i style="background:url({{ asset('admin/pic/icons.png') }}) no-repeat 0 -240px;"></i><b>条码<em>系统</em></b></a></li>
-            @endcan
-            @can("website system")
+            @endif
+            @if($permissions->get('website system'))
             <li class="active" sys="web"><a href="javascript:;"><i style="background:url({{ asset('admin/pic/icons.png') }}) no-repeat 0 -220px;"></i><b>网站<em>系统</em></b></a></li>
-            @endcan
+            @endif
         </ul>
     </div>
 

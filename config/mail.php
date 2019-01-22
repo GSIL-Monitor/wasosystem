@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'system@waso.com.cn'),
-        'name' => env('MAIL_FROM_NAME', '深度定制公司'),
+        'name' => env('MAIL_FROM_NAME', '成都网烁信息科技'),
     ],
 
     /*
@@ -87,7 +87,7 @@ return [
     'username' => env('MAIL_USERNAME'),
 
     'password' => env('MAIL_PASSWORD'),
-
+    'accept_email'=>env('ACCEPT_EMAIL','fuo8210@dingtalk.com'),
     /*
     |--------------------------------------------------------------------------
     | Sendmail System Path

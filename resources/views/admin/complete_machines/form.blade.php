@@ -135,8 +135,9 @@
                             <div class="liRight">
 
                                 {{--产品价格统计--}}
-                                @php $priceSun=priceSum($complete_machine_product_goods->pluck('price')) ;@endphp
+                                @php $priceSun=priceSum($complete_machine_product_goods) ;@endphp
                                 @foreach(config('status.complete_machine_prices') as $key=>$value)
+
                                     @if($key=='balance')
                                         <label class="priceLabel">
                                             <div class="priceTit">{{ $value }}：</div>

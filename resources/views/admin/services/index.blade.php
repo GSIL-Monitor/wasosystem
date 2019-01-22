@@ -33,6 +33,9 @@
                 <tr>
                     <th class="tableInfoDel"><input type="checkbox" class="selectBox SelectAll"></th>
                     <th class="tableInfoDel">名称</th>
+                    <th class="tableInfoDel">客户信息</th>
+                    <th class="tableInfoDel">申报单号</th>
+                    <th class="tableInfoDel">质保模式</th>
                     <th  class="tableMoreHide">添加时间</th>
                     <th class="">修改时间</th>
 
@@ -46,6 +49,9 @@
                         <td class="tableInfoDel  tablePhoneShow  tableName"><a class="changeWeb"
                                                                                data_url="{{ route('admin.services.edit',$service->id) }}">{{ $service->serial_number }}</a>
                         </td>
+                        <td>{{ $service->username ?? '' }}</td>
+                        <td>{{ $service->order->serial_number ?? '' }}</td>
+                        <td>{{ config('status.service_quality_assurance_model')[$service->quality_assurance_model] }}</td>
                         <td class="tableMoreHide">{{ $service->created_at->format('Y-m-d') }}</td>
                         <td class="">{{ $service->updated_at->format('Y-m-d') }}</td>
                     </tr>

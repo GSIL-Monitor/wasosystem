@@ -19,7 +19,14 @@
                 <button  class="Btn blue common_update" form_id="AllEdit">更新</button>
                 @endcan
             </div>
-            @include('admin.product_goods.search',['url'=>route('admin.product_goods.updatePrices')])
+            @include('admin.common._search',[
+            'url'=>route('admin.product_goods.updatePrices'),
+            'status'=>array_except(Request::all(),['type','keyword','_token']),
+            'condition'=>[
+                'name'=>'产品型号',
+                'jiancheng'=>'产品简称',
+            ]
+            ])
             <div class="phoneBtnOpen"></div>
         </div>
         <div class="PageBox">
@@ -42,6 +49,7 @@
                     <th>核心价格</th>
                     <th>成本价格</th>
                     <th>淘宝价格</th>
+                    <th>产品销量</th>
                     <th>价格浮动</th>
                     <th>更新时间</th>
                 </tr>
@@ -51,10 +59,10 @@
                             {{ $loop->iteration }}
                         </td>
                         <td class="tableInfoDel  tablePhoneShow  tableName">{{ $product_good->name }}</td>
-                        <td class="tableMoreHide">0</td>
-                        <td class="tableMoreHide">0</td>
-                        <td class="tableMoreHide">0</td>
-                        <td class="tableMoreHide">0</td>
+                        <td class="tableMoreHide">{{ $product_good->product_goods_order->sum('pivot.product_good_num') }}</td>
+                        <td class="tableMoreHide">{{ optional($product_good->inventory_management)->new ?? 0 }}</td>
+                        <td class="tableMoreHide">{{ optional($product_good->inventory_management)->good ?? 0 }}</td>
+                        <td class="tableMoreHide">{{ optional($product_good->inventory_management)->bad ?? 0 }}</td>
                         @foreach(config('status.procuctGoodPrices') as $key=>$value)
                             @if($key=='cost_price' || $key=='taobao_price')
                                 <td>{!!  Form::number('edit['.$product_good->id.'][price->'.$key.']',old('edit['.$product_good->id.'][price->'.$key.']',$product_good->price[$key] ?? 0),['placeholder'=>'请输入'.$value,'class'=>'checkNull cost_price','original_price'=>$product_good->price[$key],'data-id'=>$product_good->id,'id'=>$key.$product_good->id,'onkeyup'=>'this.value=(this.value>0)?this.value:0','original_price'=>$product_good->price[$key] ?? 0]) !!}   </td>
@@ -80,6 +88,7 @@
                     <div class="empty">没有数据</div>
                 @endforelse
             </table>
+                {{ $product_goods->appends(Request::except(['_token','page']))->links() }}
             </form>
         </div>
     </div>

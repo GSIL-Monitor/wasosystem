@@ -57,9 +57,13 @@ class CompleteMachine extends Model
     {
         return 'completeMachine';
     }
-    public static function scopeSiteQuery($query, $condition, $type)
+    public static function scopeSiteQuery($query, $condition, $type,$apiCondition=null)
     {
-        return $query->with('complete_machine_product_goods','favoriteCompleteMachines')
+        return $query->with(['complete_machine_product_goods'=>function($query) use ($apiCondition){
+            $query->when($apiCondition,function ($query){
+                $query->whereIn('product_id',[20,23])->select(['pic']);
+            });
+        },'favoriteCompleteMachines'])
             ->where('status->show',1)
             ->when($condition, function ($query) use ($condition) {
                 $pinyin = new Pinyin('Overtrue\Pinyin\MemoryFileDictLoader');
@@ -164,7 +168,7 @@ class CompleteMachine extends Model
     public function UnitPrice()
     {
         $price=user()->grades->identifying ?? 'retail_price';
-        return $this->complete_machine_product_goods->sum('price.'.$price);
+        return priceSum($this->complete_machine_product_goods)[$price];
     }
 
 

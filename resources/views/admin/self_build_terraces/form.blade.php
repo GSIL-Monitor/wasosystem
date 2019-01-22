@@ -136,12 +136,13 @@
                 <div class="liLeft">价格管理：</div>
                 <div class="liRight">
                     {{--产品价格统计--}}
-                    @php $priceSun=priceSum($self_build_terrace_product_goods->pluck('price')); @endphp
+                    @php $priceSun=priceSum($self_build_terrace_product_goods); @endphp
                     @foreach(config('status.procuctGoodPrices') as $key=>$value)
+
                         @if($key=='cost_price' || $key=='taobao_price')
-                            <label class="priceLabel"><div class="priceTit">{{ $value }}：</div><div class="priceCont">{!!  Form::number('price['.$key.']',old('price['.$key.']',$priceSun[$key]),['placeholder'=>'请输入'.$value,'class'=>'checkNull','id'=>$key,'original_price'=>$productGood->price[$key] ?? 0]) !!}</div></label>
+                            <label class="priceLabel"><div class="priceTit">{{ $value }}：{{ $self_build_terrace->price[$key] }}</div><div class="priceCont">{!!  Form::number('price['.$key.']',old('price['.$key.']',$priceSun[$key]),['placeholder'=>'请输入'.$value,'class'=>'checkNull','id'=>$key,'original_price'=>$productGood->price[$key] ?? 0]) !!}</div></label>
                         @else
-                            <label class="priceLabel"><div class="priceTit">{{ $value }}：</div><div class="priceCont">{!!  Form::number('price['.$key.']',old('price['.$key.']',$priceSun[$key]),['placeholder'=>'请输入'.$value,'readonly','class'=>'checkNull','id'=>$key]) !!}</div></label>
+                            <label class="priceLabel"><div class="priceTit">{{ $value }}：{{ $self_build_terrace->price[$key] }}</div><div class="priceCont">{!!  Form::number('price['.$key.']',old('price['.$key.']',$priceSun[$key]),['placeholder'=>'请输入'.$value,'readonly','class'=>'checkNull','id'=>$key]) !!}</div></label>
                         @endif
                     @endforeach
                     {!!  Form::hidden('float',old('float',$productGood->float ?? 'smooth'),['id'=>'float']) !!}
@@ -155,6 +156,6 @@
 
 
 </div>
-<script src="{{ asset('admin/js/goodPrice.js') }}"></script>
+{{--<script src="{{ asset('admin/js/goodPrice.js') }}"></script>--}}
 @include('admin.common._addProduct',['model'=>'self_build_terraces','id'=>$self_build_terrace->id ?? Auth::user()->id])
 

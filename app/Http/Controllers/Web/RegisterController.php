@@ -69,7 +69,7 @@ class RegisterController extends Controller
             $data['source']='网站注册';
             $user->visitor_details()->create($data);//修改客情信息
             ding()->at([],true)->with('registered_customer')
-                ->text('测试信息！！！！ 有新注册客户！账号：'.$user->username.'，请值班客服人员尽快受理！来源:微信注册'
+                ->text(config('ding.test_message').' 有新注册客户！账号：'.$user->username.'，请值班客服人员尽快受理！来源:微信注册'
                 );
             return \Auth::guard('user')->login($user);
         }
@@ -89,7 +89,7 @@ class RegisterController extends Controller
             $user_data['source']='网站注册';
             $user->visitor_details()->create($user_data);//修改客情信息
             ding()->at([],true)->with('registered_customer')
-                ->text('测试信息！！！！ 有新注册客户！账号：'.$user->username.'，请值班客服人员尽快受理！来源:'.$source.'注册'
+                ->text(config('ding.test_message').' 有新注册客户！账号：'.$user->username.'，请值班客服人员尽快受理！来源:'.$source.'注册'
                 );
             return $user->username;
         }

@@ -334,6 +334,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'waso', 'as' => 'admin.', 'mid
     $router->post('upload/uploadImages', 'UploadController@uploadImages');//文件上传
     $router->delete('upload/uploadFileDelete', 'UploadController@uploadFilesDelete');//文件删除
 });
+
 $router->get('/comm', 'Admin\MigrationController@run');
 
 //Auth::routes();

@@ -136,7 +136,8 @@ class ProductGood extends Model
     }
     public function product_goods_order()
     {
-        return $this->belongsToMany(Order::Class,'order_materials', 'product_good_id', 'order_id');
+        return $this->belongsToMany(Order::Class,'order_materials', 'product_good_id', 'order_id')
+            ->withPivot('product_good_num','product_number','product_good_price','product_good_raid');
     }
     public function product_goods_common_equipment()
     {

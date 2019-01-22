@@ -7,6 +7,7 @@ use App\Models\ProductGood;
 use App\Models\Product;
 use App\Services\FileServices;
 use App\Services\ProductGoodServices;
+use function foo\func;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductGoodRequest;
@@ -48,20 +49,14 @@ class ProductGoodController extends Controller
     public function updatePrices(Request $request)
     {
         $product_id = $request->has('product_id') ? $request->get('product_id') : 23;
-        if ($request->has('type')) {
-            $product_goods = ProductGood::condition($product_id)
-                ->where($request->get('type'), 'like', '%' . $request->get('keyword') . '%')
-                ->orderBy('jiagou_id', 'asc')
-                ->orderBy('xilie_id', 'asc')
-                ->orderBy('name', 'asc')
-                ->get();
-        } else {
-            $product_goods = ProductGood::condition($product_id)
-                ->orderBy('jiagou_id', 'asc')
-                ->orderBy('xilie_id', 'asc')
-                ->orderBy('name', 'asc')
-                ->get();
-        }
+        $product_goods = ProductGood::with(['product_goods_order','inventory_management'])->condition($product_id)
+            ->when($request->has('keyword'),function($query) use($request){
+                $query->where($request->get('type'), 'like', '%' . $request->get('keyword') . '%');
+            })
+            ->orderBy('jiagou_id', 'asc')
+            ->orderBy('xilie_id', 'asc')
+            ->orderBy('name', 'asc')
+            ->paginate(20);
 
         $products = Product::order()->get(['id', 'title']);//根据编号获取所有产品
         return view('admin.product_goods.updatePrices', compact('product_goods', 'products', 'product_id'));

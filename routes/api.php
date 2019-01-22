@@ -26,10 +26,20 @@ $api->version('v1', [
     $api->get('/index/complete_machine_category','CommonApiController@complete_machine_category');
     $api->get('/index/news','CommonApiController@index_news');
     $api->get('/news','CommonApiController@news');
+    $api->get('/news_show/{information_management}','CommonApiController@news_show');
+
     $api->get('/product/{frameworks}/products','CommonApiController@products');
     $api->get('/product/complete_machine_categorys','CommonApiController@complete_machine_categorys');
     $api->get('/product/{complete_machine}/complete_machine_info','CommonApiController@complete_machine_show');
     $api->get('/product/completeMachine/{complete_machine}/collect', 'CommonApiController@collect');
     $api->get('/product/completeMachine/{complete_machine}/intention_to_order', 'CommonApiController@intention_to_order');
+
+    //公告
+    $api->get('notification','MessagesController@index');
+    $api->get('notification/{notification}','MessagesController@show');
+    //收货地址
+    $api->get('user_address','UserAddressController@index');
+    $api->get('user_address/{user_address}','UserAddressController@show');
+
 });
 

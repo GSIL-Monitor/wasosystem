@@ -29,6 +29,7 @@ class UnitQuotationSheetExport implements WithEvents
     {
         $comm_info=BaseSheetExport::commInfo(self::$order);
         $invoice =$comm_info['invoice'];
+        $pic=str_after(order_complete_machine_pic(self::$order->order_product_goods),'storage/');
         $sheet= $event->sheet->getDelegate();
         $sheet->setCellValue('A1', '网烁服务器明细及报价')->mergeCells('A1:I1');
         $sheet->setCellValue('A2', '序列号：'.self::$order->serial_number )->mergeCells('A2:I2');
@@ -41,7 +42,7 @@ class UnitQuotationSheetExport implements WithEvents
         $sheet->setCellValue('B5', self::$order->user->admins->phone)->mergeCells('B5:C5');
         $sheet->setCellValue('B6', self::$order->user->admins->email)->mergeCells('B6:C6');
         $sheet->setCellValue('D3', '企业简介：')->mergeCells('D3:D6');
-        $sheet->setCellValue('E3',  "Intel授权\"智造基地\"成员和SOEM合作伙伴；美国超微华西区唯一的STAP授权合作伙伴；华硕工作站产品四川唯一代理。企业通过ISO9001质量管理体系认证和产品的3C认证；15年专研服务器定制，为您避免3大采购风险！")->mergeCells('E3:G6');
+        $sheet->setCellValue('E3',  "Intel授权\"智造基地\"成员和铂金技术合作伙伴；美国超微华西区唯一的STAP授权合作伙伴；华硕工作站产品四川唯一代理。企业通过ISO9001质量管理体系认证和产品的3C认证；15年专研服务器定制，为您避免3大采购风险！")->mergeCells('E3:G6');
         $sheet->setCellValue('H3', '配置代码：')->mergeCells('H3:H6');
         $sheet->setCellValue('A7', '型号');
         $sheet->setCellValue('B7', '配置参数')->mergeCells('B7:E7');
@@ -88,7 +89,7 @@ class UnitQuotationSheetExport implements WithEvents
         $event->sheet->styleCells('I8', ['alignment' => ['horizontal' =>Alignment::HORIZONTAL_LEFT,'wrapText'=>true]]);
         $event->sheet->styleCells('E3', ['alignment' => ['horizontal' =>Alignment::HORIZONTAL_LEFT,'wrapText'=>true]]);
         if(self::$order->order_type != 'parts' ) {
-            BaseSheetExport::setImages($sheet, public_path('pic/about/about1.jpg'), 'J1', 50, 50);
+            BaseSheetExport::setImages($sheet,public_path('storage/'.$pic), 'J1', 50, 50);
         }
         BaseSheetExport::QrCode($sheet,self::$order,'I3',15,15);
 

@@ -28,7 +28,7 @@ table td{border-collapse: collapse;}
 .bg .ling p b{color:#106381; font-weight:600;}
 
 .bg .pics{text-align: right; width:870px; overflow: hidden;}
-.bg .pics img{width:270px; margin-right:20px;}
+.bg .pics img{width:270px;margin-top: -30px;  margin-right: 10px;}
 
 .bg .canshu{position:absolute; left:45px; top:520px; z-index: 10;}
 .bg .canshu ul{width:870px;}

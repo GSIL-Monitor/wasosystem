@@ -25,7 +25,7 @@ class ServerController extends Controller
     public function index(Request $request, $id)
     {
         $complete_machine_framework = CompleteMachineFrameworks::find($id);
-        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id)->oldest('name')->get();
+        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id)->oldest('name')->paginate(12);
         $type = $servers->first();
         $session = $request->session();
         if ($session->has('complete_machine_type')) {
@@ -42,7 +42,6 @@ class ServerController extends Controller
 
     public function show(Request $request, CompleteMachine $completeMachine)
     {
-
         $completeMachine
             ->load([
                 'information_management_complete_machines',
@@ -101,7 +100,7 @@ class ServerController extends Controller
     public function search(Request $request, $id)
     {
         $complete_machine_framework = CompleteMachineFrameworks::find($id);
-        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id)->oldest('name')->get();
+        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id)->oldest('name')->paginate(12);
         $html = view('site.servers.product_list', compact('servers'));
         return response($html)->getContent();
     }

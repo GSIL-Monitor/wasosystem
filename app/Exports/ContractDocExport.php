@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use PhpOffice\PhpWord\IOFactory;
 use PhpOffice\PhpWord\SimpleType\Jc;
 
+
 class ContractDocExport
 {
     static $order;

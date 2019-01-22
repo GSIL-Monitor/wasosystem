@@ -5,6 +5,21 @@
 @section('css')
     <link href="{{ asset('css/product_info.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/product_info_edit.css') }}" rel="stylesheet" type="text/css">
+    <style>
+        .ivu-btn-primary{color:#fff;background-color:#fff;border:none}
+        .ivu-btn-primary:hover{color:#fff;background-color:#fff;border:none}
+        .A_caozuo .ivu-poptip-footer span {
+            display: block;
+            padding: 5px 20px;
+            width: auto;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            background: #176b86;
+            color: #fff;
+            float: left;
+        }
+    </style>
 @endsection
 @section('js')
     <script src="{{ asset('js/product.js') }}"></script>
@@ -36,6 +51,7 @@
                     var Notice=this.$Notice;
                     axios.get('{{ route('server.reset',$completeMachine->id) }}').then(function (response) {
                         self.$refs.child.goodList=response.data;
+                        self.total_price='{!! $completeMachine->UnitPrice() !!}'
                         Notice.success(
                             {
                                 title: "重置成功！",

@@ -86,6 +86,6 @@ class AdminsController extends Controller
 
     public function log_viewer()
     {
-        return view('vendor.log-viewer.bootstrap-4._master');
+        return redirect()->route('log-viewer::logs.list');
 	}
 }

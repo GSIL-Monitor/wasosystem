@@ -24,7 +24,6 @@
             <a href="/">首页</a> > 产品分类 > {{ $complete_machine_framework->name ?? '全部' }}
         </div>
     </div>
-
     <div class="wrap">
         <!--  手机端 搜索 开始-->
         <div class="P_pro_condition">

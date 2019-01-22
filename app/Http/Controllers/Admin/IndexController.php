@@ -22,18 +22,11 @@ class IndexController extends Controller
     public function index()
     {
 
-
-
-
-
-
-
-
 //        dd('后台首页，当前用户名：'.auth('admin')->user()->name);
 
 
-
-        return view('admin.index.index');
+       $permissions=admin()->getAllPermissions()->pluck('name','name');
+        return view('admin.index.index',compact('permissions'));
     }
 
     public function home()

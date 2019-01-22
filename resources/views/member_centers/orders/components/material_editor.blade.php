@@ -25,7 +25,7 @@
                                 ok-text="保存意向配置"
                                 placement="bottom"
                         >
-                            <Button class="reset"><span>保存意向配置</span></Button>
+                            <Button><span>保存意向配置</span></Button>
                         </Poptip>
                         <Poptip
                                 confirm
@@ -34,7 +34,7 @@
                                 ok-text="重置"
                                 placement="bottom"
                         >
-                            <Button class="reset"><span>恢复默认</span></Button>
+                            <Button ><span>恢复默认</span></Button>
                         </Poptip>
                         {{--<span class="reset" @click="reset">恢复默认</span>--}}
                     </div>

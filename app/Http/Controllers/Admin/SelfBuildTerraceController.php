@@ -60,6 +60,7 @@ class SelfBuildTerraceController extends Controller
     public function edit(ProductGood $self_build_terrace,SelfBuildTerraceRequest $request)
     {
         $arguments = $this->getArguments($request);
+
         return view('admin.self_build_terraces.create_and_edit', compact('self_build_terrace','arguments'));
     }
 

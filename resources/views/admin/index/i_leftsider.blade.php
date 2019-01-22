@@ -1,6 +1,6 @@
 <div class="LeftLinks">
-    @php $permissions=admin()->getAllPermissions()->pluck('name','name');@endphp
-    @can("website system")
+
+        @if($permissions->get('website system'))
         @foreach($nav['WebMenus'] as $navs)
             @if($permissions->get('show '.$navs['url']))
                 <dl sys="{{ $navs->cats }}">
@@ -22,8 +22,8 @@
                 </dl>
             @endif
         @endforeach
-    @endcan
-    @can("barcode system")
+    @endif
+    @if($permissions->get('barcode system'))
         @foreach($nav['TiaoMenus'] as $navs)
             @if($permissions->get('show '.$navs['url']))
                 <dl sys="{{ $navs->cats }}">
@@ -45,7 +45,7 @@
                 </dl>
             @endif
         @endforeach
-    @endcan
+    @endif
 
 </div>
 

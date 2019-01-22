@@ -7,6 +7,7 @@
     <script src="{{ asset('js/product.js') }}"></script>
     <script src="{{ asset('js/server.js') }}"></script>
     <script>
+
         function checkSit(){
             var con_sit = $("#con_sit").val();
             var Wwidth =$(window).width() ;
@@ -25,8 +26,13 @@
         });
         checkSit();
         var url="{{ route('server.search',$id) }}";
+
         $(function () {
             $(".type_box li:nth-child(4n)").addClass("lastLi");
+           $(document).on('click','.page-item:not(".disabled")',function () {
+               var lastPage=$(this).attr('data-total')
+               $(this).addClass('active').siblings().removeClass('active')
+           })
         });
     </script>
 @endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Events\OrderSend;
 use App\Http\Resources\BannerCollection;
+use App\Http\Resources\NewsCollection;
 use App\Models\BusinessManagement;
 use App\Models\CompleteMachine;
 use App\Models\CompleteMachineFrameworks;
@@ -53,8 +54,7 @@ class CommonApiController extends Controller
             ->latest()->take(4)->get(['id', 'name', 'pic', 'created_at', 'read_count']);
         $arr = [];
         foreach ($news as $key => $item) {
-            $created_at = explode(' ', $item->created_at);
-            $item['created_at'] = $created_at[0];
+            $item['create_at'] =$item->created_at->format('Y-m-d');
             $arr[$key] = $item;
         }
         return $arr;
@@ -65,16 +65,24 @@ class CommonApiController extends Controller
         $news = InformationManagement::where([
             ['type', $request->type], ['marketing->show', 1]
         ])
-            ->latest()->paginate(10);
-
+        ->latest()->select(['id','name','pic','created_at','read_count'])->paginate(10);
+        $news->appends(['type'=>$request->type]);
         return $news;
+    }
+    //新闻列表
+    public function news_show($id)
+    {
+        $information_anagement=InformationManagement::findOrFail($id);
+        $information_anagement['created']=$information_anagement->created_at->format('Y-m-d');
+        $information_anagement->content=str_replace('src="','src="http://waso_test.work/',$information_anagement->content);
+        return $information_anagement;
     }
 
     //产品页
     public function products(Request $request, $id)
     {
         $complete_machine_framework = CompleteMachineFrameworks::find($id);
-        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id)->oldest('name')->paginate(10);
+        $servers = CompleteMachine::SiteQuery($complete_machine_framework, $id,'api')->oldest('name')->select(['id','name','additional_arguments'])->paginate(10);
         return $servers;
     }
 
@@ -91,7 +99,7 @@ class CommonApiController extends Controller
     {
         $user=User::with('favoriteCompleteMachines')->find($request->user_id);
         $completeMachine = CompleteMachine::with('complete_machine_product_goods.product')->findOrFail($id);
-        $completeMachine->details = str_replace('/ueditor/php/', env('APP_URL') . '/ueditor/php/', $completeMachine->details);
+        $completeMachine->details = str_replace('/ueditor/php/', env('APP_URL') . 'ueditor/php/', $completeMachine->details);
         $complete_machine_paramenter = new CompleteMachineParamenter();
         $material_detail=[];
         //整机参数
@@ -102,7 +110,8 @@ class CommonApiController extends Controller
         }
         $completeMachine->material_detail = $material_detail;
         $completeMachine->collect=false;
-        if($user->favoriteCompleteMachines->firstWhere('id',$completeMachine->id)) {
+        $completeMachine->user =$user;
+        if($user && $user->favoriteCompleteMachines->firstWhere('id',$completeMachine->id)) {
             $completeMachine->collect = true;
         }
 
@@ -115,11 +124,11 @@ class CommonApiController extends Controller
         $user=User::find($request->user_id);
         if ($user->favoriteCompleteMachines()->find($id)) {
             $user->favoriteCompleteMachines()->detach($id);//如果存在删除
-            return [];
+            return 'remove';
         }
         //如果不存在添加
         $user->favoriteCompleteMachines()->attach($id);
-        return [];
+        return 'add';
     }
     //整机下单
     public function intention_to_order(Request $request,$id)

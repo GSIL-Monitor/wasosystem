@@ -7,6 +7,7 @@ use App\Http\Requests\Request;
 use App\Models\CompleteMachine;
 use App\Services\InformationManagementServices;
 use App\Models\InformationManagement;
+use function foo\func;
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Controllers\Controller;
 class InformationManagementController extends Controller
@@ -23,7 +24,13 @@ class InformationManagementController extends Controller
     public function index(Request $request)
     {
         $type=$request->get('type') ?? 'company_dynamic';
-        $information_managements =  $this->information_management->whereType($type)->latest()->paginate(20);
+        $information_managements =  $this->information_management->where(function ($query) use ($request,$type){
+            $keyword=$request->input('keyword') ?? '';
+            $query->whereType($type)
+                    ->when($request->input('keyword'),function($query) use($keyword){
+                $query->where('name','like',"%$keyword%");
+            });
+        })->latest()->paginate(20);
 
        return view('admin.information_managements.index',compact('information_managements','type'));
 

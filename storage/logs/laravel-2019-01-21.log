@@ -1,0 +1,1240 @@
+[2019-01-21 00:00:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 00:00:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 00:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 00:30:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 01:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 01:00:12] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 01:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 01:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 02:00:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 02:00:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 02:30:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 02:30:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 03:00:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 03:00:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 03:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 03:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 04:00:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 04:00:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 04:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 04:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 05:00:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 05:00:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 05:30:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 05:30:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 06:00:05] local.INFO: 创建数据库备份成功  
+[2019-01-21 06:00:08] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 06:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 06:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 07:00:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 07:00:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 07:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 07:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 08:00:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 08:00:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 08:00:12] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 08:00:12] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 08:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 08:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 09:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 09:00:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 09:00:14] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 09:00:14] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 09:30:06] local.INFO: 创建数据库备份成功  
+[2019-01-21 09:30:09] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-21 10:00:17] local.INFO: 创建数据库备份成功  
+[2019-01-21 10:00:18] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 10:00:18] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 10:17:49] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"cru","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:17:53] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"new","captcha":"zeb","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:18:04] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"813","captcha":"8nm","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:18:04] local.NOTICE: 813-周应伟 | GET waso | 提交的参数：[] | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:21:03] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"813","captcha":"utc","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:21:04] local.NOTICE: 813-周应伟 | GET waso | 提交的参数：[] | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-21 10:26:39] local.INFO: Detected N+1 Query  
+[2019-01-21 10:26:39] local.INFO: Model: App\Models\Admin  
+[2019-01-21 10:26:39] local.INFO: Relation: Spatie\Permission\Models\Role  
+[2019-01-21 10:26:39] local.INFO: Num-Called: 2  
+[2019-01-21 10:26:39] local.INFO: Call-Stack:  
+[2019-01-21 10:26:39] local.INFO: #16 /vendor/spatie/laravel-permission/src/Traits/HasPermissions.php:212  
+[2019-01-21 10:26:39] local.INFO: #17 /vendor/spatie/laravel-permission/src/Traits/HasPermissions.php:224  
+[2019-01-21 10:26:39] local.INFO: #18 /storage/framework/views/13f8552663a0790d7482abc422ffbd63edb6ddf2.php:18  
+[2019-01-21 10:26:39] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:26:39] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:26:39] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:26:39] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:26:39] local.INFO: #24 /storage/framework/views/514dcea76e2e8230b5b6c26213a03fea360aa7b7.php:24  
+[2019-01-21 10:26:39] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:26:39] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:26:39] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:26:39] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:26:39] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:26:39] local.INFO: #31 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:26:39] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:26:39] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:26:39] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:26:39] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:26:39] local.INFO: #36 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:26:39] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #39 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:26:39] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:26:39] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:26:39] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:26:39] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: Model: Spatie\Permission\Models\Role  
+[2019-01-21 10:26:39] local.INFO: Relation: Spatie\Permission\Models\Permission  
+[2019-01-21 10:26:39] local.INFO: Num-Called: 2  
+[2019-01-21 10:26:39] local.INFO: Call-Stack:  
+[2019-01-21 10:26:39] local.INFO: #20 /vendor/spatie/laravel-permission/src/Traits/HasPermissions.php:212  
+[2019-01-21 10:26:39] local.INFO: #21 /vendor/spatie/laravel-permission/src/Traits/HasPermissions.php:224  
+[2019-01-21 10:26:39] local.INFO: #22 /storage/framework/views/13f8552663a0790d7482abc422ffbd63edb6ddf2.php:18  
+[2019-01-21 10:26:39] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:26:39] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:26:39] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:26:39] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:26:39] local.INFO: #28 /storage/framework/views/514dcea76e2e8230b5b6c26213a03fea360aa7b7.php:24  
+[2019-01-21 10:26:39] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:26:39] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:26:39] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:26:39] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:26:39] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:26:39] local.INFO: #35 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:26:39] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:26:39] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:26:39] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:26:39] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:26:39] local.INFO: #40 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:26:39] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #43 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:26:39] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:26:39] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:26:39] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:26:39] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 10:38:43] local.INFO: Detected N+1 Query  
+[2019-01-21 10:38:43] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:38:43] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:38:43] local.INFO: Num-Called: 20  
+[2019-01-21 10:38:43] local.INFO: Call-Stack:  
+[2019-01-21 10:38:43] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:38:43] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:38:43] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:38:43] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:38:43] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:38:43] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:38:43] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:38:43] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:38:43] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:38:43] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:38:43] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:38:43] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:38:43] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:38:43] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:38:43] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:38:43] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:38:43] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:38:43] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:38:43] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:38:43] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:38:43] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: Detected N+1 Query  
+[2019-01-21 10:39:01] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:39:01] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:39:01] local.INFO: Num-Called: 20  
+[2019-01-21 10:39:01] local.INFO: Call-Stack:  
+[2019-01-21 10:39:01] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:39:01] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:39:01] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:39:01] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:39:01] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:39:01] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:39:01] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:39:01] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:39:01] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:39:01] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:39:01] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:39:01] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:39:01] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:39:01] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:39:01] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:39:01] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:39:01] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:39:01] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:01] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:39:01] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:01] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: Detected N+1 Query  
+[2019-01-21 10:39:07] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:39:07] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:39:07] local.INFO: Num-Called: 20  
+[2019-01-21 10:39:07] local.INFO: Call-Stack:  
+[2019-01-21 10:39:07] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:39:07] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:39:07] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:39:07] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:39:07] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:39:07] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:39:07] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:39:07] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:39:07] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:39:07] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:39:07] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:39:07] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:39:07] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:39:07] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:39:07] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:39:07] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:39:07] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:39:07] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:07] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:39:07] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:07] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: Detected N+1 Query  
+[2019-01-21 10:39:09] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:39:09] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:39:09] local.INFO: Num-Called: 5  
+[2019-01-21 10:39:09] local.INFO: Call-Stack:  
+[2019-01-21 10:39:09] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:39:09] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:39:09] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:39:09] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:39:09] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:39:09] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:39:09] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:39:09] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:39:09] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:39:09] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:39:09] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:39:09] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:39:09] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:39:09] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:39:09] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:39:09] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:39:09] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:39:09] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:09] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:39:09] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:09] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: Detected N+1 Query  
+[2019-01-21 10:39:18] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:39:18] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:39:18] local.INFO: Num-Called: 20  
+[2019-01-21 10:39:18] local.INFO: Call-Stack:  
+[2019-01-21 10:39:18] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:39:18] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:39:18] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:39:18] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:39:18] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:39:18] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:39:18] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:39:18] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:39:18] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:39:18] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:39:18] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:39:18] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:39:18] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:39:18] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:39:18] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:39:18] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:39:18] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:39:18] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:39:18] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:39:18] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:39:18] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: Detected N+1 Query  
+[2019-01-21 10:40:54] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:40:54] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:40:54] local.INFO: Num-Called: 20  
+[2019-01-21 10:40:54] local.INFO: Call-Stack:  
+[2019-01-21 10:40:54] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:40:54] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:40:54] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:40:54] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:40:54] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:40:54] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:40:54] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:40:54] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:40:54] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:40:54] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:40:54] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:40:54] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:40:54] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:40:54] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:40:54] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:40:54] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:40:54] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:40:54] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:54] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:40:54] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:54] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: Detected N+1 Query  
+[2019-01-21 10:40:55] local.INFO: Model: App\Models\Order  
+[2019-01-21 10:40:55] local.INFO: Relation: order_demand_management  
+[2019-01-21 10:40:55] local.INFO: Num-Called: 5  
+[2019-01-21 10:40:55] local.INFO: Call-Stack:  
+[2019-01-21 10:40:55] local.INFO: #17 /storage/framework/views/afea7962be748ac5a3f60f0ddb284740d9247a11.php:74  
+[2019-01-21 10:40:55] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:40:55] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:40:55] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:40:55] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:40:55] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:40:55] local.INFO: #24 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:40:55] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:40:55] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:40:55] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:40:55] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:40:55] local.INFO: #29 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:40:55] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #32 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:40:55] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:40:55] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:40:55] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:40:55] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:40:55] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:40:55] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:40:55] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:40:55] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:52:14] local.ERROR: Call to a member function order_product_goods() on null {"userId":47,"email":"15208128210@qq.com","exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function order_product_goods() on null at /home/vagrant/Code/wasosystem/app/Exports/ServiceSheetExport.php:50)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/HasEventBus.php(39): App\\Exports\\ServiceSheetExport::afterSheet(Object(Maatwebsite\\Excel\\Events\\AfterSheet))
+#1 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/Sheet.php(120): Maatwebsite\\Excel\\Sheet->raise(Object(Maatwebsite\\Excel\\Events\\AfterSheet))
+#2 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/Sheet.php(100): Maatwebsite\\Excel\\Sheet->close(Object(App\\Exports\\ServiceSheetExport))
+#3 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/Writer.php(100): Maatwebsite\\Excel\\Sheet->export(Object(App\\Exports\\ServiceSheetExport))
+#4 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/Excel.php(122): Maatwebsite\\Excel\\Writer->export(Object(App\\Exports\\ServiceSheetExport), 'Xlsx')
+#5 /home/vagrant/Code/wasosystem/vendor/maatwebsite/excel/src/Excel.php(76): Maatwebsite\\Excel\\Excel->export(Object(App\\Exports\\ServiceSheetExport), 'ZB2018082017444...', 'Xlsx')
+#6 /home/vagrant/Code/wasosystem/app/Http/Controllers/Admin/ServiceController.php(133): Maatwebsite\\Excel\\Excel->download(Object(App\\Exports\\ServiceSheetExport), 'ZB2018082017444...')
+#7 [internal function]: App\\Http\\Controllers\\Admin\\ServiceController->export(Object(App\\Models\\Service), Object(App\\Http\\Requests\\Request), Object(Maatwebsite\\Excel\\Excel))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('export', Array)
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\ServiceController), 'export')
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /home/vagrant/Code/wasosystem/app/Http/Middleware/AdminAuthMiddleware.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\AdminAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#16 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/app/Http/Middleware/OperationLog.php(32): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\OperationLog->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(33): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(111): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#70 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#71 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#72 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#73 {main}
+"} 
+[2019-01-21 10:58:08] local.ERROR: Trying to get property 'series_number' of non-object (View: /home/vagrant/Code/wasosystem/resources/views/admin/services/index.blade.php) {"userId":47,"email":"15208128210@qq.com","exception":"[object] (ErrorException(code: 0): Trying to get property 'series_number' of non-object (View: /home/vagrant/Code/wasosystem/resources/views/admin/services/index.blade.php) at /home/vagrant/Code/wasosystem/storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53, ErrorException(code: 0): Trying to get property 'series_number' of non-object at /home/vagrant/Code/wasosystem/storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/home/vagrant/C...', Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('/home/vagrant/C...', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\\View\\View->getContents()
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(90): Illuminate\\View\\View->renderContents()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Http/Response.php(42): Illuminate\\View\\View->render()
+#6 /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(733): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(705): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/app/Http/Middleware/AdminAuthMiddleware.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\AdminAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /home/vagrant/Code/wasosystem/app/Http/Middleware/OperationLog.php(32): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\OperationLog->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(33): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(111): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#68 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#69 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#70 {main}
+"} 
+[2019-01-21 10:58:09] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:09] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:09] local.INFO: Relation: order  
+[2019-01-21 10:58:09] local.INFO: Num-Called: 3  
+[2019-01-21 10:58:09] local.INFO: Call-Stack:  
+[2019-01-21 10:58:09] local.INFO: #18 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:09] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:09] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:09] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:09] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:09] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:09] local.INFO: #25 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:09] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:09] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:09] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:09] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:09] local.INFO: #30 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:09] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #33 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:09] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:09] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:09] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:09] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:09] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:09] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:09] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:58:09] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.ERROR: Trying to get property 'id' of non-object (View: /home/vagrant/Code/wasosystem/resources/views/admin/services/index.blade.php) {"userId":47,"email":"15208128210@qq.com","exception":"[object] (ErrorException(code: 0): Trying to get property 'id' of non-object (View: /home/vagrant/Code/wasosystem/resources/views/admin/services/index.blade.php) at /home/vagrant/Code/wasosystem/storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53, ErrorException(code: 0): Trying to get property 'id' of non-object at /home/vagrant/Code/wasosystem/storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/home/vagrant/C...', Array)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('/home/vagrant/C...', Array)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\\View\\View->getContents()
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/View.php(90): Illuminate\\View\\View->renderContents()
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Http/Response.php(42): Illuminate\\View\\View->render()
+#6 /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(733): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(705): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /home/vagrant/Code/wasosystem/app/Http/Middleware/AdminAuthMiddleware.php(26): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\AdminAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /home/vagrant/Code/wasosystem/app/Http/Middleware/OperationLog.php(32): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\OperationLog->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#40 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#41 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(33): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(65): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(111): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#68 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#69 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#70 {main}
+"} 
+[2019-01-21 10:58:17] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:17] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:17] local.INFO: Relation: order  
+[2019-01-21 10:58:17] local.INFO: Num-Called: 3  
+[2019-01-21 10:58:17] local.INFO: Call-Stack:  
+[2019-01-21 10:58:17] local.INFO: #18 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:17] local.INFO: #20 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:17] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:17] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:17] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:17] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:17] local.INFO: #25 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:17] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:17] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:17] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:17] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:17] local.INFO: #30 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:17] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #33 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:17] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:17] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:17] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:17] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:17] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:17] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:17] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:58:17] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:24] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:24] local.INFO: Relation: order  
+[2019-01-21 10:58:24] local.INFO: Num-Called: 20  
+[2019-01-21 10:58:24] local.INFO: Call-Stack:  
+[2019-01-21 10:58:24] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:24] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:24] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:24] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:24] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:24] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:24] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:24] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:24] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:24] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:24] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:24] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:24] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:24] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:24] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:24] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:24] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:24] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:24] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:24] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:58:34] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:34] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:34] local.INFO: Relation: order  
+[2019-01-21 10:58:34] local.INFO: Num-Called: 20  
+[2019-01-21 10:58:34] local.INFO: Call-Stack:  
+[2019-01-21 10:58:34] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:34] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:34] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:34] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:34] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:34] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:34] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:34] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:34] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:34] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:34] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:34] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:34] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:34] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:34] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:34] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:34] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:34] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:34] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:34] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:58:37] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:37] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:37] local.INFO: Relation: order  
+[2019-01-21 10:58:37] local.INFO: Num-Called: 8  
+[2019-01-21 10:58:37] local.INFO: Call-Stack:  
+[2019-01-21 10:58:37] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:37] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:37] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:37] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:37] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:37] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:37] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:37] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:37] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:37] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:37] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:37] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:37] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:37] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:37] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:37] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:37] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:37] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:37] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:37] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:58:39] local.INFO: Detected N+1 Query  
+[2019-01-21 10:58:39] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:58:39] local.INFO: Relation: order  
+[2019-01-21 10:58:39] local.INFO: Num-Called: 20  
+[2019-01-21 10:58:39] local.INFO: Call-Stack:  
+[2019-01-21 10:58:39] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:58:39] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:58:39] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:58:39] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:58:39] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:58:39] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:58:39] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:58:39] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:58:39] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:58:39] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:58:39] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:58:39] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:58:39] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:58:39] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:58:39] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:58:39] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:58:39] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:58:39] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:58:39] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:58:39] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:59:03] local.INFO: Detected N+1 Query  
+[2019-01-21 10:59:03] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:59:03] local.INFO: Relation: order  
+[2019-01-21 10:59:03] local.INFO: Num-Called: 20  
+[2019-01-21 10:59:03] local.INFO: Call-Stack:  
+[2019-01-21 10:59:03] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:59:03] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:59:03] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:59:03] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:59:03] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:59:03] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:59:03] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:59:03] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:59:03] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:59:03] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:59:03] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:59:03] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:59:03] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:59:03] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:59:03] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:59:03] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:59:03] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:59:03] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:03] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:03] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:59:44] local.INFO: Detected N+1 Query  
+[2019-01-21 10:59:44] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:59:44] local.INFO: Relation: order  
+[2019-01-21 10:59:44] local.INFO: Num-Called: 20  
+[2019-01-21 10:59:44] local.INFO: Call-Stack:  
+[2019-01-21 10:59:44] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:59:44] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:59:44] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:59:44] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:59:44] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:59:44] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:59:44] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:59:44] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:59:44] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:59:44] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:59:44] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:59:44] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:59:44] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:59:44] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:59:44] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:59:44] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:59:44] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:59:44] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:44] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:44] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 10:59:59] local.INFO: Detected N+1 Query  
+[2019-01-21 10:59:59] local.INFO: Model: App\Models\Service  
+[2019-01-21 10:59:59] local.INFO: Relation: order  
+[2019-01-21 10:59:59] local.INFO: Num-Called: 20  
+[2019-01-21 10:59:59] local.INFO: Call-Stack:  
+[2019-01-21 10:59:59] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 10:59:59] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 10:59:59] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 10:59:59] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 10:59:59] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 10:59:59] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 10:59:59] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 10:59:59] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 10:59:59] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 10:59:59] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 10:59:59] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 10:59:59] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 10:59:59] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 10:59:59] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 10:59:59] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 10:59:59] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 10:59:59] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 10:59:59] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 10:59:59] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 10:59:59] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:00:01] local.INFO: Detected N+1 Query  
+[2019-01-21 11:00:01] local.INFO: Model: App\Models\Service  
+[2019-01-21 11:00:01] local.INFO: Relation: order  
+[2019-01-21 11:00:01] local.INFO: Num-Called: 4  
+[2019-01-21 11:00:01] local.INFO: Call-Stack:  
+[2019-01-21 11:00:01] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 11:00:01] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 11:00:01] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 11:00:01] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 11:00:01] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 11:00:01] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 11:00:01] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 11:00:01] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 11:00:01] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 11:00:01] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 11:00:01] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 11:00:01] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 11:00:01] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 11:00:01] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 11:00:01] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 11:00:01] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 11:00:01] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 11:00:01] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:01] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:01] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:00:04] local.INFO: Detected N+1 Query  
+[2019-01-21 11:00:04] local.INFO: Model: App\Models\Service  
+[2019-01-21 11:00:04] local.INFO: Relation: order  
+[2019-01-21 11:00:04] local.INFO: Num-Called: 20  
+[2019-01-21 11:00:04] local.INFO: Call-Stack:  
+[2019-01-21 11:00:04] local.INFO: #19 /storage/framework/views/df5270e8dd5e21ca26db126b483b220535e56a63.php:53  
+[2019-01-21 11:00:04] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 11:00:04] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 11:00:04] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 11:00:04] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 11:00:04] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 11:00:04] local.INFO: #26 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 11:00:04] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 11:00:04] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 11:00:04] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 11:00:04] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 11:00:04] local.INFO: #31 /app/Http/Middleware/AdminAuthMiddleware.php:26  
+[2019-01-21 11:00:04] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #34 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 11:00:04] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 11:00:04] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 11:00:04] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 11:00:04] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 11:00:04] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:00:04] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:00:04] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 11:00:09] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 11:00:09] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 11:09:44] local.INFO: Detected N+1 Query  
+[2019-01-21 11:09:44] local.INFO: Model: App\Models\ProductGood  
+[2019-01-21 11:09:44] local.INFO: Relation: App\Models\ProductFramework  
+[2019-01-21 11:09:44] local.INFO: Num-Called: 2  
+[2019-01-21 11:09:44] local.INFO: Call-Stack:  
+[2019-01-21 11:09:44] local.INFO: #18 /app/Http/Controllers/Admin/ProductGoodController.php:42  
+[2019-01-21 11:09:44] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:45  
+[2019-01-21 11:09:44] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:212  
+[2019-01-21 11:09:44] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:169  
+[2019-01-21 11:09:44] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 11:09:44] local.INFO: #25 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 11:09:44] local.INFO: #26 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 11:09:44] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 11:09:44] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 11:09:44] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 11:09:44] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 11:09:44] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:09:44] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:59  
+[2019-01-21 11:09:44] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:44] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:44] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:104  
+[2019-01-21 11:09:44] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:667  
+[2019-01-21 11:09:44] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:642  
+[2019-01-21 11:09:46] local.INFO: Detected N+1 Query  
+[2019-01-21 11:09:46] local.INFO: Model: App\Models\ProductParamenter  
+[2019-01-21 11:09:46] local.INFO: Relation: App\Models\ProductFramework  
+[2019-01-21 11:09:46] local.INFO: Num-Called: 2  
+[2019-01-21 11:09:46] local.INFO: Call-Stack:  
+[2019-01-21 11:09:46] local.INFO: #12 /app/Presenters/ProductParamenterPresenter.php:19  
+[2019-01-21 11:09:46] local.INFO: #13 /storage/framework/views/27424117919604e8ba623c32d76baa0032072086.php:67  
+[2019-01-21 11:09:46] local.INFO: #15 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 11:09:46] local.INFO: #16 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 11:09:46] local.INFO: #17 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 11:09:46] local.INFO: #18 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 11:09:46] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 11:09:46] local.INFO: #20 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 11:09:46] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 11:09:46] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 11:09:46] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 11:09:46] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 11:09:46] local.INFO: #25 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 11:09:46] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 11:09:46] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 11:09:46] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 11:09:46] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 11:09:46] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:09:46] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:59  
+[2019-01-21 11:09:46] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:104  
+[2019-01-21 11:09:46] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:667  
+[2019-01-21 11:09:46] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:642  
+[2019-01-21 11:09:46] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:608  
+[2019-01-21 11:09:46] local.INFO: Model: App\Models\ProductParamenter  
+[2019-01-21 11:09:46] local.INFO: Relation: App\Models\ProductParamenter  
+[2019-01-21 11:09:46] local.INFO: Num-Called: 17  
+[2019-01-21 11:09:46] local.INFO: Call-Stack:  
+[2019-01-21 11:09:46] local.INFO: #12 /app/Presenters/ProductParamenterPresenter.php:29  
+[2019-01-21 11:09:46] local.INFO: #13 /storage/framework/views/27424117919604e8ba623c32d76baa0032072086.php:67  
+[2019-01-21 11:09:46] local.INFO: #15 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59  
+[2019-01-21 11:09:46] local.INFO: #16 /vendor/laravel/framework/src/Illuminate/View/View.php:142  
+[2019-01-21 11:09:46] local.INFO: #17 /vendor/laravel/framework/src/Illuminate/View/View.php:125  
+[2019-01-21 11:09:46] local.INFO: #18 /vendor/laravel/framework/src/Illuminate/View/View.php:90  
+[2019-01-21 11:09:46] local.INFO: #19 /vendor/laravel/framework/src/Illuminate/Http/Response.php:42  
+[2019-01-21 11:09:46] local.INFO: #20 /vendor/symfony/http-foundation/Response.php:202  
+[2019-01-21 11:09:46] local.INFO: #21 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:733  
+[2019-01-21 11:09:46] local.INFO: #22 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:705  
+[2019-01-21 11:09:46] local.INFO: #23 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:665  
+[2019-01-21 11:09:46] local.INFO: #24 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:30  
+[2019-01-21 11:09:46] local.INFO: #25 /app/Http/Middleware/OperationLog.php:32  
+[2019-01-21 11:09:46] local.INFO: #26 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #27 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #28 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:41  
+[2019-01-21 11:09:46] local.INFO: #29 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #30 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #31 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:67  
+[2019-01-21 11:09:46] local.INFO: #32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #33 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #34 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49  
+[2019-01-21 11:09:46] local.INFO: #35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #36 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #37 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:63  
+[2019-01-21 11:09:46] local.INFO: #38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #39 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #40 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37  
+[2019-01-21 11:09:46] local.INFO: #41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #42 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #43 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:59  
+[2019-01-21 11:09:46] local.INFO: #44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:151  
+[2019-01-21 11:09:46] local.INFO: #45 /vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:53  
+[2019-01-21 11:09:46] local.INFO: #46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:104  
+[2019-01-21 11:09:46] local.INFO: #47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:667  
+[2019-01-21 11:09:46] local.INFO: #48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:642  
+[2019-01-21 11:09:46] local.INFO: #49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:608  
+[2019-01-21 11:30:12] local.INFO: 创建数据库备份成功  
+[2019-01-21 12:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 12:00:09] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 12:00:09] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 12:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 13:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 13:00:07] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 13:00:08] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 13:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 14:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 14:00:09] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 14:00:09] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 14:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 14:39:03] local.ERROR: The Response content must be a string or object implementing __toString(), "boolean" given. {"exception":"[object] (UnexpectedValueException(code: 0): The Response content must be a string or object implementing __toString(), \"boolean\" given. at /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php:394)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Http/Response.php(45): Symfony\\Component\\HttpFoundation\\Response->setContent(true)
+#1 /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(true)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(733): Symfony\\Component\\HttpFoundation\\Response->__construct(true)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(705): Illuminate\\Routing\\Router::toResponse(Object(Dingo\\Api\\Http\\Request), true)
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Router->prepareResponse(Object(Dingo\\Api\\Http\\Request), true)
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#6 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#14 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#20 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#33 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 {main}
+"} 
+[2019-01-21 14:39:05] local.ERROR: The Response content must be a string or object implementing __toString(), "boolean" given. {"exception":"[object] (UnexpectedValueException(code: 0): The Response content must be a string or object implementing __toString(), \"boolean\" given. at /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php:394)
+[stacktrace]
+#0 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Http/Response.php(45): Symfony\\Component\\HttpFoundation\\Response->setContent(false)
+#1 /home/vagrant/Code/wasosystem/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(false)
+#2 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(733): Symfony\\Component\\HttpFoundation\\Response->__construct(false)
+#3 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(705): Illuminate\\Routing\\Router::toResponse(Object(Dingo\\Api\\Http\\Request), false)
+#4 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Router->prepareResponse(Object(Dingo\\Api\\Http\\Request), false)
+#5 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#6 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/PrepareController.php(45): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#7 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\PrepareController->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#8 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#9 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#10 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Dingo\\Api\\Http\\Request))
+#12 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Dingo\\Api\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Dingo\\Api\\Http\\Request))
+#14 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Adapter/Laravel.php(81): Illuminate\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#15 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Routing/Router.php(512): Dingo\\Api\\Routing\\Adapter\\Laravel->dispatch(Object(Dingo\\Api\\Http\\Request), 'v1')
+#16 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(126): Dingo\\Api\\Routing\\Router->dispatch(Object(Dingo\\Api\\Http\\Request))
+#17 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Dingo\\Api\\Http\\Middleware\\Request->Dingo\\Api\\Http\\Middleware\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#18 /home/vagrant/Code/wasosystem/vendor/beyondcode/laravel-query-detector/src/QueryDetectorMiddleware.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#19 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): BeyondCode\\QueryDetector\\QueryDetectorMiddleware->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#20 /home/vagrant/Code/wasosystem/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#21 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#22 /home/vagrant/Code/wasosystem/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#23 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#24 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#25 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#26 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#27 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#28 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#29 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#30 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#31 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#32 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Dingo\\Api\\Http\\Request))
+#33 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(127): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 /home/vagrant/Code/wasosystem/vendor/dingo/api/src/Http/Middleware/Request.php(103): Dingo\\Api\\Http\\Middleware\\Request->sendRequestThroughRouter(Object(Dingo\\Api\\Http\\Request))
+#35 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Dingo\\Api\\Http\\Middleware\\Request->handle(Object(Dingo\\Api\\Http\\Request), Object(Closure))
+#36 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 /home/vagrant/Code/wasosystem/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 /home/vagrant/Code/wasosystem/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 {main}
+"} 
+[2019-01-21 15:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 15:00:10] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 15:00:10] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 15:30:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 16:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 16:00:10] local.INFO: 整机产品更新价格成功！  
+[2019-01-21 16:00:10] local.INFO: 自建产品更新价格成功！  
+[2019-01-21 16:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 17:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 17:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 18:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 18:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 19:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 19:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 20:00:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 20:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 21:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-21 21:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 22:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 22:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-21 23:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-21 23:30:07] local.INFO: 创建数据库备份成功  

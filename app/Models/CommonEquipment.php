@@ -8,7 +8,7 @@ class CommonEquipment extends Model
 {
    protected $casts=[];
     protected $fillable = ['user_id', 'order_id', 'name', 'machine_model', 'code', 'unit_price', 'total_prices', 'old_prices', 'num',
-        'order_type', 'order_status','service_status', 'invoice_type', 'user_remark', 'company_remark','market'];
+        'order_type','service_status', 'invoice_type', 'user_remark', 'company_remark','market'];
 
 
     public function user()

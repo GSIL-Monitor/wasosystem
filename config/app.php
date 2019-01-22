@@ -14,7 +14,7 @@ return [
     */
     'expiresAt'=>now()->addMinutes(30),
     'log'=>'daily',
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', '成都网烁信息科技'),
 
     /*
     |--------------------------------------------------------------------------

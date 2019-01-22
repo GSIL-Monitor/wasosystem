@@ -15,7 +15,7 @@
                 <div class="price">
                     <h5><i class="new_price">{{ $completeMachine->UnitPrice() }}.00元</i>
                     </h5>
-                    <span class="lineSpan">原价：{{ $completeMachine->price['retail_price'] }}.00元</span>
+                    <span class="lineSpan">原价：{{ priceSum($completeMachine->complete_machine_product_goods)['retail_price'] }}.00元</span>
                 </div>
            @endauth
 

@@ -7,14 +7,12 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class BindEmailMail extends Mailable implements ShouldQueue
+class BindEmailMail
 {
     use Queueable, SerializesModels;
 
     /**
-     * Create a new message instance.
-     *
-     * @return void
+     * BindEmailMail constructor.
      */
     public function __construct()
     {
@@ -30,7 +28,7 @@ class BindEmailMail extends Mailable implements ShouldQueue
     {
        $code =rand(100000,999999);
         cache(['email_code' => $code], config('app.expiresAt'));
-        return $this->view('emails.bind_email')->subject("网烁公司")->with([
+        return $this->view('emails.bind_email')->subject("网烁客服系统")->with([
             'code'=>$code
         ]);;
     }

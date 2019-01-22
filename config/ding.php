@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'test_message'=>'测试信息！！！！',
     // 默认发送的机器人
     //默认是公司
     'default' => [

@@ -1,0 +1,58 @@
+[2019-01-07 09:30:20] local.INFO: 创建数据库备份成功  
+[2019-01-07 09:30:24] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 10:00:11] local.INFO: 创建数据库备份成功  
+[2019-01-07 10:00:18] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 10:00:19] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 10:00:19] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 10:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 10:30:11] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 10:35:55] local.NOTICE: 没用登陆IP192.168.0.162 | POST waso/login | 提交的参数：{"account":"813","captcha":"ycx","remember":"0"} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 10:35:56] local.NOTICE: 813-周应伟 | GET waso | 提交的参数：[] | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 10:36:21] local.NOTICE: 813-周应伟 | POST waso/allUpdate | 提交的参数：{"table":"users","edit":{"1992":{"parts_buy":"1"},"87":{"parts_buy":"1"},"736":{"parts_buy":"1"},"1207":{"parts_buy":"1"},"85":{"parts_buy":"1"},"378":{"parts_buy":"1"},"21":{"parts_buy":"1"},"2031":{"parts_buy":"1"},"2019":{"parts_buy":"1"},"2080":{"parts_buy":"0"},"2094":{"parts_buy":"0"},"2081":{"parts_buy":"0"},"74":{"parts_buy":"0"},"2051":{"parts_buy":"0"},"2046":{"parts_buy":"0"},"2042":{"parts_buy":"0"},"2035":{"parts_buy":"0"},"143":{"parts_buy":"0"},"791":{"parts_buy":"0"},"170":{"parts_buy":"0"}},"undefined":"0","id":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 10:36:33] local.NOTICE: 813-周应伟 | POST waso/allUpdate | 提交的参数：{"table":"users","edit":{"1992":{"parts_buy":"1"},"87":{"parts_buy":"1"},"736":{"parts_buy":"1"},"85":{"parts_buy":"1"},"378":{"parts_buy":"1"},"21":{"parts_buy":"1"},"2031":{"parts_buy":"1"},"2019":{"parts_buy":"1"},"2080":{"parts_buy":"0"},"2094":{"parts_buy":"0"},"2081":{"parts_buy":"0"},"1207":{"parts_buy":"0"},"74":{"parts_buy":"0"},"2051":{"parts_buy":"0"},"2046":{"parts_buy":"0"},"2042":{"parts_buy":"0"},"2035":{"parts_buy":"0"},"143":{"parts_buy":"0"},"791":{"parts_buy":"0"},"170":{"parts_buy":"0"}},"undefined":"0","id":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 10:36:38] local.NOTICE: 813-周应伟 | POST waso/allUpdate | 提交的参数：{"table":"users","edit":{"1992":{"parts_buy":"1"},"87":{"parts_buy":"1"},"736":{"parts_buy":"1"},"1207":{"parts_buy":"1"},"85":{"parts_buy":"1"},"378":{"parts_buy":"1"},"21":{"parts_buy":"1"},"2031":{"parts_buy":"1"},"2019":{"parts_buy":"1"},"2080":{"parts_buy":"0"},"2094":{"parts_buy":"0"},"2081":{"parts_buy":"0"},"74":{"parts_buy":"0"},"2051":{"parts_buy":"0"},"2046":{"parts_buy":"0"},"2042":{"parts_buy":"0"},"2035":{"parts_buy":"0"},"143":{"parts_buy":"0"},"791":{"parts_buy":"0"},"170":{"parts_buy":"0"}},"undefined":"0","id":["0"]} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 11:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-07 11:00:17] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 11:00:18] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 11:00:18] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 11:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 11:30:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 12:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-07 12:00:11] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 12:00:11] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 12:00:12] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 12:30:07] local.INFO: 创建数据库备份成功  
+[2019-01-07 12:30:11] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 13:00:07] local.INFO: 创建数据库备份成功  
+[2019-01-07 13:00:11] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 13:00:11] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 13:00:11] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 13:30:09] local.INFO: 创建数据库备份成功  
+[2019-01-07 13:30:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 14:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-07 14:00:15] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 14:00:15] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 14:00:15] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 14:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 14:30:12] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 15:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-07 15:00:15] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 15:00:16] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 15:00:16] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 15:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 15:30:12] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 16:00:10] local.INFO: 创建数据库备份成功  
+[2019-01-07 16:00:14] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 16:00:15] local.INFO: 整机产品更新价格成功！  
+[2019-01-07 16:00:15] local.INFO: 自建产品更新价格成功！  
+[2019-01-07 16:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 16:30:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 17:00:09] local.INFO: 创建数据库备份成功  
+[2019-01-07 17:00:13] local.INFO: 最新数据库备份发送邮件成功  
+[2019-01-07 17:11:37] local.NOTICE: 813-周应伟 | PUT waso/business_managements/111 | 提交的参数：{"pic":{"url":["files_images\/2019-01-07\/3OHJEn1fDrySoIU80s30ilcO62lleVsn84dywKBO.jpeg","files_images\/2019-01-07\/8P7s9evoRuk6abwlpFlf9FeDYA9Oa7mW0kj86mPW.jpeg"],"name":["1516760281","1516760283"]},"type":"banner","field":{"color":"219,219,219","url":"www.waso.com.cn\/server_8.html","max_font":"网烁深度学习服务器","min_font":"用GPU为人工智能加速","font_float":"left","font_color":"W","mini_program_font_color":"white","more":"1"}} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 17:11:48] local.NOTICE: 813-周应伟 | PUT waso/business_managements/107 | 提交的参数：{"pic":{"url":["files_images\/2019-01-07\/wnns53Js4yKdUaYxrbQDdv7JKIzkcv4tIfUAVEYU.jpeg","files_images\/2019-01-07\/z2h3Mg2rOJhxEMmKuMZX4RDKZqgNDFp1wNwXQHqt.jpeg"],"name":["1510622717","1511419982"]},"type":"banner","field":{"color":"219,219,219","url":"www.waso.com.cn\/About.html","max_font":"为用户提供深度定制服务器","min_font":"专业应用计算机，创新应用服务","font_float":"left","font_color":"W","mini_program_font_color":"white","more":"1"}} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 17:11:54] local.NOTICE: 813-周应伟 | PUT waso/business_managements/108 | 提交的参数：{"pic":{"url":["files_images\/2019-01-07\/SqKYXbfLOrzYmmIW7EcRhXY6sKnxJfpwWatF8kn5.jpeg","files_images\/2019-01-07\/3swXkoXSWMEEhn6Y9mo2C4Drhlj1TfRWKS1czoX6.jpeg"],"name":["1510622725","1511419988"]},"type":"banner","field":{"color":"219,219,219","url":"www.waso.com.cn\/Products\/deep.html","max_font":"不同需求 不选通用配置","min_font":"网烁为专业用户做深度定制","font_float":"left","font_color":"W","mini_program_font_color":"white","more":"1"}} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 17:12:06] local.NOTICE: 813-周应伟 | PUT waso/business_managements/109 | 提交的参数：{"pic":{"url":["files_images\/2019-01-07\/hejLayVMw3PkHySjDmyucOvyOQzuZQadwj68l6FK.jpeg","files_images\/2019-01-07\/efQfJ8pYqhH8EbgMmUXWPPw2kuiWO8I9YtvUKzt4.jpeg"],"name":["1510622732","1511419995"]},"type":"banner","field":{"color":"219,219,219","url":"www.waso.com.cn\/Designer.html","max_font":"网烁设计师电脑","min_font":"为创意赋能  为设计加速","font_float":"left","font_color":"LOGO","mini_program_font_color":"white","more":"1"}} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 17:12:25] local.NOTICE: 813-周应伟 | PUT waso/business_managements/110 | 提交的参数：{"pic":{"url":["files_images\/2019-01-07\/uvbMV6s8jVbIjINM580I5MscSHV4Q1KwzTZn94e9.jpeg","files_images\/2019-01-07\/BAPCZzNUH3lapftibDlf7W2zbHB2Oie8KFnqebS9.jpeg"],"name":["1510622739","1511420000"]},"type":"banner","field":{"color":"219,219,219","url":"http:\/\/www.wpshkx.cn","max_font":"定制测试中心","min_font":"精心测试  稳定为王","font_float":"left","font_color":"LOGO","mini_program_font_color":"white","more":"0"}} | 127.0.0.0 中国 成都市 (本地调试) 四川  
+[2019-01-07 17:30:08] local.INFO: 创建数据库备份成功  
+[2019-01-07 17:30:11] local.INFO: 最新数据库备份发送邮件成功  

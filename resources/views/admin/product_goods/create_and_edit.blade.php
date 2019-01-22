@@ -1,6 +1,12 @@
 @extends('admin.layout.default')
 @section('js')
     <script>
+        $(function () {
+            @if(isset($productGood) && $productGood->jiagou_id == 279)
+                $('select,input').attr('disabled',true);
+                $('.demo-upload-list-cover').hide()
+            @endif
+        });
         var vm = new Vue({
             el: "#app",
             data: {
@@ -58,6 +64,7 @@
         <div class="PageBtn">
             <div class="phoneBtns">
                 <button class="Btn Refresh ">刷新</button>
+                @if(isset($productGood) && $productGood->jiagou_id != 279)
                 @can('create product_goods')
                     <button type="submit" class="Btn common_add" form_id="product_goods"
                             location="top">@if(Route::is('admin.product_goods.create'))添加@else
@@ -67,6 +74,7 @@
                             location="top">@if(Route::is('admin.product_goods.create'))添加@else
                             修改@endif</button>
                 @endcan
+                @endif
                 <button class="changeWebClose Btn">返回</button>
             </div>
             <div class="phoneBtnOpen"></div>

@@ -15,7 +15,11 @@
                             {!!  Form::hidden('product_id',old('product_id',$product->id)) !!}
                             {!!  Form::hidden('series_name',old('series_name'),['v-model'=>'series_name']) !!}
                             {!!  Form::hidden('framework_name',old('framework_name'),['v-model'=>'framework_name']) !!}
-                            @php $frameworks=$product->framework()->whereParentId(0)->order('name','asc')->pluck('name', 'id');@endphp
+                            @if(Route::is('admin.product_goods.create'))
+                            @php $frameworks=$product->framework()->whereParentId(0)->where('id','<>','279')->order('name','asc')->pluck('name', 'id');@endphp
+                            @else
+                                @php $frameworks=$product->framework()->whereParentId(0)->order('name','asc')->pluck('name', 'id');@endphp
+                            @endif
                             {!!  Form::select('jiagou_id',$frameworks,old('jiagou_id'),['placeholder'=>'请选择架构类型','class'=>'checkNull framework_name','v-model'=>'typed','@change'=>'getCanshus()']) !!}
                         </div>
                         <div class="clear"></div>
@@ -131,7 +135,9 @@
     {!! Form::close() !!}
 </div>
 
-<script src="{{ asset('admin/js/goodPrice.js') }}"></script>
+    <script src="{{ asset('admin/js/goodPrice.js') }}"></script>
+
+
 
 
 

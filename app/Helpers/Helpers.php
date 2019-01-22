@@ -31,12 +31,27 @@ if (!function_exists('getImages')) {
 if (!function_exists('priceSum')) {
     function priceSum($price)
     {
-        $core_price = $price->sum("core_price");
-        $cost_price = $price->sum('cost_price');
-        $member_price = $price->sum('member_price');
-        $retail_price = $price->sum('retail_price');
-        $taobao_price = $price->sum('taobao_price');
-        $cooperation_price = $price->sum('cooperation_price');
+
+        $core_price = $price->sum(function ($item){
+            return $item->price["core_price"] * $item->pivot->product_good_num;
+        });
+
+        $cost_price = $price->sum(function ($item){
+            return $item->price["cost_price"] * $item->pivot->product_good_num;
+        });
+        $member_price = $price->sum(function ($item){
+            return $item->price["member_price"] * $item->pivot->product_good_num;
+        });
+        $retail_price = $price->sum(function ($item){
+            return $item->price["retail_price"] * $item->pivot->product_good_num;
+        });
+        $taobao_price = $price->sum(function ($item){
+            return $item->price["taobao_price"] * $item->pivot->product_good_num;
+        });
+        $cooperation_price = $price->sum(function ($item){
+            return $item->price["cooperation_price"] * $item->pivot->product_good_num;
+        });
+
         return ['core_price' => $core_price,
             'cost_price' => $cost_price,
             'member_price' => $member_price,
@@ -262,6 +277,7 @@ if (!function_exists('randomColor')) {
             } else {
                 if ($crate) {
                     $pic = json_decode($crate->pic, true);
+
                 }
 
             }
@@ -269,9 +285,7 @@ if (!function_exists('randomColor')) {
             if ($pic && $all) {
                 return $pic;
             } else {
-                if ($pic) {
-                    return $pic[0]['url'];
-                }
+                return $pic[0]['url'] ?? '';
             }
         }
     }

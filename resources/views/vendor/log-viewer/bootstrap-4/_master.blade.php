@@ -222,14 +222,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item {{ Route::is('log-viewer::dashboard') ? 'active' : '' }}">
-                    <a href="{{ route('log-viewer::dashboard') }}" class="nav-link">
-                        <i class="fa fa-dashboard"></i> 仪表盘
-                    </a>
-                </li>
+                {{--<li class="nav-item {{ Route::is('log-viewer::dashboard') ? 'active' : '' }}">--}}
+                    {{--<a href="{{ route('log-viewer::dashboard') }}" class="nav-link">--}}
+                        {{--<i class="fa fa-dashboard"></i> 仪表盘--}}
+                    {{--</a>--}}
+                {{--</li>--}}
                 <li class="nav-item {{ Route::is('log-viewer::logs.list') ? 'active' : '' }}">
                     <a href="{{ route('log-viewer::logs.list') }}" class="nav-link">
-                        <i class="fa fa-archive"></i> 日志
+                        <i class="fa fa-archive"></i> 日志列表
                     </a>
                 </li>
             </ul>

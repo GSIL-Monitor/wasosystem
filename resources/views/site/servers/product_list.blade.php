@@ -1,4 +1,5 @@
 <div class="type_box">
+
     <ul>
         @forelse($servers as $server)
             @php $pics=order_complete_machine_pic($server->complete_machine_product_goods,'all');@endphp
@@ -69,5 +70,5 @@
         <div class="clear"></div>
     </ul>
 </div>
-{{--{{ $servers->links('vendor.pagination.ajax_page') }}--}}
+{{ $servers->appends(Request::except(['_token','page']))->links('vendor.pagination.ajax_page') }}
 

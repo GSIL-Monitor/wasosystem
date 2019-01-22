@@ -22,7 +22,7 @@
                                 <li class="tr">
                                     <em class="change_view" >
                                         <span class="num LikeBtn">{{ $user_address->number }}</span>
-                                        <span class="name LikeBtn">{{ $user_address->address }}</span>
+                                        <span class="name LikeBtn" title="{{ $user_address->address }}">{{ $user_address->address }}</span>
                                         <span class="type LikeBtn">{{ $user_address->name }}</span>
                                         <span class="peo LikeBtn">{{ $user_address->phone }}</span>
                                         <span class="oth">

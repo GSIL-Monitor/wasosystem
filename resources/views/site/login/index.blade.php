@@ -119,7 +119,7 @@
                 {{ Form::close() }}
                 <div class="submit">
                     <i class="wait"><img src="{{ asset('pic/wait.gif') }}"></i>
-                    <a @click="login" >立即登录</a>
+                    <a @click="login"  >立即登录</a>
                 </div>
             </div>
            </div>

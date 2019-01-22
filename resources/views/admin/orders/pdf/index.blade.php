@@ -15,16 +15,14 @@
         <p>{{ optional($complate_machine)->additional_arguments['page_description'] ?? '占位' }}</p>
     </div>
     <div class="ling">
-        <notempty name="chanpin">
             <p><b>应用领域：</b>{{ implode(',',optional($complate_machine)->application  ?? []) }}</p>
             <p><b>产品优势：</b>{{ optional($complate_machine)->additional_arguments['product_description'] ?? '占位' }}</p>
-        </notempty>
         <div class="pics">
-            <notempty name="pic">
-                <volist name="pic" id="v" offset="0" length="3">
-                    <img src="__PUBLIC__/Uploads/{$v}">
-                </volist>
-            </notempty>
+            @php $pics=order_complete_machine_pic($complate_machine->complete_machine_product_goods,'all') ?? [];@endphp
+            @forelse($pics as $item)
+                    <img src="{{ $item['url'] }}">
+                @empty
+           @endforelse
             <div class="clear"></div>
         </div>
     </div>

@@ -28,7 +28,7 @@ class MessageMail extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->view('emails.message')->subject("深度定制公司")->with([
+        return $this->view('emails.message')->subject("网烁客服系统")->with([
             'productName'=>$this->message->product->name,
             'product_id'=>$this->message->product_id,
             'content'=>$this->message->content,

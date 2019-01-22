@@ -5,7 +5,10 @@
     <link href="{{ asset('css/order_info_public.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/order.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/product_info_edit.css') }}" rel="stylesheet" type="text/css">
-
+    <style>
+        .ivu-btn-primary{color:#fff;background-color:#fff;border:none}
+        .ivu-btn-primary:hover{color:#fff;background-color:#fff;border:none}
+    </style>
 @endsection
 @section('js')
 
@@ -41,6 +44,7 @@
                     var Notice=this.$Notice;
                     axios.get('{{ route('order.reset',$order->id) }}').then(function (response) {
                         self.$refs.child.goodList=response.data;
+                        self.total_price= '{!! $order->unit_price !!}',
                         Notice.success(
                             {
                                 title: "重置成功！",

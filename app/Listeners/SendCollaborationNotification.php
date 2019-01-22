@@ -31,7 +31,7 @@ class SendCollaborationNotification implements ShouldQueue
         if(!empty($event->demandManagement->assistant) && $event->demandManagement->send ==false){
             $admin=Admin::whereIn('id',$event->demandManagement->assistant)->get()->implode('phone',',');
             ding()->with('demand_collaboration')->at(explode(',',$admin))
-                ->text('测试信息！！！！'.$event->demandManagement->administrator->account."发出需求号：".$event->demandManagement->demand_number.'需要协同完成，收到信息后请尽快配合！');
+                ->text(config('ding.test_message').$event->demandManagement->administrator->account."发出需求号：".$event->demandManagement->demand_number.'需要协同完成，收到信息后请尽快配合！');
             $event->demandManagement->update(['send'=>true]);
         }
         if(!empty($event->demandManagement->demand_management_order)){

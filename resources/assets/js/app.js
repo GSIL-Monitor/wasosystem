@@ -10,8 +10,6 @@
 window.Vue = require('vue');
 //引入iview插件
 import iView from 'iview';
-
-
 import VueDND from 'awe-dnd';
 import VeeValidate , { Validator }from 'vee-validate';
 import zh from './zh_CN'
@@ -27,7 +25,7 @@ Vue.use(VeeValidate, {
 Validator.extend('mobile', {
     getMessage: field => field + '格式不正确',
     validate: (value, args) => {
-        return value.length == 11 && (/^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value) || /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(value))
+        return (value.length == 11 && /^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value)) || (value.length == 12 && /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(value))
     }
 });
 //邮箱电话验证唯一
@@ -118,7 +116,6 @@ Vue.component('good-remote-select', require('./components/GoodRemoteSelect.vue')
 Vue.component('date-picker-filtrate', require('./components/DatePickerFiltrate.vue'));
 Vue.component('date-picker-select', require('./components/DatePicker.vue'));
 Vue.component('material_editor', require('./components/MaterialEditor.vue'));
-Vue.component('v-chart', ECharts)
 //Vue.component('v-distpicker', Distpicker) 地址选择器   现在选用仿京东选择器
 // const app = new Vue({
 //     el: '#app'
